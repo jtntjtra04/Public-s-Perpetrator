@@ -6,12 +6,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
-
     private Vector2 move_input;
 
     //References
     private Rigidbody2D rb;
     private Animator anim;
+    public DialogueManager dialogue_manager;
 
     private void Awake()
     {
@@ -20,6 +20,10 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+        if (dialogue_manager.dialoguebox_on)
+        {
+            return;
+        }
         // Input movement
         move_input.x = Input.GetAxisRaw("Horizontal");
         move_input.y = Input.GetAxisRaw("Vertical");

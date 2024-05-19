@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
     //References
     private Rigidbody2D rb;
     private Animator anim;
-    public DialogueManager dialogue_manager;
 
     private void Awake()
     {
@@ -20,7 +19,11 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        if (dialogue_manager.dialoguebox_on)
+        if (DialogueManager.instance != null && DialogueManager.instance.dialoguebox_on)
+        {
+            return;
+        }
+        if (NotificationTrigger.instance != null && NotificationTrigger.instance.notifbox_active) 
         {
             return;
         }

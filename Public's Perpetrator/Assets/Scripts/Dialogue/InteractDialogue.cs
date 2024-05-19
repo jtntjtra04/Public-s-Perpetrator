@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mikewazowski : MonoBehaviour
+public class InteractDialogue : MonoBehaviour
 {
     private DialogueTrigger dialogue_trigger;
     private bool CanTriggerDialogue = false;
+    public DialogueManager dialogue_manager;
     private void Start()
     {
         dialogue_trigger = GetComponent<DialogueTrigger>();
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && CanTriggerDialogue)
+        if (Input.GetKeyDown(KeyCode.F) && CanTriggerDialogue && dialogue_manager.dialoguebox_on == false)
         {
             dialogue_trigger.TriggerDialogue();
         }

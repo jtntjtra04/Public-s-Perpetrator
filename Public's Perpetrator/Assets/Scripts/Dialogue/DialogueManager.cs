@@ -17,10 +17,16 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogue_text;
     public Image npc_image;
 
-    public float text_speed = 0.05f;
+    public float text_speed = 0.04f;
     private bool dialogue_on = false;
     public bool dialoguebox_on = false;
 
+    public static DialogueManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
         lines = new Queue<string>();
@@ -97,5 +103,12 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("End dialogue");
         dialogue_box.SetActive(false);
         dialoguebox_on = false;
+
+        NotificationTrigger trigger_notif = GetComponent<NotificationTrigger>();
+
+        if (trigger_notif != null)
+        {
+            trigger_notif.ShowNotification();
+        }
     }
 }

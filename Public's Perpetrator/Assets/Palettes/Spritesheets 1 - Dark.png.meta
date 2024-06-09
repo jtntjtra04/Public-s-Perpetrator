@@ -1,0 +1,539 @@
+fileFormatVersion: 2
+guid: b26527ecf1ecebd41a78c0c9dd5f2d13
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 269370396075304384
+    second: Spritesheets 1 - Dark_0
+  - first:
+      213: -8245172415136970141
+    second: Spritesheets 1 - Dark_1
+  - first:
+      213: 793240845654304145
+    second: Spritesheets 1 - Dark_2
+  - first:
+      213: -8334990947574187316
+    second: Spritesheets 1 - Dark_3
+  - first:
+      213: 9203861168154584869
+    second: Spritesheets 1 - Dark_4
+  - first:
+      213: 5327929022004239294
+    second: Spritesheets 1 - Dark_5
+  - first:
+      213: -934293562145323974
+    second: Spritesheets 1 - Dark_6
+  - first:
+      213: 2237641200655046706
+    second: Spritesheets 1 - Dark_7
+  - first:
+      213: 1052587998717639258
+    second: Spritesheets 1 - Dark_8
+  - first:
+      213: -6372932724251235459
+    second: Spritesheets 1 - Dark_9
+  - first:
+      213: 3614168409365878992
+    second: Spritesheets 1 - Dark_10
+  - first:
+      213: -101587355703857850
+    second: Spritesheets 1 - Dark_11
+  - first:
+      213: 7571161658122909352
+    second: Spritesheets 1 - Dark_12
+  - first:
+      213: 7854695755871008856
+    second: Spritesheets 1 - Dark_13
+  - first:
+      213: 5880345044077519064
+    second: Spritesheets 1 - Dark_14
+  - first:
+      213: 8982407999854453170
+    second: Spritesheets 1 - Dark_15
+  - first:
+      213: -4296326967305569262
+    second: Spritesheets 1 - Dark_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 18
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 315
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c52313b2fefcb300800000000000000
+      internalID: 269370396075304384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_1
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 342
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a49eb8f53439d80800000000000000
+      internalID: -8245172415136970141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 315
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1952e8aa858220b00800000000000000
+      internalID: 793240845654304145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_3
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 342
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca7eb3d4e9245c80800000000000000
+      internalID: -8334990947574187316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 315
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527add1e7feaabf70800000000000000
+      internalID: 9203861168154584869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_5
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 342
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb9e09873b90f940800000000000000
+      internalID: 5327929022004239294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_6
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 315
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34c46094f8b803f0800000000000000
+      internalID: -934293562145323974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 192
+        width: 144
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23892d301d2bd0f10800000000000000
+      internalID: 2237641200655046706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 63
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a776e353b8b9e00800000000000000
+      internalID: 1052587998717639258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 192
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7bea89d37bce87a0800000000000000
+      internalID: -6372932724251235459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_10
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 192
+        width: 48
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d811b6050b182230800000000000000
+      internalID: 3614168409365878992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_11
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 159
+        width: 69
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64da99596d6179ef0800000000000000
+      internalID: -101587355703857850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 24
+        width: 96
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a639711a6b221960800000000000000
+      internalID: 7571161658122909352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_13
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 96
+        width: 57
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858b57b8c2c710d60800000000000000
+      internalID: 7854695755871008856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_14
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 48
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d028f489ae2b9150800000000000000
+      internalID: 5880345044077519064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1a3fa2c7ce7ac70800000000000000
+      internalID: 8982407999854453170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21cf1dad2616064c0800000000000000
+      internalID: -4296326967305569262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ec5efdac4001ff841bdce6392a519b6c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Spritesheets 1 - Dark_0: 269370396075304384
+      Spritesheets 1 - Dark_1: -8245172415136970141
+      Spritesheets 1 - Dark_10: 3614168409365878992
+      Spritesheets 1 - Dark_11: -101587355703857850
+      Spritesheets 1 - Dark_12: 7571161658122909352
+      Spritesheets 1 - Dark_13: 7854695755871008856
+      Spritesheets 1 - Dark_14: 5880345044077519064
+      Spritesheets 1 - Dark_15: 8982407999854453170
+      Spritesheets 1 - Dark_16: -4296326967305569262
+      Spritesheets 1 - Dark_2: 793240845654304145
+      Spritesheets 1 - Dark_3: -8334990947574187316
+      Spritesheets 1 - Dark_4: 9203861168154584869
+      Spritesheets 1 - Dark_5: 5327929022004239294
+      Spritesheets 1 - Dark_6: -934293562145323974
+      Spritesheets 1 - Dark_7: 2237641200655046706
+      Spritesheets 1 - Dark_8: 1052587998717639258
+      Spritesheets 1 - Dark_9: -6372932724251235459
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

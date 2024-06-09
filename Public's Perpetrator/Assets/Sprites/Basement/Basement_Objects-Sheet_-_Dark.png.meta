@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: d67c329a6343dcb4fa390a9fff33765c
+guid: 0376b0caa9d1b684897c6aeb2e9852df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4104531098197155591
-    second: Basement_Objects-Sheet - Dark_0
+      213: -8554652755739355230
+    second: Basement_Objects-Sheet_-_Dark_0
   - first:
-      213: -7528930807325203232
-    second: Basement_Objects-Sheet - Dark_1
+      213: 1463891695257563967
+    second: Basement_Objects-Sheet_-_Dark_1
   - first:
-      213: 2635928712251805813
-    second: Basement_Objects-Sheet - Dark_2
+      213: 2161844207640164370
+    second: Basement_Objects-Sheet_-_Dark_2
   - first:
-      213: 3229902463099442027
-    second: Basement_Objects-Sheet - Dark_3
+      213: 3698970430948689839
+    second: Basement_Objects-Sheet_-_Dark_3
   - first:
-      213: -6444796214103688590
-    second: Basement_Objects-Sheet - Dark_4
+      213: 6289726311358441990
+    second: Basement_Objects-Sheet_-_Dark_4
   - first:
-      213: -6099693737821938977
-    second: Basement_Objects-Sheet - Dark_5
+      213: -2028127427539078457
+    second: Basement_Objects-Sheet_-_Dark_5
   - first:
-      213: 5762949612149669838
-    second: Basement_Objects-Sheet - Dark_6
+      213: 8623297048318915439
+    second: Basement_Objects-Sheet_-_Dark_6
   - first:
-      213: 4859495499613394026
-    second: Basement_Objects-Sheet - Dark_7
+      213: 2978154814610635166
+    second: Basement_Objects-Sheet_-_Dark_7
   - first:
-      213: -4616490579662609179
-    second: Basement_Objects-Sheet - Dark_8
+      213: 7806269040995710608
+    second: Basement_Objects-Sheet_-_Dark_8
   - first:
-      213: -6167883549657936451
-    second: Basement_Objects-Sheet - Dark_9
+      213: -6752017817516921304
+    second: Basement_Objects-Sheet_-_Dark_9
   - first:
-      213: 6007786387803970361
-    second: Basement_Objects-Sheet - Dark_10
+      213: 1624478323997591765
+    second: Basement_Objects-Sheet_-_Dark_10
   - first:
-      213: 9019555740462894513
-    second: Basement_Objects-Sheet - Dark_11
+      213: 9129189591852839222
+    second: Basement_Objects-Sheet_-_Dark_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -133,7 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_0
+      name: Basement_Objects-Sheet_-_Dark_0
       rect:
         serializedVersion: 2
         x: 23
@@ -147,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70fd59d794936f830800000000000000
-      internalID: 4104531098197155591
+      spriteID: 2a7d655a4a4c74980800000000000000
+      internalID: -8554652755739355230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_1
+      name: Basement_Objects-Sheet_-_Dark_1
       rect:
         serializedVersion: 2
         x: 191
@@ -168,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e4e2ea125dd38790800000000000000
-      internalID: -7528930807325203232
+      spriteID: f33b875adb9c05410800000000000000
+      internalID: 1463891695257563967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_2
+      name: Basement_Objects-Sheet_-_Dark_2
       rect:
         serializedVersion: 2
         x: 278
@@ -189,14 +189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5709503b233b49420800000000000000
-      internalID: 2635928712251805813
+      spriteID: 218b0285ad9600e10800000000000000
+      internalID: 2161844207640164370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_3
+      name: Basement_Objects-Sheet_-_Dark_3
       rect:
         serializedVersion: 2
         x: 353
@@ -210,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b63933c6d2be2dc20800000000000000
-      internalID: 3229902463099442027
+      spriteID: fa7ce5b4202655330800000000000000
+      internalID: 3698970430948689839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_4
+      name: Basement_Objects-Sheet_-_Dark_4
       rect:
         serializedVersion: 2
         x: 47
@@ -231,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27a31904dfb7f86a0800000000000000
-      internalID: -6444796214103688590
+      spriteID: 60aa2fa71c8994750800000000000000
+      internalID: 6289726311358441990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_5
+      name: Basement_Objects-Sheet_-_Dark_5
       rect:
         serializedVersion: 2
         x: 230
@@ -252,14 +252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fdad27eecd8895ba0800000000000000
-      internalID: -6099693737821938977
+      spriteID: 7c27e42a9d4aad3e0800000000000000
+      internalID: -2028127427539078457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_6
+      name: Basement_Objects-Sheet_-_Dark_6
       rect:
         serializedVersion: 2
         x: 47
@@ -273,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecff7aa832c1aff40800000000000000
-      internalID: 5762949612149669838
+      spriteID: f6339bd2afa1ca770800000000000000
+      internalID: 8623297048318915439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_7
+      name: Basement_Objects-Sheet_-_Dark_7
       rect:
         serializedVersion: 2
         x: 143
@@ -294,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a64d0120965607340800000000000000
-      internalID: 4859495499613394026
+      spriteID: e997cf26608845920800000000000000
+      internalID: 2978154814610635166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_8
+      name: Basement_Objects-Sheet_-_Dark_8
       rect:
         serializedVersion: 2
         x: 227
@@ -315,14 +315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e4e54ae64eeeefb0800000000000000
-      internalID: -4616490579662609179
+      spriteID: 096bda95550755c60800000000000000
+      internalID: 7806269040995710608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_9
+      name: Basement_Objects-Sheet_-_Dark_9
       rect:
         serializedVersion: 2
         x: 50
@@ -336,14 +336,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dbdc9a62796476aa0800000000000000
-      internalID: -6167883549657936451
+      spriteID: 82eabc591930c42a0800000000000000
+      internalID: -6752017817516921304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_10
+      name: Basement_Objects-Sheet_-_Dark_10
       rect:
         serializedVersion: 2
         x: 242
@@ -357,14 +357,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93b9b7b93e1ff5350800000000000000
-      internalID: 6007786387803970361
+      spriteID: 5d8c237cd6e4b8610800000000000000
+      internalID: 1624478323997591765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_11
+      name: Basement_Objects-Sheet_-_Dark_11
       rect:
         serializedVersion: 2
         x: 332
@@ -378,8 +378,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1bd40268826eb2d70800000000000000
-      internalID: 9019555740462894513
+      spriteID: 631f495b09561be70800000000000000
+      internalID: 9129189591852839222
       vertices: []
       indices: 
       edges: []
@@ -394,19 +394,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Basement_Objects-Sheet - Dark_0: 4104531098197155591
-      Basement_Objects-Sheet - Dark_1: -7528930807325203232
-      Basement_Objects-Sheet - Dark_10: 6007786387803970361
-      Basement_Objects-Sheet - Dark_11: 9019555740462894513
-      Basement_Objects-Sheet - Dark_2: 2635928712251805813
-      Basement_Objects-Sheet - Dark_3: 3229902463099442027
-      Basement_Objects-Sheet - Dark_4: -6444796214103688590
-      Basement_Objects-Sheet - Dark_5: -6099693737821938977
-      Basement_Objects-Sheet - Dark_6: 5762949612149669838
-      Basement_Objects-Sheet - Dark_7: 4859495499613394026
-      Basement_Objects-Sheet - Dark_8: -4616490579662609179
-      Basement_Objects-Sheet - Dark_9: -6167883549657936451
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

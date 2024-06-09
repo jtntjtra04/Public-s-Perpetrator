@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 6235277073552685766}
   - component: {fileID: 8307120959495877836}
   - component: {fileID: 7749622299156316823}
+  - component: {fileID: 7275847389297479417}
+  - component: {fileID: 3381905092129865802}
   m_Layer: 0
   m_Name: painting_girl
   m_TagString: Untagged
@@ -78,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -90926063
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 5442786839497916013, guid: 73c1349f44ad6854e8a7d2c013923e0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -150,11 +152,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - System
+    - Caelus
     lines:
-    - Obtained a Painting
+    - ohiduhuisdhfulisldfhsluhfpsuhfusdhf;isoahfp;sfhlsfhlsudfhlsdfhsdf
     images:
-    - {fileID: -7687702389306135508, guid: 1a851b7a8ae82524ca19a51c6e9238aa, type: 3}
+    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
 --- !u!114 &8307120959495877836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue_manager: {fileID: 0}
 --- !u!114 &7749622299156316823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,3 +183,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 52e3dc7b23621aa42af6060d035ec2be, type: 2}
+--- !u!114 &7275847389297479417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8980485964331215533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477e45ca651cd9d44b0877625762fd51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notif:
+    line: Obtained a Poster
+  notification_box: {fileID: 0}
+  notif_text: {fileID: 0}
+  notifbox_active: 0
+--- !u!114 &3381905092129865802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8980485964331215533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ed2339491ba224e96c6c44a57e8105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_box: {fileID: 0}
+  name_text: {fileID: 0}
+  dialogue_text: {fileID: 0}
+  npc_image: {fileID: 0}
+  text_speed: 0.04
+  dialoguebox_on: 0

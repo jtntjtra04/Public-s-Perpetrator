@@ -1,43 +1,34 @@
 fileFormatVersion: 2
-guid: d67c329a6343dcb4fa390a9fff33765c
+guid: ed3a3d8a21e314e498c8a0e1c08481b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4104531098197155591
-    second: Basement_Objects-Sheet - Dark_0
+      213: -1806090390650425761
+    second: BedRoom_-_Dark_0
   - first:
-      213: -7528930807325203232
-    second: Basement_Objects-Sheet - Dark_1
+      213: -5031745673711324092
+    second: BedRoom_-_Dark_1
   - first:
-      213: 2635928712251805813
-    second: Basement_Objects-Sheet - Dark_2
+      213: 7250223255942634474
+    second: BedRoom_-_Dark_2
   - first:
-      213: 3229902463099442027
-    second: Basement_Objects-Sheet - Dark_3
+      213: -5947530548707834209
+    second: BedRoom_-_Dark_3
   - first:
-      213: -6444796214103688590
-    second: Basement_Objects-Sheet - Dark_4
+      213: -2838487967707529035
+    second: BedRoom_-_Dark_4
   - first:
-      213: -6099693737821938977
-    second: Basement_Objects-Sheet - Dark_5
+      213: -4463847479292149919
+    second: BedRoom_-_Dark_5
   - first:
-      213: 5762949612149669838
-    second: Basement_Objects-Sheet - Dark_6
+      213: 7654751121760035378
+    second: BedRoom_-_Dark_6
   - first:
-      213: 4859495499613394026
-    second: Basement_Objects-Sheet - Dark_7
+      213: -8818578227882927216
+    second: BedRoom_-_Dark_7
   - first:
-      213: -4616490579662609179
-    second: Basement_Objects-Sheet - Dark_8
-  - first:
-      213: -6167883549657936451
-    second: Basement_Objects-Sheet - Dark_9
-  - first:
-      213: 6007786387803970361
-    second: Basement_Objects-Sheet - Dark_10
-  - first:
-      213: 9019555740462894513
-    second: Basement_Objects-Sheet - Dark_11
+      213: 3506138775428367051
+    second: BedRoom_-_Dark_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -70,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,9 +96,9 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -133,11 +124,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_0
+      name: BedRoom_-_Dark_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 377
+        x: 83
+        y: 428
         width: 146
         height: 98
       alignment: 0
@@ -147,40 +138,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70fd59d794936f830800000000000000
-      internalID: 4104531098197155591
+      spriteID: f5ee809db5a7fe6e0800000000000000
+      internalID: -1806090390650425761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_1
+      name: BedRoom_-_Dark_1
       rect:
         serializedVersion: 2
-        x: 191
-        y: 392
-        width: 62
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e4e2ea125dd38790800000000000000
-      internalID: -7528930807325203232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_2
-      rect:
-        serializedVersion: 2
-        x: 278
-        y: 404
-        width: 50
+        x: 290
+        y: 482
+        width: 116
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -189,18 +159,102 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5709503b233b49420800000000000000
-      internalID: 2635928712251805813
+      spriteID: 444f35618f5ab2ab0800000000000000
+      internalID: -5031745673711324092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_3
+      name: BedRoom_-_Dark_2
       rect:
         serializedVersion: 2
-        x: 353
-        y: 386
+        x: 287
+        y: 431
+        width: 146
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb9cb053a7fd9460800000000000000
+      internalID: 7250223255942634474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedRoom_-_Dark_3
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 287
+        width: 194
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f964c713a70267da0800000000000000
+      internalID: -5947530548707834209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedRoom_-_Dark_4
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 182
+        width: 158
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b082997b3aab98d0800000000000000
+      internalID: -2838487967707529035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedRoom_-_Dark_5
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 188
+        width: 98
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16fb4493e5a3d02c0800000000000000
+      internalID: -4463847479292149919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedRoom_-_Dark_6
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 182
         width: 68
         height: 80
       alignment: 0
@@ -210,123 +264,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b63933c6d2be2dc20800000000000000
-      internalID: 3229902463099442027
+      spriteID: 232a780b6932b3a60800000000000000
+      internalID: 7654751121760035378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_4
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 290
-        width: 56
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27a31904dfb7f86a0800000000000000
-      internalID: -6444796214103688590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_5
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 266
-        width: 194
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fdad27eecd8895ba0800000000000000
-      internalID: -6099693737821938977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_6
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 116
-        width: 50
-        height: 152
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ecff7aa832c1aff40800000000000000
-      internalID: 5762949612149669838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_7
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 116
-        width: 50
-        height: 152
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a64d0120965607340800000000000000
-      internalID: 4859495499613394026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_8
-      rect:
-        serializedVersion: 2
-        x: 227
-        y: 152
-        width: 194
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e4e54ae64eeeefb0800000000000000
-      internalID: -4616490579662609179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_9
+      name: BedRoom_-_Dark_7
       rect:
         serializedVersion: 2
         x: 50
-        y: 50
+        y: 95
+        width: 62
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09b5b0713dd1e9580800000000000000
+      internalID: -8818578227882927216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BedRoom_-_Dark_8
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 101
         width: 71
         height: 50
       alignment: 0
@@ -336,50 +306,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dbdc9a62796476aa0800000000000000
-      internalID: -6167883549657936451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_10
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 20
-        width: 50
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93b9b7b93e1ff5350800000000000000
-      internalID: 6007786387803970361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_11
-      rect:
-        serializedVersion: 2
-        x: 332
-        y: 23
-        width: 50
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1bd40268826eb2d70800000000000000
-      internalID: 9019555740462894513
+      spriteID: bc281a2d3ae48a030800000000000000
+      internalID: 3506138775428367051
       vertices: []
       indices: 
       edges: []
@@ -395,18 +323,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Basement_Objects-Sheet - Dark_0: 4104531098197155591
-      Basement_Objects-Sheet - Dark_1: -7528930807325203232
-      Basement_Objects-Sheet - Dark_10: 6007786387803970361
-      Basement_Objects-Sheet - Dark_11: 9019555740462894513
-      Basement_Objects-Sheet - Dark_2: 2635928712251805813
-      Basement_Objects-Sheet - Dark_3: 3229902463099442027
-      Basement_Objects-Sheet - Dark_4: -6444796214103688590
-      Basement_Objects-Sheet - Dark_5: -6099693737821938977
-      Basement_Objects-Sheet - Dark_6: 5762949612149669838
-      Basement_Objects-Sheet - Dark_7: 4859495499613394026
-      Basement_Objects-Sheet - Dark_8: -4616490579662609179
-      Basement_Objects-Sheet - Dark_9: -6167883549657936451
+      BedRoom_-_Dark_0: -1806090390650425761
+      BedRoom_-_Dark_1: -5031745673711324092
+      BedRoom_-_Dark_2: 7250223255942634474
+      BedRoom_-_Dark_3: -5947530548707834209
+      BedRoom_-_Dark_4: -2838487967707529035
+      BedRoom_-_Dark_5: -4463847479292149919
+      BedRoom_-_Dark_6: 7654751121760035378
+      BedRoom_-_Dark_7: -8818578227882927216
+      BedRoom_-_Dark_8: 3506138775428367051
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

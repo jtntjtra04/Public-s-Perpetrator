@@ -33,11 +33,15 @@ public class InventoryManager : MonoBehaviour
             }
             else
             {
-                inventory.SetActive(false);
-                inventory_active = false;
+                CloseInventory();
             }
             
         }
+    }
+    public void CloseInventory()
+    {
+        inventory.SetActive(false);
+        inventory_active = false;
     }
     public void AddItem(Item item)
     {

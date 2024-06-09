@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     //References
     private Rigidbody2D rb;
     private Animator anim;
+    public LampPuzzle lamp_puzzle;
 
     private void Awake()
     {
@@ -24,6 +25,10 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         if (NotificationTrigger.instance != null && NotificationTrigger.instance.notifbox_active) 
+        {
+            return;
+        }
+        if (lamp_puzzle.on_puzzle)
         {
             return;
         }

@@ -1,43 +1,37 @@
 fileFormatVersion: 2
-guid: d67c329a6343dcb4fa390a9fff33765c
+guid: 593aa31bdfe6fbf4e9ac8323a53faad5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4104531098197155591
-    second: Basement_Objects-Sheet - Dark_0
+      213: -7932224004848105074
+    second: Spritesheets_1_-_Dark_0
   - first:
-      213: -7528930807325203232
-    second: Basement_Objects-Sheet - Dark_1
+      213: 3073057500477024627
+    second: Spritesheets_1_-_Dark_1
   - first:
-      213: 2635928712251805813
-    second: Basement_Objects-Sheet - Dark_2
+      213: 5438340011512270202
+    second: Spritesheets_1_-_Dark_2
   - first:
-      213: 3229902463099442027
-    second: Basement_Objects-Sheet - Dark_3
+      213: -2700005779967590048
+    second: Spritesheets_1_-_Dark_3
   - first:
-      213: -6444796214103688590
-    second: Basement_Objects-Sheet - Dark_4
+      213: 6087363112071763794
+    second: Spritesheets_1_-_Dark_4
   - first:
-      213: -6099693737821938977
-    second: Basement_Objects-Sheet - Dark_5
+      213: 3183173987482324536
+    second: Spritesheets_1_-_Dark_5
   - first:
-      213: 5762949612149669838
-    second: Basement_Objects-Sheet - Dark_6
+      213: 4874836564755235953
+    second: Spritesheets_1_-_Dark_6
   - first:
-      213: 4859495499613394026
-    second: Basement_Objects-Sheet - Dark_7
+      213: -3175476075145596190
+    second: Spritesheets_1_-_Dark_7
   - first:
-      213: -4616490579662609179
-    second: Basement_Objects-Sheet - Dark_8
+      213: 5032992130283863795
+    second: Spritesheets_1_-_Dark_8
   - first:
-      213: -6167883549657936451
-    second: Basement_Objects-Sheet - Dark_9
-  - first:
-      213: 6007786387803970361
-    second: Basement_Objects-Sheet - Dark_10
-  - first:
-      213: 9019555740462894513
-    second: Basement_Objects-Sheet - Dark_11
+      213: 3851240554433170284
+    second: Spritesheets_1_-_Dark_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -70,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,9 +99,9 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -133,96 +127,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_0
+      name: Spritesheets_1_-_Dark_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 377
-        width: 146
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70fd59d794936f830800000000000000
-      internalID: 4104531098197155591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_1
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 392
-        width: 62
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e4e2ea125dd38790800000000000000
-      internalID: -7528930807325203232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_2
-      rect:
-        serializedVersion: 2
-        x: 278
-        y: 404
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5709503b233b49420800000000000000
-      internalID: 2635928712251805813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_3
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 386
-        width: 68
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b63933c6d2be2dc20800000000000000
-      internalID: 3229902463099442027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_4
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 290
-        width: 56
+        x: 98
+        y: 302
+        width: 185
         height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -231,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27a31904dfb7f86a0800000000000000
-      internalID: -6444796214103688590
+      spriteID: e89c3385b441be190800000000000000
+      internalID: -7932224004848105074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_5
+      name: Spritesheets_1_-_Dark_1
       rect:
         serializedVersion: 2
-        x: 230
-        y: 266
-        width: 194
-        height: 101
+        x: 335
+        y: 191
+        width: 146
+        height: 193
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fdad27eecd8895ba0800000000000000
-      internalID: -6099693737821938977
+      spriteID: 3796842d381b5aa20800000000000000
+      internalID: 3073057500477024627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_6
+      name: Spritesheets_1_-_Dark_2
       rect:
         serializedVersion: 2
-        x: 47
-        y: 116
-        width: 50
-        height: 152
+        x: 527
+        y: 191
+        width: 49
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,60 +183,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ecff7aa832c1aff40800000000000000
-      internalID: 5762949612149669838
+      spriteID: a7d8bf94d6dd87b40800000000000000
+      internalID: 5438340011512270202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_7
+      name: Spritesheets_1_-_Dark_3
       rect:
         serializedVersion: 2
-        x: 143
-        y: 116
-        width: 50
-        height: 152
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a64d0120965607340800000000000000
-      internalID: 4859495499613394026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_8
-      rect:
-        serializedVersion: 2
-        x: 227
-        y: 152
-        width: 194
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5e4e54ae64eeeefb0800000000000000
-      internalID: -4616490579662609179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_9
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 50
+        x: 14
+        y: 158
         width: 71
         height: 50
       alignment: 0
@@ -336,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dbdc9a62796476aa0800000000000000
-      internalID: -6167883549657936451
+      spriteID: 061c7816c07a78ad0800000000000000
+      internalID: -2700005779967590048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_10
+      name: Spritesheets_1_-_Dark_4
       rect:
         serializedVersion: 2
-        x: 242
-        y: 20
-        width: 50
-        height: 116
+        x: 95
+        y: 191
+        width: 194
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93b9b7b93e1ff5350800000000000000
-      internalID: 6007786387803970361
+      spriteID: 2579ad98f78aa7450800000000000000
+      internalID: 6087363112071763794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Basement_Objects-Sheet - Dark_11
+      name: Spritesheets_1_-_Dark_5
       rect:
         serializedVersion: 2
-        x: 332
-        y: 23
-        width: 50
-        height: 116
+        x: 11
+        y: 47
+        width: 74
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,8 +246,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1bd40268826eb2d70800000000000000
-      internalID: 9019555740462894513
+      spriteID: 83ec52e50e7ec2c20800000000000000
+      internalID: 3183173987482324536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets_1_-_Dark_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 26
+        width: 98
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17442541706e6a340800000000000000
+      internalID: 4874836564755235953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets_1_-_Dark_7
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 47
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2f13485517ee3d0800000000000000
+      internalID: -3175476075145596190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets_1_-_Dark_8
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 47
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fef7e23da7c8d540800000000000000
+      internalID: 5032992130283863795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets_1_-_Dark_9
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 95
+        width: 59
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b419721ea527530800000000000000
+      internalID: 3851240554433170284
       vertices: []
       indices: 
       edges: []
@@ -395,18 +347,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Basement_Objects-Sheet - Dark_0: 4104531098197155591
-      Basement_Objects-Sheet - Dark_1: -7528930807325203232
-      Basement_Objects-Sheet - Dark_10: 6007786387803970361
-      Basement_Objects-Sheet - Dark_11: 9019555740462894513
-      Basement_Objects-Sheet - Dark_2: 2635928712251805813
-      Basement_Objects-Sheet - Dark_3: 3229902463099442027
-      Basement_Objects-Sheet - Dark_4: -6444796214103688590
-      Basement_Objects-Sheet - Dark_5: -6099693737821938977
-      Basement_Objects-Sheet - Dark_6: 5762949612149669838
-      Basement_Objects-Sheet - Dark_7: 4859495499613394026
-      Basement_Objects-Sheet - Dark_8: -4616490579662609179
-      Basement_Objects-Sheet - Dark_9: -6167883549657936451
+      Spritesheets_1_-_Dark_0: -7932224004848105074
+      Spritesheets_1_-_Dark_1: 3073057500477024627
+      Spritesheets_1_-_Dark_2: 5438340011512270202
+      Spritesheets_1_-_Dark_3: -2700005779967590048
+      Spritesheets_1_-_Dark_4: 6087363112071763794
+      Spritesheets_1_-_Dark_5: 3183173987482324536
+      Spritesheets_1_-_Dark_6: 4874836564755235953
+      Spritesheets_1_-_Dark_7: -3175476075145596190
+      Spritesheets_1_-_Dark_8: 5032992130283863795
+      Spritesheets_1_-_Dark_9: 3851240554433170284
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

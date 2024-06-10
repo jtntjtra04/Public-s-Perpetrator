@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     public LampPuzzle lamp_puzzle;
+    public RoomSwitch stairs;
 
     private void Awake()
     {
@@ -29,6 +30,10 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         if (lamp_puzzle.on_puzzle)
+        {
+            return;
+        }
+        if (stairs.isTransition)
         {
             return;
         }

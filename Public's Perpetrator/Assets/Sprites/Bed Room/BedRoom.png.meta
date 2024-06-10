@@ -322,7 +322,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BedRoom_0: -7129269299574136458
+      BedRoom_1: -3886621791497888005
+      BedRoom_2: -1266684145821004415
+      BedRoom_3: -2356798129839617928
+      BedRoom_4: 4867423532768076461
+      BedRoom_5: 4324060979130765376
+      BedRoom_6: 5570299594008042986
+      BedRoom_7: 2155949223926657014
+      BedRoom_8: 8176400601216216764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

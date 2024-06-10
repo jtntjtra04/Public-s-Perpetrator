@@ -394,7 +394,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Basement_Objects-Sheet_-_Dark_0: -8554652755739355230
+      Basement_Objects-Sheet_-_Dark_1: 1463891695257563967
+      Basement_Objects-Sheet_-_Dark_10: 1624478323997591765
+      Basement_Objects-Sheet_-_Dark_11: 9129189591852839222
+      Basement_Objects-Sheet_-_Dark_2: 2161844207640164370
+      Basement_Objects-Sheet_-_Dark_3: 3698970430948689839
+      Basement_Objects-Sheet_-_Dark_4: 6289726311358441990
+      Basement_Objects-Sheet_-_Dark_5: -2028127427539078457
+      Basement_Objects-Sheet_-_Dark_6: 8623297048318915439
+      Basement_Objects-Sheet_-_Dark_7: 2978154814610635166
+      Basement_Objects-Sheet_-_Dark_8: 7806269040995710608
+      Basement_Objects-Sheet_-_Dark_9: -6752017817516921304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

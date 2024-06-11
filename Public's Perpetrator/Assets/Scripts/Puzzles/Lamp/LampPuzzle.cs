@@ -12,6 +12,7 @@ public class LampPuzzle : MonoBehaviour
     private bool can_trigger_puzzle = false;
     private bool puzzle_done = false;
     public bool on_puzzle = false;
+    public bool have_battery = false;
 
     // Toggle Switch
     public Toggle[] switches;
@@ -58,7 +59,7 @@ public class LampPuzzle : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F) && can_trigger_puzzle && !puzzle_done)
+        if(Input.GetKeyDown(KeyCode.F) && can_trigger_puzzle && !puzzle_done && have_battery)
         {
             lamp_puzzle.SetActive(true);
             on_puzzle = true;

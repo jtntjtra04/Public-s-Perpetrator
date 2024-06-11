@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 9835792d4d3e0494cae1af102686ec01
+guid: bf0909340d34f044fa5770f16ff16133
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1063514300747794026
-    second: "\u1D18\u1D00\u0280\u1D00\u1D04\u1D07\u029Fs\u1D1Cs_0"
+      213: 8133450674097667954
+    second: Sliders-Sheet_0
+  - first:
+      213: 4898869864659694393
+    second: Sliders-Sheet_1
+  - first:
+      213: 669366821313740979
+    second: Sliders-Sheet_2
+  - first:
+      213: -2225204018518651421
+    second: Sliders-Sheet_3
+  - first:
+      213: 1987344429760017227
+    second: Sliders-Sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,9 +84,9 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u1D18\u1D00\u0280\u1D00\u1D04\u1D07\u029Fs\u1D1Cs_0"
+      name: Sliders-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 41
+        y: 716
+        width: 305
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +126,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a66ce9d2f9c52ce00800000000000000
-      internalID: 1063514300747794026
+      spriteID: 27fb0c39b42dfd070800000000000000
+      internalID: 8133450674097667954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sliders-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 623
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93338e3cf284cf340800000000000000
+      internalID: 4898869864659694393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sliders-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 623
+        width: 146
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b086d8d3911a4900800000000000000
+      internalID: 669366821313740979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sliders-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 623
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed8c6b1cbc7e11e0800000000000000
+      internalID: -2225204018518651421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sliders-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 29
+        width: 488
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43723eba37749b10800000000000000
+      internalID: 1987344429760017227
       vertices: []
       indices: 
       edges: []
@@ -131,7 +227,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u1D18\u1D00\u0280\u1D00\u1D04\u1D07\u029Fs\u1D1Cs_0": 1063514300747794026
+      Sliders-Sheet_0: 8133450674097667954
+      Sliders-Sheet_1: 4898869864659694393
+      Sliders-Sheet_2: 669366821313740979
+      Sliders-Sheet_3: -2225204018518651421
+      Sliders-Sheet_4: 1987344429760017227
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

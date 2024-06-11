@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f175ecbd32216f646bd906eba43cb884, type: 3}
-  m_Name: Painting
+  m_Name: Poster
   m_EditorClassIdentifier: 
   id: 1
-  name: Painting
-  icon: {fileID: 5442786839497916013, guid: 73c1349f44ad6854e8a7d2c013923e0b, type: 3}
+  name: Poster
+  icon: {fileID: 1063514300747794026, guid: 9835792d4d3e0494cae1af102686ec01, type: 3}

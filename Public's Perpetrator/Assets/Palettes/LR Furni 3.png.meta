@@ -1,0 +1,589 @@
+fileFormatVersion: 2
+guid: 686177ca48cf5044faacd7f722613310
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3826820523895240563
+    second: Spritesheets 1 - Dark 2_0
+  - first:
+      213: 6967932437938754573
+    second: Spritesheets 1 - Dark 2_1
+  - first:
+      213: -3801522759527931188
+    second: Spritesheets 1 - Dark 2_2
+  - first:
+      213: -3464379751720276548
+    second: Spritesheets 1 - Dark 2_3
+  - first:
+      213: -2096052867285423932
+    second: Spritesheets 1 - Dark 2_4
+  - first:
+      213: 647427087909700309
+    second: Spritesheets 1 - Dark 2_5
+  - first:
+      213: -6175306825596217030
+    second: Spritesheets 1 - Dark 2_6
+  - first:
+      213: -6490945340214347346
+    second: Spritesheets 1 - Dark 2_7
+  - first:
+      213: 2028786370399753178
+    second: Spritesheets 1 - Dark 2_8
+  - first:
+      213: -5210032930461963171
+    second: Spritesheets 1 - Dark 2_9
+  - first:
+      213: -5753381774605270381
+    second: Spritesheets 1 - Dark 2_10
+  - first:
+      213: 1413345784137159534
+    second: Spritesheets 1 - Dark 2_11
+  - first:
+      213: 7339312262223658013
+    second: Spritesheets 1 - Dark 2_12
+  - first:
+      213: -31680406480795367
+    second: Spritesheets 1 - Dark 2_13
+  - first:
+      213: -7806492467640964586
+    second: Spritesheets 1 - Dark 2_14
+  - first:
+      213: 2343208355422934060
+    second: Spritesheets 1 - Dark 2_15
+  - first:
+      213: 8951833565916181614
+    second: Spritesheets 1 - Dark 2_16
+  - first:
+      213: -2593444229166672891
+    second: Spritesheets 1 - Dark 2_17
+  - first:
+      213: -8026045434967556299
+    second: Spritesheets 1 - Dark 2_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 653
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37733f9bdf89b1530800000000000000
+      internalID: 3826820523895240563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 665
+        width: 185
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04d24672a113b060800000000000000
+      internalID: 6967932437938754573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_2
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 665
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc266c801374e3bc0800000000000000
+      internalID: -3801522759527931188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_3
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 665
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd28ab88fc0cefc0800000000000000
+      internalID: -3464379751720276548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_4
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 554
+        width: 146
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c86307c50359e2e0800000000000000
+      internalID: -2096052867285423932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_5
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 554
+        width: 50
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2c2d8918f1cf800800000000000000
+      internalID: 647427087909700309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_6
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 554
+        width: 50
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39da490927ec4aa0800000000000000
+      internalID: -6175306825596217030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_7
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 554
+        width: 50
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9fb048a978be5a0800000000000000
+      internalID: -6490945340214347346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 596
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3d4d47472b72c10800000000000000
+      internalID: 2028786370399753178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_9
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 605
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c2ab757ae32b7b0800000000000000
+      internalID: -5210032930461963171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_10
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 554
+        width: 194
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 392427b32c1e720b0800000000000000
+      internalID: -5753381774605270381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_11
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 521
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e639a40a0863d9310800000000000000
+      internalID: 1413345784137159534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_12
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 458
+        width: 59
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1c728dfd997ad560800000000000000
+      internalID: 7339312262223658013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_13
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 410
+        width: 74
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9194f5196d27f8ff0800000000000000
+      internalID: -31680406480795367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_14
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 362
+        width: 98
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a6f741674c9a390800000000000000
+      internalID: -7806492467640964586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_15
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 410
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2416bb959fb48020800000000000000
+      internalID: 2343208355422934060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_16
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 410
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e643ad8033d4b3c70800000000000000
+      internalID: 8951833565916181614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_17
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 170
+        width: 194
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504dbb7d63c320cd0800000000000000
+      internalID: -2593444229166672891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheets 1 - Dark 2_18
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 122
+        width: 242
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ffc916332cd9090800000000000000
+      internalID: -8026045434967556299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Spritesheets 1 - Dark 2_0: 3826820523895240563
+      Spritesheets 1 - Dark 2_1: 6967932437938754573
+      Spritesheets 1 - Dark 2_10: -5753381774605270381
+      Spritesheets 1 - Dark 2_11: 1413345784137159534
+      Spritesheets 1 - Dark 2_12: 7339312262223658013
+      Spritesheets 1 - Dark 2_13: -31680406480795367
+      Spritesheets 1 - Dark 2_14: -7806492467640964586
+      Spritesheets 1 - Dark 2_15: 2343208355422934060
+      Spritesheets 1 - Dark 2_16: 8951833565916181614
+      Spritesheets 1 - Dark 2_17: -2593444229166672891
+      Spritesheets 1 - Dark 2_18: -8026045434967556299
+      Spritesheets 1 - Dark 2_2: -3801522759527931188
+      Spritesheets 1 - Dark 2_3: -3464379751720276548
+      Spritesheets 1 - Dark 2_4: -2096052867285423932
+      Spritesheets 1 - Dark 2_5: 647427087909700309
+      Spritesheets 1 - Dark 2_6: -6175306825596217030
+      Spritesheets 1 - Dark 2_7: -6490945340214347346
+      Spritesheets 1 - Dark 2_8: 2028786370399753178
+      Spritesheets 1 - Dark 2_9: -5210032930461963171
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

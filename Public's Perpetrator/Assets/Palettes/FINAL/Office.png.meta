@@ -1,64 +1,61 @@
 fileFormatVersion: 2
-guid: b8ac2008df2591840bd30696d717581e
+guid: 9109acc523238684ebdeb98f56e3c841
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 269370396075304384
-    second: Spritesheets 1 - Dark_0
+      213: -4628819908696812992
+    second: Office - Dark_0
   - first:
-      213: -8245172415136970141
-    second: Spritesheets 1 - Dark_1
+      213: -5070864979506090064
+    second: Office - Dark_1
   - first:
-      213: 793240845654304145
-    second: Spritesheets 1 - Dark_2
+      213: 8845167320983969039
+    second: Office - Dark_2
   - first:
-      213: -8334990947574187316
-    second: Spritesheets 1 - Dark_3
+      213: -5092378596723488080
+    second: Office - Dark_3
   - first:
-      213: 9203861168154584869
-    second: Spritesheets 1 - Dark_4
+      213: 4718781209389414764
+    second: Office - Dark_4
   - first:
-      213: 5327929022004239294
-    second: Spritesheets 1 - Dark_5
+      213: 8810681227383993158
+    second: Office - Dark_5
   - first:
-      213: -934293562145323974
-    second: Spritesheets 1 - Dark_6
+      213: -512904730509239012
+    second: Office - Dark_6
   - first:
-      213: 2237641200655046706
-    second: Spritesheets 1 - Dark_7
+      213: 7141991080206230138
+    second: Office - Dark_7
   - first:
-      213: 1052587998717639258
-    second: Spritesheets 1 - Dark_8
+      213: 6052868612620723887
+    second: Office - Dark_8
   - first:
-      213: -6372932724251235459
-    second: Spritesheets 1 - Dark_9
+      213: -6285905205164679307
+    second: Office - Dark_9
   - first:
-      213: 3614168409365878992
-    second: Spritesheets 1 - Dark_10
+      213: 3003498393435753483
+    second: Office - Dark_10
   - first:
-      213: -101587355703857850
-    second: Spritesheets 1 - Dark_11
+      213: 8235470136731134487
+    second: Office - Dark_11
   - first:
-      213: 7571161658122909352
-    second: Spritesheets 1 - Dark_12
+      213: -2106269137403212280
+    second: Office - Dark_12
   - first:
-      213: 7854695755871008856
-    second: Spritesheets 1 - Dark_13
+      213: -7373797748114494370
+    second: Office - Dark_13
   - first:
-      213: 5880345044077519064
-    second: Spritesheets 1 - Dark_14
+      213: 9211231145248559927
+    second: Office - Dark_14
   - first:
-      213: 8982407999854453170
-    second: Spritesheets 1 - Dark_15
+      213: -6662418563625895955
+    second: Office - Dark_15
   - first:
-      213: -4296326967305569262
-    second: Spritesheets 1 - Dark_16
+      213: 90272456167097152
+    second: Office - Dark_16
   - first:
-      213: 5696718276585436395
-    second: Spritesheets 1 - Dark_17
-  - first:
-      213: 1201006471380330319
-    second: Spritesheets 1 - Dark_18
+      213: -3575723813608308688
+    second: Office - Dark_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,8 +125,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -154,13 +151,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spritesheets 1 - Dark_0
+      name: Office - Dark_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 653
-        width: 53
-        height: 50
+        x: 47
+        y: 437
+        width: 50
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c52313b2fefcb300800000000000000
-      internalID: 269370396075304384
+      spriteID: 042dedc41d023cfb0800000000000000
+      internalID: -4628819908696812992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheets 1 - Dark_1
+      name: Office - Dark_1
       rect:
         serializedVersion: 2
-        x: 98
-        y: 665
-        width: 185
-        height: 59
+        x: 116
+        y: 431
+        width: 50
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36a49eb8f53439d80800000000000000
-      internalID: -8245172415136970141
+      spriteID: 0bf2290fa2ba0a9b0800000000000000
+      internalID: -5070864979506090064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheets 1 - Dark_2
+      name: Office - Dark_2
       rect:
         serializedVersion: 2
-        x: 299
-        y: 665
-        width: 23
-        height: 29
+        x: 197
+        y: 422
+        width: 89
+        height: 86
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1952e8aa858220b00800000000000000
-      internalID: 793240845654304145
+      spriteID: f0d942290d850ca70800000000000000
+      internalID: 8845167320983969039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheets 1 - Dark_3
+      name: Office - Dark_3
       rect:
         serializedVersion: 2
-        x: 329
-        y: 665
-        width: 23
-        height: 29
+        x: 326
+        y: 455
+        width: 38
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cca7eb3d4e9245c80800000000000000
-      internalID: -8334990947574187316
+      spriteID: 0ba8e7895ac3459b0800000000000000
+      internalID: -5092378596723488080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheets 1 - Dark_4
+      name: Office - Dark_4
       rect:
         serializedVersion: 2
-        x: 368
-        y: 554
-        width: 146
-        height: 193
+        x: 377
+        y: 455
+        width: 62
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 527add1e7feaabf70800000000000000
-      internalID: 9203861168154584869
+      spriteID: c69b17e328a7c7140800000000000000
+      internalID: 4718781209389414764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheets 1 - Dark_5
+      name: Office - Dark_5
       rect:
         serializedVersion: 2
         x: 527
-        y: 554
-        width: 50
-        height: 116
+        y: 467
+        width: 59
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,20 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebb9e09873b90f940800000000000000
-      internalID: 5327929022004239294
+      spriteID: 643fc6335e3d54a70800000000000000
+      internalID: 8810681227383993158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheets 1 - Dark_6
+      name: Office - Dark_6
       rect:
         serializedVersion: 2
-        x: 581
-        y: 554
-        width: 50
-        height: 116
+        x: 530
+        y: 389
+        width: 62
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,102 +291,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a34c46094f8b803f0800000000000000
-      internalID: -934293562145323974
+      spriteID: c1d11667ddbc1e8f0800000000000000
+      internalID: -512904730509239012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheets 1 - Dark_7
+      name: Office - Dark_7
       rect:
         serializedVersion: 2
-        x: 656
-        y: 554
-        width: 50
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23892d301d2bd0f10800000000000000
-      internalID: 2237641200655046706
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheets 1 - Dark_8
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 596
-        width: 35
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a5a776e353b8b9e00800000000000000
-      internalID: 1052587998717639258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheets 1 - Dark_9
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 605
-        width: 23
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7bea89d37bce87a0800000000000000
-      internalID: -6372932724251235459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheets 1 - Dark_10
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 554
-        width: 194
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0d811b6050b182230800000000000000
-      internalID: 3614168409365878992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheets 1 - Dark_11
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 521
+        x: 623
+        y: 398
         width: 71
         height: 50
       alignment: 0
@@ -399,19 +312,145 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64da99596d6179ef0800000000000000
-      internalID: -101587355703857850
+      spriteID: a7263bc2c037d1360800000000000000
+      internalID: 7141991080206230138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheets 1 - Dark_12
+      name: Office - Dark_8
       rect:
         serializedVersion: 2
-        x: 473
-        y: 458
-        width: 59
+        x: 29
+        y: 299
+        width: 86
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6ae570feb100450800000000000000
+      internalID: 6052868612620723887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office - Dark_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 368
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f5162258af3c8a0800000000000000
+      internalID: -6285905205164679307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office - Dark_10
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 368
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cc13820e19ea920800000000000000
+      internalID: 3003498393435753483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office - Dark_11
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 350
+        width: 98
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71a623ab4744a4270800000000000000
+      internalID: 8235470136731134487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office - Dark_12
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 206
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e86b7016705c2e0800000000000000
+      internalID: -2106269137403212280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office - Dark_13
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 254
+        width: 194
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c6f0224020ba990800000000000000
+      internalID: -7373797748114494370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office - Dark_14
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 212
+        width: 152
         height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -420,19 +459,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a639711a6b221960800000000000000
-      internalID: 7571161658122909352
+      spriteID: 7331e846cedd4df70800000000000000
+      internalID: 9211231145248559927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheets 1 - Dark_13
+      name: Office - Dark_15
       rect:
         serializedVersion: 2
-        x: 11
-        y: 410
-        width: 74
+        x: 527
+        y: 254
+        width: 194
         height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -441,20 +480,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 858b57b8c2c710d60800000000000000
-      internalID: 7854695755871008856
+      spriteID: de73c1a8d955a83a0800000000000000
+      internalID: -6662418563625895955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheets 1 - Dark_14
+      name: Office - Dark_16
       rect:
         serializedVersion: 2
         x: 143
-        y: 362
-        width: 98
-        height: 146
+        y: 62
+        width: 290
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,82 +501,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d028f489ae2b9150800000000000000
-      internalID: 5880345044077519064
+      spriteID: 04387d21256b04100800000000000000
+      internalID: 90272456167097152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheets 1 - Dark_15
+      name: Office - Dark_17
       rect:
         serializedVersion: 2
-        x: 287
-        y: 410
-        width: 50
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b1a3fa2c7ce7ac70800000000000000
-      internalID: 8982407999854453170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheets 1 - Dark_16
-      rect:
-        serializedVersion: 2
-        x: 383
-        y: 410
-        width: 50
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 21cf1dad2616064c0800000000000000
-      internalID: -4296326967305569262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheets 1 - Dark_17
-      rect:
-        serializedVersion: 2
-        x: 479
-        y: 170
-        width: 194
-        height: 242
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: be4b95d071fce0f40800000000000000
-      internalID: 5696718276585436395
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spritesheets 1 - Dark_18
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 122
-        width: 242
+        x: 527
+        y: 14
+        width: 146
         height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -546,8 +522,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f47e193c505daa010800000000000000
-      internalID: 1201006471380330319
+      spriteID: 030c8f2f22a706ec0800000000000000
+      internalID: -3575723813608308688
       vertices: []
       indices: 
       edges: []
@@ -563,25 +539,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Spritesheets 1 - Dark_0: 269370396075304384
-      Spritesheets 1 - Dark_1: -8245172415136970141
-      Spritesheets 1 - Dark_10: 3614168409365878992
-      Spritesheets 1 - Dark_11: -101587355703857850
-      Spritesheets 1 - Dark_12: 7571161658122909352
-      Spritesheets 1 - Dark_13: 7854695755871008856
-      Spritesheets 1 - Dark_14: 5880345044077519064
-      Spritesheets 1 - Dark_15: 8982407999854453170
-      Spritesheets 1 - Dark_16: -4296326967305569262
-      Spritesheets 1 - Dark_17: 5696718276585436395
-      Spritesheets 1 - Dark_18: 1201006471380330319
-      Spritesheets 1 - Dark_2: 793240845654304145
-      Spritesheets 1 - Dark_3: -8334990947574187316
-      Spritesheets 1 - Dark_4: 9203861168154584869
-      Spritesheets 1 - Dark_5: 5327929022004239294
-      Spritesheets 1 - Dark_6: -934293562145323974
-      Spritesheets 1 - Dark_7: 2237641200655046706
-      Spritesheets 1 - Dark_8: 1052587998717639258
-      Spritesheets 1 - Dark_9: -6372932724251235459
+      Office - Dark_0: -4628819908696812992
+      Office - Dark_1: -5070864979506090064
+      Office - Dark_10: 3003498393435753483
+      Office - Dark_11: 8235470136731134487
+      Office - Dark_12: -2106269137403212280
+      Office - Dark_13: -7373797748114494370
+      Office - Dark_14: 9211231145248559927
+      Office - Dark_15: -6662418563625895955
+      Office - Dark_16: 90272456167097152
+      Office - Dark_17: -3575723813608308688
+      Office - Dark_2: 8845167320983969039
+      Office - Dark_3: -5092378596723488080
+      Office - Dark_4: 4718781209389414764
+      Office - Dark_5: 8810681227383993158
+      Office - Dark_6: -512904730509239012
+      Office - Dark_7: 7141991080206230138
+      Office - Dark_8: 6052868612620723887
+      Office - Dark_9: -6285905205164679307
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

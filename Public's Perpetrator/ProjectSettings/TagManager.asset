@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Living Room
   - Kitchen
+  - Batteries
   layers:
   - Default
   - TransparentFX

@@ -1,49 +1,43 @@
 fileFormatVersion: 2
-guid: df7fd7a77ab76cd49ae93e8e993c042f
+guid: ed77e9858ca600843b075bdbebbaa49e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2844535602944882775
-    second: BedRoom - Dark_0
+      213: 3749793079977050942
+    second: Bathroom - Dark 1_0
   - first:
-      213: 6074221295923375090
-    second: BedRoom - Dark_1
+      213: -7802741020436355340
+    second: Bathroom - Dark 1_1
   - first:
-      213: -2390573112230456418
-    second: BedRoom - Dark_2
+      213: -4492215937771120780
+    second: Bathroom - Dark 1_2
   - first:
-      213: 7445652586754425905
-    second: BedRoom - Dark_3
+      213: 242613762746493138
+    second: Bathroom - Dark 1_3
   - first:
-      213: -3847324016931755845
-    second: BedRoom - Dark_4
+      213: -5167627272749410825
+    second: Bathroom - Dark 1_4
   - first:
-      213: 2232804036619864704
-    second: BedRoom - Dark_5
+      213: 97365806874781906
+    second: Bathroom - Dark 1_5
   - first:
-      213: 2064430476148961870
-    second: BedRoom - Dark_6
+      213: -3987594210158819433
+    second: Bathroom - Dark 1_6
   - first:
-      213: -1428796968559507508
-    second: BedRoom - Dark_7
+      213: -2101190544167740769
+    second: Bathroom - Dark 1_7
   - first:
-      213: -2236995629730341771
-    second: BedRoom - Dark_8
+      213: -8119437266717458981
+    second: Bathroom - Dark 1_8
   - first:
-      213: 8294304608779175971
-    second: BedRoom - Dark_9
+      213: -5674487283855244436
+    second: Bathroom - Dark 1_9
   - first:
-      213: -8645678212371488523
-    second: BedRoom - Dark_10
+      213: 7065169467645809826
+    second: Bathroom - Dark 1_10
   - first:
-      213: -6033490403972527242
-    second: BedRoom - Dark_11
-  - first:
-      213: -7245332765483115521
-    second: BedRoom - Dark_12
-  - first:
-      213: -5908726387183056350
-    second: BedRoom - Dark_13
+      213: 8121238427711341894
+    second: Bathroom - Dark 1_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +107,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -139,295 +133,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BedRoom - Dark_0
+      name: Bathroom - Dark 1_0
       rect:
         serializedVersion: 2
-        x: 90
-        y: 429
-        width: 144
-        height: 96
+        x: 38
+        y: 569
+        width: 50
+        height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7583b745f02d97720800000000000000
-      internalID: 2844535602944882775
+      spriteID: e33004160f0f90430800000000000000
+      internalID: 3749793079977050942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BedRoom - Dark_1
+      name: Bathroom - Dark 1_1
       rect:
         serializedVersion: 2
-        x: 297
-        y: 483
-        width: 114
-        height: 48
+        x: 119
+        y: 545
+        width: 62
+        height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2fb20a60618fb4450800000000000000
-      internalID: 6074221295923375090
+      spriteID: 4f6a582f16817b390800000000000000
+      internalID: -7802741020436355340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BedRoom - Dark_2
+      name: Bathroom - Dark 1_2
       rect:
         serializedVersion: 2
-        x: 486
-        y: 357
-        width: 42
-        height: 144
+        x: 203
+        y: 545
+        width: 62
+        height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e9357e39b6af2ded0800000000000000
-      internalID: -2390573112230456418
+      spriteID: 477ddc6c76178a1c0800000000000000
+      internalID: -4492215937771120780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BedRoom - Dark_3
+      name: Bathroom - Dark 1_3
       rect:
         serializedVersion: 2
-        x: 576
-        y: 432
-        width: 48
-        height: 96
+        x: 308
+        y: 545
+        width: 146
+        height: 98
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13447723495445760800000000000000
-      internalID: 7445652586754425905
+      spriteID: 2d8202a8eefed5300800000000000000
+      internalID: 242613762746493138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BedRoom - Dark_4
+      name: Bathroom - Dark 1_4
       rect:
         serializedVersion: 2
-        x: 672
-        y: 336
-        width: 144
-        height: 192
+        x: 47
+        y: 398
+        width: 152
+        height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb824fac03f8b9ac0800000000000000
-      internalID: -3847324016931755845
+      spriteID: 7f5962cef56e848b0800000000000000
+      internalID: -5167627272749410825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BedRoom - Dark_5
+      name: Bathroom - Dark 1_5
       rect:
         serializedVersion: 2
-        x: 294
-        y: 432
-        width: 144
-        height: 42
+        x: 239
+        y: 350
+        width: 50
+        height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08a09cff0738cfe10800000000000000
-      internalID: 2232804036619864704
+      spriteID: 2d86a0c7fa9e95100800000000000000
+      internalID: 97365806874781906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BedRoom - Dark_6
+      name: Bathroom - Dark 1_6
       rect:
         serializedVersion: 2
-        x: 54
-        y: 288
-        width: 192
-        height: 96
+        x: 383
+        y: 350
+        width: 50
+        height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e42795a849456ac10800000000000000
-      internalID: 2064430476148961870
+      spriteID: 797441b613839a8c0800000000000000
+      internalID: -3987594210158819433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BedRoom - Dark_7
+      name: Bathroom - Dark 1_7
       rect:
         serializedVersion: 2
-        x: 285
-        y: 183
-        width: 156
-        height: 204
+        x: 116
+        y: 326
+        width: 29
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc70bd82ab4eb2ce0800000000000000
-      internalID: -1428796968559507508
+      spriteID: f9ad879255217d2e0800000000000000
+      internalID: -2101190544167740769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BedRoom - Dark_8
+      name: Bathroom - Dark 1_8
       rect:
         serializedVersion: 2
-        x: 486
-        y: 267
-        width: 66
-        height: 78
+        x: 323
+        y: 359
+        width: 41
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 57c52dda35894f0e0800000000000000
-      internalID: -2236995629730341771
+      spriteID: bddbc3513d6f15f80800000000000000
+      internalID: -8119437266717458981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BedRoom - Dark_9
+      name: Bathroom - Dark 1_9
       rect:
         serializedVersion: 2
-        x: 576
-        y: 273
-        width: 48
-        height: 63
+        x: 47
+        y: 212
+        width: 146
+        height: 98
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3280b29b81a4b1370800000000000000
-      internalID: 8294304608779175971
+      spriteID: c63465b41eb2041b0800000000000000
+      internalID: -5674487283855244436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BedRoom - Dark_10
+      name: Bathroom - Dark 1_10
       rect:
         serializedVersion: 2
-        x: 57
-        y: 96
-        width: 60
-        height: 63
+        x: 230
+        y: 164
+        width: 224
+        height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f0634df871640880800000000000000
-      internalID: -8645678212371488523
+      spriteID: 2a4d6fca2368c0260800000000000000
+      internalID: 7065169467645809826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BedRoom - Dark_11
+      name: Bathroom - Dark 1_11
       rect:
         serializedVersion: 2
-        x: 159
-        y: 102
-        width: 69
-        height: 48
+        x: 26
+        y: 53
+        width: 188
+        height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67b4d73c17cb44ca0800000000000000
-      internalID: -6033490403972527242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BedRoom - Dark_12
-      rect:
-        serializedVersion: 2
-        x: 294
-        y: 96
-        width: 144
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ffb51e9bc38637b90800000000000000
-      internalID: -7245332765483115521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BedRoom - Dark_13
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 81
-        width: 144
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22a0af818acfffda0800000000000000
-      internalID: -5908726387183056350
+      spriteID: 6458cf3625f64b070800000000000000
+      internalID: 8121238427711341894
       vertices: []
       indices: 
       edges: []
@@ -435,7 +387,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 067aabb66e9d0234086cfa4727dfb75f
+    spriteID: 2fb6258715420094f9188f9807c63aed
     internalID: 0
     vertices: []
     indices: 
@@ -443,20 +395,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BedRoom - Dark_0: 2844535602944882775
-      BedRoom - Dark_1: 6074221295923375090
-      BedRoom - Dark_10: -8645678212371488523
-      BedRoom - Dark_11: -6033490403972527242
-      BedRoom - Dark_12: -7245332765483115521
-      BedRoom - Dark_13: -5908726387183056350
-      BedRoom - Dark_2: -2390573112230456418
-      BedRoom - Dark_3: 7445652586754425905
-      BedRoom - Dark_4: -3847324016931755845
-      BedRoom - Dark_5: 2232804036619864704
-      BedRoom - Dark_6: 2064430476148961870
-      BedRoom - Dark_7: -1428796968559507508
-      BedRoom - Dark_8: -2236995629730341771
-      BedRoom - Dark_9: 8294304608779175971
+      Bathroom - Dark 1_0: 3749793079977050942
+      Bathroom - Dark 1_1: -7802741020436355340
+      Bathroom - Dark 1_10: 7065169467645809826
+      Bathroom - Dark 1_11: 8121238427711341894
+      Bathroom - Dark 1_2: -4492215937771120780
+      Bathroom - Dark 1_3: 242613762746493138
+      Bathroom - Dark 1_4: -5167627272749410825
+      Bathroom - Dark 1_5: 97365806874781906
+      Bathroom - Dark 1_6: -3987594210158819433
+      Bathroom - Dark 1_7: -2101190544167740769
+      Bathroom - Dark 1_8: -8119437266717458981
+      Bathroom - Dark 1_9: -5674487283855244436
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

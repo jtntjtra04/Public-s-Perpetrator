@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     public LampPuzzle lamp_puzzle;
     public RoomSwitch stairs;
+    public LampPuzzle batteryinhand;
+    public BoxCollider2D puzzlebox;
 
     private void Awake()
     {
@@ -57,5 +59,13 @@ public class PlayerMovement : MonoBehaviour
     {
         // Movement
         rb.MovePosition(move_input.normalized * speed * Time.fixedDeltaTime + rb.position);
+    }
+        private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Batteries"))
+        {
+            batteryinhand.have_battery = true;
+            puzzlebox.enabled = false;
+        }
     }
 }

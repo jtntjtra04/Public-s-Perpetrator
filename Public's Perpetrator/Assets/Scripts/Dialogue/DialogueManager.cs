@@ -83,6 +83,7 @@ public class DialogueManager : MonoBehaviour
         Sprite image = images.Dequeue();
 
         dialogue_on = true;
+        dialoguebox_on = true;
         name_text.text = name;
         npc_image.sprite = image;
         StopAllCoroutines();
@@ -109,6 +110,11 @@ public class DialogueManager : MonoBehaviour
         if (trigger_notif != null)
         {
             trigger_notif.ShowNotification();
+        }
+        Phone nokia = GetComponent<Phone>();
+        if (nokia != null)
+        {
+            nokia.ShowPhone();
         }
     }
 }

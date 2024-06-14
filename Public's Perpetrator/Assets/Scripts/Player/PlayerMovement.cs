@@ -73,5 +73,14 @@ public class PlayerMovement : MonoBehaviour
         {
             audiomanager.PlaySFX(audiomanager.door);
         }
+        if (collision.gameObject.CompareTag("Scene2"))
+        {
+            audiomanager.ChangeMusic(audiomanager.BGM2);
+            Destroy(collision);
+        }
+        if (collision.gameObject.CompareTag("Scene3"))
+        {
+            audiomanager.ChangeMusic(audiomanager.BGM3);
+        }
     }
 }

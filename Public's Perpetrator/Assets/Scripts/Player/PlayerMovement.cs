@@ -15,11 +15,13 @@ public class PlayerMovement : MonoBehaviour
     public RoomSwitch stairs;
     public LampPuzzle batteryinhand;
     public BoxCollider2D puzzlebox;
+    AudioManager audiomanager;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     private void Update()
     {
@@ -66,6 +68,10 @@ public class PlayerMovement : MonoBehaviour
         {
             batteryinhand.have_battery = true;
             puzzlebox.enabled = false;
+        }
+        if (collision.gameObject.CompareTag("Door"))
+        {
+            audiomanager.PlaySFX(audiomanager.door);
         }
     }
 }

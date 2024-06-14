@@ -34,6 +34,7 @@ public class LampPuzzle : MonoBehaviour
 
     // Bookshelf references
     public Animator book_anim;
+    AudioManager audiomanager;
 
     private void Start()
     {
@@ -68,6 +69,11 @@ public class LampPuzzle : MonoBehaviour
         {
             ClosePuzzle();
         }
+    }
+    private void Awake()
+    {
+        audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -111,6 +117,7 @@ public class LampPuzzle : MonoBehaviour
         switch_box.interactable = false;
         yield return new WaitForSeconds(2f);
         book_anim.SetTrigger("Move");
+        audiomanager.PlaySFX(audiomanager.shelfdrag);
         puzzle_done = true;
         ClosePuzzle();
     }

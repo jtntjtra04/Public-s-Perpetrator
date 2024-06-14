@@ -4,9 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Living Room
-  - Kitchen
   - Batteries
+  - Audio
+  - Door
+  - Scene 2
+  - Scene 3
   layers:
   - Default
   - TransparentFX

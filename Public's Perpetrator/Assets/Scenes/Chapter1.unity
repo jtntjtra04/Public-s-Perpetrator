@@ -348,7 +348,7 @@ MonoBehaviour:
     lines:
     - A bunch of paperwork related to the latest controversies circulating the government.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &7143044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -650,7 +650,7 @@ GameObject:
   - component: {fileID: 63471014}
   m_Layer: 0
   m_Name: Area - 2nd Floor Loc 4
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1691,7 +1691,7 @@ GameObject:
   - component: {fileID: 102305333}
   m_Layer: 0
   m_Name: Area - Office
-  m_TagString: Living Room
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1839,7 +1839,7 @@ GameObject:
   - component: {fileID: 105210269}
   m_Layer: 0
   m_Name: Area - 2nd Floor Loc 3
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2060,7 +2060,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -90926063
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 4718781209389414764, guid: 9109acc523238684ebdeb98f56e3c841, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7054,6 +7054,61 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &151349622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 151349624}
+  - component: {fileID: 151349625}
+  m_Layer: 5
+  m_Name: AudioManager
+  m_TagString: Audio
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &151349624
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151349622}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0985, y: 1.0985, z: 1.0985}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 256700762}
+  - {fileID: 269623525}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 400.00003, y: 223.39554}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &151349625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151349622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0aebb137e0ba424e8f499f3271b1bc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 256700761}
+  SFXSource: {fileID: 269623524}
+  BackgroundM: {fileID: 8300000, guid: 9c23500c8ac11d24e9b546cad8d6f29e, type: 3}
+  door: {fileID: 8300000, guid: dfaafa6dc5ebabb4680c57211f1cadfa, type: 3}
+  shelfdrag: {fileID: 8300000, guid: 1c9e2b6cb8ebe194e9d197f511598426, type: 3}
 --- !u!1 &181583889
 GameObject:
   m_ObjectHideFlags: 0
@@ -7569,6 +7624,139 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &256700760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 256700762}
+  - component: {fileID: 256700761}
+  m_Layer: 5
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &256700761
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256700760}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!224 &256700762
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256700760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151349624}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &262744969
 GameObject:
   m_ObjectHideFlags: 0
@@ -7703,6 +7891,139 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.62820673, y: 0.785099}
   m_EdgeRadius: 0
+--- !u!1 &269623523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 269623525}
+  - component: {fileID: 269623524}
+  m_Layer: 5
+  m_Name: SFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &269623524
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269623523}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!224 &269623525
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269623523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 151349624}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &280367888
 GameObject:
   m_ObjectHideFlags: 0
@@ -10010,6 +10331,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337573912}
   m_CullTransparentMesh: 1
+--- !u!1 &351722622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 351722624}
+  - component: {fileID: 351722623}
+  m_Layer: 1
+  m_Name: PostProcessing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &351722623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351722622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 4b6ab020f592f64408b1c8d531b9b8cc, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!4 &351722624
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351722622}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &352924832
 GameObject:
   m_ObjectHideFlags: 0
@@ -10285,7 +10655,7 @@ MonoBehaviour:
     - The light switch doesn't work. The owner must've forgotten about the electricity
       bills.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &375334218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10377,7 +10747,7 @@ GameObject:
   - component: {fileID: 402559797}
   m_Layer: 0
   m_Name: Area - Bedroom
-  m_TagString: Living Room
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10722,7 +11092,7 @@ GameObject:
   - component: {fileID: 462462719}
   m_Layer: 0
   m_Name: Area - Basement Loc
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10876,7 +11246,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: -379863315
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &469391462
 RectTransform:
@@ -11454,7 +11824,7 @@ MonoBehaviour:
     lines:
     - More collection of books again, but more on political topics.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &495858431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11849,7 +12219,7 @@ MonoBehaviour:
     lines:
     - More collection of books again, but more on history and investigations.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &509937039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11979,6 +12349,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -12075,6 +12446,66 @@ MonoBehaviour:
   target: {fileID: 1159420705}
   follow_speed: 10
   offset: 0
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 519420032}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 2
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &521953500
 GameObject:
   m_ObjectHideFlags: 0
@@ -12175,7 +12606,7 @@ GameObject:
   - component: {fileID: 531937623}
   m_Layer: 0
   m_Name: Area - Living Room 4
-  m_TagString: Living Room
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12432,7 +12863,7 @@ MonoBehaviour:
     lines:
     - A vintage clock. It seemed to have run out of batteries.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &540116973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12551,7 +12982,7 @@ MonoBehaviour:
     lines:
     - "A kitchen stove. It\u2019s out of gas."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!61 &557212528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12697,7 +13128,7 @@ GameObject:
   - component: {fileID: 561976439}
   m_Layer: 0
   m_Name: Area - Living Room 3
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12966,6 +13397,196 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &589246934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 589246935}
+  - component: {fileID: 589246940}
+  - component: {fileID: 589246939}
+  - component: {fileID: 589246938}
+  - component: {fileID: 589246937}
+  - component: {fileID: 589246936}
+  m_Layer: 0
+  m_Name: Crack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &589246935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589246934}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.99, y: 13.37, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 835531336}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &589246936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589246934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69386bbf259070458282b0daae99b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - Pascal
+    - Pascal
+    lines:
+    - Cracks on the wall. These house walls seem to be old. Did the owner not have
+      the money to patch it up?
+    - Impossible, the mail I received was beyond a normal salary.
+    images:
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+--- !u!114 &589246937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589246934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_manager: {fileID: 1305199792}
+--- !u!114 &589246938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589246934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ed2339491ba224e96c6c44a57e8105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_box: {fileID: 2137740934}
+  name_text: {fileID: 2108751371}
+  dialogue_text: {fileID: 861758120}
+  npc_image: {fileID: 1288293755}
+  text_speed: 0.04
+  dialoguebox_on: 0
+--- !u!61 &589246939
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589246934}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.07728267, y: 0.09778452}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.66, y: 0.5}
+    newSize: {x: 0.66, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.5564694, y: 1.0257273}
+  m_EdgeRadius: 0
+--- !u!212 &589246940
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589246934}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -90926063
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 4727963854409751349, guid: ce50e42b08560ec40a0899b254b4a66f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.66, y: 0.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &594495332
 GameObject:
   m_ObjectHideFlags: 0
@@ -13198,8 +13819,8 @@ MonoBehaviour:
     - Some chopped lettuce in the pot. It's still too raw to be soup.
     - This lettuce seems fresh, did the person leave in a hurry?
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!61 &600020033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13564,9 +14185,9 @@ MonoBehaviour:
     - ( flips rug )
     - "And.. there\u2019s nothing here.."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &603284765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13799,7 +14420,7 @@ MonoBehaviour:
     - "Folded white towels. They\u2019re still dry, I guess the owner hasn\u2019t
       showered for a day or two."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &611336432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15941,7 +16562,7 @@ MonoBehaviour:
     lines:
     - "Delicious food lies within it. But nah, I\u2019m not hungry."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &676093140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16073,7 +16694,7 @@ GameObject:
   - component: {fileID: 680564006}
   m_Layer: 0
   m_Name: Area - Basement
-  m_TagString: Living Room
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16364,7 +16985,7 @@ MonoBehaviour:
     lines:
     - A brand new toilet. Seems like the previous one gave the owner a rough time.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &722873049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16924,7 +17545,7 @@ GameObject:
   - component: {fileID: 789801955}
   m_Layer: 0
   m_Name: Area - Kitchen
-  m_TagString: Kitchen
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17157,7 +17778,7 @@ GameObject:
   - component: {fileID: 802380738}
   m_Layer: 0
   m_Name: Area - Office Loc
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17262,6 +17883,7 @@ Transform:
   m_Children:
   - {fileID: 1742280950}
   - {fileID: 540116969}
+  - {fileID: 589246935}
   - {fileID: 1000241722}
   - {fileID: 1380744529}
   - {fileID: 2075186837}
@@ -17428,7 +18050,7 @@ MonoBehaviour:
     - "Folded white towels. They\u2019re still dry, I guess the owner hasn\u2019t
       showered for a day or two."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &840599205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18586,7 +19208,7 @@ MonoBehaviour:
     lines:
     - A family painting, but some part of it is ripped off.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &878060671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18886,13 +19508,13 @@ MonoBehaviour:
     - Looking back at the blood splat from earlier, I also wonder if the owner is
       still alive.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &890331677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19253,7 +19875,7 @@ MonoBehaviour:
     lines:
     - More collection of books again, but more on popular crime cases.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &930751086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21497,7 +22119,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -90926063
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: -5092378596723488080, guid: 9109acc523238684ebdeb98f56e3c841, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -21536,7 +22158,7 @@ GameObject:
   - component: {fileID: 988800947}
   m_Layer: 0
   m_Name: Area - Living Room 2 Loc
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21717,11 +22339,11 @@ MonoBehaviour:
     - Pascal
     - Pascal
     lines:
-    - Looks like this journalist really into some weird vintage stuff.
+    - Looks like the owner is really into some weird vintage stuff.
     - "There\u2019s an empty battery slot within this device. "
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1000241726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22688,7 +23310,7 @@ MonoBehaviour:
     lines:
     - A large bathtub. It even fits two people.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1095854120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24604,7 +25226,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.09846878}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -24614,7 +25236,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.359375, y: 0.453125}
+  m_Size: {x: 0.359375, y: 0.65006256}
   m_EdgeRadius: 0
 --- !u!114 &1118587418
 MonoBehaviour:
@@ -24634,7 +25256,7 @@ MonoBehaviour:
     lines:
     - Still no electricity. Surely glad there's still some shed of light.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1118587419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25110,7 +25732,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25493,7 +26115,7 @@ MonoBehaviour:
     lines:
     - "Potted plants. They\u2019re fake."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1169034666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25531,7 +26153,7 @@ GameObject:
   - component: {fileID: 1184893356}
   m_Layer: 0
   m_Name: Area - 2nd Floor 4
-  m_TagString: Living Room
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25767,7 +26389,7 @@ GameObject:
   - component: {fileID: 1203640693}
   m_Layer: 0
   m_Name: Area - 2nd Floor 2
-  m_TagString: Living Room
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25917,7 +26539,7 @@ GameObject:
   - component: {fileID: 1214481972}
   m_Layer: 0
   m_Name: Area - Bathroom
-  m_TagString: Living Room
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26208,7 +26830,7 @@ MonoBehaviour:
     lines:
     - Nothing special on television at the moment.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1248543740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27041,7 +27663,7 @@ GameObject:
   - component: {fileID: 1273341640}
   m_Layer: 0
   m_Name: Area - 2nd Floor
-  m_TagString: Living Room
+  m_TagString: Scene 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27204,14 +27826,14 @@ RectTransform:
   m_GameObject: {fileID: 1288293753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2137740935}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -600, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -600, y: -18}
   m_SizeDelta: {x: 126.33, y: 126.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1288293755
@@ -27584,7 +28206,7 @@ GameObject:
   - component: {fileID: 1346039777}
   m_Layer: 0
   m_Name: Area - Living Room 3 Loc
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27658,6 +28280,66 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1351917302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1351917304}
+  - component: {fileID: 1351917303}
+  m_Layer: 5
+  m_Name: VignetteUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!223 &1351917303
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351917302}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: -379863315
+  m_SortingOrder: 1
+  m_TargetDisplay: 0
+--- !u!224 &1351917304
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351917302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1716887298}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1358651865
 GameObject:
   m_ObjectHideFlags: 0
@@ -27714,7 +28396,7 @@ MonoBehaviour:
   m_Horizontal: 1
   m_Vertical: 1
   m_MovementType: 1
-  m_Elasticity: 0.1
+  m_Elasticity: 0.6
   m_Inertia: 1
   m_DecelerationRate: 0.135
   m_ScrollSensitivity: 1
@@ -28282,11 +28964,11 @@ MonoBehaviour:
     - Pascal
     lines:
     - Is this.. really blood?
-    - "Yet, there\u2019s no body or corpse lying around the scene.  I should check
+    - "Yet, there\u2019s no body or corpse lying around the scene. I should check
       around."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1375666449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28550,8 +29232,8 @@ MonoBehaviour:
 
 '
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!1 &1392662667
 GameObject:
   m_ObjectHideFlags: 0
@@ -28650,7 +29332,7 @@ GameObject:
   - component: {fileID: 1403093640}
   m_Layer: 0
   m_Name: Area - Bedroom Loc
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35518,8 +36200,8 @@ MonoBehaviour:
     - They seem to circulate around heated controversies surrounding the government
       and politicians.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1456569626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37165,7 +37847,7 @@ MonoBehaviour:
     lines:
     - "A bathroom sink. There\u2019s still fresh water coming out of it."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1463943599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37259,7 +37941,7 @@ GameObject:
   - component: {fileID: 1465683448}
   m_Layer: 0
   m_Name: Area - Living Room 4 Loc
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37345,7 +38027,7 @@ GameObject:
   - component: {fileID: 1471054444}
   m_Layer: 0
   m_Name: Area - 2nd Floor Loc
-  m_TagString: Living Room
+  m_TagString: Scene 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37652,7 +38334,7 @@ GameObject:
   - component: {fileID: 1477729296}
   m_Layer: 0
   m_Name: Area - Living Room 2
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45834,7 +46516,7 @@ MonoBehaviour:
     lines:
     - "A fairly old sink. There\u2019s still fresh water coming out of it."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!61 &1617600694
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47051,7 +47733,7 @@ MonoBehaviour:
     lines:
     - What is this place? I better look around.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1640904247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47508,7 +48190,7 @@ MonoBehaviour:
     lines:
     - A bunch of paperwork related to the government & robot advancements.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1647763024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47694,7 +48376,7 @@ MonoBehaviour:
     lines:
     - Hmm, old coats and polo shirts. How old fashioned is this civilian?
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1677287475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48025,7 +48707,7 @@ GameObject:
   - component: {fileID: 1696623909}
   m_Layer: 0
   m_Name: Area - 2nd Floor 3
-  m_TagString: Living Room
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48271,8 +48953,8 @@ MonoBehaviour:
     - A pretty old computer model. There seems to be a quote attached in the background.
     - "\u201CLight will show the way\u201D. Does this mean anything?"
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1708302415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48436,6 +49118,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1716887297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1716887298}
+  - component: {fileID: 1716887300}
+  - component: {fileID: 1716887299}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1716887298
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716887297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1351917304}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1716887299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716887297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 2823567687765095263, guid: c52813cc3b89dc44fbb8fa576b5d24df, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1716887300
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716887297}
+  m_CullTransparentMesh: 0
 --- !u!1 &1742280949
 GameObject:
   m_ObjectHideFlags: 0
@@ -48625,7 +49382,7 @@ MonoBehaviour:
   dialogue_text: {fileID: 861758120}
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
-  dialoguebox_on: 0
+  dialoguebox_on: 1
 --- !u!114 &1742280956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48647,8 +49404,8 @@ MonoBehaviour:
     - "It\u2019s too heavy to push, with or without the books. Kinda regret rejecting
       that free gym pass."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!1 &1744614654
 GameObject:
   m_ObjectHideFlags: 0
@@ -49022,7 +49779,7 @@ MonoBehaviour:
     lines:
     - "A bathroom sink. There\u2019s still fresh water coming out of it."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1759922077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49208,7 +49965,7 @@ MonoBehaviour:
     lines:
     - A bunch of paperwork related to Mr. Sunny Sullivan.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1761332065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50142,7 +50899,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.011697292}
+  m_Offset: {x: 0, y: 0.24796844}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -50152,7 +50909,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.78125, y: 0.4648428}
+  m_Size: {x: 0.78125, y: 0.98417425}
   m_EdgeRadius: 0
 --- !u!212 &1814041085
 SpriteRenderer:
@@ -50684,7 +51441,7 @@ MonoBehaviour:
     lines:
     - I'm not tired. Not yet.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1847556029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50905,7 +51662,7 @@ MonoBehaviour:
     lines:
     - More collection of books again, but more on past murder cases.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1876565410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51004,7 +51761,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.023834229}
+  m_Offset: {x: 0, y: 0.24796844}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -51014,7 +51771,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.78125, y: 0.45058727}
+  m_Size: {x: 0.78125, y: 0.98417425}
   m_EdgeRadius: 0
 --- !u!212 &1879426239
 SpriteRenderer:
@@ -51178,7 +51935,7 @@ MonoBehaviour:
     lines:
     - Some shower soap and a sponge. These products look pretty cheap.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1889786015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51409,7 +52166,7 @@ MonoBehaviour:
     lines:
     - "Potted plants. They\u2019re fake."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &1896431330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52382,7 +53139,7 @@ GameObject:
   - component: {fileID: 1987809111}
   m_Layer: 0
   m_Name: Area - Living Room
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52615,7 +53372,7 @@ GameObject:
   - component: {fileID: 2003945471}
   m_Layer: 0
   m_Name: Area - 2nd Floor Loc 2
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53446,9 +54203,9 @@ Tilemap:
   - first: {x: -2, y: -1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 48
+      m_TileIndex: 49
       m_TileSpriteIndex: 11
-      m_TileMatrixIndex: 0
+      m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -55191,10 +55948,10 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 7a440e37a55962746aa02bd8132a8b8c, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: a68bafae436445d4db52c7687f11fbba, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: b771e919fed5b784dbd774b663b4af77, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a283e1ed17db9cc4b9e802557d97abb5, type: 2}
   - m_RefCount: 1
@@ -55391,7 +56148,7 @@ Tilemap:
   - m_RefCount: 5
     m_Data: {fileID: -1868568070, guid: 7af747ce393fce24db957dd056a62bdd, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -509451794, guid: c3ef1c3b08459b74ea8f8957dd4a2766, type: 3}
+    m_Data: {fileID: 1559343539, guid: c3ef1c3b08459b74ea8f8957dd4a2766, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1810377605, guid: 7af747ce393fce24db957dd056a62bdd, type: 3}
   - m_RefCount: 1
@@ -55603,7 +56360,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -104156073, guid: c3ef1c3b08459b74ea8f8957dd4a2766, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 225
+  - m_RefCount: 224
     m_Data:
       e00: 1
       e01: 0
@@ -55621,7 +56378,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data:
       e00: -1
       e01: 0
@@ -57309,7 +58066,7 @@ MonoBehaviour:
     lines:
     - Poor service of electricity.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &2075186842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57583,7 +58340,7 @@ MonoBehaviour:
     lines:
     - "A pile of old books. There\u2019s something under it."
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &2091665665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57829,7 +58586,7 @@ MonoBehaviour:
     lines:
     - A brand new toilet. Seems like the previous one gave the owner a rough time.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &2104602327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58009,7 +58766,7 @@ GameObject:
   - component: {fileID: 2111561492}
   m_Layer: 0
   m_Name: Area - Bathroom Loc
-  m_TagString: Living Room
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58226,10 +58983,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2119616056}
   - component: {fileID: 2119616061}
-  - component: {fileID: 2119616060}
-  - component: {fileID: 2119616059}
-  - component: {fileID: 2119616058}
-  - component: {fileID: 2119616057}
   m_Layer: 0
   m_Name: Soap
   m_TagString: Untagged
@@ -58252,102 +59005,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 883691269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2119616057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119616055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69386bbf259070458282b0daae99b17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    names:
-    - Pascal
-    lines:
-    - Some shower soap and a sponge. These products look pretty cheap.
-    images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
---- !u!114 &2119616058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119616055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue_manager: {fileID: 1305199792}
---- !u!114 &2119616059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119616055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10ed2339491ba224e96c6c44a57e8105, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue_box: {fileID: 2137740934}
-  name_text: {fileID: 2108751371}
-  dialogue_text: {fileID: 861758120}
-  npc_image: {fileID: 1288293755}
-  text_speed: 0.04
-  dialoguebox_on: 0
---- !u!61 &2119616060
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119616055}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: -0.016901016, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.453125, y: 0.875}
-    newSize: {x: 0.453125, y: 0.875}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.48692703, y: 0.875}
-  m_EdgeRadius: 0
 --- !u!212 &2119616061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -58784,6 +59441,14 @@ PrefabInstance:
       propertyPath: dialogue_text
       value: 
       objectReference: {fileID: 861758120}
+    - target: {fileID: 8808807995144741184, guid: 8dd0ed653471a9649b89d5bead49de91, type: 3}
+      propertyPath: 'dialogue.images.Array.data[0]'
+      value: 
+      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - target: {fileID: 8808807995144741184, guid: 8dd0ed653471a9649b89d5bead49de91, type: 3}
+      propertyPath: 'dialogue.images.Array.data[1]'
+      value: 
+      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58882,9 +59547,17 @@ PrefabInstance:
       value: Pascal
       objectReference: {fileID: 0}
     - target: {fileID: 6235277073552685766, guid: 2226131d3dad28f4485600cb6971cb70, type: 3}
+      propertyPath: 'dialogue.images.Array.data[0]'
+      value: 
+      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - target: {fileID: 6235277073552685766, guid: 2226131d3dad28f4485600cb6971cb70, type: 3}
       propertyPath: 'dialogue.images.Array.data[1]'
       value: 
-      objectReference: {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - target: {fileID: 7275847389297479417, guid: 2226131d3dad28f4485600cb6971cb70, type: 3}
+      propertyPath: notif.line
+      value: Obtained a poster.
+      objectReference: {fileID: 0}
     - target: {fileID: 7275847389297479417, guid: 2226131d3dad28f4485600cb6971cb70, type: 3}
       propertyPath: notif_text
       value: 
@@ -58900,6 +59573,10 @@ PrefabInstance:
     - target: {fileID: 8980485964331215533, guid: 2226131d3dad28f4485600cb6971cb70, type: 3}
       propertyPath: m_Name
       value: Painting
+      objectReference: {fileID: 0}
+    - target: {fileID: 9081795677630143203, guid: 2226131d3dad28f4485600cb6971cb70, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58986,6 +59663,14 @@ PrefabInstance:
       propertyPath: dialogue_text
       value: 
       objectReference: {fileID: 861758120}
+    - target: {fileID: 4258655551814532605, guid: 159fbe8608145e141a14b78d0efa0acc, type: 3}
+      propertyPath: 'dialogue.images.Array.data[0]'
+      value: 
+      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - target: {fileID: 4258655551814532605, guid: 159fbe8608145e141a14b78d0efa0acc, type: 3}
+      propertyPath: 'dialogue.images.Array.data[1]'
+      value: 
+      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
     - target: {fileID: 7849027841155230609, guid: 159fbe8608145e141a14b78d0efa0acc, type: 3}
       propertyPath: item
       value: 
@@ -59003,6 +59688,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1371127953}
     m_Modifications:
+    - target: {fileID: 2133591189662482030, guid: c91ba7161d47b4e42bf5bada7396ea5a, type: 3}
+      propertyPath: 'dialogue.images.Array.data[0]'
+      value: 
+      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - target: {fileID: 2133591189662482030, guid: c91ba7161d47b4e42bf5bada7396ea5a, type: 3}
+      propertyPath: 'dialogue.images.Array.data[1]'
+      value: 
+      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - target: {fileID: 2133591189662482030, guid: c91ba7161d47b4e42bf5bada7396ea5a, type: 3}
+      propertyPath: 'dialogue.images.Array.data[2]'
+      value: 
+      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
     - target: {fileID: 2952979398709095554, guid: c91ba7161d47b4e42bf5bada7396ea5a, type: 3}
       propertyPath: notif_text
       value: 
@@ -59108,6 +59805,18 @@ PrefabInstance:
       propertyPath: dialogue_text
       value: 
       objectReference: {fileID: 861758120}
+    - target: {fileID: 3702001284986773920, guid: 7436b6ac59028594eaeffe749421ce03, type: 3}
+      propertyPath: 'dialogue.images.Array.data[0]'
+      value: 
+      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - target: {fileID: 3702001284986773920, guid: 7436b6ac59028594eaeffe749421ce03, type: 3}
+      propertyPath: 'dialogue.images.Array.data[1]'
+      value: 
+      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - target: {fileID: 3702001284986773920, guid: 7436b6ac59028594eaeffe749421ce03, type: 3}
+      propertyPath: 'dialogue.images.Array.data[2]'
+      value: 
+      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
     - target: {fileID: 6957568401371324726, guid: 7436b6ac59028594eaeffe749421ce03, type: 3}
       propertyPath: m_Name
       value: Certificate
@@ -59157,6 +59866,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8580499770284478583, guid: 7436b6ac59028594eaeffe749421ce03, type: 3}
+      propertyPath: notif.line
+      value: Obtained a journalist's certificate.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8580499770284478583, guid: 7436b6ac59028594eaeffe749421ce03, type: 3}
       propertyPath: notif_text
       value: 
       objectReference: {fileID: 1098449526}
@@ -59175,7 +59888,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 1305199793}
   - {fileID: 1950594767}
+  - {fileID: 351722624}
   - {fileID: 519420032}
+  - {fileID: 1351917304}
   - {fileID: 976601024}
   - {fileID: 469391462}
   - {fileID: 1465192240}
@@ -59189,3 +59904,4 @@ SceneRoots:
   - {fileID: 181583893}
   - {fileID: 1159420705}
   - {fileID: 748920578}
+  - {fileID: 151349624}

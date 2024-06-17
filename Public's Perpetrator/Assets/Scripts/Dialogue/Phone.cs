@@ -5,7 +5,6 @@ using UnityEngine;
 public class Phone : MonoBehaviour
 {
     public GameObject phone;
-    private bool condi = false;
     public bool phoneout = false;
     void Start()
     {

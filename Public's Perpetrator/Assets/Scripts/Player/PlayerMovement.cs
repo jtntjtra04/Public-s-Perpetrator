@@ -81,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Scene3"))
         {
             audiomanager.ChangeMusic(audiomanager.BGM3);
+            Destroy(collision);
         }
     }
 }

@@ -12,16 +12,21 @@ public class NotificationTrigger : MonoBehaviour
     private bool notif_on = true;
     private float text_speed = 0.04f;
 
+    // Player Movement References
+    private PlayerMovement player_movement;
+
     public static NotificationTrigger instance;
     private void Awake()
     {
         instance = this;
+        player_movement = FindAnyObjectByType<PlayerMovement>();
     }
     public void ShowNotification()
     {
         notification_box.SetActive(true);
         //notif_text.text = notif.line;
         notifbox_active = true;
+        player_movement.DisableMovement();
         StartCoroutine(TypeLines(notif.line));
     }
     private void Update()
@@ -52,6 +57,7 @@ public class NotificationTrigger : MonoBehaviour
     {
         notification_box.SetActive(false);
         notifbox_active = false;
+        player_movement.EnableMovement();
 
         ItemController item_controller = GetComponent<ItemController>();
         item_controller.PickUpItem();

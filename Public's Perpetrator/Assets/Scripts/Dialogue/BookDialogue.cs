@@ -6,11 +6,12 @@ public class BookDialogue : MonoBehaviour
 {
     private DialogueTrigger dialogue_trigger;
     private bool CanTriggerDialogue = false;
-    public DialogueManager dialogue_manager;
+    private DialogueManager dialogue_manager;
     private Phone nokia;
     private void Start()
     {
         dialogue_trigger = GetComponent<DialogueTrigger>();
+        dialogue_manager = GetComponent<DialogueManager>();
     }
 
     private void Awake()

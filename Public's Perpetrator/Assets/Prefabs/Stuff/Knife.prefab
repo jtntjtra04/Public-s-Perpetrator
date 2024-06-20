@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2837413753286080347}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.65172225, w: 0.7584577}
+  m_LocalRotation: {x: 0, y: 0, z: 0.65172124, w: 0.7584587}
   m_LocalPosition: {x: 8.800003, y: -1.59, z: 0}
   m_LocalScale: {x: 0.40225002, y: 0.40225002, z: 0.40224996}
   m_ConstrainProportionsScale: 0
@@ -168,7 +168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue_manager: {fileID: 0}
 --- !u!114 &4258655551814532605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,8 +188,8 @@ MonoBehaviour:
     - A splat of blood.. Perhaps a brawl happened recently?
     - A pocket knife with a symbol engraved on the handle. This might be worth analyzing.
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &7849027841155230609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f27327ce2e5faa4cb68c9b798d9fd22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 52e3dc7b23621aa42af6060d035ec2be, type: 2}
+  item: {fileID: 11400000, guid: f8a0b054ad892624497f27bc852273d9, type: 2}
 --- !u!114 &2674220903236920693
 MonoBehaviour:
   m_ObjectHideFlags: 0

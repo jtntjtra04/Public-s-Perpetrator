@@ -167,7 +167,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -90926063
   m_SortingLayer: 2
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1063514300747794026, guid: 9835792d4d3e0494cae1af102686ec01, type: 3}
   m_Color: {r: 0.49962977, g: 0.5680082, b: 0.78113204, a: 1}
   m_FlipX: 0
@@ -239,11 +239,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Caelus
+    - Pascal
+    - Pascal
     lines:
-    - ohiduhuisdhfulisldfhsluhfpsuhfusdhf;isoahfp;sfhlsfhlsudfhlsdfhsdf
+    - A poster of Paracelsus. A classic.
+    - 'This poster is a bit loose. '
     images:
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
 --- !u!114 &8307120959495877836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue_manager: {fileID: 0}
 --- !u!114 &7749622299156316823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notif:
-    line: Obtained a Poster
+    line: Obtained a poster.
   notification_box: {fileID: 0}
   notif_text: {fileID: 0}
   notifbox_active: 0

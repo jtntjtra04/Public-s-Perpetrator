@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Finger
   m_EditorClassIdentifier: 
   id: 3
-  name: Severed finger
+  name: Severed Finger
   icon: {fileID: -8661526599448196129, guid: 1929c2c73fa5dca43b6fb5667dfc4c1c, type: 3}

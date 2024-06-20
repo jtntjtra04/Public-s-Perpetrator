@@ -21,11 +21,15 @@ public class DialogueManager : MonoBehaviour
     private bool dialogue_on = false;
     public bool dialoguebox_on = false;
 
-    public static DialogueManager instance;
+    // Player Movement
+    private PlayerMovement player_movement;
+
+    //public static DialogueManager instance;
 
     private void Awake()
     {
-        instance = this;
+        player_movement = FindAnyObjectByType<PlayerMovement>();
+        //instance = this;
     }
     private void Start()
     {
@@ -35,20 +39,20 @@ public class DialogueManager : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0) && dialoguebox_on)
+        if(Input.GetMouseButtonUp(0) && dialoguebox_on)
         {
-            text_speed = 0f;
-
             if (!dialogue_on)
             {
                 NextDialogue();
             }
+            text_speed = 0f;
         }
     }
     public void StartDialogue(Dialogue dialogue)
     {
         dialogue_box.SetActive(true);
         dialoguebox_on = true;
+        player_movement.DisableMovement();
         //name_text.text = dialogue.name;
         //npc_image.sprite = dialogue.image;
 
@@ -83,7 +87,6 @@ public class DialogueManager : MonoBehaviour
         Sprite image = images.Dequeue();
 
         dialogue_on = true;
-        dialoguebox_on = true;
         name_text.text = name;
         npc_image.sprite = image;
         StopAllCoroutines();
@@ -104,6 +107,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("End dialogue");
         dialogue_box.SetActive(false);
         dialoguebox_on = false;
+        player_movement.EnableMovement();
 
         NotificationTrigger trigger_notif = GetComponent<NotificationTrigger>();
 
@@ -115,6 +119,22 @@ public class DialogueManager : MonoBehaviour
         if (nokia != null)
         {
             nokia.ShowPhone();
+        }
+        // For Investigation Board
+        CounterLeft1 counter_L_1 = GetComponent<CounterLeft1>();
+        if(counter_L_1 != null)
+        {
+            counter_L_1.InteractCounterLeft1();
+        }
+        CounterLeft2 counter_L_2 = GetComponent<CounterLeft2>();
+        if(counter_L_2 != null)
+        {
+            counter_L_2.InteractCounterLeft2();
+        }
+        CounterRight counter_R = GetComponent<CounterRight>();
+        if(counter_R != null)
+        {
+            counter_R.InteractCounterRight();
         }
     }
 }

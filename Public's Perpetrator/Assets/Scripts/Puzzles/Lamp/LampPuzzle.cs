@@ -77,7 +77,6 @@ public class LampPuzzle : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Touched the lamps");
         if (collision.CompareTag("Player"))
         {
             can_trigger_puzzle = true;
@@ -121,7 +120,7 @@ public class LampPuzzle : MonoBehaviour
         puzzle_done = true;
         ClosePuzzle();
     }
-    private void ClosePuzzle()
+    public void ClosePuzzle()
     {
         lamp_puzzle.SetActive(false);
         on_puzzle = false;

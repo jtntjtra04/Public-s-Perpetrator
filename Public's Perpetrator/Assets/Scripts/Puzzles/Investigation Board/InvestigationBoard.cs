@@ -30,11 +30,6 @@ public class InvestigationBoard : MonoBehaviour
     private bool[] connector_states;
     private bool[] connector_done;
 
-    // Connections Condition
-    private bool a_fingerprint = false;
-    private bool the_signature = false;
-    private bool the_finger_stamp = false;
-
     // Connections Button
     public GameObject[] connections;
 

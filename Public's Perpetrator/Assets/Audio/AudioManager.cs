@@ -11,7 +11,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip BGM3;
     public AudioClip door;
     public AudioClip shelfdrag;
-    public AudioClip steeldoor;
+    public AudioClip inventory;
+    public AudioClip item;
 
     private void Start()
     {

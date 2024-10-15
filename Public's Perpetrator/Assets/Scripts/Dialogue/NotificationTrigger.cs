@@ -11,6 +11,7 @@ public class NotificationTrigger : MonoBehaviour
     public bool notifbox_active = false;
     private bool notif_on = true;
     private float text_speed = 0.04f;
+    AudioManager audionotif;
 
     // Player Movement References
     private PlayerMovement player_movement;
@@ -20,6 +21,7 @@ public class NotificationTrigger : MonoBehaviour
     {
         instance = this;
         player_movement = FindAnyObjectByType<PlayerMovement>();
+        audionotif = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     public void ShowNotification()
     {
@@ -45,6 +47,7 @@ public class NotificationTrigger : MonoBehaviour
     }
     private IEnumerator TypeLines(string line)
     {
+        audionotif.PlaySFX(audionotif.item);
         notif_text.text = "";
         foreach (char letter in line.ToCharArray())
         {

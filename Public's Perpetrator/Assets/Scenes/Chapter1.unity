@@ -380,6 +380,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!114 &7143046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2243,7 +2244,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -90926063
   m_SortingLayer: 2
-  m_SortingOrder: 5
+  m_SortingOrder: 7
   m_Sprite: {fileID: 4718781209389414764, guid: 9109acc523238684ebdeb98f56e3c841, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7502,7 +7503,8 @@ MonoBehaviour:
   BGM3: {fileID: 8300000, guid: 830378c752842d142b567295f33b2169, type: 3}
   door: {fileID: 8300000, guid: dfaafa6dc5ebabb4680c57211f1cadfa, type: 3}
   shelfdrag: {fileID: 8300000, guid: 1c9e2b6cb8ebe194e9d197f511598426, type: 3}
-  steeldoor: {fileID: 0}
+  inventory: {fileID: 8300000, guid: 7e9008714729e834a9a8e14738eb2d07, type: 3}
+  item: {fileID: 8300000, guid: 09f5f5f46be380a4bb29521b0d82299e, type: 3}
 --- !u!1 &181583889
 GameObject:
   m_ObjectHideFlags: 0
@@ -7712,6 +7714,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &190016447
 GameObject:
   m_ObjectHideFlags: 0
@@ -7772,7 +7775,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -90926063
   m_SortingLayer: 2
-  m_SortingOrder: -1
+  m_SortingOrder: 5
   m_Sprite: {fileID: -5070864979506090064, guid: 9109acc523238684ebdeb98f56e3c841, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10844,6 +10847,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!61 &375334220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12098,6 +12102,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &501818217
 GameObject:
   m_ObjectHideFlags: 0
@@ -12492,6 +12497,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &514978541
 GameObject:
   m_ObjectHideFlags: 0
@@ -13236,6 +13242,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!61 &540116974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13270,7 +13277,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.25503856}
+  m_Offset: {x: 0, y: -0.13995838}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13280,7 +13287,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.828125, y: 1.2913268}
+  m_Size: {x: 0.828125, y: 1.0611665}
   m_EdgeRadius: 0
 --- !u!1 &557212525
 GameObject:
@@ -13371,7 +13378,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.09408812}
+  m_Offset: {x: 0, y: 0.13052002}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13381,7 +13388,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1.188176}
+  m_Size: {x: 1, y: 1.2610395}
   m_EdgeRadius: 0
 --- !u!212 &557212529
 SpriteRenderer:
@@ -13467,6 +13474,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &561976437
 GameObject:
   m_ObjectHideFlags: 0
@@ -13839,6 +13847,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!61 &589246939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13873,7 +13882,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.07728267, y: 0.09778452}
+  m_Offset: {x: -0.07728267, y: 0.107179165}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -13883,7 +13892,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.5564694, y: 1.0257273}
+  m_Size: {x: 1.5564694, y: 1.006938}
   m_EdgeRadius: 0
 --- !u!212 &589246940
 SpriteRenderer:
@@ -14303,6 +14312,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &603284761
 GameObject:
   m_ObjectHideFlags: 0
@@ -14449,6 +14459,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!61 &603284767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14681,6 +14692,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &620010586
 GameObject:
   m_ObjectHideFlags: 0
@@ -17127,6 +17139,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &679222013
 GameObject:
   m_ObjectHideFlags: 0
@@ -17550,6 +17563,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &728658645
 GameObject:
   m_ObjectHideFlags: 0
@@ -17610,7 +17624,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -90926063
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: -7373797748114494370, guid: 9109acc523238684ebdeb98f56e3c841, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18779,6 +18793,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &844656144
 GameObject:
   m_ObjectHideFlags: 0
@@ -19936,6 +19951,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!61 &878060673
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20191,6 +20207,8 @@ MonoBehaviour:
     - Pascal
     - Pascal
     - Pascal
+    - Pascal
+    - Pascal
     lines:
     - 'This looks like an investigation board.  There seems to be a mapping of various
       locations marked on the spot. '
@@ -20203,7 +20221,13 @@ MonoBehaviour:
       something. If not now, when again will the mystery be unraveled?"
     - Looking back at the blood splat from earlier, I also wonder if the owner is
       still alive.
+    - But first, I need to try and figure out the event that occurred before I arrived
+      here.
+    - Surely there's some sort of evidence that I could use to make sense of this.
+      I wonder if there are any in my suitcase.
     images:
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
     - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
     - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
     - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
@@ -20241,6 +20265,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!61 &890331679
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20372,7 +20397,7 @@ Transform:
   m_GameObject: {fileID: 915006779}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 79.06, y: -0.2, z: -1}
+  m_LocalPosition: {x: 78.99, y: -0.2, z: -1}
   m_LocalScale: {x: 280.85336, y: 152.40932, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20601,6 +20626,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &946822120
 GameObject:
   m_ObjectHideFlags: 0
@@ -22771,7 +22797,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -90926063
   m_SortingLayer: 2
-  m_SortingOrder: 5
+  m_SortingOrder: 7
   m_Sprite: {fileID: -5092378596723488080, guid: 9109acc523238684ebdeb98f56e3c841, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -23014,6 +23040,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!61 &1000241727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23699,7 +23726,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -90926063
   m_SortingLayer: 2
-  m_SortingOrder: 5
+  m_SortingOrder: 7
   m_Sprite: {fileID: 7141991080206230138, guid: 9109acc523238684ebdeb98f56e3c841, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -23991,6 +24018,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &1098449524
 GameObject:
   m_ObjectHideFlags: 0
@@ -25936,6 +25964,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &1122886249
 GameObject:
   m_ObjectHideFlags: 0
@@ -26205,7 +26234,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -90926063
   m_SortingLayer: 2
-  m_SortingOrder: -1
+  m_SortingOrder: 5
   m_Sprite: {fileID: -5070864979506090064, guid: 9109acc523238684ebdeb98f56e3c841, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -26609,7 +26638,7 @@ Transform:
   m_GameObject: {fileID: 1159420703}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.46, y: -6.42, z: 0}
+  m_LocalPosition: {x: -8.81, y: -6.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26638,7 +26667,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -27009,6 +27038,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!4 &1179949610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8246212259374311380, guid: 7436b6ac59028594eaeffe749421ce03, type: 3}
@@ -27736,6 +27766,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &1257841662
 GameObject:
   m_ObjectHideFlags: 0
@@ -28956,6 +28987,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!4 &1305199793
 Transform:
   m_ObjectHideFlags: 0
@@ -29167,7 +29199,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.25260162}
+  m_Offset: {x: 0, y: 0.36609364}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -29177,7 +29209,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.390625, y: 0.28562927}
+  m_Size: {x: 1.390625, y: 0.5126133}
   m_EdgeRadius: 0
 --- !u!1 &1328442772
 GameObject:
@@ -30330,6 +30362,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!212 &1375666450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30454,7 +30487,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.35602832}
+  m_Offset: {x: 0, y: 0.3713801}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -30464,7 +30497,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.53125, y: 1.5691934}
+  m_Size: {x: 1.53125, y: 1.5482497}
   m_EdgeRadius: 0
 --- !u!212 &1380744531
 SpriteRenderer:
@@ -30550,6 +30583,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!114 &1380744535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37504,7 +37538,7 @@ Transform:
   m_GameObject: {fileID: 1454417584}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.749998, y: -1.4799995, z: 0}
+  m_LocalPosition: {x: 3.41, y: -1.4799995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37653,6 +37687,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!61 &1456569628
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39219,6 +39254,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &1465192238
 GameObject:
   m_ObjectHideFlags: 0
@@ -42633,7 +42669,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -90926063
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: -7373797748114494370, guid: 9109acc523238684ebdeb98f56e3c841, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -48210,6 +48246,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &1619675762
 GameObject:
   m_ObjectHideFlags: 0
@@ -49381,6 +49418,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!212 &1640904250
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -49838,6 +49876,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!114 &1647763026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50036,6 +50075,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &1680727691
 GameObject:
   m_ObjectHideFlags: 0
@@ -50070,6 +50110,7 @@ Transform:
   - {fileID: 600020031}
   - {fileID: 557212526}
   - {fileID: 1617600692}
+  - {fileID: 2049948938}
   m_Father: {fileID: 1373416942}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1680727693
@@ -50539,6 +50580,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!61 &1708302417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51075,7 +51117,8 @@ MonoBehaviour:
   dialogue_text: {fileID: 861758120}
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
-  dialoguebox_on: 1
+  dialoguebox_on: 0
+  isplaying: 0
 --- !u!212 &1742061062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -51365,6 +51408,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!114 &1742280956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51780,6 +51824,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!114 &1759922078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51978,6 +52023,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!114 &1761332067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53504,6 +53550,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &1870555037
 GameObject:
   m_ObjectHideFlags: 0
@@ -53724,6 +53771,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &1879426236
 GameObject:
   m_ObjectHideFlags: 0
@@ -54007,7 +54055,7 @@ Transform:
   m_GameObject: {fileID: 1889786011}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1099987, y: -2.4400005, z: 0}
+  m_LocalPosition: {x: 4.1099987, y: -1.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54116,6 +54164,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!61 &1889786017
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54333,6 +54382,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!61 &1896431331
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -58976,6 +59026,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028824458}
   m_CullTransparentMesh: 1
+--- !u!1 &2049948937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2049948938}
+  - component: {fileID: 2049948939}
+  m_Layer: 0
+  m_Name: Barrier
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2049948938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049948937}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1680727692}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2049948939
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049948937}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.7312577, y: -0.33663654}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.054222584, y: 0.3267269}
+  m_EdgeRadius: 0
 --- !u!1 &2055027080
 GameObject:
   m_ObjectHideFlags: 0
@@ -60423,6 +60551,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!95 &2075186844
 Animator:
   serializedVersion: 7
@@ -60706,6 +60835,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!61 &2091665666
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60963,6 +61093,7 @@ MonoBehaviour:
   npc_image: {fileID: 1288293755}
   text_speed: 0.04
   dialoguebox_on: 0
+  isplaying: 0
 --- !u!1 &2108751369
 GameObject:
   m_ObjectHideFlags: 0

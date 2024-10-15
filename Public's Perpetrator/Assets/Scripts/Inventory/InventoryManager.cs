@@ -11,9 +11,12 @@ public class InventoryManager : MonoBehaviour
     public Transform item_content;
     public GameObject inventory_item;
     public bool inventory_active = false;
+    AudioManager audioinv;
+
     private void Awake()
     {
         Instance = this;
+        audioinv = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     private void Start()
     {
@@ -25,6 +28,7 @@ public class InventoryManager : MonoBehaviour
         {
             if (!inventory_active)
             {
+                audioinv.PlaySFX(audioinv.inventory);
                 inventory.SetActive(true);
                 InputItems();
                 inventory_active = true;
@@ -55,6 +59,7 @@ public class InventoryManager : MonoBehaviour
         {
             Destroy(item.gameObject);
         }
+
         foreach (var item in items)
         {
             GameObject input_item = Instantiate(inventory_item, item_content);

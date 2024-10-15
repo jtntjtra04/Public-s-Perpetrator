@@ -9,6 +9,7 @@ TagManager:
   - Door
   - Scene2
   - Scene3
+  - Object
   layers:
   - Default
   - TransparentFX

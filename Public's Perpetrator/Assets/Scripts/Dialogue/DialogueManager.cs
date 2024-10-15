@@ -20,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     public float text_speed = 0.04f;
     private bool dialogue_on = false;
     public bool dialoguebox_on = false;
+    public float isplaying = 0f;
 
     // Player Movement
     private PlayerMovement player_movement;
@@ -41,15 +42,22 @@ public class DialogueManager : MonoBehaviour
     {
         if(Input.GetMouseButtonUp(0) && dialoguebox_on)
         {
+            isplaying += 1;
             if (!dialogue_on)
             {
                 NextDialogue();
             }
-            text_speed = 0f;
+            if (isplaying >= 2)
+            {
+                text_speed = 0f;
+                isplaying = 0;
+            }
         }
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        isplaying = 1;
+        if (dialoguebox_on) return;
         dialogue_box.SetActive(true);
         dialoguebox_on = true;
         player_movement.DisableMovement();
@@ -101,6 +109,7 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(text_speed);
         }
         dialogue_on = false;
+        isplaying = 0;
     }
     public void EndDialogue()
     {
@@ -115,11 +124,14 @@ public class DialogueManager : MonoBehaviour
         {
             trigger_notif.ShowNotification();
         }
+
+        // For Phone
         Phone nokia = GetComponent<Phone>();
         if (nokia != null)
         {
             nokia.ShowPhone();
         }
+
         // For Investigation Board
         CounterLeft1 counter_L_1 = GetComponent<CounterLeft1>();
         if(counter_L_1 != null)

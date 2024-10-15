@@ -49,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
             StopPlayer();
             return;
         }
+
         // Input movement
         move_input.x = Input.GetAxisRaw("Horizontal");
         move_input.y = Input.GetAxisRaw("Vertical");

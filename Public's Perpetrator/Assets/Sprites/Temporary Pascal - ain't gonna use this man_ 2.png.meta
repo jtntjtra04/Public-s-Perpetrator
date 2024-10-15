@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e5a044302dcb16c4e863e1387358ed0c
+guid: ebea4ff102d0b3042ade276bb6a61046
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 893981899326508376
-    second: White Circle PNG - 1500x1500_0
+      213: 6411124284076802954
+    second: Temporary Pascal - ain't gonna use this man_ 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: White Circle PNG - 1500x1500_0
+      name: Temporary Pascal - ain't gonna use this man_ 2_0
       rect:
         serializedVersion: 2
-        x: 155
-        y: 154
-        width: 1191
-        height: 1191
+        x: 39
+        y: 0
+        width: 882
+        height: 1019
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85d4cf80dcf086c00800000000000000
-      internalID: 893981899326508376
+      spriteID: a83474b9193e8f850800000000000000
+      internalID: 6411124284076802954
       vertices: []
       indices: 
       edges: []
@@ -130,8 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      White Circle PNG - 1500x1500_0: 893981899326508376
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

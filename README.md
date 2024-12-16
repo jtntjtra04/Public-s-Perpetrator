@@ -36,12 +36,12 @@
 <br>
 
 ## ♦️About Game
-<p align="justify">Paracelsus is a 2D combat platformer game with a pixelated artstyle that follows Celsus's journey to search 4 elemental spirits in the Tower of Aerulus. This is my first game and I contributed as a lead game programmer to make the movement, enemy, UI, and game mechanics such as puzzle, skills, elements, etc.</p>
+<p align="justify">Public's Perpetrator is a 2D top down puzzle mystery game with story of an investigator who realized a melacious motive from government and he start search a clue to find the perpetrator. I mainly worked as a game programmer to make all the game mechanics such as movement, UI, collecting items, and puzzles.</p>
 
 <br>
 
 ## 🎮 Gameplay
-<p align="justify">The player have to venture in Tower of Aerulus and face tough enemies, solve puzzles, and make contracts with the spirits at the end of his journey.</p>
+<p align="justify">The player has to search and investigate all the object clues on the scene to find the melacious motive, then connect all the clues to find the ending and find the perpetrator.</p>
 
 <br>
 

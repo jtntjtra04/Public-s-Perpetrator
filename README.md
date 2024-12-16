@@ -49,12 +49,12 @@
 
 |  Script       | Description                                                  |
 | ------------------- | ------------------------------------------------------------ |
-| `GameController.cs` | Responsible to control all the game system such as health, potion, elements, checkpoint, obstacle, spirit, etc |
+| `LampPuzzle.cs` | Responsible to control the one of the puzzle in the game, which is lamp puzzle |
 | `PlayerMovement.cs`  | Control the movement of the player|
-| `ElementSwitching.cs`  | Code for switch the player's element such as fire, water, wind, and earth |
-| `SwitchSkill.cs`  | Manages the switch skill logic |
-| `SkeletonAI.cs`  | Responsible for logic about the skeleton patrol and player detection |
-| `JumpEnemyAttack.cs`  | Manages to control boss mechanic such as player detection, boss movement, etc |
+| `PlayerItem.cs`  | Code to store the player's clue item in inventory |
+| `CameraMovement.cs`  | Code to make the camera follows the player |
+| `DialogueManager.cs`  | Responsible for all the dialogue mechanics and interaction to objects |
+| `InventoryManager.cs`  | Manages the inventory system |
 | `etc`  |
 
 <br>
@@ -64,9 +64,6 @@
 | **Key Binding** | **Function** |
 | - | - |
 | W, A, S, D | Basic movement |
-| 1, 2, 3, 4 | Switch Element |
-| Left-Click | Attack |
-| Right-Click | Skill |
-| Space | Jump |
+| F | Interact |
 
 <br>

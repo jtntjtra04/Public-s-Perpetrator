@@ -5,7 +5,7 @@
 </p>
 
 ## 🔴 About This Project
-<p align="justify">Public's Perpetrator is a game that was made for Serious Game & Gamification Subject and Sofware Engineering Subject.</p>
+<p align="justify">Public's Perpetrator is a game that was made for Serious Game & Gamification Subject and Software Engineering Subject.</p>
 
 <br>
 

@@ -393,7 +393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4f7fc9e6229ea40ae3fd3daf1e8481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  investigation_board: {fileID: 520054343}
+  investigation_board: {fileID: 0}
 --- !u!1 &12837354
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 520054343}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
         m_MethodName: ConnectorButton
         m_Mode: 3
@@ -7396,7 +7396,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1642864442}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ClosePuzzle
         m_Mode: 1
@@ -7505,216 +7505,6 @@ MonoBehaviour:
   shelfdrag: {fileID: 8300000, guid: 1c9e2b6cb8ebe194e9d197f511598426, type: 3}
   inventory: {fileID: 8300000, guid: 7e9008714729e834a9a8e14738eb2d07, type: 3}
   item: {fileID: 8300000, guid: 09f5f5f46be380a4bb29521b0d82299e, type: 3}
---- !u!1 &181583889
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 181583893}
-  - component: {fileID: 181583892}
-  - component: {fileID: 181583891}
-  - component: {fileID: 181583890}
-  - component: {fileID: 181583894}
-  - component: {fileID: 181583895}
-  - component: {fileID: 181583896}
-  m_Layer: 0
-  m_Name: Mike Wazowzki
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!58 &181583890
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181583889}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 3.5781248
---- !u!50 &181583891
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181583889}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!212 &181583892
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181583889}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -90926063
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -5591103359618205288, guid: 3e9da211f5f82584bb9feccb75ac7271, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 7.15625, y: 7.109375}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &181583893
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181583889}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.84, y: 12.15, z: 0}
-  m_LocalScale: {x: 0.27, y: 0.27, z: 0.27}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &181583894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181583889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69386bbf259070458282b0daae99b17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    names:
-    - Mike
-    - Caelus
-    - Mike
-    lines:
-    - Bruhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-    - Huf huf huf huf huf huf huf huf huf huf
-    - mwachhhhhhhhhhhhhhhhhhhhhhhhhhhh
-    images:
-    - {fileID: -5591103359618205288, guid: 3e9da211f5f82584bb9feccb75ac7271, type: 3}
-    - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
-    - {fileID: -5591103359618205288, guid: 3e9da211f5f82584bb9feccb75ac7271, type: 3}
---- !u!114 &181583895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181583889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &181583896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181583889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10ed2339491ba224e96c6c44a57e8105, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue_box: {fileID: 2137740934}
-  name_text: {fileID: 2108751371}
-  dialogue_text: {fileID: 861758120}
-  npc_image: {fileID: 1288293755}
-  text_speed: 0.04
-  dialoguebox_on: 0
-  isplaying: 0
 --- !u!1 &190016447
 GameObject:
   m_ObjectHideFlags: 0
@@ -12763,7 +12553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 520054342}
   - component: {fileID: 520054344}
-  - component: {fileID: 520054343}
+  - component: {fileID: 520054345}
   m_Layer: 0
   m_Name: Inves Board Triggerer
   m_TagString: Untagged
@@ -12786,41 +12576,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1979590326}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &520054343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520054341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49b69d0498e01fe4eb3c9cd5a2b03097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  investigation_board: {fileID: 1545976965}
-  on_board: 0
-  have_finger: 0
-  have_knife: 0
-  have_certificate: 0
-  have_poster: 0
-  interact_counter_L: 0
-  interact_counter_L_2: 0
-  interact_counter_R: 0
-  connector_selected: {fileID: -741155594131258307, guid: c7d6da04c4ae50f4aa5c287df768b7cf, type: 3}
-  connector_unselected: {fileID: 1806155792462630838, guid: 8266eff4ef3db504e8456ebf8c3c9795, type: 3}
-  connector_solved: {fileID: -1163389222586971273, guid: ed1bf31d52179b648a4675895ac3b797, type: 3}
-  connectors:
-  - {fileID: 658868611}
-  - {fileID: 1347969961}
-  - {fileID: 12837356}
-  connections:
-  - {fileID: 1845761589}
-  - {fileID: 112335267}
-  - {fileID: 1516918834}
-  connection_text: {fileID: 1399177611}
-  connection_shade: {fileID: 977816009}
-  transition_anim: {fileID: 748920579}
 --- !u!61 &520054344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12867,92 +12622,41 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.28125, y: 2.0631485}
   m_EdgeRadius: 0
---- !u!1 &521953500
-GameObject:
+--- !u!114 &520054345
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 521953502}
-  - component: {fileID: 521953501}
-  m_Layer: 0
-  m_Name: Living_Room_Sample_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!212 &521953501
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521953500}
+  m_GameObject: {fileID: 520054341}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -615158073
-  m_SortingLayer: 1
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -5508195157495620152, guid: e059a4b67b6898047850d87461e62d6e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 5.46875, y: 6.40625}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &521953502
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 521953500}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0427, y: 0.3908, z: 0}
-  m_LocalScale: {x: 4.119157, y: 4.119157, z: 4.119157}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe91acba652d111458548fe48cd0d2c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  investigation_board: {fileID: 1545976965}
+  on_board: 0
+  have_finger: 0
+  have_knife: 0
+  have_certificate: 0
+  have_poster: 0
+  interact_counter_L: 0
+  interact_counter_L_2: 0
+  interact_counter_R: 0
+  connector_selected: {fileID: -741155594131258307, guid: c7d6da04c4ae50f4aa5c287df768b7cf, type: 3}
+  connector_unselected: {fileID: 1806155792462630838, guid: 8266eff4ef3db504e8456ebf8c3c9795, type: 3}
+  connector_solved: {fileID: -1163389222586971273, guid: ed1bf31d52179b648a4675895ac3b797, type: 3}
+  connectors:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  connections:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  connection_text: {fileID: 1399177611}
+  connection_shade: {fileID: 977816009}
+  transition_anim: {fileID: 748920579}
 --- !u!1 &531937621
 GameObject:
   m_ObjectHideFlags: 0
@@ -16697,7 +16401,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 520054343}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
         m_MethodName: ConnectorButton
         m_Mode: 3
@@ -16829,7 +16533,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 520054343}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
         m_MethodName: TheBlood
         m_Mode: 1
@@ -26540,7 +26244,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1642864442}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -26685,11 +26389,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   can_walk: 0
-  lamp_puzzle: {fileID: 1642864442}
+  lamp_puzzle: {fileID: 1642864444}
   stairs: {fileID: 561976439}
-  batteryinhand: {fileID: 1642864442}
+  batteryinhand: {fileID: 1642864444}
   puzzlebox: {fileID: 1000241727}
-  board: {fileID: 520054343}
+  board: {fileID: 520054345}
   letter: {fileID: 729144592}
 --- !u!95 &1159420708
 Animator:
@@ -26762,7 +26466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da7103398229a5b45908f8226e492b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  investigation_board: {fileID: 520054343}
+  investigation_board: {fileID: 520054345}
   board_collider: {fileID: 890331679}
 --- !u!1 &1163609819
 GameObject:
@@ -29296,7 +29000,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1642864442}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -29485,7 +29189,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 520054343}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
         m_MethodName: ConnectorButton
         m_Mode: 3
@@ -29787,7 +29491,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1642864442}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -30004,7 +29708,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1642864442}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -43117,7 +42821,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1642864442}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -43288,7 +42992,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 520054343}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
         m_MethodName: TheFingerStamp
         m_Mode: 1
@@ -49530,7 +49234,7 @@ GameObject:
   - component: {fileID: 1642864440}
   - component: {fileID: 1642864441}
   - component: {fileID: 1642864443}
-  - component: {fileID: 1642864442}
+  - component: {fileID: 1642864444}
   m_Layer: 0
   m_Name: Light Bulbs
   m_TagString: Untagged
@@ -49607,43 +49311,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1642864442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1642864439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf96f83623f9e544fa304e8a087cefb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lamp_puzzle: {fileID: 1163609819}
-  on_puzzle: 0
-  have_battery: 0
-  switches:
-  - {fileID: 1328442774}
-  - {fileID: 2018450855}
-  - {fileID: 1772709098}
-  - {fileID: 1154520527}
-  - {fileID: 1571424791}
-  - {fileID: 1364989759}
-  - {fileID: 1363378779}
-  switch_box: {fileID: 2074548271}
-  switch_off: {fileID: -8334990947574187316, guid: 2209b2885233f6e46a29b416b17f2bc9, type: 3}
-  switch_on: {fileID: 793240845654304145, guid: 2209b2885233f6e46a29b416b17f2bc9, type: 3}
-  lamps:
-  - {fileID: 1617459926}
-  - {fileID: 1985187418}
-  - {fileID: 673454651}
-  - {fileID: 2138074866}
-  - {fileID: 1020612355}
-  - {fileID: 2871391}
-  - {fileID: 2063962321}
-  lamp_on: {fileID: -2154974545477705457, guid: 14a25a3c2f06efb49aeef28b9729947c, type: 3}
-  lamp_off: {fileID: -7132394697259571161, guid: 14a25a3c2f06efb49aeef28b9729947c, type: 3}
-  book_anim: {fileID: 1742280953}
 --- !u!61 &1642864443
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49690,6 +49357,43 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.890625, y: 3.657133}
   m_EdgeRadius: 0
+--- !u!114 &1642864444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642864439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff5b2b516ef010245b995a11573610af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lamp_puzzle: {fileID: 1163609819}
+  on_puzzle: 0
+  have_battery: 0
+  switches:
+  - {fileID: 1328442774}
+  - {fileID: 2018450855}
+  - {fileID: 1772709098}
+  - {fileID: 1154520527}
+  - {fileID: 1571424791}
+  - {fileID: 1364989759}
+  - {fileID: 1363378779}
+  switch_box: {fileID: 2074548271}
+  switch_off: {fileID: -8334990947574187316, guid: 2209b2885233f6e46a29b416b17f2bc9, type: 3}
+  switch_on: {fileID: 793240845654304145, guid: 2209b2885233f6e46a29b416b17f2bc9, type: 3}
+  lamps:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  lamp_on: {fileID: -2154974545477705457, guid: 14a25a3c2f06efb49aeef28b9729947c, type: 3}
+  lamp_off: {fileID: -7132394697259571161, guid: 14a25a3c2f06efb49aeef28b9729947c, type: 3}
+  book_anim: {fileID: 1742280953}
 --- !u!1 &1647763019
 GameObject:
   m_ObjectHideFlags: 0
@@ -49889,7 +49593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e835992cd003ed146bda8e5b9b10737b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  investigation_board: {fileID: 520054343}
+  investigation_board: {fileID: 0}
 --- !u!1 &1677287470
 GameObject:
   m_ObjectHideFlags: 0
@@ -52036,7 +51740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b71cff1fa2ad0940877fb571227a91b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  investigation_board: {fileID: 520054343}
+  investigation_board: {fileID: 0}
 --- !u!1 &1772709096
 GameObject:
   m_ObjectHideFlags: 0
@@ -52121,7 +51825,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1642864442}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -58881,7 +58585,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1642864442}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -58976,7 +58680,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 520054343}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
         m_MethodName: TheSymbols
         m_Mode: 1
@@ -62439,9 +62143,7 @@ SceneRoots:
   - {fileID: 1031084045}
   - {fileID: 1020991883}
   - {fileID: 915006781}
-  - {fileID: 521953502}
   - {fileID: 1550909784}
-  - {fileID: 181583893}
   - {fileID: 1159420705}
   - {fileID: 748920578}
   - {fileID: 151349624}

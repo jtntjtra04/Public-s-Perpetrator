@@ -1,0 +1,664 @@
+fileFormatVersion: 2
+guid: c224ba7692f1eeb408155bb670b43ab7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9027403075739044171
+    second: Spritesheets 1_0
+  - first:
+      213: -7976166608036995676
+    second: Spritesheets 1_1
+  - first:
+      213: -6085476934904560293
+    second: Spritesheets 1_2
+  - first:
+      213: 7897450805024456099
+    second: Spritesheets 1_3
+  - first:
+      213: 2765210566526793646
+    second: Spritesheets 1_4
+  - first:
+      213: 2989525644787362795
+    second: Spritesheets 1_5
+  - first:
+      213: 5396767649686045049
+    second: Spritesheets 1_6
+  - first:
+      213: -96081195759682354
+    second: Spritesheets 1_7
+  - first:
+      213: 980764680973116145
+    second: Spritesheets 1_8
+  - first:
+      213: -4089531950506871088
+    second: Spritesheets 1_9
+  - first:
+      213: 1886965576767593482
+    second: Spritesheets 1_10
+  - first:
+      213: -7657825847030210165
+    second: Spritesheets 1_11
+  - first:
+      213: 6367388728358087815
+    second: Spritesheets 1_12
+  - first:
+      213: 3162730823591885945
+    second: Spritesheets 1_13
+  - first:
+      213: -4154063862357630851
+    second: Spritesheets 1_14
+  - first:
+      213: -4145617187503051484
+    second: Spritesheets 1_15
+  - first:
+      213: 8619812091249084665
+    second: Spritesheets 1_16
+  - first:
+      213: 8718104021602182508
+    second: Spritesheets 1_17
+  - first:
+      213: -6801908235865074593
+    second: Spritesheets 1_18
+  - first:
+      213: -5175892539012104858
+    second: Spritesheets 1_19
+  - first:
+      213: 8114377273654936270
+    second: Spritesheets 1_20
+  - first:
+      213: 7079089616263262351
+    second: Spritesheets 1_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wall clock
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 653
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49c1b5a447c74d70800000000000000
+      internalID: 9027403075739044171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light bulb ornaments
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 665
+        width: 185
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad5f92cab6fe4190800000000000000
+      internalID: -7976166608036995676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: switch on
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 665
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b554e2e48fa0c8ba0800000000000000
+      internalID: -6085476934904560293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: switch off
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 665
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3adfa982aa1699d60800000000000000
+      internalID: 7897450805024456099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large bookshelf
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 554
+        width: 146
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea77cfa0c50006620800000000000000
+      internalID: 2765210566526793646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lamp off
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 554
+        width: 50
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beba8781cbdec7920800000000000000
+      internalID: 2989525644787362795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lamp on
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 554
+        width: 50
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9714bd6859b25ea40800000000000000
+      internalID: 5396767649686045049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: old worn out lamp
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 554
+        width: 50
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc362959a6aaaef0800000000000000
+      internalID: -96081195759682354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light bulb flash
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 596
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2e6a1f7406c9d00800000000000000
+      internalID: 980764680973116145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light bulb off
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 605
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d67d68bb501f37c0800000000000000
+      internalID: -4089531950506871088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large coffee table
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 554
+        width: 194
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c5f9ac139df2a10800000000000000
+      internalID: 1886965576767593482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electronic device
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 557
+        width: 56
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81a5fb07ffe9b590800000000000000
+      internalID: -7657825847030210165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light bulb on
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 566
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c2c9400528d5850800000000000000
+      internalID: 6367388728358087815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: study material
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 488
+        width: 71
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c7f5c5de644eb20800000000000000
+      internalID: 3162730823591885945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dining table
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 362
+        width: 98
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70e2e52decc956c0800000000000000
+      internalID: -4154063862357630851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: left chair
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 410
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42d6024e12fc776c0800000000000000
+      internalID: -4145617187503051484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right chair
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 410
+        width: 50
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8c4816d69bf9770800000000000000
+      internalID: 8619812091249084665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fake plantery
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 458
+        width: 59
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65a08aca6decf870800000000000000
+      internalID: 8718104021602182508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small rug
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 365
+        width: 74
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54557e5f74ca91a0800000000000000
+      internalID: -6801908235865074593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cell phone
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 362
+        width: 56
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66db698a8298b28b0800000000000000
+      internalID: -5175892539012104858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large vertical carpet
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 170
+        width: 194
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec284b9732f0c9070800000000000000
+      internalID: 8114377273654936270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: large horizontal carpet
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 122
+        width: 242
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f803786df7afd3260800000000000000
+      internalID: 7079089616263262351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fa8640042761a98478342f0e6c0ab1ce
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      cell phone: -5175892539012104858
+      dining table: -4154063862357630851
+      electronic device: -7657825847030210165
+      fake plantery: 8718104021602182508
+      lamp off: 2989525644787362795
+      lamp on: 5396767649686045049
+      large bookshelf: 2765210566526793646
+      large coffee table: 1886965576767593482
+      large horizontal carpet: 7079089616263262351
+      large vertical carpet: 8114377273654936270
+      left chair: -4145617187503051484
+      light bulb flash: 980764680973116145
+      light bulb off: -4089531950506871088
+      light bulb on: 6367388728358087815
+      light bulb ornaments: -7976166608036995676
+      old worn out lamp: -96081195759682354
+      right chair: 8619812091249084665
+      small rug: -6801908235865074593
+      study material: 3162730823591885945
+      switch off: 7897450805024456099
+      switch on: -6085476934904560293
+      wall clock: 9027403075739044171
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -25,19 +25,22 @@ public class DialogueManager : MonoBehaviour
     // Player Movement
     private PlayerMovement player_movement;
 
-    //public static DialogueManager instance;
 
     private void Awake()
     {
         player_movement = FindAnyObjectByType<PlayerMovement>();
         //instance = this;
     }
+
+
     private void Start()
     {
         lines = new Queue<string>();
         names = new Queue<string>();
         images = new Queue<Sprite>();
     }
+
+
     private void Update()
     {
         if(Input.GetMouseButtonUp(0) && dialoguebox_on)
@@ -54,6 +57,8 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+
+
     public void StartDialogue(Dialogue dialogue)
     {
         isplaying = 1;
@@ -82,6 +87,8 @@ public class DialogueManager : MonoBehaviour
         }
         NextDialogue();
     }
+
+
     public void NextDialogue()
     {
         text_speed = 0.05f;
@@ -100,6 +107,8 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeLines(line));
     }
+
+
     private IEnumerator TypeLines(string sentence)
     {
         dialogue_text.text = "";
@@ -111,6 +120,8 @@ public class DialogueManager : MonoBehaviour
         dialogue_on = false;
         isplaying = 0;
     }
+
+
     public void EndDialogue()
     {
         Debug.Log("End dialogue");

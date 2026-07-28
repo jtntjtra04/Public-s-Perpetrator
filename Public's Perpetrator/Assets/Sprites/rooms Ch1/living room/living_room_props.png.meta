@@ -272,9 +272,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 527
-        y: 554
+        y: 555
         width: 50
-        height: 116
+        height: 114
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,10 +292,10 @@ TextureImporter:
       name: lamp on
       rect:
         serializedVersion: 2
-        x: 581
-        y: 554
+        x: 580
+        y: 555
         width: 50
-        height: 116
+        height: 114
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -650,6 +650,8 @@ TextureImporter:
       light bulb off: -4089531950506871088
       light bulb on: 6367388728358087815
       light bulb ornaments: -7976166608036995676
+      living_room_props_0: -164627713
+      living_room_props_1: 1387959025
       old worn out lamp: -96081195759682354
       right chair: 8619812091249084665
       small rug: -6801908235865074593

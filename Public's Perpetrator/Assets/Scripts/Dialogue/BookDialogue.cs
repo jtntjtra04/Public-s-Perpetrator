@@ -7,25 +7,31 @@ public class BookDialogue : MonoBehaviour
     private DialogueTrigger dialogue_trigger;
     private bool CanTriggerDialogue = false;
     private DialogueManager dialogue_manager;
-    private Phone nokia;
+    private HiddenObject phone;
+
+
     private void Start()
     {
         dialogue_trigger = GetComponent<DialogueTrigger>();
         dialogue_manager = GetComponent<DialogueManager>();
     }
 
+
     private void Awake()
     {
-        nokia = GetComponent<Phone>();
+        phone = GetComponent<HiddenObject>();
     }
+
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && CanTriggerDialogue && dialogue_manager.dialoguebox_on == false && !nokia.phoneout)
+        if (Input.GetKeyDown(KeyCode.F) && CanTriggerDialogue && dialogue_manager.dialoguebox_on == false && !phone.object_revealed)
         {
             dialogue_trigger.TriggerDialogue();
         }
     }
+
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -33,6 +39,8 @@ public class BookDialogue : MonoBehaviour
             CanTriggerDialogue = true;
         }
     }
+
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

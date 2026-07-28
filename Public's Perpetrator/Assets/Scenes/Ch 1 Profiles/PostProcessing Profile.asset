@@ -15,28 +15,28 @@ MonoBehaviour:
   active: 1
   enabled:
     overrideState: 1
-    value: 0
+    value: 1
   mode:
     overrideState: 1
     value: 0
   color:
     overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
+    value: {r: 0.223411, g: 0, b: 0.335849, a: 1}
   center:
     overrideState: 1
-    value: {x: 0.5, y: 0.5}
+    value: {x: 0.48, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.58
+    value: 0.546
   smoothness:
     overrideState: 1
-    value: 1
+    value: 0.648
   roundness:
     overrideState: 1
-    value: 0.8
+    value: 1
   rounded:
     overrideState: 1
-    value: 0
+    value: 1
   mask:
     overrideState: 1
     value: {fileID: 0}

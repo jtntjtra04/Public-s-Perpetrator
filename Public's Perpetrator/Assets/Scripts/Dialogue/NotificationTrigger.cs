@@ -13,16 +13,18 @@ public class NotificationTrigger : MonoBehaviour
     private float text_speed = 0.04f;
     AudioManager audionotif;
 
-    // Player Movement References
-    private PlayerMovement player_movement;
-
+    private PlayerMovement player_movement;         // player movement references
     public static NotificationTrigger instance;
+
+
     private void Awake()
     {
         instance = this;
         player_movement = FindAnyObjectByType<PlayerMovement>();
         audionotif = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
+
+
     public void ShowNotification()
     {
         notification_box.SetActive(true);
@@ -30,6 +32,8 @@ public class NotificationTrigger : MonoBehaviour
         notifbox_active = true;
         player_movement.DisableMovement();
         StartCoroutine(TypeLines(notif.line));
+
+
     }
     private void Update()
     {
@@ -45,9 +49,11 @@ public class NotificationTrigger : MonoBehaviour
             }
         }
     }
+
+
     private IEnumerator TypeLines(string line)
     {
-        audionotif.PlaySFX(audionotif.item);
+        audionotif.PlaySFX(audionotif.item_obtained);
         notif_text.text = "";
         foreach (char letter in line.ToCharArray())
         {
@@ -56,6 +62,8 @@ public class NotificationTrigger : MonoBehaviour
         }
         notif_on = false;
     }
+
+
     private void EndNotification()
     {
         notification_box.SetActive(false);

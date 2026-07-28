@@ -9,16 +9,20 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 move_input;
     public bool can_walk;
 
-    //References
     private Rigidbody2D rb;
     private Animator anim;
     public LampPuzzle lamp_puzzle;
-    public RoomSwitch stairs;
     public LampPuzzle batteryinhand;
     public BoxCollider2D puzzlebox;
     public InvestigationBoard board;
     public Mail letter;
+
     AudioManager audiomanager;
+
+    [Header("Footsteps")]
+    [SerializeField] private AudioSource footstepSource;
+    private bool wasMoving = false;
+
 
     private void Awake()
     {
@@ -27,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
+
+
     private void Update()
     {
         if (!can_walk)
@@ -50,8 +56,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        // Input movement
-        move_input.x = Input.GetAxisRaw("Horizontal");
+        move_input.x = Input.GetAxisRaw("Horizontal");              // input movement
         move_input.y = Input.GetAxisRaw("Vertical");
 
         anim.SetFloat("Horizontal", move_input.x);
@@ -65,11 +70,43 @@ public class PlayerMovement : MonoBehaviour
 
         anim.SetFloat("Speed", move_input.magnitude);
     }
+
+
     private void FixedUpdate()
     {
-        // Movement
-        rb.MovePosition(move_input.normalized * speed * Time.fixedDeltaTime + rb.position);
+        rb.MovePosition(move_input.normalized * speed * Time.fixedDeltaTime + rb.position);     // consistent movement update
+
+        bool isMoving = move_input.magnitude > 0.1f;
+
+        if (isMoving && !footstepSource.isPlaying)
+        {
+            footstepSource.pitch = 1.2f;
+            footstepSource.PlayOneShot(audiomanager.walking_wood);
+        }
+        else if (!isMoving && wasMoving)
+        {
+            StartCoroutine(FadeOutFootsteps());
+        }
+
+        wasMoving = isMoving;
     }
+
+
+    private IEnumerator FadeOutFootsteps(float duration = 0.15f)
+    {
+        float startVolume = 0.15f;
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            footstepSource.volume = Mathf.Lerp(startVolume, 0f, t / duration);
+            yield return null;
+        }
+        footstepSource.Stop();
+        footstepSource.volume = startVolume; // reset for next play
+    }
+
+
     private void StopPlayer()
     {
         rb.velocity = Vector2.zero;
@@ -78,33 +115,46 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("Horizontal", 0f);
         anim.SetFloat("Vertical", 0f);
     }
+
+
     public void DisableMovement()
     {
         can_walk = false;
     }
+
+
     public void EnableMovement()
     {
         can_walk = true;
     }
+
+
+    public void SetFacingDirection(float x, float y)
+    {
+        anim.SetFloat("HorizontalIdle", x);
+        anim.SetFloat("VerticalIdle", y);
+    }
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Batteries"))
+        if (collision.gameObject.CompareTag("batteries"))
         {
             batteryinhand.have_battery = true;
             puzzlebox.enabled = false;
         }
-        if (collision.gameObject.CompareTag("Door"))
+        if (collision.gameObject.CompareTag("door"))
         {
             audiomanager.PlaySFX(audiomanager.door);
         }
-        if (collision.gameObject.CompareTag("Scene2"))
+        if (collision.gameObject.CompareTag("crime scene"))
         {
-            audiomanager.ChangeMusic(audiomanager.BGM2);
+            audiomanager.ChangeMusic(audiomanager.BGM_crime_scene);
             Destroy(collision);
         }
-        if (collision.gameObject.CompareTag("Scene3"))
+        if (collision.gameObject.CompareTag("basement"))
         {
-            audiomanager.ChangeMusic(audiomanager.BGM3);
+            audiomanager.ChangeMusic(audiomanager.BGM_basement);
             Destroy(collision);
         }
     }

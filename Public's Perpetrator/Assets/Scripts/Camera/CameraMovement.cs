@@ -8,6 +8,7 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private float follow_speed;
     [SerializeField] private float offset;
 
+
     private void Update()
     {
         Vector3 update_pos = new Vector3(target.position.x, target.position.y + offset, -10f);

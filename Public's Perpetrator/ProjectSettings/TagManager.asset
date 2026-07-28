@@ -4,22 +4,22 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Batteries
   - Audio
-  - Door
-  - Scene2
-  - Scene3
   - Object
+  - batteries
+  - door
+  - crime scene
+  - basement
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
+  - Walls
   - Furniture
   - Player
-  - 
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 3679809223
+    locked: 0
+  - name: Lighting
+    uniqueID: 2227523023
     locked: 0
   - name: Object
     uniqueID: 4204041233

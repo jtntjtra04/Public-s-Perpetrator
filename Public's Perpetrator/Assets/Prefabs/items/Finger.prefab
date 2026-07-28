@@ -14,9 +14,8 @@ GameObject:
   - component: {fileID: 6376795217788781455}
   - component: {fileID: 446493505762977441}
   - component: {fileID: 8808807995144741184}
-  - component: {fileID: 4685029002757949409}
   - component: {fileID: 4366145966323580780}
-  - component: {fileID: 5031020531810919568}
+  - component: {fileID: 4685029002757949409}
   m_Layer: 0
   m_Name: Finger
   m_TagString: Untagged
@@ -192,6 +191,19 @@ MonoBehaviour:
     images:
     - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
     - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+--- !u!114 &4366145966323580780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5649485188419762219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f27327ce2e5faa4cb68c9b798d9fd22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 04d02d2001a6778479bc76aa1df1fad4, type: 2}
 --- !u!114 &4685029002757949409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,35 +221,3 @@ MonoBehaviour:
   notification_box: {fileID: 0}
   notif_text: {fileID: 0}
   notifbox_active: 0
---- !u!114 &4366145966323580780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5649485188419762219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f27327ce2e5faa4cb68c9b798d9fd22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 04d02d2001a6778479bc76aa1df1fad4, type: 2}
---- !u!114 &5031020531810919568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5649485188419762219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10ed2339491ba224e96c6c44a57e8105, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue_box: {fileID: 0}
-  name_text: {fileID: 0}
-  dialogue_text: {fileID: 0}
-  npc_image: {fileID: 0}
-  text_speed: 0.04
-  dialoguebox_on: 0
-  isplaying: 0

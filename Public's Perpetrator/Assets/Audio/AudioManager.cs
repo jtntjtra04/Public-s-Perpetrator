@@ -6,24 +6,30 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
-    public AudioClip BGM1;
-    public AudioClip BGM2;
-    public AudioClip BGM3;
+    [SerializeField] AudioSource footstepSource;    // separate AudioSource for footsteps, assigned in Inspector
+    public AudioClip BGM_night;
+    public AudioClip BGM_crime_scene;
+    public AudioClip BGM_basement;
     public AudioClip door;
-    public AudioClip shelfdrag;
-    public AudioClip inventory;
-    public AudioClip item;
+    public AudioClip shelf_drag;
+    public AudioClip inventory_open;
+    public AudioClip item_obtained;
+    public AudioClip walking_wood;
+
 
     private void Start()
     {
-    musicSource.clip = BGM1;
+    musicSource.clip = BGM_night;
     musicSource.Play();
     }
 
-    public void PlaySFX(AudioClip clip)
+
+    public void PlaySFX(AudioClip clip, float pitch = 1f)
     {
+        SFXSource.pitch = pitch;
         SFXSource.PlayOneShot(clip);
     }
+
 
     public void ChangeMusic(AudioClip music)
     {

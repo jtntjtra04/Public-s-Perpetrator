@@ -6,13 +6,11 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    //Queue -> Change per dialogue
-    private Queue<string> lines;
+    private Queue<string> lines;                // queue -> change per dialogue
     private Queue<string> names;
     private Queue<Sprite> images;
 
-    //UI
-    public GameObject dialogue_box;
+    public GameObject dialogue_box;             // UI
     public TextMeshProUGUI name_text;
     public TextMeshProUGUI dialogue_text;
     public Image npc_image;
@@ -22,8 +20,8 @@ public class DialogueManager : MonoBehaviour
     public bool dialoguebox_on = false;
     public float isplaying = 0f;
 
-    // Player Movement
-    private PlayerMovement player_movement;
+
+    private PlayerMovement player_movement;     // player movement
 
 
     private void Awake()
@@ -124,7 +122,6 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        Debug.Log("End dialogue");
         dialogue_box.SetActive(false);
         dialoguebox_on = false;
         player_movement.EnableMovement();
@@ -137,10 +134,10 @@ public class DialogueManager : MonoBehaviour
         }
 
         // For Phone
-        Phone nokia = GetComponent<Phone>();
-        if (nokia != null)
+        HiddenObject phone = GetComponent<HiddenObject>();
+        if (phone != null)
         {
-            nokia.ShowPhone();
+            phone.RevealObject();
         }
 
         // For Investigation Board

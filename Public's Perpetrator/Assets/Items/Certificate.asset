@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 5
   name: Journalist's Certificate
-  icon: {fileID: -2387641146491444505, guid: 772d80cf5fe3eae4892aac5ddb30b23e, type: 3}
+  icon: {fileID: -2387641146491444505, guid: cdfa94994da6a51428dc57ad59d2a4c2, type: 3}

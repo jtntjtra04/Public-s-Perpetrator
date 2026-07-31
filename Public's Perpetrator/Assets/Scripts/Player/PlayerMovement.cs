@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
 
         bool isMoving = move_input.magnitude > 0.1f;
 
-        if (isMoving && !footstepSource.isPlaying)
+        if (isMoving && !footstepSource.isPlaying)                                              // for footstep noises
         {
             footstepSource.pitch = 1.2f;
             footstepSource.PlayOneShot(audiomanager.walking_wood);
@@ -94,7 +94,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator FadeOutFootsteps(float duration = 0.15f)
     {
-        float startVolume = 0.15f;
+        float startVolume = 0.05f;
         float t = 0f;
         while (t < duration)
         {
@@ -145,7 +145,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("door"))
         {
-            audiomanager.PlaySFX(audiomanager.door);
+            audiomanager.PlaySFX(audiomanager.door, 1f, 0.2f);
         }
         if (collision.gameObject.CompareTag("crime scene"))
         {

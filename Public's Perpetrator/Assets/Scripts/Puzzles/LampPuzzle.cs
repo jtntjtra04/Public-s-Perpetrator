@@ -5,35 +5,25 @@ using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class LampPuzzle : MonoBehaviour
 {
-    // Puzzle
-    public GameObject lamp_puzzle;
+    public GameObject lamp_puzzle;              // lamp puzzle
     private bool can_trigger_puzzle = false;
-    private bool puzzle_done = false;
     public bool on_puzzle = false;
     public bool have_battery = false;
 
-    // Toggle Switch
-    public Toggle[] switches;
+    public Toggle[] switches;                   // switch toggles and sprites
     public CanvasGroup switch_box;
-
-    // Switch Sprite
-    public Sprite switch_off;
+    public Sprite switch_off;                
     public Sprite switch_on;
 
-    // Lamps
-    public Image[] lamps;
-
-    // Lamp Sprite
-    public Sprite lamp_on;
+    public Image[] lamps;                       // lamp image, sprites, and states
+    public Sprite lamp_on;                     
     public Sprite lamp_off;
-
-    // Lamp Condition
     private bool[] lamp_states;
 
-    // Bookshelf references
-    public Animator book_anim;
+    public Animator book_anim;                  // to trigger the sliding bookshelf
     AudioManager audiomanager;
 
 
@@ -43,31 +33,24 @@ public class LampPuzzle : MonoBehaviour
         on_puzzle = false;
         int lamps_number = 7;
 
-        // Ensure the switches and lamps arrays have the correct number of elements
         if (switches.Length != lamps_number || lamps.Length != lamps_number)
         {
-            Debug.LogError("Number of switches and lamps must be " + lamps_number);
+            Debug.LogError("Number of switches and lamps must be " + lamps_number);     // debug to ensure the number switches and arrays are matching
             return;
         }
-        lamp_states = new bool[7] { false, false, false, false, false, false, false};
 
-/*        for(int i = 0; i < lamps_number; i++)
-        {
-            lamps[i].sprite = lamp_states[i] ? lamp_on : lamp_off;
-            switches[i].onValueChanged.AddListener((bool isOn) => { ToggleSwitch(i); });
-            switches[i].GetComponentInChildren<Image>().sprite = switches[i].isOn ? switch_on : switch_off;
-        }*/
+        lamp_states = new bool[7] { false, false, false, false, false, false, false};   // all the lamps are initially off
     }
 
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F) && can_trigger_puzzle && !puzzle_done && have_battery)
+        if(Input.GetKeyDown(KeyCode.F) && can_trigger_puzzle && have_battery)   // if the puzzle isn't done and batteries are in hand, puzzle can be triggered
         {
             lamp_puzzle.SetActive(true);
             on_puzzle = true;
         }
-        if(Input.GetKeyDown(KeyCode.Escape) && on_puzzle)
+        if(Input.GetKeyDown(KeyCode.Escape) && on_puzzle)                       // when uncertain, the player can leave the puzzle for now
         {
             ClosePuzzle();
         }
@@ -77,7 +60,6 @@ public class LampPuzzle : MonoBehaviour
     private void Awake()
     {
         audiomanager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-
     }
 
 
@@ -99,7 +81,7 @@ public class LampPuzzle : MonoBehaviour
     }
 
 
-    public void ToggleSwitch(int index)
+    public void ToggleSwitch(int index)         // toggling the switches light up different lamps
     {
         if (index < 0 || index >= lamp_states.Length)
         {
@@ -116,7 +98,7 @@ public class LampPuzzle : MonoBehaviour
     }
 
 
-    private void GoalCondition()
+    private void GoalCondition()                // condition to solve the puzzle
     {
         if (lamp_states[2] && lamp_states[3] && lamp_states[4] && !lamp_states[0] && !lamp_states[1] && !lamp_states[5] && !lamp_states[6])
         {
@@ -125,18 +107,17 @@ public class LampPuzzle : MonoBehaviour
     }
 
 
-    private IEnumerator HiddenDoorAnimation()
+    private IEnumerator HiddenDoorAnimation()   // used to trigger the sliding bookshelf
     {
         switch_box.interactable = false;
         yield return new WaitForSeconds(2f);
         book_anim.SetTrigger("Move");
         audiomanager.PlaySFX(audiomanager.shelf_drag);
-        puzzle_done = true;
         ClosePuzzle();
     }
 
 
-    public void ClosePuzzle()
+    public void ClosePuzzle()                   // whenever the player exits the puzzle
     {
         lamp_puzzle.SetActive(false);
         on_puzzle = false;

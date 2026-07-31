@@ -20,7 +20,7 @@ TagManager:
   - Walls
   - Furniture
   - Player
-  - 
+  - Special
   - 
   - 
   - 
@@ -50,11 +50,11 @@ TagManager:
   - name: Background
     uniqueID: 3679809223
     locked: 0
-  - name: Lighting
-    uniqueID: 2227523023
-    locked: 0
   - name: Object
     uniqueID: 4204041233
+    locked: 0
+  - name: Lighting
+    uniqueID: 2227523023
     locked: 0
   - name: UI
     uniqueID: 3915103981

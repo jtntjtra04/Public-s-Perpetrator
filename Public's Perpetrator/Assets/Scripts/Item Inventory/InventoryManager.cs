@@ -13,6 +13,7 @@ public class InventoryManager : MonoBehaviour
     public bool inventory_active = false;
     AudioManager audioinv;
 
+
     private void Awake()
     {
         Instance = this;

@@ -15,6 +15,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip inventory_open;
     public AudioClip item_obtained;
     public AudioClip walking_wood;
+    public AudioClip metal_screech;
+    public AudioClip lamp_flicker;
+    public AudioClip flashlight_click;
 
 
     private void Start()
@@ -24,10 +27,33 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    public void PlaySFX(AudioClip clip, float pitch = 1f)
+    public void PlaySFX(AudioClip clip, float pitch = 1f, float volume = 1f)
     {
+        SFXSource.volume = volume;
         SFXSource.pitch = pitch;
         SFXSource.PlayOneShot(clip);
+    }
+
+
+    public void PlaySpatialSFX(AudioClip clip, Vector3 position, float maxDistance, float volume)
+    {
+        Vector3 flatPosition = new Vector3(position.x, position.y, 0f);
+
+        GameObject tempGO = new GameObject("SpatialSFX" + clip.name);
+        tempGO.transform.position = flatPosition;
+
+        AudioSource aSource = tempGO.AddComponent<AudioSource>();
+        aSource.clip = clip;
+        aSource.volume = volume;
+
+        aSource.spatialBlend = 1.0f;
+        aSource.rolloffMode = AudioRolloffMode.Linear;
+
+        aSource.minDistance = 1f;
+        aSource.maxDistance = maxDistance;  // sound area is bound to this distance
+
+        aSource.Play();
+        Destroy(tempGO, clip.length);
     }
 
 

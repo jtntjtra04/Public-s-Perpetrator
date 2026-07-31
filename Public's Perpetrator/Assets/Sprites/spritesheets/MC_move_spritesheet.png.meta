@@ -238,10 +238,10 @@ TextureImporter:
       name: MC_front_2
       rect:
         serializedVersion: 2
-        x: 173
-        y: 343
+        x: 174
+        y: 342
         width: 63
-        height: 96
+        height: 97
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

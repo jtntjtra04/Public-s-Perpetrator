@@ -7,20 +7,26 @@ public class InteractDialogue : MonoBehaviour
     private DialogueTrigger dialogue_trigger;
     private bool CanTriggerDialogue = false;
     private DialogueManager dialogue_manager;
+    private HighlightObject object_status;
 
 
     private void Start()
     {
         dialogue_trigger = GetComponent<DialogueTrigger>();
         dialogue_manager = GetComponent<DialogueManager>();
+        object_status = GetComponent<HighlightObject>();
     }
 
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && CanTriggerDialogue && dialogue_manager.dialoguebox_on == false)
+        if (Input.GetKeyDown(KeyCode.E) && CanTriggerDialogue && dialogue_manager.dialoguebox_on == false)
         {
             dialogue_trigger.TriggerDialogue();
+            if (object_status != null)
+            {
+                object_status.is_interacted = true;
+            }
         }
     }
 

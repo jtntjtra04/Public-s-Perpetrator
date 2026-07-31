@@ -27,7 +27,6 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         player_movement = FindAnyObjectByType<PlayerMovement>();
-        //instance = this;
     }
 
 
@@ -64,8 +63,6 @@ public class DialogueManager : MonoBehaviour
         dialogue_box.SetActive(true);
         dialoguebox_on = true;
         player_movement.DisableMovement();
-        //name_text.text = dialogue.name;
-        //npc_image.sprite = dialogue.image;
 
         names.Clear();
         lines.Clear();
@@ -133,8 +130,8 @@ public class DialogueManager : MonoBehaviour
             trigger_notif.ShowNotification();
         }
 
-        // For Phone
-        HiddenObject phone = GetComponent<HiddenObject>();
+        
+        HiddenObject phone = GetComponent<HiddenObject>();          // requirement to interact with phone
         if (phone != null)
         {
             phone.RevealObject();

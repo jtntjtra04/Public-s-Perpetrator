@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 2871392}
   - component: {fileID: 2871391}
   m_Layer: 5
-  m_Name: lamp 6
+  m_Name: bulb 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7132394697259571161, guid: 14a25a3c2f06efb49aeef28b9729947c, type: 3}
+  m_Sprite: {fileID: -4089531950506871088, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6961,7 +6961,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1642864442}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ClosePuzzle
         m_Mode: 1
@@ -40742,7 +40742,7 @@ GameObject:
   - component: {fileID: 673454652}
   - component: {fileID: 673454651}
   m_Layer: 5
-  m_Name: lamp 3
+  m_Name: bulb 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40787,7 +40787,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7132394697259571161, guid: 14a25a3c2f06efb49aeef28b9729947c, type: 3}
+  m_Sprite: {fileID: -4089531950506871088, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -45946,7 +45946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0118e96c8c8f6f47a8b582a5c8297a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  highlightColor: {r: 1, g: 0.75686276, b: 0.36078432, a: 1}
   highlightDuration: 0.6
   fadeSpeed: 0.5
   is_interacted: 0
@@ -50537,7 +50537,6 @@ GameObject:
   - component: {fileID: 1000241724}
   - component: {fileID: 1000241730}
   - component: {fileID: 1000241728}
-  - component: {fileID: 1000241729}
   m_Layer: 9
   m_Name: electronic device
   m_TagString: Untagged
@@ -50713,43 +50712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1000241729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000241721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff5b2b516ef010245b995a11573610af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lamp_puzzle: {fileID: 1163609819}
-  on_puzzle: 1
-  have_battery: 0
-  switches:
-  - {fileID: 1328442774}
-  - {fileID: 2018450855}
-  - {fileID: 1772709098}
-  - {fileID: 1154520527}
-  - {fileID: 1571424791}
-  - {fileID: 1364989759}
-  - {fileID: 1363378779}
-  switch_box: {fileID: 2074548271}
-  switch_off: {fileID: 7897450805024456099, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
-  switch_on: {fileID: -6085476934904560293, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
-  lamps:
-  - {fileID: 1617459926}
-  - {fileID: 1985187418}
-  - {fileID: 673454651}
-  - {fileID: 2138074866}
-  - {fileID: 1020612355}
-  - {fileID: 2871391}
-  - {fileID: 2063962321}
-  lamp_on: {fileID: 980764680973116145, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
-  lamp_off: {fileID: -4089531950506871088, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
-  book_anim: {fileID: 1742280953}
 --- !u!114 &1000241730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50778,7 +50740,7 @@ GameObject:
   - component: {fileID: 1020612356}
   - component: {fileID: 1020612355}
   m_Layer: 5
-  m_Name: lamp 5
+  m_Name: bulb 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50823,7 +50785,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7132394697259571161, guid: 14a25a3c2f06efb49aeef28b9729947c, type: 3}
+  m_Sprite: {fileID: -4089531950506871088, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -50961,6 +50923,7 @@ Transform:
   - {fileID: 1169034661}
   - {fileID: 1896431327}
   - {fileID: 2075186837}
+  - {fileID: 1642864440}
   - {fileID: 375334215}
   - {fileID: 1742280950}
   - {fileID: 66362631}
@@ -51593,7 +51556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0118e96c8c8f6f47a8b582a5c8297a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  highlightColor: {r: 1, g: 0.75686276, b: 0.36078432, a: 1}
   highlightDuration: 0.6
   fadeSpeed: 0.5
   is_interacted: 0
@@ -53346,8 +53309,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   can_walk: 0
-  lamp_puzzle: {fileID: 1000241729}
-  batteryinhand: {fileID: 1000241729}
+  lamp_puzzle: {fileID: 1642864442}
+  batteryinhand: {fileID: 1642864442}
   puzzlebox: {fileID: 1000241727}
   board: {fileID: 520054345}
   letter: {fileID: 729144592}
@@ -53717,7 +53680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0118e96c8c8f6f47a8b582a5c8297a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  highlightColor: {r: 1, g: 0.75686276, b: 0.36078432, a: 1}
   highlightDuration: 0.6
   fadeSpeed: 0.5
   is_interacted: 0
@@ -58097,6 +58060,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1533666827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2837413753286080347, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+  m_PrefabInstance: {fileID: 4420982523133493113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1533666835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533666827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0118e96c8c8f6f47a8b582a5c8297a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightColor: {r: 1, g: 0.75686276, b: 0.36078432, a: 1}
+  highlightDuration: 0.6
+  fadeSpeed: 0.5
+  is_interacted: 0
 --- !u!1 &1540251403
 GameObject:
   m_ObjectHideFlags: 0
@@ -59114,7 +59098,7 @@ GameObject:
   - component: {fileID: 1617459927}
   - component: {fileID: 1617459926}
   m_Layer: 5
-  m_Name: lamp 1
+  m_Name: bulb 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59159,7 +59143,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7132394697259571161, guid: 14a25a3c2f06efb49aeef28b9729947c, type: 3}
+  m_Sprite: {fileID: -4089531950506871088, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -59777,6 +59761,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1642864440}
   - component: {fileID: 1642864441}
+  - component: {fileID: 1642864442}
+  - component: {fileID: 1642864443}
   m_Layer: 0
   m_Name: light bulb ornaments
   m_TagString: Untagged
@@ -59797,7 +59783,7 @@ Transform:
   m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1715759806}
+  m_Father: {fileID: 1026665841}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1642864441
 SpriteRenderer:
@@ -59853,6 +59839,89 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1642864442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642864439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff5b2b516ef010245b995a11573610af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lamp_puzzle: {fileID: 1163609819}
+  on_puzzle: 0
+  have_battery: 0
+  switches:
+  - {fileID: 1328442774}
+  - {fileID: 2018450855}
+  - {fileID: 1772709098}
+  - {fileID: 1154520527}
+  - {fileID: 1571424791}
+  - {fileID: 1364989759}
+  - {fileID: 1363378779}
+  switch_box: {fileID: 2074548271}
+  switch_off: {fileID: 7897450805024456099, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
+  switch_on: {fileID: -6085476934904560293, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
+  lamps:
+  - {fileID: 1617459926}
+  - {fileID: 1985187418}
+  - {fileID: 673454651}
+  - {fileID: 2138074866}
+  - {fileID: 1020612355}
+  - {fileID: 2871391}
+  - {fileID: 2063962321}
+  lamp_on: {fileID: 980764680973116145, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
+  lamp_off: {fileID: -4089531950506871088, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
+  book_anim: {fileID: 1742280953}
+--- !u!61 &1642864443
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642864439}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.60548425, y: -0.60217565}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.85, y: 0.59}
+    newSize: {x: 1.85, y: 0.59}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.6858611, y: 1.6026729}
+  m_EdgeRadius: 0
 --- !u!1 &1647763019
 GameObject:
   m_ObjectHideFlags: 0
@@ -60909,7 +60978,6 @@ Transform:
   - {fileID: 483036893}
   - {fileID: 1022713352}
   - {fileID: 503601746}
-  - {fileID: 1642864440}
   - {fileID: 1879426237}
   - {fileID: 407946700}
   - {fileID: 141903043}
@@ -72598,7 +72666,7 @@ GameObject:
   - component: {fileID: 1985187419}
   - component: {fileID: 1985187418}
   m_Layer: 5
-  m_Name: lamp 2
+  m_Name: bulb 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72643,7 +72711,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7132394697259571161, guid: 14a25a3c2f06efb49aeef28b9729947c, type: 3}
+  m_Sprite: {fileID: -4089531950506871088, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -73388,7 +73456,7 @@ GameObject:
   - component: {fileID: 2063962322}
   - component: {fileID: 2063962321}
   m_Layer: 5
-  m_Name: lamp 7
+  m_Name: bulb 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73433,7 +73501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7132394697259571161, guid: 14a25a3c2f06efb49aeef28b9729947c, type: 3}
+  m_Sprite: {fileID: -4089531950506871088, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -75245,7 +75313,7 @@ GameObject:
   - component: {fileID: 2138074867}
   - component: {fileID: 2138074866}
   m_Layer: 5
-  m_Name: lamp 4
+  m_Name: bulb 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75290,7 +75358,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7132394697259571161, guid: 14a25a3c2f06efb49aeef28b9729947c, type: 3}
+  m_Sprite: {fileID: -4089531950506871088, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -76053,7 +76121,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2837413753286080347, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      insertIndex: 7
+      addedObject: {fileID: 1533666835}
   m_SourcePrefab: {fileID: 100100000, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
 --- !u!1001 &5895954960026135108
 PrefabInstance:

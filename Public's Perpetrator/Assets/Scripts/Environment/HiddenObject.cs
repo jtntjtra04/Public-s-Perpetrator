@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class HiddenObject : MonoBehaviour
 {
     public GameObject hidden_object;

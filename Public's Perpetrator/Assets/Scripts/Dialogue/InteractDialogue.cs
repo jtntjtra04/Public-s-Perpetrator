@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class InteractDialogue : MonoBehaviour
 {
     private DialogueTrigger dialogue_trigger;
@@ -12,9 +13,9 @@ public class InteractDialogue : MonoBehaviour
 
     private void Start()
     {
-        dialogue_trigger = GetComponent<DialogueTrigger>();
-        dialogue_manager = GetComponent<DialogueManager>();
-        object_status = GetComponent<HighlightObject>();
+        dialogue_trigger = this.gameObject.GetComponent<DialogueTrigger>();
+        object_status = this.gameObject.GetComponent<HighlightObject>();
+        dialogue_manager = FindFirstObjectByType<DialogueManager>();
     }
 
 

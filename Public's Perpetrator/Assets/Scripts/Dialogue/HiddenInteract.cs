@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BookDialogue : MonoBehaviour
+public class HiddenInteract : MonoBehaviour
 {
     private DialogueTrigger dialogue_trigger;
     private bool CanTriggerDialogue = false;
     private DialogueManager dialogue_manager;
     private HiddenObject phone;
+    private HighlightObject object_status;
 
 
     private void Start()
     {
         dialogue_trigger = GetComponent<DialogueTrigger>();
         dialogue_manager = GetComponent<DialogueManager>();
+        object_status = GetComponent<HighlightObject>();
     }
 
 
@@ -25,9 +27,13 @@ public class BookDialogue : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && CanTriggerDialogue && dialogue_manager.dialoguebox_on == false && !phone.object_revealed)
+        if (Input.GetKeyDown(KeyCode.E) && CanTriggerDialogue && dialogue_manager.dialoguebox_on == false && !phone.object_revealed)
         {
             dialogue_trigger.TriggerDialogue();
+            if (object_status != null)
+            {
+                object_status.is_interacted = true;
+            }
         }
     }
 

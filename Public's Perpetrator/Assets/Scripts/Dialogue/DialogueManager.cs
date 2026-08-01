@@ -4,22 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class DialogueManager : MonoBehaviour
 {
     private Queue<string> lines;                // queue -> change per dialogue
     private Queue<string> names;
     private Queue<Sprite> images;
 
+    [Header("UI")]
     public GameObject dialogue_box;             // UI
     public TextMeshProUGUI name_text;
     public TextMeshProUGUI dialogue_text;
     public Image npc_image;
 
+    [Header("Dialogue Status")]
     public float text_speed = 0.04f;
     private bool dialogue_on = false;
     public bool dialoguebox_on = false;
     public float isplaying = 0f;
-
 
     private PlayerMovement player_movement;     // player movement
 
@@ -72,10 +74,12 @@ public class DialogueManager : MonoBehaviour
         {
             names.Enqueue(name);
         }
+
         foreach(string line in dialogue.lines)
         {
             lines.Enqueue(line);
         }
+
         foreach(Sprite image in dialogue.images)
         {
             images.Enqueue(image);
@@ -87,11 +91,13 @@ public class DialogueManager : MonoBehaviour
     public void NextDialogue()
     {
         text_speed = 0.05f;
+
         if (lines.Count == 0)
         {
             EndDialogue();
             return;
         }
+
         string name = names.Dequeue();
         string line = lines.Dequeue();
         Sprite image = images.Dequeue();
@@ -107,11 +113,13 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator TypeLines(string sentence)
     {
         dialogue_text.text = "";
+
         foreach(char letter in sentence.ToCharArray())
         {
             dialogue_text.text += letter;
             yield return new WaitForSeconds(text_speed);
         }
+
         dialogue_on = false;
         isplaying = 0;
     }
@@ -135,23 +143,6 @@ public class DialogueManager : MonoBehaviour
         if (phone != null)
         {
             phone.RevealObject();
-        }
-
-        // For Investigation Board
-        CounterLeft1 counter_L_1 = GetComponent<CounterLeft1>();
-        if(counter_L_1 != null)
-        {
-            counter_L_1.InteractCounterLeft1();
-        }
-        CounterLeft2 counter_L_2 = GetComponent<CounterLeft2>();
-        if(counter_L_2 != null)
-        {
-            counter_L_2.InteractCounterLeft2();
-        }
-        CounterRight counter_R = GetComponent<CounterRight>();
-        if(counter_R != null)
-        {
-            counter_R.InteractCounterRight();
         }
     }
 }

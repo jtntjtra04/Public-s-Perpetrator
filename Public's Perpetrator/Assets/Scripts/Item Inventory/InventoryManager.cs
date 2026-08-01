@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject inventory;
     public Transform item_content;
     public GameObject inventory_item;
+    public PlayerMovement player;
     public bool inventory_active = false;
     AudioManager audioinv;
 
@@ -37,7 +38,9 @@ public class InventoryManager : MonoBehaviour
                 inventory.SetActive(true);
                 InputItems();
                 inventory_active = true;
+                player.DisableMovement();
             }
+
             else
             {
                 CloseInventory();
@@ -51,6 +54,7 @@ public class InventoryManager : MonoBehaviour
     {
         inventory.SetActive(false);
         inventory_active = false;
+        player.EnableMovement();
     }
 
 

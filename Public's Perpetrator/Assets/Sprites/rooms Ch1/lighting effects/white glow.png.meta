@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      white glow_0: 708921160213282612
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -28,7 +28,7 @@ public class HighlightObject : MonoBehaviour
 
     public void ShineLight()
     {
-        if (is_interacted == true) return;                                          // important objects that have been interacted with no longer highlight
+        if (is_interacted == true) return;                                  // important objects that have been interacted with no longer highlight
 
         spriteRenderer.color = highlightColor;                              // highlighted color
 

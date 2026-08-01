@@ -7,7 +7,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
     [SerializeField] AudioSource footstepSource;    // separate AudioSource for footsteps, assigned in Inspector
-    public AudioClip BGM_night;
+    public AudioClip BGM_windy_indoors;
     public AudioClip BGM_crime_scene;
     public AudioClip BGM_basement;
     public AudioClip door;
@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-    musicSource.clip = BGM_night;
+    musicSource.clip = BGM_windy_indoors;
     musicSource.Play();
     }
 
@@ -39,20 +39,32 @@ public class AudioManager : MonoBehaviour
     {
         Vector3 flatPosition = new Vector3(position.x, position.y, 0f);
 
-        GameObject tempGO = new GameObject("SpatialSFX" + clip.name);
+        GameObject tempGO = new GameObject("SpatialSFX" + clip.name);                   // a temporary object to play these audio cues
         tempGO.transform.position = flatPosition;
+
+        GameObject container = GameObject.Find("ActivePropSFX Holder");                 // store these audio clone cues in a separate folder to prevent clustering in the hierarchy
+        if (container == null)
+        {
+            container = new GameObject("ActivePropSFX Holder");
+        }
+        tempGO.transform.SetParent(container.transform);
 
         AudioSource aSource = tempGO.AddComponent<AudioSource>();
         aSource.clip = clip;
         aSource.volume = volume;
 
         aSource.spatialBlend = 1.0f;
-        aSource.rolloffMode = AudioRolloffMode.Linear;
+        aSource.rolloffMode = AudioRolloffMode.Linear;                      
 
         aSource.minDistance = 1f;
-        aSource.maxDistance = maxDistance;  // sound area is bound to this distance
+        aSource.maxDistance = maxDistance;                                              // sound area is bound to this distance
 
         aSource.Play();
+
+        float strictCutoff = 2f;
+        float destroyDelay = (clip != null && clip.length > 0) ? Mathf.Min(clip.length, strictCutoff) : strictCutoff;       // strict deletion of clones
+
+        Destroy(tempGO, destroyDelay);
         Destroy(tempGO, clip.length);
     }
 

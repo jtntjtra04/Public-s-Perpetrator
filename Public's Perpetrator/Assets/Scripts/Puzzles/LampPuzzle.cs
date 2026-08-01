@@ -45,11 +45,13 @@ public class LampPuzzle : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F) && can_trigger_puzzle && have_battery)   // if the puzzle isn't done and batteries are in hand, puzzle can be triggered
+        if(Input.GetKeyDown(KeyCode.E) && can_trigger_puzzle && have_battery)   // if the puzzle isn't done and batteries are in hand, puzzle can be triggered
         {
             lamp_puzzle.SetActive(true);
             on_puzzle = true;
+            Debug.Log("interacted with puzzle");
         }
+
         if(Input.GetKeyDown(KeyCode.Escape) && on_puzzle)                       // when uncertain, the player can leave the puzzle for now
         {
             ClosePuzzle();

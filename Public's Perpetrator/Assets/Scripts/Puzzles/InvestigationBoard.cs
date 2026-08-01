@@ -4,42 +4,38 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class InvestigationBoard : MonoBehaviour
 {
-    // Puzzle
-    public GameObject investigation_board;
+    public GameObject investigation_board;          // secret link puzzle
     private bool can_open_board = false;
-    private bool figure_done = false;
+    private bool secret_puzzle_solved = false;
     public bool on_board = false;
-    public bool have_finger = false;
+
+    [Header("Requirements")]
+    public Mail mail_status;
+    public bool have_finger = false;                // requirements
     public bool have_knife = false;
     public bool have_certificate = false;
     public bool have_poster = false;
-    public bool interact_counter_L = false;
-    public bool interact_counter_L_2 = false;
-    public bool interact_counter_R = false;
-    private int curr_connector;
 
-    // Connector Sprites
-    public Sprite connector_selected;
+    [Header("Connector Related")]
+    private int curr_connector;
+    public Sprite connector_selected;               // connector sprites
     public Sprite connector_unselected;
     public Sprite connector_solved;
 
-    // Connectors
-    public Button[] connectors;
+    public Button[] connectors;                     // connector buttons
     private bool[] connector_states;
     private bool[] connector_done;
 
-    // Connections Button
-    public GameObject[] connections;
+    public GameObject[] connections;                // links between evidence
 
-    // Connection Count
-    private int connection_count;
+    private int connection_count;                   // connections made
     public Text connection_text;
     public Text connection_shade;
 
-    // Change Scene Transition
-    public Animator transition_anim;
+    public Animator transition_anim;                // change of scene after secret link puzzle is solved
 
 
     private void Start()
@@ -62,23 +58,21 @@ public class InvestigationBoard : MonoBehaviour
 
     private void Update()
     {
-        // To interact with the board
-        if (Input.GetKeyDown(KeyCode.F) && can_open_board && !figure_done && CompletedItems())
+        if (Input.GetKeyDown(KeyCode.E) && can_open_board && !secret_puzzle_solved && CompletedItems())
         {
-            investigation_board.SetActive(true);
+            investigation_board.SetActive(true);            // interacting with the secret link puzzle
             on_board = true;
         }
-        // To leave the board for exploration
-        if (Input.GetKeyDown(KeyCode.Escape) && on_board)
+        if (Input.GetKeyDown(KeyCode.Escape) && on_board)   // leave the board to explore again
         {
             CloseBoard();
         }
     }
 
 
-    public bool CompletedItems()
+    public bool CompletedItems()    // all necessary items / evidence gathered
     {
-        if(have_finger && have_knife && have_certificate && have_poster && interact_counter_L && interact_counter_L_2 && interact_counter_R)
+        if(have_finger && have_knife && have_certificate && (mail_status.opened_mail == true))
         {
             return true;
         }
@@ -99,7 +93,7 @@ public class InvestigationBoard : MonoBehaviour
     }
 
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)  
     {
         if (collision.CompareTag("Player"))
         {
@@ -140,7 +134,7 @@ public class InvestigationBoard : MonoBehaviour
     }
 
 
-    private void UpdateConnectorSprite(int connector)
+    private void UpdateConnectorSprite(int connector)       // selecting connectors will change their appearance
     {
         if (!connector_done[connector])
         {
@@ -158,7 +152,7 @@ public class InvestigationBoard : MonoBehaviour
     }
 
 
-    public void TheSymbols()
+    public void TheSymbols()    // correct answer 1
     {
         if(curr_connector == 0 && connection_count < 3)
         {
@@ -167,7 +161,7 @@ public class InvestigationBoard : MonoBehaviour
     }
 
 
-    public void TheFingerStamp()
+    public void TheFingerStamp()    // correct answer 2
     {
         if(curr_connector == 1 && connection_count < 3)
         {
@@ -176,7 +170,7 @@ public class InvestigationBoard : MonoBehaviour
     }
 
 
-    public void TheBlood()
+    public void TheBlood()    // correct answer 3
     {
         if (curr_connector == 2 && connection_count < 3)
         {
@@ -185,7 +179,7 @@ public class InvestigationBoard : MonoBehaviour
     }
 
 
-    private void ConnectorSolved(int connector)
+    private void ConnectorSolved(int connector)     // if answer is correct
     {
         Debug.Log("Change Connector to Purple");
         connector_done[connector] = true;
@@ -196,24 +190,24 @@ public class InvestigationBoard : MonoBehaviour
         connection_shade.text = "Connections : " + connection_count;
         if (connection_count >= 3)
         {
-            StartCoroutine(ScenarioFigured());
+            StartCoroutine(SecretLinkCleared());
         }
     }
 
 
-    private IEnumerator ScenarioFigured()
+    private IEnumerator SecretLinkCleared()
     {
-        figure_done = true;
+        secret_puzzle_solved = true;
         yield return new WaitForSeconds(3f);
         CloseBoard();
         transition_anim.Play("StartFade");
         yield return new WaitForSeconds(4f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   // switches scenes when the puzzle is solved
         transition_anim.Play("EndFade");
     }
 
 
-    private void CloseConnection(int number)
+    private void CloseConnection(int number)        // other choices are ridden of
     {
         connections[number].SetActive(false);
         connector_states[number] = false;

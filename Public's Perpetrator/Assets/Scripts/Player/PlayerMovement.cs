@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator anim;
+
+    [Header("Important Interactions")]
     public LampPuzzle lamp_puzzle;
     public LampPuzzle batteryinhand;
     public BoxCollider2D puzzlebox;

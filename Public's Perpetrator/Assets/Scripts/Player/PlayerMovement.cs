@@ -156,7 +156,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("basement"))
         {
-            audiomanager.ChangeMusic(audiomanager.BGM_basement);
+            audiomanager.StopMusic();
             Destroy(collision);
         }
     }

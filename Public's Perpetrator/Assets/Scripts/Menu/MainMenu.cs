@@ -4,52 +4,63 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class MainMenu : MonoBehaviour
 {
     public Animator transition_fade;
 
-    public void Start()
+
+    // =============================== //
+
+
+    public void Start() 
     {
         transition_fade.Play("EndFade");
     }
     
-    public void OpenMenu()
+
+    public void OpenMenu()  
     {
         StartCoroutine(PreviousPart());
     }
+
 
     public void ChooseChapter()
     {
         StartCoroutine(NextPart());
     }
 
+
     public void PlayGame()
     {
         StartCoroutine(NextPart());
     }
+
 
     public void ExitGame()
     {
         Application.Quit();
     }
 
-    private IEnumerator NextPart()
+
+    private IEnumerator NextPart()      // fade transition and scene switching
     {
         transition_fade.enabled = true;
         transition_fade.Play("StartFade");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         transition_fade.Play("EndFade");
-                Debug.Log("faded");
+        Debug.Log("faded");
     }
 
-    private IEnumerator PreviousPart()
+
+    private IEnumerator PreviousPart()  // fade transition and scene switching
     {
         transition_fade.enabled = true;
         transition_fade.Play("StartFade");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         transition_fade.Play("EndFade");
-                Debug.Log("faded");
+        Debug.Log("faded");
     }
 }

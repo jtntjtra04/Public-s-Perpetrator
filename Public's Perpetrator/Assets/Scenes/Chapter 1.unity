@@ -225,7 +225,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.29, y: -3.42, z: 0}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
+  m_LocalScale: {x: 2.2, y: 2.2, z: 2.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1979590326}
@@ -318,7 +318,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.044264793}
+  m_Offset: {x: 0, y: 0.17904983}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -328,7 +328,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.78125, y: 1.5624485}
+  m_Size: {x: 0.78125, y: 1.1158192}
   m_EdgeRadius: 0
 --- !u!114 &7143043
 MonoBehaviour:
@@ -344,14 +344,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
+    - Paul
+    - Paul
     lines:
     - A bunch of documents surrounding the latest controversies circulating the government.
     - I was aware of some of em being quite scummy, but I didn't realize they were
       all this scummy..
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &7143044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7067,7 +7068,6 @@ MonoBehaviour:
   footstepSource: {fileID: 976977926}
   BGM_windy_indoors: {fileID: 8300000, guid: bfccf4abb17eb024ca2cde51508b6485, type: 3}
   BGM_crime_scene: {fileID: 8300000, guid: de1ecd00959a401499928fc63dbac18f, type: 3}
-  BGM_basement: {fileID: 0}
   door: {fileID: 8300000, guid: dfaafa6dc5ebabb4680c57211f1cadfa, type: 3}
   shelf_drag: {fileID: 8300000, guid: 1c9e2b6cb8ebe194e9d197f511598426, type: 3}
   inventory_open: {fileID: 8300000, guid: 7e9008714729e834a9a8e14738eb2d07, type: 3}
@@ -7994,7 +7994,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 793240845654304145, guid: 2209b2885233f6e46a29b416b17f2bc9, type: 3}
+  m_Sprite: {fileID: 7897450805024456099, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23613,12 +23613,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
+    - Paul
+    - Paul
     lines:
-    - The light switch doesn't work. The owner must've forgotten about the electricity
+    - Hmm.. the lights don't seem to work.
+    - The house doesn't seem barren though. It's probably their past due electricity
       bills.
+    - But that money transfer back home was no joke. Something doesn't add up..
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &375334218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27294,7 +27300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 793240845654304145, guid: 2209b2885233f6e46a29b416b17f2bc9, type: 3}
+  m_Sprite: {fileID: 7897450805024456099, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27338,7 +27344,7 @@ Transform:
   m_GameObject: {fileID: 462462717}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.0029895995, y: -19.46, z: 0}
+  m_LocalPosition: {x: 0.0029895995, y: -21.14, z: 0}
   m_LocalScale: {x: 0.24757577, y: 1.0652335, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27920,11 +27926,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - More collection of books again, but more on political topics.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &495858431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28448,11 +28454,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - More collection of books again, but more on history and investigations.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &509937039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28860,7 +28866,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -28890,7 +28896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   investigation_board: {fileID: 1545976965}
   on_board: 0
-  mail_status: {fileID: 0}
+  mail_status: {fileID: 729144592}
   have_finger: 0
   have_knife: 0
   have_certificate: 0
@@ -29178,11 +29184,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
-    - A vintage clock. It seemed to have run out of batteries.
+    - For a clock, this model's rather old. It has ran out juice.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &540116973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29298,11 +29304,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - "A kitchen stove. It\u2019s out of gas."
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!61 &557212528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39412,15 +39418,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
+    - Paul
+    - Paul
+    - Paul
     lines:
-    - Cracks on the wall. These house walls seem to be old. Did the owner not have
-      the money to patch it up?
-    - Impossible, the mail I received was beyond a normal salary.
+    - I suppose it's inevitable for the house to begin revealling its wounds.
+    - But covering it with a painting rather than patching it up (considering the
+      transfer amount from earlier)..
+    - How conservative do you really have to be?
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &589246937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39778,14 +39787,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
+    - Paul
+    - Paul
     lines:
     - Some chopped lettuce in the pot. It's still too raw to be soup.
     - This lettuce seems fresh, did the person leave in a hurry?
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!61 &600020033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40029,9 +40038,9 @@ MonoBehaviour:
     - ( flips rug )
     - "And.. there\u2019s nothing here.."
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &603284765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40214,12 +40223,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - "Folded white towels. They\u2019re still dry, I guess the owner hasn\u2019t
       showered for a day or two."
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &611336432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41409,11 +41418,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - A brand new toilet. Seems like the previous one gave the owner a rough time.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &722873049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42596,8 +42605,8 @@ Transform:
   m_GameObject: {fileID: 807263724}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.4, y: -1.5, z: 0}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
+  m_LocalPosition: {x: 4.4, y: -1.2900009, z: 0}
+  m_LocalScale: {x: 2.2, y: 2.2, z: 2.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1979590326}
@@ -42616,16 +42625,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
-    - Pascal
+    - Paul
+    - Paul
+    - Paul
     lines:
     - This one's empty..
     - Wait a second, there's another piece of paper here.
     - A very old children's drawing? This looks.. oddly familiar, but I'm not sure
       how..
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &807263728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42691,7 +42702,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.46516037}
+  m_Offset: {x: 0, y: 0.10327126}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -42701,7 +42712,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.78125, y: 1.4446793}
+  m_Size: {x: 0.78125, y: 0.720901}
   m_EdgeRadius: 0
 --- !u!212 &807263731
 SpriteRenderer:
@@ -43153,12 +43164,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - "Folded white towels. They\u2019re still dry, I guess the owner hasn\u2019t
       showered for a day or two."
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &840599205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45154,7 +45165,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 80.86, y: 0}
+  m_AnchoredPosition: {x: 157, y: -19}
   m_SizeDelta: {x: 1096.06, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &861758120
@@ -45177,10 +45188,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: My name is Firefly, what can I help for you?
+  m_text: This is an example dialogue and I can teype as long as I want until a certain
+    threshold..
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b404053674c569149b49c408bce8fc60, type: 2}
+  m_sharedMaterial: {fileID: -5912440345306644242, guid: b404053674c569149b49c408bce8fc60, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -45210,13 +45222,13 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_wordSpacing: 20
+  m_lineSpacing: 35
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -45306,11 +45318,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - A family painting, but some part of it is ripped off.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &878060671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45547,15 +45559,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
-    - Pascal
-    - Pascal
-    - Pascal
-    - Pascal
-    - Pascal
-    - Pascal
-    - Pascal
+    - Paul
+    - Paul
+    - Paul
+    - Paul
+    - Paul
+    - Paul
+    - Paul
+    - Paul
+    - Paul
     lines:
     - 'This looks like an investigation board.  There seems to be a mapping of various
       locations marked on the spot. '
@@ -45573,15 +45585,15 @@ MonoBehaviour:
     - Surely there's some sort of evidence that I could use to make sense of this.
       I wonder if there are any in my suitcase.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &890331677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45659,90 +45671,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.4618049, y: 0.6791172}
   m_EdgeRadius: 0
---- !u!1 &897482649
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 897482650}
-  - component: {fileID: 897482651}
-  m_Layer: 0
-  m_Name: faint light 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &897482650
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897482649}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.94, y: 8.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1715759806}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &897482651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897482649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ComponentVersion: 2
-  m_LightType: 3
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 0.7377358, g: 0.78384984, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeIntensity: 1
-  m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000c76e55db119494facf4dc584edbe5be9
-  m_LightCookieSprite: {fileID: 0}
-  m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_OverlapOperation: 0
-  m_NormalMapDistance: 3
-  m_NormalMapQuality: 2
-  m_UseNormalMap: 0
-  m_ShadowsEnabled: 1
-  m_ShadowIntensity: 0.75
-  m_ShadowSoftness: 0.3
-  m_ShadowSoftnessFalloffIntensity: 0.5
-  m_ShadowVolumeIntensityEnabled: 0
-  m_ShadowVolumeIntensity: 0.75
-  m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 360.00003
-  m_PointLightOuterAngle: 360.00003
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 10
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &898026390
 GameObject:
   m_ObjectHideFlags: 0
@@ -45793,11 +45721,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - Hmm, old coats and polo shirts. How old fashioned is this civilian?
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &898026393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46658,11 +46586,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - More collection of books again, but more on popular crime cases.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &930751086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46729,8 +46657,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -338.7801}
-  m_SizeDelta: {x: -400, y: -777.56}
+  m_AnchoredPosition: {x: 0, y: -351.95248}
+  m_SizeDelta: {x: -400, y: -751.2151}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &946822122
 MonoBehaviour:
@@ -46752,7 +46680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5100814351343666845, guid: dd7cdeea1beadd14092d51f6e6a45c5a, type: 3}
+  m_Sprite: {fileID: -1183473763512926845, guid: dd7cdeea1beadd14092d51f6e6a45c5a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -46804,7 +46732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000019073486, y: 0.0000019073486}
+  m_AnchoredPosition: {x: 0, y: 0.0000019073486}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &955353485
@@ -46827,7 +46755,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 793240845654304145, guid: 2209b2885233f6e46a29b416b17f2bc9, type: 3}
+  m_Sprite: {fileID: 7897450805024456099, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -50627,14 +50555,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
+    - 
+    - Paul
+    - Paul
+    - Paul
     lines:
-    - Looks like the owner is really into some weird vintage stuff.
-    - "There\u2019s an empty battery slot within this device. "
+    - A very vintage electronic device sits on the coffee table.
+    - I've never seen anything like this. Must be handmade or something back from
+      the 90s.
+    - I can fit two batteries in these slots to power it back up.
+    - If only I had some..
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1000241726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51790,11 +51725,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - A large bathtub. It even fits two people.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1095854120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51883,10 +51818,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: My name is Firefly, what can I help for you?
+  m_text: You obtained.. something..
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b404053674c569149b49c408bce8fc60, type: 2}
+  m_sharedMaterial: {fileID: -5912440345306644242, guid: b404053674c569149b49c408bce8fc60, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -51910,14 +51845,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -52112,11 +52047,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - Still no electricity. Surely glad there's still some shed of light.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1118587419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53040,6 +52975,57 @@ PrefabInstance:
       propertyPath: m_Name
       value: frame
       objectReference: {fileID: 0}
+    - target: {fileID: 6235277073552685766, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: dialogue.lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235277073552685766, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: dialogue.names.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235277073552685766, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: dialogue.images.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235277073552685766, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[0]'
+      value: An old poster of Paracelsus, a classic. It's gotta cost a huge fortune
+        though.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235277073552685766, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[1]'
+      value: and a note..
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235277073552685766, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[2]'
+      value: '"I was meant ot return this painting back to its rightful place after
+        discovering it was ''stolen'' by the authorities instead of secured but I
+        never had the time. I should do that tomorrow."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235277073552685766, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: 'dialogue.names.Array.data[0]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235277073552685766, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: 'dialogue.names.Array.data[1]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235277073552685766, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: 'dialogue.names.Array.data[2]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235277073552685766, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: 'dialogue.images.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - target: {fileID: 6235277073552685766, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: 'dialogue.images.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - target: {fileID: 6235277073552685766, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: 'dialogue.images.Array.data[2]'
+      value: 
+      objectReference: {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     - target: {fileID: 7275847389297479417, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
       propertyPath: notif_text
       value: 
@@ -53111,7 +53097,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.0999146, y: -0.000030517578}
+  m_AnchoredPosition: {x: 6.0998535, y: -0.000030517578}
   m_SizeDelta: {x: 49.3, y: 50.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1154520527
@@ -53161,7 +53147,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1642864442}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -53639,11 +53625,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
-    - "Potted plants. They\u2019re fake."
+    - A fake potted plant. At least it's still green..
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1169034666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54373,11 +54359,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - Nothing special on television at the moment.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1248543740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54671,15 +54657,15 @@ RectTransform:
   m_GameObject: {fileID: 1288293753}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2137740935}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -600, y: -18}
-  m_SizeDelta: {x: 126.33, y: 126.33}
+  m_AnchoredPosition: {x: -565, y: -45.6}
+  m_SizeDelta: {x: 206.0613, y: 200.8605}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1288293755
 MonoBehaviour:
@@ -54701,7 +54687,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -9037728103166714318, guid: 3b214dd0ac30a824f8b1c563b3256dce, type: 3}
+  m_Sprite: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -55231,8 +55217,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -374.90005, y: -0.000030517578}
-  m_SizeDelta: {x: 49.3, y: 50.44}
+  m_AnchoredPosition: {x: -635, y: 0}
+  m_SizeDelta: {x: 49.299988, y: 50.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328442774
 MonoBehaviour:
@@ -55281,7 +55267,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1642864442}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -55678,11 +55664,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - "Delicious food lies within it. But nah, I\u2019m not hungry."
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1360210733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55825,7 +55811,7 @@ GameObject:
   - component: {fileID: 1363378778}
   - component: {fileID: 1363378779}
   m_Layer: 5
-  m_Name: swtich 7
+  m_Name: switch 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55848,8 +55834,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 378.0999, y: -0.000030517578}
-  m_SizeDelta: {x: 49.3, y: 50.44}
+  m_AnchoredPosition: {x: 620, y: 0}
+  m_SizeDelta: {x: 49.299988, y: 50.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1363378779
 MonoBehaviour:
@@ -55898,7 +55884,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1642864442}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -56065,7 +56051,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 253.09985, y: -0.000030517578}
+  m_AnchoredPosition: {x: 416, y: -0.000030517578}
   m_SizeDelta: {x: 49.3, y: 50.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364989759
@@ -56115,7 +56101,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1642864442}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -56487,8 +56473,8 @@ MonoBehaviour:
     - "Yet, there\u2019s no body or corpse lying around the scene. I should check
       around."
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1375666449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56743,18 +56729,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
+    - Paul
+    - Paul
+    - Paul
     lines:
-    - ' A dining table for two. Is this person married?
-
-'
-    - 'Gah, I miss dinner already.
-
-'
+    - ' A dining table for two. Likely for a family of two.'
+    - ..
+    - I miss dinner already..
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!1 &1399177609
 GameObject:
   m_ObjectHideFlags: 0
@@ -56954,7 +56939,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000019073486, y: 0.0000019073486}
+  m_AnchoredPosition: {x: 0, y: 0.0000019073486}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1413655861
@@ -56977,7 +56962,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 793240845654304145, guid: 2209b2885233f6e46a29b416b17f2bc9, type: 3}
+  m_Sprite: {fileID: 7897450805024456099, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -57351,11 +57336,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - "A bathroom sink. There\u2019s still fresh water coming out of it."
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1463943599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58625,7 +58610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 130.09988, y: -0.000030517578}
+  m_AnchoredPosition: {x: 215, y: -0.000030517578}
   m_SizeDelta: {x: 49.3, y: 50.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1571424791
@@ -58675,7 +58660,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1642864442}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -59211,11 +59196,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - "A fairly old sink. There\u2019s still fresh water coming out of it."
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!61 &1617600694
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59374,7 +59359,7 @@ Transform:
   m_GameObject: {fileID: 1619675762}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.0036863019, y: -19.5, z: 0}
+  m_LocalPosition: {x: -0.0036863019, y: -21.18, z: 0}
   m_LocalScale: {x: 0.24757577, y: 1.0117787, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59480,90 +59465,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1630335570
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1630335571}
-  - component: {fileID: 1630335572}
-  m_Layer: 0
-  m_Name: faint light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1630335571
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630335570}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.13, y: 8.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1715759806}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1630335572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630335570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ComponentVersion: 2
-  m_LightType: 3
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 0.7377358, g: 0.78384984, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeIntensity: 1
-  m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000c76e55db119494facf4dc584edbe5be9
-  m_LightCookieSprite: {fileID: 0}
-  m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_OverlapOperation: 0
-  m_NormalMapDistance: 3
-  m_NormalMapQuality: 2
-  m_UseNormalMap: 0
-  m_ShadowsEnabled: 1
-  m_ShadowIntensity: 0.75
-  m_ShadowSoftness: 0.3
-  m_ShadowSoftnessFalloffIntensity: 0.5
-  m_ShadowVolumeIntensityEnabled: 0
-  m_ShadowVolumeIntensity: 0.75
-  m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 360.00003
-  m_PointLightOuterAngle: 360.00003
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 10
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &1640904244
 GameObject:
   m_ObjectHideFlags: 0
@@ -59618,7 +59519,7 @@ MonoBehaviour:
     lines:
     - What is this place? I better look around.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1640904247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59952,8 +59853,8 @@ Transform:
   m_GameObject: {fileID: 1647763019}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.29, y: -1.5, z: 0}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
+  m_LocalPosition: {x: -6.29, y: -1.29, z: 0}
+  m_LocalScale: {x: 2.2, y: 2.2, z: 2.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1979590326}
@@ -60046,7 +59947,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.46516037}
+  m_Offset: {x: 0, y: 0.10327126}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -60056,7 +59957,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.78125, y: 1.4446793}
+  m_Size: {x: 0.78125, y: 0.720901}
   m_EdgeRadius: 0
 --- !u!114 &1647763023
 MonoBehaviour:
@@ -60072,13 +59973,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
+    - Paul
+    - Paul
     lines:
     - A lot of news related to the government & robot advancements.
     - Well Ihope these "AI taking over shenanigans" ain't real..
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1647763024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60260,11 +60162,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - Hmm, old coats and polo shirts. How old fashioned is this civilian?
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1677287475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60493,7 +60395,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 793240845654304145, guid: 2209b2885233f6e46a29b416b17f2bc9, type: 3}
+  m_Sprite: {fileID: 7897450805024456099, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -60854,14 +60756,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
+    - Paul
+    - Paul
     lines:
     - A pretty old computer model. There seems to be a quote attached in the background.
     - "\u201CLight will show the way\u201D. Does this mean anything?"
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1708302415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60968,8 +60870,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1630335571}
-  - {fileID: 897482650}
   - {fileID: 38823324}
   - {fileID: 679222014}
   - {fileID: 1744614655}
@@ -61276,13 +61176,21 @@ MonoBehaviour:
     names:
     - Pascal
     - Pascal
+    - Pascal
+    - Pascal
+    - Pascal
     lines:
-    - It seems to be quiet here. Did the owner leave in a hurry?
-    - "Hmph, no use to think about it now, I suppose it\u2019s about time I begin
-      searching.."
+    - ...
+    - It's so quiet.. I can even hear the wind outside..
+    - Hello?
+    - ...
+    - I don't think anyone's home. Imma try look around.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1742061060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61619,15 +61527,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
+    - 
+    - 
+    - Paul
+    - Paul
+    - Paul
+    - Paul
     lines:
-    - A collection of books and.. mangas? There seems to be something behind it.
-    - "It\u2019s too heavy to push, with or without the books. Kinda regret rejecting
-      that free gym pass."
+    - A bookshelf filled with a collection of books on life advice and.. mangas?
+    - What looks like a normal bookshelf to the human eye, this one seems rather..
+      unusual..
+    - This bookshelf seems to be lighter than I anticipated. Perhaps I can move it
+      aside.
+    - (grunts)
+    - With or without the books, it doesn't seem to budge.
+    - It seems to be locked to a certain mechanism.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!1 &1744614654
 GameObject:
   m_ObjectHideFlags: 0
@@ -69359,11 +69280,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - "A bathroom sink. There\u2019s still fresh water coming out of it."
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1759922077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69426,7 +69347,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.4, y: -3.42, z: 0}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
+  m_LocalScale: {x: 2.2, y: 2.2, z: 2.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1979590326}
@@ -69519,7 +69440,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.044264793}
+  m_Offset: {x: 0, y: 0.17904983}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -69529,7 +69450,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.78125, y: 1.5624485}
+  m_Size: {x: 0.78125, y: 1.1158192}
   m_EdgeRadius: 0
 --- !u!114 &1761332064
 MonoBehaviour:
@@ -69545,12 +69466,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - A bunch of paperwork related to an individual named Mr. Sunny Sullivan. Ain't
       this man our Minister of Defence?
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1761332065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69616,7 +69537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -119.900085, y: -0.000030517578}
+  m_AnchoredPosition: {x: -222, y: -0.000030517578}
   m_SizeDelta: {x: 49.3, y: 50.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1772709098
@@ -69666,7 +69587,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1642864442}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -69874,7 +69795,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000019073486, y: 0.0000019073486}
+  m_AnchoredPosition: {x: 0, y: 0.0000019073486}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1828899578
@@ -69897,7 +69818,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3801522759527931188, guid: 686177ca48cf5044faacd7f722613310, type: 3}
+  m_Sprite: {fileID: 7897450805024456099, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -70103,11 +70024,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - I'm not tired. Not yet.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1847556029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70189,11 +70110,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - Some shower soap and a sponge. These products look pretty cheap.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1864908120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70508,11 +70429,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - More collection of books again, but more on past murder cases.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1876565410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70901,11 +70822,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - Some shower soap and a sponge. These products look pretty cheap.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1889786015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71131,11 +71052,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
-    - "Potted plants. They\u2019re fake."
+    - An actual potted plant. Still healthy and green.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1896431330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72034,15 +71955,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
+    - Paul
+    - Paul
     lines:
     - More books and old newspapers.
     - They seem to circulate around heated controversies surrounding the government
       and politicians.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1951719694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72255,7 +72176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 793240845654304145, guid: 2209b2885233f6e46a29b416b17f2bc9, type: 3}
+  m_Sprite: {fileID: 7897450805024456099, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -72358,11 +72279,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - "Delicious food lies within it. But nah, I\u2019m not hungry."
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1967488903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73209,7 +73130,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -246.90005, y: -0.000030517578}
+  m_AnchoredPosition: {x: -439, y: -0.000030517578}
   m_SizeDelta: {x: 49.3, y: 50.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2018450855
@@ -73259,7 +73180,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1642864442}
         m_TargetAssemblyTypeName: LampPuzzle, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 3
@@ -73642,10 +73563,10 @@ RectTransform:
   - {fileID: 1363378778}
   m_Father: {fileID: 1163609820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 468.2, y: -419.02}
-  m_SizeDelta: {x: 983.59, y: 241.97}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 170}
+  m_SizeDelta: {x: 1350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2074548270
 CanvasRenderer:
@@ -73811,11 +73732,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - 
+    - 
+    - Paul
+    - Paul
     lines:
-    - Poor service of electricity.
+    - Presumably the only reliable light source as of now, a tall lamp remains to
+      flicker continuously in the corner of the living room.
+    - It may just be a poor service of electricity, but there may be more to it..
+    - The only thing I see lit up..
+    - It can't be a coincidence..
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &2075186842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73975,11 +73906,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - "A pile of old books. There\u2019s something under it."
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &2091665665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74323,11 +74254,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
     - A brand new toilet. Seems like the previous one gave the owner a rough time.
     images:
-    - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &2104602327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74393,7 +74324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -491, y: 118}
+  m_AnchoredPosition: {x: -491, y: 114.1}
   m_SizeDelta: {x: 235.01, y: 79.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2108751371
@@ -74416,10 +74347,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Firefly
+  m_text: My Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b404053674c569149b49c408bce8fc60, type: 2}
+  m_sharedMaterial: {fileID: -5912440345306644242, guid: b404053674c569149b49c408bce8fc60, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -74443,8 +74374,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -75260,8 +75191,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -338.7801}
-  m_SizeDelta: {x: -400, y: -777.56}
+  m_AnchoredPosition: {x: 0, y: -351.95248}
+  m_SizeDelta: {x: -400, y: -751.2151}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2137740936
 MonoBehaviour:
@@ -75939,13 +75870,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 861758120}
     - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: 'dialogue.names.Array.data[0]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: 'dialogue.names.Array.data[1]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
       propertyPath: 'dialogue.images.Array.data[0]'
       value: 
-      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
       propertyPath: 'dialogue.images.Array.data[1]'
       value: 
-      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 5031020531810919568, guid: 8dd0ed653471a9649b89d5bead49de91, type: 3}
       propertyPath: name_text
       value: 
@@ -76098,6 +76037,22 @@ PrefabInstance:
       propertyPath: dialogue_text
       value: 
       objectReference: {fileID: 861758120}
+    - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: 'dialogue.names.Array.data[0]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: 'dialogue.names.Array.data[1]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: 'dialogue.images.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: 'dialogue.images.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 7082376294307570876, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
       propertyPath: m_Color.b
       value: 0.49411765
@@ -76135,17 +76090,29 @@ PrefabInstance:
     m_TransformParent: {fileID: 1371127953}
     m_Modifications:
     - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: 'dialogue.names.Array.data[0]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: 'dialogue.names.Array.data[1]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: 'dialogue.names.Array.data[2]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
       propertyPath: 'dialogue.images.Array.data[0]'
       value: 
-      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
       propertyPath: 'dialogue.images.Array.data[1]'
       value: 
-      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
       propertyPath: 'dialogue.images.Array.data[2]'
       value: 
-      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 2952979398709095554, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
       propertyPath: notif_text
       value: 
@@ -76407,17 +76374,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: 'dialogue.names.Array.data[0]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: 'dialogue.names.Array.data[1]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: 'dialogue.names.Array.data[2]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
       propertyPath: 'dialogue.images.Array.data[0]'
       value: 
-      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
       propertyPath: 'dialogue.images.Array.data[1]'
       value: 
-      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
       propertyPath: 'dialogue.images.Array.data[2]'
       value: 
-      objectReference: {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 6957568401371324726, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
       propertyPath: m_Name
       value: certificate

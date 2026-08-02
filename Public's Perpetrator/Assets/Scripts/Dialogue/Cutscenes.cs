@@ -7,9 +7,9 @@ using TMPro;
 [System.Serializable]
 public class Cutscenes
 {
-    public string[] names2;
+    public string[] cutscene_name;
     [TextArea(3, 10)]
-    public string[] lines2;
-    public Sprite[] images2;
-    public Sprite[] images3;
+    public string[] cutscene_lines;
+    public Sprite[] cutscene_BG;
+    public Sprite[] cutscene_character;
 }

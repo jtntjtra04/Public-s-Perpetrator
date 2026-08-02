@@ -9,7 +9,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource footstepSource;    // separate AudioSource for footsteps, assigned in Inspector
     public AudioClip BGM_windy_indoors;
     public AudioClip BGM_crime_scene;
-    public AudioClip BGM_basement;
     public AudioClip door;
     public AudioClip shelf_drag;
     public AudioClip inventory_open;
@@ -18,6 +17,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip metal_screech;
     public AudioClip lamp_flicker;
     public AudioClip flashlight_click;
+
+
+    // =============================== //
 
 
     private void Start()
@@ -75,5 +77,11 @@ public class AudioManager : MonoBehaviour
         musicSource.clip = music;
         musicSource.clip.LoadAudioData();
         musicSource.Play();
+    }
+
+
+    public void StopMusic()
+    {
+        musicSource.Stop();
     }
 }

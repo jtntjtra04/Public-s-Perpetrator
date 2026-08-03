@@ -38,6 +38,9 @@ public class InvestigationBoard : MonoBehaviour
     public Animator transition_anim;                // change of scene after secret link puzzle is solved
 
 
+    // =============================== //
+
+
     private void Start()
     {
         investigation_board.SetActive(false);
@@ -106,6 +109,7 @@ public class InvestigationBoard : MonoBehaviour
     {
         if(connector == 0 && !connector_done[0])
         {
+            Debug.Log("connector 1 correct");
             CloseConnection(1);
             CloseConnection(2);
             connections[connector].SetActive(true);
@@ -115,6 +119,7 @@ public class InvestigationBoard : MonoBehaviour
         }
         if (connector == 1 && !connector_done[1])
         {
+            Debug.Log("connector 2 correct");
             CloseConnection(0);
             CloseConnection(2);
             connections[connector].SetActive(true);
@@ -124,6 +129,7 @@ public class InvestigationBoard : MonoBehaviour
         }
         if (connector == 2 && !connector_done[2])
         {
+            Debug.Log("connector 3 correct");
             CloseConnection(0);
             CloseConnection(1);
             connections[connector].SetActive(true);
@@ -152,7 +158,7 @@ public class InvestigationBoard : MonoBehaviour
     }
 
 
-    public void TheSymbols()    // correct answer 1
+    public void TheSymbol()    // correct answer 1
     {
         if(curr_connector == 0 && connection_count < 3)
         {

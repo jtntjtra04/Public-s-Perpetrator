@@ -10,6 +10,8 @@ TagManager:
   - door
   - crime scene
   - basement
+  - Main Menu
+  - Chapters
   layers:
   - Default
   - TransparentFX

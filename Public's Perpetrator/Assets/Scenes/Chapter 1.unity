@@ -599,7 +599,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 520054345}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
         m_MethodName: ConnectorButton
         m_Mode: 3
@@ -23539,7 +23539,7 @@ Transform:
   m_GameObject: {fileID: 375334214}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.96, y: -3.74, z: 0}
+  m_LocalPosition: {x: -1.96, y: -3.852, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -23587,7 +23587,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -90926063
   m_SortingLayer: 2
-  m_SortingOrder: 5
+  m_SortingOrder: 45
   m_Sprite: {fileID: 7897450805024456099, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   m_Color: {r: 0.35686275, g: 0.36862746, b: 0.49411765, a: 1}
   m_FlipX: 0
@@ -23690,17 +23690,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.006159663}
+  m_Offset: {x: -0.00000010058284, y: 0.04147747}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: -0.49899188}
     oldSize: {x: 0.23, y: 0.29}
     newSize: {x: 0.23, y: 0.29}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.359375, y: 0.44080567}
+  m_Size: {x: 0.23828605, y: 0.37017006}
   m_EdgeRadius: 0
 --- !u!1 &399022640
 GameObject:
@@ -27926,10 +27926,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
+    - 
+    - Paul
     - Paul
     lines:
-    - More collection of books again, but more on political topics.
+    - A collection of news articles and compiled books on political topics.
+    - Politics really have gotten ugly sometimes.
+    - To the point such silly statements are announced to the public.
     images:
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &495858431
 MonoBehaviour:
@@ -28454,10 +28460,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
+    - 
     - Paul
     lines:
-    - More collection of books again, but more on history and investigations.
+    - A collection of binders and files on past criminal investigations.
+    - These were wall past crime cases investigated by the police.
+    - But most of them seem to focus on corruption cases.
     images:
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &509937039
 MonoBehaviour:
@@ -29305,9 +29315,15 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - Paul
+    - Paul
     lines:
-    - "A kitchen stove. It\u2019s out of gas."
+    - A kitchen stove out of gas.
+    - Dammit, did I arrive at the wrong time?
+    - But the door wasn't even locked. How urgent can a gas canister be.
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!61 &557212528
 BoxCollider2D:
@@ -30269,8 +30285,8 @@ Tilemap:
   - first: {x: -4, y: -25, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 71
-      m_TileSpriteIndex: 27
+      m_TileIndex: 79
+      m_TileSpriteIndex: 79
       m_TileMatrixIndex: 2
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -30279,8 +30295,8 @@ Tilemap:
   - first: {x: -3, y: -25, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 71
-      m_TileSpriteIndex: 27
+      m_TileIndex: 79
+      m_TileSpriteIndex: 79
       m_TileMatrixIndex: 2
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -32749,8 +32765,8 @@ Tilemap:
   - first: {x: -4, y: 1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 71
-      m_TileSpriteIndex: 27
+      m_TileIndex: 79
+      m_TileSpriteIndex: 79
       m_TileMatrixIndex: 2
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -32759,8 +32775,8 @@ Tilemap:
   - first: {x: -3, y: 1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 71
-      m_TileSpriteIndex: 27
+      m_TileIndex: 79
+      m_TileSpriteIndex: 79
       m_TileMatrixIndex: 2
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -38940,7 +38956,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 061e90d9d561af84db6bc134fbca93ae, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: adb3980f6c4d07a408f73125f3ffe138, type: 2}
-  - m_RefCount: 5
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 94bb85f8c50d3b54082e08f8c0a7e544, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 82e00af92a2521d4cac3e085bc2f610e, type: 2}
@@ -38956,6 +38972,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: a7c1e9258fb031846b5348d8bc3b2b5b, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 4ec95afa7eec91741ac8529e315b953d, type: 2}
+  - m_RefCount: 4
+    m_Data: {fileID: 11400000, guid: 408b2626afb8d1645a438bb1b75d1598, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 26
     m_Data: {fileID: -9000413787488976080, guid: 67dbe9b0e49735642b999259d8f75d9d, type: 3}
@@ -39011,7 +39029,7 @@ Tilemap:
     m_Data: {fileID: 1835114539, guid: 5197853377b2c8040b99936af7e651f4, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 196963463, guid: 5197853377b2c8040b99936af7e651f4, type: 3}
-  - m_RefCount: 5
+  - m_RefCount: 1
     m_Data: {fileID: 2046243736, guid: 5197853377b2c8040b99936af7e651f4, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -733689894, guid: 5197853377b2c8040b99936af7e651f4, type: 3}
@@ -39115,6 +39133,8 @@ Tilemap:
     m_Data: {fileID: -6945669303781674656, guid: abf54d2ba0fb38047bf580ba32703480, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -1176041330, guid: 5197853377b2c8040b99936af7e651f4, type: 3}
+  - m_RefCount: 4
+    m_Data: {fileID: -733800312, guid: 5197853377b2c8040b99936af7e651f4, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 907
     m_Data:
@@ -39790,8 +39810,8 @@ MonoBehaviour:
     - Paul
     - Paul
     lines:
-    - Some chopped lettuce in the pot. It's still too raw to be soup.
-    - This lettuce seems fresh, did the person leave in a hurry?
+    - There's still food residue on this knife. It's still fresh as well..
+    - The owner should be around here somwhere..
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
@@ -40030,15 +40050,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
-    - Pascal
+    - Paul
+    - 
+    - Paul
+    - Paul
     lines:
-    - Is there something under this rug?
+    - Wait, is there something under this rug?
     - ( flips rug )
-    - "And.. there\u2019s nothing here.."
+    - Oh #$%&!
+    - A dead massive cockroach there out of all places..
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &603284765
@@ -40224,11 +40247,13 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - 
     lines:
-    - "Folded white towels. They\u2019re still dry, I guess the owner hasn\u2019t
-      showered for a day or two."
+    - A set of folded towels. They're pretty dry..
+    - Did the case really got the best of them to the point of no showers?
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
 --- !u!114 &611336432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40442,7 +40467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &656324575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40557,7 +40582,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 520054345}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
         m_MethodName: ConnectorButton
         m_Mode: 3
@@ -40689,7 +40714,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 520054345}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
         m_MethodName: TheBlood
         m_Mode: 1
@@ -41419,9 +41444,12 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - Paul
     lines:
-    - A brand new toilet. Seems like the previous one gave the owner a rough time.
+    - This toilet's not working.
+    - But at least it's clean though..
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &722873049
 MonoBehaviour:
@@ -42627,15 +42655,18 @@ MonoBehaviour:
     names:
     - Paul
     - Paul
+    - 
     - Paul
     lines:
     - This one's empty..
-    - Wait a second, there's another piece of paper here.
+    - Wait a minute..
+    - A piece of paper lies in the very edge of the cabinet drawer.
     - A very old children's drawing? This looks.. oddly familiar, but I'm not sure
       how..
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &807263728
 MonoBehaviour:
@@ -43165,10 +43196,12 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - Paul
     lines:
-    - "Folded white towels. They\u2019re still dry, I guess the owner hasn\u2019t
-      showered for a day or two."
+    - More bath towels, but this top one's wet.
+    - There's some blood residue on the bottom..
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &840599205
 MonoBehaviour:
@@ -45318,11 +45351,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Paul
+    - 
+    - 
     lines:
-    - A family painting, but some part of it is ripped off.
+    - A family painting, but a section of it has been ripped off.
+    - No matter how hard you tried to make something out of it, yu just can't.
     images:
-    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
 --- !u!114 &878060671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45722,9 +45758,12 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - Paul
     lines:
-    - Hmm, old coats and polo shirts. How old fashioned is this civilian?
+    - A bunch of suits, regular clothes, and even some women's attire..
+    - I'm hoping this isn't their blood..
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &898026393
 MonoBehaviour:
@@ -46587,10 +46626,13 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - 
     lines:
-    - More collection of books again, but more on popular crime cases.
+    - A collection of books around popular crime cases.
+    - Definitely my cup of tea.
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
 --- !u!114 &930751086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51927,7 +51969,7 @@ Transform:
   m_GameObject: {fileID: 1118587413}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.14, y: 0.19, z: 0}
+  m_LocalPosition: {x: 4.14, y: -0.135, z: 0}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -52021,17 +52063,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0019727647, y: -0.16030267}
+  m_Offset: {x: -0.0019727647, y: -0.10331335}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: -0.49899188}
     oldSize: {x: 0.23, y: 0.29}
     newSize: {x: 0.23, y: 0.29}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22128561, y: 0.6067241}
+  m_Size: {x: 0.22128561, y: 0.15139593}
   m_EdgeRadius: 0
 --- !u!114 &1118587418
 MonoBehaviour:
@@ -52049,7 +52091,7 @@ MonoBehaviour:
     names:
     - Paul
     lines:
-    - Still no electricity. Surely glad there's still some shed of light.
+    - It's lights out..
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1118587419
@@ -53245,7 +53287,7 @@ Transform:
   m_GameObject: {fileID: 1159420703}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.04, y: -7.41, z: 0}
+  m_LocalPosition: {x: 10.3, y: 31, z: 0}
   m_LocalScale: {x: 1.35, y: 1.2912749, z: 1.2912749}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -54360,9 +54402,12 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - Paul
     lines:
-    - Nothing special on television at the moment.
+    - The television's not working.
+    - But it's probably another criminal case right about now.
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1248543740
 MonoBehaviour:
@@ -55456,7 +55501,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 520054345}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
         m_MethodName: ConnectorButton
         m_Mode: 3
@@ -55665,9 +55710,12 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - Paul
     lines:
-    - "Delicious food lies within it. But nah, I\u2019m not hungry."
+    - A bunch of frozen meals packs.
+    - I'm stuffed enough. Maybe I'll have some chicken curry tonight.
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1360210733
 MonoBehaviour:
@@ -56387,7 +56435,7 @@ Transform:
   m_GameObject: {fileID: 1375666444}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 99.4672, y: 3.0785, z: 0}
+  m_LocalPosition: {x: 99.4672, y: 3.95, z: 0}
   m_LocalScale: {x: 0.1191578, y: 2.836705, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56466,14 +56514,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
+    - Paul
+    - Paul
+    - Paul
+    - 
+    - Paul
     lines:
-    - Is this.. really blood?
-    - "Yet, there\u2019s no body or corpse lying around the scene. I should check
-      around."
+    - Oh #$%&..
+    - This can't be good.
+    - From the looks of it, it may be less than a day old..
+    - From what was planned to be a secret meeting, turned out to be a crime scene..
+    - I should look around. Better be warry too..
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1375666449
 MonoBehaviour:
@@ -57338,7 +57394,7 @@ MonoBehaviour:
     names:
     - Paul
     lines:
-    - "A bathroom sink. There\u2019s still fresh water coming out of it."
+    - It still works.
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1463943599
@@ -58285,6 +58341,220 @@ Transform:
   m_Children: []
   m_Father: {fileID: 352924833}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1542674526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1542674527}
+  - component: {fileID: 1542674532}
+  - component: {fileID: 1542674531}
+  - component: {fileID: 1542674530}
+  - component: {fileID: 1542674529}
+  - component: {fileID: 1542674528}
+  m_Layer: 0
+  m_Name: bedroom mess
+  m_TagString: basement
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1542674527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542674526}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 52.3122, y: 4.5337, z: 0}
+  m_LocalScale: {x: 8.721948, y: 0.18311588, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1965398122}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1542674528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542674526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69386bbf259070458282b0daae99b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - 
+    - Paul
+    - Paul
+    - Paul
+    - 
+    - 
+    - 
+    - Paul
+    - Paul
+    lines:
+    - A large bloody mess remains to stain the floors of the bedroom..
+    - ...
+    - This is way worse than I imagined..
+    - Am I witnessing.. the aftermath of a massacre..?
+    - Countless possibilties begin to clog your inner thoughts as your feet approaches
+      more of these red spots..
+    - Are you stepping into the house of a murderer? Have you gone into a death trap
+      all this time? Or rather..
+    - Is there more to this than your typical straightforward murder case..?
+    - Hmm.. but I have yet to witness a body or remains of at least what used to
+      be.. human..
+    - There's gotta be more than what meets the eye..
+    images:
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+--- !u!114 &1542674529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542674526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91609c912b55a364caf83fc58fc7836f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_manager: {fileID: 1305199792}
+--- !u!114 &1542674530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542674526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ed2339491ba224e96c6c44a57e8105, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_box: {fileID: 2137740934}
+  name_text: {fileID: 2108751371}
+  dialogue_text: {fileID: 861758120}
+  npc_image: {fileID: 1288293755}
+  text_speed: 0.04
+  dialoguebox_on: 0
+  isplaying: 0
+--- !u!61 &1542674531
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542674526}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!212 &1542674532
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542674526}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1545976965
 GameObject:
   m_ObjectHideFlags: 0
@@ -58935,7 +59205,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 520054345}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
         m_MethodName: TheFingerStamp
         m_Mode: 1
@@ -59198,7 +59468,7 @@ MonoBehaviour:
     names:
     - Paul
     lines:
-    - "A fairly old sink. There\u2019s still fresh water coming out of it."
+    - A fairly old sink. It still works properly though.
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!61 &1617600694
@@ -59495,8 +59765,8 @@ Transform:
   m_GameObject: {fileID: 1640904244}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 11.0154, y: 26.7369, z: 0}
-  m_LocalScale: {x: 0.25002387, y: 1.9563879, z: 1}
+  m_LocalPosition: {x: 12.0154, y: 26.7369, z: 0}
+  m_LocalScale: {x: 0.25002387, y: 11.956033, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1965398122}
@@ -59515,9 +59785,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
+    - Paul
     lines:
-    - What is this place? I better look around.
+    - What is this place.. ?
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1640904247
@@ -59977,7 +60247,7 @@ MonoBehaviour:
     - Paul
     lines:
     - A lot of news related to the government & robot advancements.
-    - Well Ihope these "AI taking over shenanigans" ain't real..
+    - Well I hope these "AI taking over" shenanigans are never coming true..
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
@@ -60163,9 +60433,12 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - Paul
     lines:
-    - Hmm, old coats and polo shirts. How old fashioned is this civilian?
+    - A bunch of old coats and polo shirts.
+    - They seem really old fashioned for my taste.
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1677287475
 MonoBehaviour:
@@ -60757,12 +61030,26 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - 
+    - Pinned Note
+    - Pinned Note
+    - Pinned Note
     - Paul
     lines:
-    - A pretty old computer model. There seems to be a quote attached in the background.
-    - "\u201CLight will show the way\u201D. Does this mean anything?"
+    - A pretty old computer model, even a bit too old to work at this current year
+      of age. I'm surprised it's still working.
+    - A digital sticky note is pinned on the right bottom of the screen.
+    - '"When the lights remains to linger, the small bulb also proceeds to shine."'
+    - '"When the lights only flicker, the small bulb can only wish to be divine."'
+    - '"When the lights flicker quicker, they wait for the next group of small bulbs
+      to follow the sign."'
+    - Man.. why riddles at a time like this..
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1708302415
 MonoBehaviour:
@@ -60829,7 +61116,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.048980996}
+  m_Offset: {x: 0, y: 0.04460807}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -60839,7 +61126,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.96875, y: 0.917663}
+  m_Size: {x: 0.96875, y: 0.9264089}
   m_EdgeRadius: 0
 --- !u!1 &1715759805
 GameObject:
@@ -61174,11 +61461,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Pascal
-    - Pascal
-    - Pascal
-    - Pascal
-    - Pascal
+    - Paul
+    - Paul
+    - Paul
+    - Paul
+    - Paul
     lines:
     - ...
     - It's so quiet.. I can even hear the wind outside..
@@ -69282,7 +69569,7 @@ MonoBehaviour:
     names:
     - Paul
     lines:
-    - "A bathroom sink. There\u2019s still fresh water coming out of it."
+    - Clean as it may seem, there's still some minor blood residue in the sink..
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1759922077
@@ -69467,10 +69754,12 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - Paul
     lines:
-    - A bunch of paperwork related to an individual named Mr. Sunny Sullivan. Ain't
-      this man our Minister of Defence?
+    - A bunch of paperwork related to an individual named Mr. Sunny Sullivan.
+    - The Ministry of Defence? Why him?
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1761332065
 MonoBehaviour:
@@ -69998,7 +70287,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0042915344, y: 0.36773002}
+  m_Offset: {x: 0.0042915344, y: 0.22332513}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -70008,7 +70297,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.5876884, y: 1.3361261}
+  m_Size: {x: 1.5876884, y: 1.6249359}
   m_EdgeRadius: 0
 --- !u!114 &1847556028
 MonoBehaviour:
@@ -70025,10 +70314,13 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - 
     lines:
-    - I'm not tired. Not yet.
+    - If it weren't for the blood.. this bed would've been comfy..
+    - I'm not gonna be convinced to sleep..
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
 --- !u!114 &1847556029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70111,9 +70403,12 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - Paul
     lines:
-    - Some shower soap and a sponge. These products look pretty cheap.
+    - A bunch of bath products. I don't recognize these brands though..
+    - Must be ones from a thrift store.
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1864908120
 MonoBehaviour:
@@ -70429,10 +70724,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
+    - 
+    - Paul
+    - Paul
     - Paul
     lines:
-    - More collection of books again, but more on past murder cases.
+    - A bookshelf of murder stories (and how to get away with it).
+    - Don't tell me I'm walking in the house of a killer..
+    - But if I'm thinking positively, this has to be related with those unsolved
+      murder cases, especially that one where the office assistant was arrested.
+    - Even I did't buy their story. The evidence didn't add up.
     images:
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1876565410
 MonoBehaviour:
@@ -70823,9 +71128,12 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - Paul
     lines:
-    - Some shower soap and a sponge. These products look pretty cheap.
+    - Some off--brand shower soap and a sponge.
+    - Now I'm getting even more convinced of their economical lifestyle..
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1889786015
 MonoBehaviour:
@@ -71958,9 +72266,9 @@ MonoBehaviour:
     - Paul
     - Paul
     lines:
-    - More books and old newspapers.
+    - More books and old news articles.
     - They seem to circulate around heated controversies surrounding the government
-      and politicians.
+      authorities.
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
@@ -72224,6 +72532,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1640904245}
+  - {fileID: 1542674527}
   - {fileID: 1742061058}
   - {fileID: 1375666445}
   - {fileID: 603284762}
@@ -72280,9 +72589,12 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - Paul
     lines:
-    - "Delicious food lies within it. But nah, I\u2019m not hungry."
+    - A bunch of vegetables and small handful of fruits.
+    - This brand doesn't seem expensive though..
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &1967488903
 MonoBehaviour:
@@ -73275,9 +73587,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 520054345}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
-        m_MethodName: TheSymbols
+        m_MethodName: TheSymbol
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -73907,9 +74219,12 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - Paul
     lines:
-    - "A pile of old books. There\u2019s something under it."
+    - A pile of old, used books.
+    - Wait, there's something under it..
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &2091665665
 MonoBehaviour:
@@ -74255,9 +74570,15 @@ MonoBehaviour:
   dialogue:
     names:
     - Paul
+    - 
+    - Paul
     lines:
-    - A brand new toilet. Seems like the previous one gave the owner a rough time.
+    - This toilet's pretty clean.
+    - Though leftover waste still lingers inside..
+    - They really need have a plunger..
     images:
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
 --- !u!114 &2104602327
 MonoBehaviour:
@@ -75870,6 +76191,34 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 861758120}
     - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: dialogue.lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: dialogue.names.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: dialogue.images.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[0]'
+      value: Bloody heck..
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[1]'
+      value: A severed finger? The blood is fresh as well..
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[2]'
+      value: Who did this belong to?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[3]'
+      value: Better hope it isn't the person behind the email.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
       propertyPath: 'dialogue.names.Array.data[0]'
       value: Paul
       objectReference: {fileID: 0}
@@ -75878,11 +76227,27 @@ PrefabInstance:
       value: Paul
       objectReference: {fileID: 0}
     - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: 'dialogue.names.Array.data[2]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: 'dialogue.names.Array.data[3]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
       propertyPath: 'dialogue.images.Array.data[0]'
       value: 
       objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
       propertyPath: 'dialogue.images.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: 'dialogue.images.Array.data[2]'
+      value: 
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - target: {fileID: 8808807995144741184, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: 'dialogue.images.Array.data[3]'
       value: 
       objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 5031020531810919568, guid: 8dd0ed653471a9649b89d5bead49de91, type: 3}
@@ -76038,6 +76403,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 861758120}
     - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: dialogue.lines.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: dialogue.names.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: dialogue.images.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[0]'
+      value: A pocket knife with a symbol engraved on the handle. This must be the
+        murder weapon.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[1]'
+      value: But something so small causing this much of a blood bath? That can't
+        be..
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[2]'
+      value: Someone's must've left it behind after one heck of a fight..
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
       propertyPath: 'dialogue.names.Array.data[0]'
       value: Paul
       objectReference: {fileID: 0}
@@ -76046,11 +76437,19 @@ PrefabInstance:
       value: Paul
       objectReference: {fileID: 0}
     - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: 'dialogue.names.Array.data[2]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
       propertyPath: 'dialogue.images.Array.data[0]'
       value: 
       objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
       propertyPath: 'dialogue.images.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: 'dialogue.images.Array.data[2]'
       value: 
       objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 7082376294307570876, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
@@ -76090,6 +76489,36 @@ PrefabInstance:
     m_TransformParent: {fileID: 1371127953}
     m_Modifications:
     - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: dialogue.lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: dialogue.names.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: dialogue.images.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[0]'
+      value: An old cellphone model. I haven't seen this model ever since I was like..
+        five.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[1]'
+      value: Old models like this can definitely go under the radar. Must've been
+        used to stay hidden for a long time.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[2]'
+      value: Their batteries are a bit loose too.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[3]'
+      value: Perhaps these batteries can be more of use elsehwere..
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
       propertyPath: 'dialogue.names.Array.data[0]'
       value: Paul
       objectReference: {fileID: 0}
@@ -76100,6 +76529,10 @@ PrefabInstance:
     - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
       propertyPath: 'dialogue.names.Array.data[2]'
       value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: 'dialogue.names.Array.data[3]'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
       propertyPath: 'dialogue.images.Array.data[0]'
@@ -76113,6 +76546,10 @@ PrefabInstance:
       propertyPath: 'dialogue.images.Array.data[2]'
       value: 
       objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - target: {fileID: 2133591189662482030, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: 'dialogue.images.Array.data[3]'
+      value: 
+      objectReference: {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     - target: {fileID: 2952979398709095554, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
       propertyPath: notif_text
       value: 
@@ -76374,6 +76811,34 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: dialogue.lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: dialogue.names.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: dialogue.images.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[0]'
+      value: ( opens drawer )
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[1]'
+      value: A journalism certificate handed to a man called Buck Channing..
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[2]'
+      value: WAIT.. isn't this the wanted man from TV ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: 'dialogue.lines.Array.data[3]'
+      value: What in the bloody heck is going on here?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
       propertyPath: 'dialogue.names.Array.data[0]'
       value: Paul
       objectReference: {fileID: 0}
@@ -76386,15 +76851,23 @@ PrefabInstance:
       value: Paul
       objectReference: {fileID: 0}
     - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: 'dialogue.names.Array.data[3]'
+      value: Paul
+      objectReference: {fileID: 0}
+    - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
       propertyPath: 'dialogue.images.Array.data[0]'
       value: 
-      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+      objectReference: {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
       propertyPath: 'dialogue.images.Array.data[1]'
       value: 
       objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
       propertyPath: 'dialogue.images.Array.data[2]'
+      value: 
+      objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: 'dialogue.images.Array.data[3]'
       value: 
       objectReference: {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - target: {fileID: 6957568401371324726, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}

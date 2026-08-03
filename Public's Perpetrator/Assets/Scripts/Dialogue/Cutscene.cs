@@ -22,6 +22,7 @@ public class Cutscene : MonoBehaviour
     public Image character_image;
 
     public Animator transition_fade;
+    public Animator BG_transition_fade;
     public SceneAudioManager scene_audio;
 
     public float text_speed = 0.04f;
@@ -31,6 +32,8 @@ public class Cutscene : MonoBehaviour
     public float scenes = 0f;
 
 
+    // =============================== //
+    // General Cutscene Reel           //
     // =============================== //
 
 
@@ -67,6 +70,7 @@ public class Cutscene : MonoBehaviour
     public void StartCutscene(Cutscenes cutscene)
     {
         Debug.Log("Begin cutscene");
+        transition_fade.Play("EndFade");
         if (cutscenebox_on) return;
         cutscene_box.SetActive(true);
         cutscenebox_on = true;
@@ -106,32 +110,47 @@ public class Cutscene : MonoBehaviour
         Debug.Log("Next scene playing");    // keep count of dialogues
         scenes++;
 
-        if (scenes == 5)
+        if (scenes == 6)                    // before switching to apartement
         {
-            scene_audio.ChangeSceneMusic(scene_audio.BGM_relaxed);       
+            scene_audio.FadeOutSceneMusic();
         }
 
-        if (scenes == 16)
+        if (scenes == 7)                    // change scene to inside apartement
         {
-            scene_audio.StopSceneMusic();
+            scene_audio.FadeInSceneMusic(scene_audio.BGM_relaxed);
         }
 
-        if (scenes == 17)
+        if (scenes == 22)                   // change to silence when recieving email
+        {
+            scene_audio.FadeOutSceneMusic();
+        }
+
+        if (scenes == 24)                   // recieve email
         {
             scene_audio.PlaySceneSFX(scene_audio.SFX_notification);
         }
 
-        if (scenes == 19)
+        if (scenes == 26)                   // click on email
         {
             scene_audio.PlaySceneSFX(scene_audio.SFX_click);
         }
 
-        if (scenes == 27)
+        if (scenes == 37)                   // take keys
         {
-            scene_audio.ChangeSceneMusic(scene_audio.BGM_nighttime);
+            scene_audio.PlaySceneSFX(scene_audio.SFX_carkeys);
         }
 
-        if (scenes == 29 || scenes == 30)
+        if (scenes == 42)                   // arrive at spot
+        {
+            scene_audio.FadeInSceneMusic(scene_audio.BGM_nighttime);
+        }
+
+        if (scenes == 43)                   // close car door
+        {
+            scene_audio.PlaySceneSFX(scene_audio.SFX_closecardoor);
+        }
+
+        if (scenes == 45 || scenes == 48)   // door knocking
         {
             scene_audio.PlaySceneSFX(scene_audio.SFX_doorknock);
         }
@@ -154,9 +173,14 @@ public class Cutscene : MonoBehaviour
         BG_image.sprite = background;
         character_image.sprite = character;
 
-        StopAllCoroutines();
+        scene_audio.PlayTypeSFX(scene_audio.SFX_type_blip);
         StartCoroutine(TypeLines(line));
     }
+
+
+    // =============================== //
+    // Cutscene Customization          //
+    // =============================== //
 
 
     private IEnumerator TypeLines(string sentence)
@@ -169,9 +193,15 @@ public class Cutscene : MonoBehaviour
             yield return new WaitForSeconds(text_speed);
         }
 
+        scene_audio.StopTypeSFX();
         cutscene_on = false;
         isplaying = 0;
     }
+
+
+    // =============================== //
+    // Proceeding to the Game          //
+    // =============================== //
 
 
     private IEnumerator NextPart()
@@ -184,6 +214,7 @@ public class Cutscene : MonoBehaviour
         name_text.text = "";
         character_image.enabled = false;
         scene_audio.PlaySceneSFX(scene_audio.SFX_opendoor);
+        scene_audio.FadeOutSceneMusic();
 
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     public Animator transition_fade;
+    public SceneAudioManager menu_audio;
 
 
     // =============================== //
@@ -15,30 +16,47 @@ public class MainMenu : MonoBehaviour
 
     public void Start() 
     {
+        if(tag == "Main Menu")
+        {
+            menu_audio.ChangeSceneMusic(menu_audio.BGM_menu);
+        }
+
+        if (tag == "Chapters")
+        {
+            menu_audio.StopSceneMusic();
+            menu_audio.ChangeSceneMusic(menu_audio.BGM_chapters);
+        }
+
         transition_fade.Play("EndFade");
     }
     
 
     public void OpenMenu()  
     {
+        menu_audio.StopSceneMusic();
+        menu_audio.PlaySceneSFX(menu_audio.SFX_click);
         StartCoroutine(PreviousPart());
     }
 
 
     public void ChooseChapter()
     {
+        menu_audio.StopSceneMusic();
+        menu_audio.PlaySceneSFX(menu_audio.SFX_click);
         StartCoroutine(NextPart());
     }
 
 
     public void PlayGame()
     {
+        menu_audio.PlaySceneSFX(menu_audio.SFX_click);
         StartCoroutine(NextPart());
     }
 
 
     public void ExitGame()
     {
+        menu_audio.PlaySceneSFX(menu_audio.SFX_click);
         Application.Quit();
     }
 
@@ -50,7 +68,6 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         transition_fade.Play("EndFade");
-        Debug.Log("faded");
     }
 
 
@@ -61,6 +78,5 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         transition_fade.Play("EndFade");
-        Debug.Log("faded");
     }
 }

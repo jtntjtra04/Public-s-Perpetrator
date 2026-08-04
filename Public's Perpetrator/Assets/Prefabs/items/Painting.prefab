@@ -101,7 +101,6 @@ GameObject:
   - component: {fileID: 8307120959495877836}
   - component: {fileID: 7749622299156316823}
   - component: {fileID: 7275847389297479417}
-  - component: {fileID: 3381905092129865802}
   m_Layer: 0
   m_Name: Painting
   m_TagString: Untagged
@@ -247,6 +246,12 @@ MonoBehaviour:
     images:
     - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
     - {fileID: -9037728103166714318, guid: 68d333ed499c20b449bc0f8569b30a8f, type: 3}
+    choice:
+      hasChoice: 0
+      option_1_text: 
+      option_2_text: 
+      option_1_dialogue: {fileID: 0}
+      option_2_dialogue: {fileID: 0}
 --- !u!114 &8307120959495877836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,22 +294,3 @@ MonoBehaviour:
   notification_box: {fileID: 0}
   notif_text: {fileID: 0}
   notifbox_active: 0
---- !u!114 &3381905092129865802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8980485964331215533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10ed2339491ba224e96c6c44a57e8105, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue_box: {fileID: 0}
-  name_text: {fileID: 0}
-  dialogue_text: {fileID: 0}
-  npc_image: {fileID: 0}
-  text_speed: 0.04
-  dialoguebox_on: 0
-  isplaying: 0

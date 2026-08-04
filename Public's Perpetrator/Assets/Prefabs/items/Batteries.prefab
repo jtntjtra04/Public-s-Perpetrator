@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 5836118165462188957}
   - component: {fileID: 7850039816929077751}
   - component: {fileID: 7498497787011492470}
-  - component: {fileID: 4956240096872543780}
-  - component: {fileID: 7112473474923165876}
   - component: {fileID: 2133591189662482030}
+  - component: {fileID: 7112473474923165876}
   - component: {fileID: 5346909851273071644}
   - component: {fileID: 2952979398709095554}
   m_Layer: 0
@@ -138,38 +137,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.92781526, y: 0.13384128}
   m_EdgeRadius: 0
---- !u!114 &4956240096872543780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3108620024080106269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10ed2339491ba224e96c6c44a57e8105, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue_box: {fileID: 0}
-  name_text: {fileID: 0}
-  dialogue_text: {fileID: 0}
-  npc_image: {fileID: 0}
-  text_speed: 0.04
-  dialoguebox_on: 0
-  isplaying: 0
---- !u!114 &7112473474923165876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3108620024080106269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91609c912b55a364caf83fc58fc7836f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue_manager: {fileID: 0}
 --- !u!114 &2133591189662482030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +163,25 @@ MonoBehaviour:
     - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
     - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
     - {fileID: 6640140899498026023, guid: 238babc6524133e4aad9519fbbb942a5, type: 3}
+    choice:
+      hasChoice: 0
+      option_1_text: 
+      option_2_text: 
+      option_1_dialogue: {fileID: 0}
+      option_2_dialogue: {fileID: 0}
+--- !u!114 &7112473474923165876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3108620024080106269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91609c912b55a364caf83fc58fc7836f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_manager: {fileID: 0}
 --- !u!114 &5346909851273071644
 MonoBehaviour:
   m_ObjectHideFlags: 0

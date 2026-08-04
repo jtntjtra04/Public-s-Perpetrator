@@ -35,9 +35,13 @@ public class InvestigationBoard : MonoBehaviour
     public Text connection_text;
     public Text connection_shade;
 
+    [Header("After the Puzzle")]
     public Animator transition_anim;                // change of scene after secret link puzzle is solved
+    public DialogueTrigger dialogue_after;
 
 
+    // =============================== //
+    // Puzzle Updates                  //
     // =============================== //
 
 
@@ -86,6 +90,11 @@ public class InvestigationBoard : MonoBehaviour
     }
 
 
+    // =============================== //
+    // When Interacted With            //
+    // =============================== //
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Touched the board");
@@ -103,6 +112,11 @@ public class InvestigationBoard : MonoBehaviour
             can_open_board = false;
         }
     }
+
+
+    // =============================== //
+    // Puzzle Adjustments              //
+    // =============================== //
 
 
     public void ConnectorButton(int connector)
@@ -185,6 +199,11 @@ public class InvestigationBoard : MonoBehaviour
     }
 
 
+    // =============================== //
+    // When the Puzzle is Solved       //
+    // =============================== //
+
+
     private void ConnectorSolved(int connector)     // if answer is correct
     {
         Debug.Log("Change Connector to Purple");
@@ -206,10 +225,12 @@ public class InvestigationBoard : MonoBehaviour
         secret_puzzle_solved = true;
         yield return new WaitForSeconds(3f);
         CloseBoard();
-        transition_anim.Play("StartFade");
-        yield return new WaitForSeconds(4f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   // switches scenes when the puzzle is solved
-        transition_anim.Play("EndFade");
+        dialogue_after.TriggerDialogue();
+
+        // transition_anim.Play("StartFade");
+        // yield return new WaitForSeconds(4f);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   // switches scenes when the puzzle is solved
+        // transition_anim.Play("EndFade");
     }
 
 

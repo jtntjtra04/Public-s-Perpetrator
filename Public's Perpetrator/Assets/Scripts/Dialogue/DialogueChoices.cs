@@ -17,6 +17,11 @@ public class DialogueChoice
     public string option_2_text;
 
 
+    [Header("Button Text")]
+    public string option_1_desc;
+    public string option_2_desc;
+
+
     [Header("Next Dialogue")]
     public DialogueTrigger option_1_dialogue;
     public DialogueTrigger option_2_dialogue;

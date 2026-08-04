@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+using static Unity.VisualScripting.Member;
 
 
 public class DialogueManager : MonoBehaviour
@@ -10,6 +11,9 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> lines;                // queue -> change per dialogue
     private Queue<string> names;
     private Queue<Sprite> images;
+
+    [Header("Call to Dialogue Manager")]
+    private GameObject current_source;
 
     [Header("UI")]
     public GameObject dialogue_box;             // UI
@@ -29,6 +33,8 @@ public class DialogueManager : MonoBehaviour
     public Button option_2_button;
     public TextMeshProUGUI option_1_text;
     public TextMeshProUGUI option_2_text;
+    public TextMeshProUGUI option_1_desc;
+    public TextMeshProUGUI option_2_desc;
     private Dialogue current_dialogue;
 
     [Header("Player Detection")]
@@ -67,9 +73,10 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, GameObject source)
     {
         current_dialogue = dialogue;
+        current_source = source;
 
         isplaying = 1;                      // in regards to faster text typing
         if (dialoguebox_on) return;
@@ -196,14 +203,13 @@ public class DialogueManager : MonoBehaviour
         dialoguebox_on = false;
         player_movement.EnableMovement();
 
-        NotificationTrigger trigger_notif = GetComponent<NotificationTrigger>();
-
+        NotificationTrigger trigger_notif = current_source.GetComponent<NotificationTrigger>();
         if (trigger_notif != null)
         {
             trigger_notif.ShowNotification();
         }
 
-        HiddenObject phone = GetComponent<HiddenObject>();          // requirement to interact with phone
+        HiddenObject phone = current_source.GetComponent<HiddenObject>();   // requirement to interact with phone
         if (phone != null)
         {
             phone.RevealObject();

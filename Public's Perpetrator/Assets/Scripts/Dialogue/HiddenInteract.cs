@@ -14,7 +14,7 @@ public class HiddenInteract : MonoBehaviour
     private void Start()
     {
         dialogue_trigger = GetComponent<DialogueTrigger>();
-        dialogue_manager = GetComponent<DialogueManager>();
+        dialogue_manager = FindAnyObjectByType<DialogueManager>();
         object_status = GetComponent<HighlightObject>();
     }
 

@@ -2,12 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
+    private DialogueManager dialogue_Manager;
+
+
+    private void Awake()
+    {
+        dialogue_Manager = FindAnyObjectByType<DialogueManager>();
+    }
+
 
     public void TriggerDialogue()
     {
-        GetComponent<DialogueManager>().StartDialogue(dialogue);
+        dialogue_Manager.StartDialogue(dialogue, gameObject);
     }
 }

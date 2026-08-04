@@ -202,10 +202,10 @@ TextureImporter:
       name: close button
       rect:
         serializedVersion: 2
-        x: 335
-        y: 623
-        width: 49
-        height: 50
+        x: 336
+        y: 624
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,9 +245,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 623
-        width: 49
-        height: 50
+        y: 624
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,6 +303,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: skip button
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 624
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb46e98f49460f488bf5f25d1c0c07a
+      internalID: 2053362951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skip button pressed
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 672
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525565e672b857c4a9bafaa4abe6b72f
+      internalID: -796219458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -322,6 +364,8 @@ TextureImporter:
       settings page: -4454133609431765916
       settings slider: 5522462000872384587
       settings slider bar: -3358933203163112000
+      skip button: 2053362951
+      skip button pressed: -796219458
       volume button: -3930151699701993549
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

@@ -67,7 +67,6 @@ public class AudioManager : MonoBehaviour
         float destroyDelay = (clip != null && clip.length > 0) ? Mathf.Min(clip.length, strictCutoff) : strictCutoff;       // strict deletion of clones
 
         Destroy(tempGO, destroyDelay);
-        Destroy(tempGO, clip.length);
     }
 
 

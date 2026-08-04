@@ -8,6 +8,6 @@ public class CutsceneTrigger : MonoBehaviour
 
     public void TriggerCutscene()
     {
-        GetComponent<Cutscene>().StartCutscene(cutscene);
+        GetComponent<CutsceneManager>().StartCutscene(cutscene);
     }
 }

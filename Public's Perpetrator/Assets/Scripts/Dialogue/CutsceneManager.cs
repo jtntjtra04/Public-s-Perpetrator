@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 
 
-public class Cutscene : MonoBehaviour
+public class CutsceneManager : MonoBehaviour
 {
     [Header("Cutscene components")]
     private Queue<string> lines_queue;
@@ -22,14 +22,15 @@ public class Cutscene : MonoBehaviour
     public Image character_image;
 
     public Animator transition_fade;
-    public Animator BG_transition_fade;
+    public Animator transition_character;
     public SceneAudioManager scene_audio;
 
     public float text_speed = 0.04f;
     private bool cutscene_on = false;
     public bool cutscenebox_on = false;
     public float isplaying = 0f;
-    public float scenes = 0f;
+    public int scenes = 0;
+    private bool skipped = false;
 
 
     // =============================== //
@@ -63,7 +64,7 @@ public class Cutscene : MonoBehaviour
                 text_speed = 0f;
                 isplaying = 0;
             }
-        }
+        } 
     }
 
 
@@ -110,55 +111,13 @@ public class Cutscene : MonoBehaviour
         Debug.Log("Next scene playing");    // keep count of dialogues
         scenes++;
 
-        if (scenes == 6)                    // before switching to apartement
-        {
-            scene_audio.FadeOutSceneMusic();
-        }
-
-        if (scenes == 7)                    // change scene to inside apartement
-        {
-            scene_audio.FadeInSceneMusic(scene_audio.BGM_relaxed);
-        }
-
-        if (scenes == 22)                   // change to silence when recieving email
-        {
-            scene_audio.FadeOutSceneMusic();
-        }
-
-        if (scenes == 24)                   // recieve email
-        {
-            scene_audio.PlaySceneSFX(scene_audio.SFX_notification);
-        }
-
-        if (scenes == 26)                   // click on email
-        {
-            scene_audio.PlaySceneSFX(scene_audio.SFX_click);
-        }
-
-        if (scenes == 37)                   // take keys
-        {
-            scene_audio.PlaySceneSFX(scene_audio.SFX_carkeys);
-        }
-
-        if (scenes == 42)                   // arrive at spot
-        {
-            scene_audio.FadeInSceneMusic(scene_audio.BGM_nighttime);
-        }
-
-        if (scenes == 43)                   // close car door
-        {
-            scene_audio.PlaySceneSFX(scene_audio.SFX_closecardoor);
-        }
-
-        if (scenes == 45 || scenes == 48)   // door knocking
-        {
-            scene_audio.PlaySceneSFX(scene_audio.SFX_doorknock);
-        }
+        HandleSceneEvents(scenes);
 
         text_speed = 0.02f;
 
         if (lines_queue.Count == 0)
         {
+            scene_audio.PlaySceneSFX(scene_audio.SFX_opendoor);
             EndCutscene();
             return;
         }
@@ -170,11 +129,54 @@ public class Cutscene : MonoBehaviour
 
         cutscene_on = true;
         name_text.text = name;
-        BG_image.sprite = background;
-        character_image.sprite = character;
-
+        HandleSceneFade(scenes, background, character);
         scene_audio.PlayTypeSFX(scene_audio.SFX_type_blip);
         StartCoroutine(TypeLines(line));
+    }
+
+
+    private void HandleSceneFade(int scenes, Sprite background, Sprite character)
+    {
+        switch (scenes)
+        {
+            case 8: StartCoroutine(BGFade(background)); character_image.sprite = character; break;
+            case 10: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+            case 31: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+            case 33: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide out"); break;
+            case 35: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+            case 44: StartCoroutine(BGFade(background)); character_image.sprite = character; break;
+            default: BG_image.sprite = background; character_image.sprite = character; break;
+        }
+    }
+
+
+    private void HandleSceneEvents(int scenes)
+    {
+        switch (scenes)
+        {
+            case 6: scene_audio.FadeOutSceneMusic(); break;
+            case 7: scene_audio.FadeInSceneMusic(scene_audio.BGM_relaxed); break;
+            case 22: scene_audio.FadeOutSceneMusic(); break;
+            case 24: scene_audio.PlaySceneSFX(scene_audio.SFX_notification); break;
+            case 26: scene_audio.PlaySceneSFX(scene_audio.SFX_click); break;
+            case 37: scene_audio.PlaySceneSFX(scene_audio.SFX_carkeys); break;
+            case 42: scene_audio.FadeInSceneMusic(scene_audio.BGM_nighttime); break;
+            case 43: scene_audio.PlaySceneSFX(scene_audio.SFX_closecardoor); break;
+            case 45: scene_audio.PlaySceneSFX(scene_audio.SFX_doorknock); break;
+            case 48: scene_audio.PlaySceneSFX(scene_audio.SFX_doorknock); break;
+        }
+    }
+
+
+    IEnumerator BGFade(Sprite background)
+    {
+        BG_image.CrossFadeAlpha(0f, 0.2f, false);
+
+        yield return new WaitForSeconds(0.3f);
+
+        BG_image.sprite = background;
+
+        BG_image.CrossFadeAlpha(1f, 0.2f, false);
     }
 
 
@@ -204,6 +206,28 @@ public class Cutscene : MonoBehaviour
     // =============================== //
 
 
+    public void SkipCutscene()
+    {
+        if (skipped) return;
+        skipped = true;
+
+        StopAllCoroutines();
+
+        transition_character.Rebind();
+        transition_character.Update(0f);
+
+        cutscene_on = false;
+        cutscenebox_on = false;
+
+        names_queue.Clear();
+        lines_queue.Clear();
+        background_queue.Clear();
+        character_queue.Clear();
+
+        EndCutscene();
+    }
+
+
     private IEnumerator NextPart()
     {
         transition_fade.enabled = true;
@@ -213,7 +237,6 @@ public class Cutscene : MonoBehaviour
         cutscene_text.text = "";
         name_text.text = "";
         character_image.enabled = false;
-        scene_audio.PlaySceneSFX(scene_audio.SFX_opendoor);
         scene_audio.FadeOutSceneMusic();
 
         yield return new WaitForSeconds(1f);

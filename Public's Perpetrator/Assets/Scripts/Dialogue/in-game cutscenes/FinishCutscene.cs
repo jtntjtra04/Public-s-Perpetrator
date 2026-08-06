@@ -8,6 +8,6 @@ public class EndCutscene : MonoBehaviour
 {
     public void GoToEnding()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Ch 1 Ending");
     }
 }

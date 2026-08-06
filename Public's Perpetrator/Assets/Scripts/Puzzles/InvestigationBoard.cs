@@ -38,6 +38,7 @@ public class InvestigationBoard : MonoBehaviour
     [Header("After the Puzzle")]
     public Animator transition_anim;                // change of scene after secret link puzzle is solved
     public DialogueTrigger dialogue_after;
+    public DialogueManager dialogue_manager;
 
 
     // =============================== //
@@ -172,7 +173,7 @@ public class InvestigationBoard : MonoBehaviour
     }
 
 
-    public void TheSymbol()    // correct answer 1
+    public void NoCorrelation()    // correct answer 1 between certificate and knife
     {
         if(curr_connector == 0 && connection_count < 3)
         {
@@ -181,7 +182,7 @@ public class InvestigationBoard : MonoBehaviour
     }
 
 
-    public void TheFingerStamp()    // correct answer 2
+    public void TheFingerStamp()    // correct answer 2 between certificate and finger
     {
         if(curr_connector == 1 && connection_count < 3)
         {
@@ -190,7 +191,7 @@ public class InvestigationBoard : MonoBehaviour
     }
 
 
-    public void TheBlood()    // correct answer 3
+    public void TheBlood()          // correct answer 3 between finger and knife
     {
         if (curr_connector == 2 && connection_count < 3)
         {
@@ -227,10 +228,13 @@ public class InvestigationBoard : MonoBehaviour
         CloseBoard();
         dialogue_after.TriggerDialogue();
 
-        // transition_anim.Play("StartFade");
-        // yield return new WaitForSeconds(4f);
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   // switches scenes when the puzzle is solved
-        // transition_anim.Play("EndFade");
+        DialogueManager dialogue_manager = FindAnyObjectByType<DialogueManager>();
+        yield return new WaitUntil(() => !dialogue_manager.dialoguebox_on);             // wait until dialogue is over
+
+        transition_anim.Play("StartFade");                                              // switches scenes with transition
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        transition_anim.Play("EndFade");
     }
 
 

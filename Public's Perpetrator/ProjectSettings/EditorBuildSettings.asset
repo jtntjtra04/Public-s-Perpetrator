@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Ch 1 Epilogue.unity
+    guid: 4f6be4b9be9710a4db4cdc559bff4d97
+  - enabled: 1
     path: Assets/Scenes/Ch 1 Ending.unity
     guid: de7860250a0cdec47a6002206464b9d7
   m_configObjects: {}

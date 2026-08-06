@@ -232,7 +232,7 @@ public class DialogueManager : MonoBehaviour
         InGameCutsceneDialogue in_game_cutscene = current_source.GetComponent<InGameCutsceneDialogue>();
         if (in_game_cutscene != null)
         {
-            in_game_cutscene.ResumeTimeline();      // timeline or cutscene continues after dialogue plays
+            in_game_cutscene.ResumeTimeline();
         }
     }
 }

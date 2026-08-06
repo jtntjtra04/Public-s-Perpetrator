@@ -4,14 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
-using Unity.VisualScripting;
-
-
-public enum CutsceneType
-{
-    Prologue,
-    Epilogue_ending_1
-}
 
 
 public class CutsceneManager : MonoBehaviour
@@ -22,30 +14,23 @@ public class CutsceneManager : MonoBehaviour
     private Queue<Sprite> background_queue;
     private Queue<Sprite> character_queue;
 
-    [Header("Cutscene component file types")]
+    [Header("Variables")]
     public GameObject cutscene_box;
     public TextMeshProUGUI name_text;
     public TextMeshProUGUI cutscene_text;
     public Image BG_image;
     public Image character_image;
 
-    [Header("Transitions & audio")]
     public Animator transition_fade;
     public Animator transition_character;
     public SceneAudioManager scene_audio;
 
-    [Header("Variables")]
     public float text_speed = 0.04f;
     private bool cutscene_on = false;
     public bool cutscenebox_on = false;
     public float isplaying = 0f;
     public int scenes = 0;
     private bool skipped = false;
-
-    [Header("Cutscene data")]
-    private CutsceneType current_cutscene_type;
-    public Cutscenes prologue;
-    public Cutscenes epilogue_ending1;
 
 
     // =============================== //
@@ -55,26 +40,15 @@ public class CutsceneManager : MonoBehaviour
 
     private void Start()
     {
+        if (SceneManager.GetActiveScene().name == "Ch 1 Prologue")
+        {
+            scene_audio.ChangeSceneMusic(scene_audio.BGM_mysterious);
+        }
+
         lines_queue = new Queue<string>();
         names_queue = new Queue<string>();
         background_queue = new Queue<Sprite>();
         character_queue = new Queue<Sprite>();
-
-        switch (CutsceneLoader.cutscene_ToPlay)
-        {
-            case CutsceneType.Prologue:
-                StartCutscene(prologue);
-                break;
-
-
-            case CutsceneType.Epilogue_ending_1:
-                StartCutscene(epilogue_ending1);
-                break;
-
-            default:
-                Debug.LogError("No cutscene selected!");
-                break;
-        }
     }
 
 
@@ -94,27 +68,13 @@ public class CutsceneManager : MonoBehaviour
                 text_speed = 0f;
                 isplaying = 0;
             }
-        }
+        } 
     }
 
 
     public void StartCutscene(Cutscenes cutscene)
     {
-        scenes = 0;                                                             // reset scene counter everytime a new specific cutscene plays
-        current_cutscene_type = cutscene.cutscene_type;                        
-
-        switch (cutscene.cutscene_type)                                         // beginning music of the cutscene event
-        {
-            case CutsceneType.Prologue:
-                scene_audio.ChangeSceneMusic(scene_audio.BGM_mysterious);
-                break;
-
-            case CutsceneType.Epilogue_ending_1:
-                break;
-        }
-
-        Debug.Log($"Begin cutscene {current_cutscene_type}");
-
+        Debug.Log("Begin cutscene");
         transition_fade.Play("EndFade");
         if (cutscenebox_on) return;
         cutscene_box.SetActive(true);
@@ -155,7 +115,7 @@ public class CutsceneManager : MonoBehaviour
         Debug.Log("Next scene playing");    // keep count of dialogues
         scenes++;
 
-        HandleSceneEvents(current_cutscene_type, scenes);
+        HandleSceneEvents(scenes);
 
         text_speed = 0.02f;
 
@@ -173,55 +133,41 @@ public class CutsceneManager : MonoBehaviour
 
         cutscene_on = true;
         name_text.text = name;
-        HandleSceneFade(current_cutscene_type, scenes, background, character);
+        HandleSceneFade(scenes, background, character);
         scene_audio.PlayTypeSFX(scene_audio.SFX_type_blip);
         StartCoroutine(TypeLines(line));
     }
 
 
-    private void HandleSceneFade(CutsceneType current_cutscene_type, int scenes, Sprite background, Sprite character)
+    private void HandleSceneFade(int scenes, Sprite background, Sprite character)
     {
-        switch (current_cutscene_type)
+        switch (scenes)
         {
-            case CutsceneType.Prologue:
-
-                switch (scenes)
-                {
-                    case 8: StartCoroutine(BGFade(background)); character_image.sprite = character; break;
-                    case 10: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
-                    case 31: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
-                    case 33: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide out"); break;
-                    case 35: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
-                    case 44: StartCoroutine(BGFade(background)); character_image.sprite = character; break;
-                    default: BG_image.sprite = background; character_image.sprite = character; break;
-                }
-
-                break;
+            case 8: StartCoroutine(BGFade(background)); character_image.sprite = character; break;
+            case 10: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+            case 31: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+            case 33: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide out"); break;
+            case 35: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+            case 44: StartCoroutine(BGFade(background)); character_image.sprite = character; break;
+            default: BG_image.sprite = background; character_image.sprite = character; break;
         }
     }
 
 
-    private void HandleSceneEvents(CutsceneType current_cutscene_type, int scenes)
+    private void HandleSceneEvents(int scenes)
     {
-        switch (current_cutscene_type)
+        switch (scenes)
         {
-            case CutsceneType.Prologue:
-
-                switch (scenes)
-                {
-                case 6: scene_audio.FadeOutSceneMusic(); break;
-                case 7: scene_audio.FadeInSceneMusic(scene_audio.BGM_relaxed); break;
-                case 22: scene_audio.FadeOutSceneMusic(); break;
-                case 24: scene_audio.PlaySceneSFX(scene_audio.SFX_notification); break;
-                case 26: scene_audio.PlaySceneSFX(scene_audio.SFX_click); break;
-                case 37: scene_audio.PlaySceneSFX(scene_audio.SFX_carkeys); break;
-                case 42: scene_audio.FadeInSceneMusic(scene_audio.BGM_nighttime); break;
-                case 43: scene_audio.PlaySceneSFX(scene_audio.SFX_closecardoor); break;
-                case 45: scene_audio.PlaySceneSFX(scene_audio.SFX_doorknock); break;
-                case 48: scene_audio.PlaySceneSFX(scene_audio.SFX_doorknock); break;
-                }
-
-                break;
+            case 6: scene_audio.FadeOutSceneMusic(); break;
+            case 7: scene_audio.FadeInSceneMusic(scene_audio.BGM_relaxed); break;
+            case 22: scene_audio.FadeOutSceneMusic(); break;
+            case 24: scene_audio.PlaySceneSFX(scene_audio.SFX_notification); break;
+            case 26: scene_audio.PlaySceneSFX(scene_audio.SFX_click); break;
+            case 37: scene_audio.PlaySceneSFX(scene_audio.SFX_carkeys); break;
+            case 42: scene_audio.FadeInSceneMusic(scene_audio.BGM_nighttime); break;
+            case 43: scene_audio.PlaySceneSFX(scene_audio.SFX_closecardoor); break;
+            case 45: scene_audio.PlaySceneSFX(scene_audio.SFX_doorknock); break;
+            case 48: scene_audio.PlaySceneSFX(scene_audio.SFX_doorknock); break;
         }
     }
 
@@ -298,18 +244,7 @@ public class CutsceneManager : MonoBehaviour
         scene_audio.FadeOutSceneMusic();
 
         yield return new WaitForSeconds(1f);
-        
-        switch (current_cutscene_type)
-        {
-            case CutsceneType.Prologue:
-                SceneManager.LoadScene("Chapter 1");
-                break;
-
-            case CutsceneType.Epilogue_ending_1:
-                SceneManager.LoadScene("Ch 1 Ending");
-                break;
-        }
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         transition_fade.Play("EndFade");
     }
 

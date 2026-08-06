@@ -20,6 +20,6 @@ public class InGameCutsceneDialogue : MonoBehaviour
 
     public void ResumeTimeline()
     {
-        director.Resume();                         // Continue the timeline / cutscene
+        director.Resume();                         // Continue the timeline
     }
 }

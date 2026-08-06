@@ -241,7 +241,8 @@ public class DialogueManager : MonoBehaviour
             in_game_cutscene.ResumeTimeline();
         }
 
-        if (CutsceneLoader.cutscene_ToPlay != CutsceneType.None)                                            // load cutscenes after certain interactions (e.g choice making in Ch 1)
+        DialogueTrigger object_trigger = current_source.GetComponent<DialogueTrigger>();
+        if (object_trigger != null && object_trigger.cutscene_AfterDialogue)
         {
             SceneManager.LoadScene("Ch 1 Cutscenes");
         }

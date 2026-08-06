@@ -939,7 +939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volume_mixer: {fileID: 24100000, guid: 6e0722d7a8a5c814fa75a31fb1de7dd6, type: 2}
-  music_slider: {fileID: 0}
+  music_slider: {fileID: 1052256221}
   sfx_slider: {fileID: 581990806}
 --- !u!114 &581990806
 MonoBehaviour:
@@ -1933,7 +1933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volume_mixer: {fileID: 24100000, guid: 6e0722d7a8a5c814fa75a31fb1de7dd6, type: 2}
   music_slider: {fileID: 1052256221}
-  sfx_slider: {fileID: 0}
+  sfx_slider: {fileID: 581990806}
 --- !u!114 &1052256221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2658,6 +2658,7 @@ MonoBehaviour:
   SFX_click: {fileID: 8300000, guid: 6428f0ff62a450e4c893570ab46f5f42, type: 3}
   SFX_doorknock: {fileID: 8300000, guid: 2d0b3ebe8b896604abfd491d7eeceb6c, type: 3}
   SFX_carkeys: {fileID: 8300000, guid: 2bb453962e47276468f71675f28d9ecc, type: 3}
+  SFX_gunshot: {fileID: 0}
   SFX_closecardoor: {fileID: 8300000, guid: 8062adba43fb72746b7877793e044824, type: 3}
 --- !u!1 &1703330274
 GameObject:

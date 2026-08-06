@@ -7,6 +7,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
     private DialogueManager dialogue_Manager;
+    public bool cutscene_AfterDialogue;        // mainly to trigger a cutscene after SPECIFIC dialogues
 
 
     private void Awake()

@@ -9776,7 +9776,7 @@ MonoBehaviour:
   dialogue_text: {fileID: 34375148}
   npc_image: {fileID: 320091777}
   text_speed: 0.04
-  dialoguebox_on: 0
+  dialoguebox_on: 1
   isplaying: 0
   choice_panel: {fileID: 1261247654}
   option_1_button: {fileID: 72592071}
@@ -16912,6 +16912,8 @@ MonoBehaviour:
       option_2_desc: 
       option_1_dialogue: {fileID: 0}
       option_2_dialogue: {fileID: 0}
+      option_1_is_cutscene: 0
+      option_1_playscene: 0
   dialogueManager: {fileID: 329104503}
   director: {fileID: 1449115847}
 --- !u!1 &773811786
@@ -51305,6 +51307,8 @@ MonoBehaviour:
       option_2_desc: 
       option_1_dialogue: {fileID: 0}
       option_2_dialogue: {fileID: 0}
+      option_1_is_cutscene: 0
+      option_1_playscene: 0
   dialogueManager: {fileID: 329104503}
   director: {fileID: 1449115847}
 --- !u!4 &1711044598

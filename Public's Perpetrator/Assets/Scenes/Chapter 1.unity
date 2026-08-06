@@ -362,6 +362,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &7143044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7148,6 +7149,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &160469543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24088,6 +24090,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &375334218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28525,6 +28528,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &495858431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29030,12 +29034,14 @@ MonoBehaviour:
     names:
     - 
     - Paul
+    - Paul
     lines:
     - A collection of binders and files on past criminal investigations.
     - These were wall past crime cases investigated by the police.
     - But most of them seem to focus on corruption cases.
     images:
     - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
@@ -29047,6 +29053,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &509937039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29558,6 +29565,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!1 &520483962
 GameObject:
   m_ObjectHideFlags: 0
@@ -29977,6 +29985,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!61 &540116974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30093,6 +30102,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!61 &557212528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40207,6 +40217,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &589246937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40562,6 +40573,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!61 &600020033
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40801,6 +40813,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &603284765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40981,6 +40994,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &611336432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42168,6 +42182,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &722873049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43453,6 +43468,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &807263728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43978,6 +43994,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &840599205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46124,6 +46141,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &878060671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46390,6 +46408,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &898026393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47248,6 +47267,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &930751086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51217,6 +51237,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!61 &1000241727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52578,6 +52599,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1095854120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52890,6 +52912,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1118587419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53241,12 +53264,12 @@ MonoBehaviour:
     - 
     - 
     lines:
-    - If this were really true.. there must be more than what meets the eye.
+    - If these were really true.. there must be more than what meets the eye.
     - According to this investigation board, all these clues seem to point towards
       this Old Warehouse not far from here.
     - But before that.. I should make sense of what unravelled before I got here.
     - There must be something in your suitcase that can act as evidence. But what?
-    - If you can't make anything out of what your currently have, perhaps you should
+    - If you can't figure anything out of what you currently have, perhaps you should
       research the house incase of missing important details..
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
@@ -53264,6 +53287,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!1 &1142537734
 GameObject:
   m_ObjectHideFlags: 0
@@ -54536,6 +54560,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!1 &1171540196
 GameObject:
   m_ObjectHideFlags: 0
@@ -54623,6 +54648,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 1142459715}
       option_1_is_cutscene: 1
       option_1_playscene: 1
+  cutscene_AfterDialogue: 0
 --- !u!114 &1171540199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55409,6 +55435,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1248543740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56715,6 +56742,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1360210733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57519,6 +57547,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!212 &1375666450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57755,6 +57784,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!1 &1399177609
 GameObject:
   m_ObjectHideFlags: 0
@@ -58365,6 +58395,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1463943599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59381,6 +59412,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1542674529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60555,6 +60587,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!61 &1617600694
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60864,6 +60897,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1640904247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61315,6 +61349,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1647763024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61494,6 +61529,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1677287475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62074,9 +62110,9 @@ MonoBehaviour:
     - A pretty old computer model, even a bit too old to work at this current year
       of age. I'm surprised it's still working.
     - A digital sticky note is pinned on the right bottom of the screen.
-    - '"When the lights remains to linger, the small bulb also proceeds to shine."'
-    - '"When the lights only flicker, the small bulb can only wish to be divine."'
-    - '"When the lights flicker quicker, they wait for the next group of small bulbs
+    - '"When mother''s light remains to linger, the small bulb also proceeds to shine."'
+    - '"When the light only flickers, the small bulb can only wish to be divine."'
+    - '"When the light flickers quicker, they wait for the next group of small bulbs
       to follow the sign."'
     - Man.. why riddles at a time like this..
     images:
@@ -62096,6 +62132,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1708302415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62513,6 +62550,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1742061060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62842,6 +62880,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!1 &1744614654
 GameObject:
   m_ObjectHideFlags: 0
@@ -70587,6 +70626,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1759922078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70752,7 +70792,7 @@ MonoBehaviour:
     - Paul
     lines:
     - A bunch of paperwork related to an individual named Mr. Sunny Sullivan.
-    - The Ministry of Defence? Why him?
+    - The Minister of Defence? Why him?
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
@@ -70766,6 +70806,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1761332065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71101,6 +71142,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 1
 --- !u!1 &1828899576
 GameObject:
   m_ObjectHideFlags: 0
@@ -71381,6 +71423,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1847556029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71460,6 +71503,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1864908120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71779,6 +71823,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1876565410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72165,6 +72210,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1889786015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72385,6 +72431,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!61 &1896431331
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73415,6 +73462,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1951719694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73730,6 +73778,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &1967488903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75183,6 +75232,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &2075186842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75340,6 +75390,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!61 &2091665666
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -75684,6 +75735,7 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+  cutscene_AfterDialogue: 0
 --- !u!114 &2104602327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77506,8 +77558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
       propertyPath: 'dialogue.lines.Array.data[1]'
-      value: But something so small causing this much of a blood bath? That can't
-        be..
+      value: But something so small causing this much blood bath? That can't be..
       objectReference: {fileID: 0}
     - target: {fileID: 4258655551814532605, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
       propertyPath: 'dialogue.lines.Array.data[2]'

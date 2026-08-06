@@ -6,16 +6,18 @@ using UnityEngine.UI;
 using static CutsceneManager;
 
 
-[System.Serializable]
+[CreateAssetMenu(fileName = "New Cutscene", menuName = "Cutscene/Cutscene Data")]
 
 
-public class Cutscenes
+public class CutsceneData : ScriptableObject
 {
+    public CutsceneType cutscene_type;
+
     public string[] cutscene_name;
+
     [TextArea(3, 10)]
+
     public string[] cutscene_lines;
     public Sprite[] cutscene_BG;
     public Sprite[] cutscene_character;
-
-    public CutsceneType cutscene_type;
 }

@@ -19,6 +19,7 @@ public class SceneAudioManager : MonoBehaviour
     public AudioClip SFX_click;
     public AudioClip SFX_doorknock;
     public AudioClip SFX_carkeys;
+    public AudioClip SFX_gunshot;
     public AudioClip SFX_closecardoor;
 
     private Coroutine fade_Coroutine;

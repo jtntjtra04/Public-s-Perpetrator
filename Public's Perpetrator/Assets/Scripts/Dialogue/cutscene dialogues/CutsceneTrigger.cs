@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CutsceneTrigger : MonoBehaviour
 {
-    public Cutscenes cutscene;
+    public CutsceneData cutscene;
 
 
     public void TriggerCutscene()

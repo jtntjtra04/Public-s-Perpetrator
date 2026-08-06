@@ -1802,8 +1802,6 @@ GameObject:
   - component: {fileID: 1872691824}
   - component: {fileID: 1872691827}
   - component: {fileID: 1872691825}
-  - component: {fileID: 1872691828}
-  - component: {fileID: 1872691829}
   m_Layer: 0
   m_Name: dialogue version 1
   m_TagString: Untagged
@@ -1860,18 +1858,8 @@ MonoBehaviour:
   cutscenebox_on: 0
   isplaying: 0
   scenes: 0
-  prologue:
-    cutscene_name: []
-    cutscene_lines: []
-    cutscene_BG: []
-    cutscene_character: []
-    cutscene_type: 0
-  epilogue_ending1:
-    cutscene_name: []
-    cutscene_lines: []
-    cutscene_BG: []
-    cutscene_character: []
-    cutscene_type: 0
+  prologue: {fileID: 11400000, guid: 2e36ff6b20281cb469afa5f7700b4b75, type: 2}
+  epilogue_ending1: {fileID: 11400000, guid: 24c701731bf64a5489d8f14801d820e4, type: 2}
 --- !u!222 &1872691827
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1880,36 +1868,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872691823}
   m_CullTransparentMesh: 1
---- !u!114 &1872691828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872691823}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd0a1b2f92c4af844830d9de41534026, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cutscene:
-    cutscene_name: []
-    cutscene_lines: []
-    cutscene_BG: []
-    cutscene_character: []
-    cutscene_type: 0
---- !u!114 &1872691829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872691823}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf7704d5a8901114faf8a651d4683e5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1933851117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,6 +2294,7 @@ MonoBehaviour:
   SFX_click: {fileID: 8300000, guid: 6428f0ff62a450e4c893570ab46f5f42, type: 3}
   SFX_doorknock: {fileID: 8300000, guid: 2d0b3ebe8b896604abfd491d7eeceb6c, type: 3}
   SFX_carkeys: {fileID: 8300000, guid: 2bb453962e47276468f71675f28d9ecc, type: 3}
+  SFX_gunshot: {fileID: 8300000, guid: 2640406b11051314bb6d87b2b590f9bf, type: 3}
   SFX_closecardoor: {fileID: 8300000, guid: 8062adba43fb72746b7877793e044824, type: 3}
 --- !u!1 &1999053797
 GameObject:

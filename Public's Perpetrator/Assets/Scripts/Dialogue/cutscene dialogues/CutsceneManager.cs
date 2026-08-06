@@ -10,7 +10,8 @@ using Unity.VisualScripting;
 public enum CutsceneType
 {
     Prologue,
-    Epilogue_ending_1
+    Epilogue_ending_1,
+    None
 }
 
 
@@ -44,8 +45,8 @@ public class CutsceneManager : MonoBehaviour
 
     [Header("Cutscene data")]
     private CutsceneType current_cutscene_type;
-    public Cutscenes prologue;
-    public Cutscenes epilogue_ending1;
+    public CutsceneData prologue;
+    public CutsceneData epilogue_ending1;
 
 
     // =============================== //
@@ -98,7 +99,7 @@ public class CutsceneManager : MonoBehaviour
     }
 
 
-    public void StartCutscene(Cutscenes cutscene)
+    public void StartCutscene(CutsceneData cutscene)
     {
         scenes = 0;                                                             // reset scene counter everytime a new specific cutscene plays
         current_cutscene_type = cutscene.cutscene_type;                        
@@ -115,7 +116,7 @@ public class CutsceneManager : MonoBehaviour
 
         Debug.Log($"Begin cutscene {current_cutscene_type}");
 
-        transition_fade.Play("EndFade");
+        transition_fade.Play("EndFade");                                        // every cutscene enters with a fade in transition
         if (cutscenebox_on) return;
         cutscene_box.SetActive(true);
         cutscenebox_on = true;
@@ -124,7 +125,6 @@ public class CutsceneManager : MonoBehaviour
         lines_queue.Clear();
         background_queue.Clear();
         character_queue.Clear();
-
 
         foreach (string name in cutscene.cutscene_name)
         {
@@ -161,9 +161,16 @@ public class CutsceneManager : MonoBehaviour
 
         if (lines_queue.Count == 0)
         {
-            scene_audio.PlaySceneSFX(scene_audio.SFX_opendoor);
-            EndCutscene();
-            return;
+            switch (current_cutscene_type)
+            {
+                case CutsceneType.Prologue:
+                    scene_audio.PlaySceneSFX(scene_audio.SFX_opendoor);
+                    EndCutscene();
+                    return;
+                case CutsceneType.Epilogue_ending_1:
+                    EndCutscene();
+                    return;
+            }   
         }
 
         string name = names_queue.Dequeue();
@@ -189,10 +196,29 @@ public class CutsceneManager : MonoBehaviour
                 {
                     case 8: StartCoroutine(BGFade(background)); character_image.sprite = character; break;
                     case 10: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
-                    case 31: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
-                    case 33: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide out"); break;
-                    case 35: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
-                    case 44: StartCoroutine(BGFade(background)); character_image.sprite = character; break;
+                    case 32: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+                    case 34: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide out"); break;
+                    case 36: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+                    case 45: StartCoroutine(BGFade(background)); character_image.sprite = character; break;
+                    default: BG_image.sprite = background; character_image.sprite = character; break;
+                }
+
+                break;
+
+            case CutsceneType.Epilogue_ending_1:
+
+                switch (scenes)
+                {
+                    case 4: StartCoroutine(BGFade(background)); character_image.sprite = character; break;
+                    case 5: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+                    case 7: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide out"); break;
+                    case 9: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+                    case 10: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+                    case 12: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+                    case 15: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+                    case 17: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+                    case 19: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide in"); break;
+                    case 20: BG_image.sprite = background; character_image.sprite = character; transition_character.Play("slide out"); break;
                     default: BG_image.sprite = background; character_image.sprite = character; break;
                 }
 
@@ -214,11 +240,22 @@ public class CutsceneManager : MonoBehaviour
                 case 22: scene_audio.FadeOutSceneMusic(); break;
                 case 24: scene_audio.PlaySceneSFX(scene_audio.SFX_notification); break;
                 case 26: scene_audio.PlaySceneSFX(scene_audio.SFX_click); break;
-                case 37: scene_audio.PlaySceneSFX(scene_audio.SFX_carkeys); break;
-                case 42: scene_audio.FadeInSceneMusic(scene_audio.BGM_nighttime); break;
-                case 43: scene_audio.PlaySceneSFX(scene_audio.SFX_closecardoor); break;
-                case 45: scene_audio.PlaySceneSFX(scene_audio.SFX_doorknock); break;
-                case 48: scene_audio.PlaySceneSFX(scene_audio.SFX_doorknock); break;
+                case 38: scene_audio.PlaySceneSFX(scene_audio.SFX_carkeys); break;
+                case 43: scene_audio.FadeInSceneMusic(scene_audio.BGM_nighttime); break;
+                case 44: scene_audio.PlaySceneSFX(scene_audio.SFX_closecardoor); break;
+                case 47: scene_audio.PlaySceneSFX(scene_audio.SFX_doorknock); break;
+                case 50: scene_audio.PlaySceneSFX(scene_audio.SFX_doorknock); break;
+                }
+
+                break;
+
+            case CutsceneType.Epilogue_ending_1:
+
+                switch (scenes)
+                {
+                    case 4: scene_audio.FadeInSceneMusic(scene_audio.BGM_nighttime); break;
+                    case 20: scene_audio.FadeOutSceneMusic(); break;
+                    case 23: scene_audio.PlaySceneSFX(scene_audio.SFX_gunshot); break;
                 }
 
                 break;

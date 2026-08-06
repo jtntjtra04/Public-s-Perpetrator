@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Timeline;
 using UnityEngine.UI;
 using static Unity.VisualScripting.Member;
@@ -170,7 +171,7 @@ public class DialogueManager : MonoBehaviour
     // =============================== //
 
 
-    private void ShowChoices()
+    private void ShowChoices()      // reveal choice panel and options
     {
         if (choice_panel == null)
         {
@@ -191,10 +192,15 @@ public class DialogueManager : MonoBehaviour
 
     public void ChooseOption1()
     {
+        if (current_dialogue.choice.option_1_is_cutscene)                                   // refers to DialogueChoice.cs to check if the choice is a cutscene or not (must be checked if it were to play)
+        {
+            CutsceneLoader.cutscene_ToPlay = current_dialogue.choice.option_1_playscene;    // calls cutscene loader and loads the cutscene_type to play according to inspector
+        }
+
         choice_panel.SetActive(false);
         dialoguebox_on = false;
         dialogue_box.SetActive(true);
-        current_dialogue.choice.option_1_dialogue.TriggerDialogue();
+        current_dialogue.choice.option_1_dialogue.TriggerDialogue();                        // trigger dialogue from object that contains the dialogue from StartDialogue() until EndDialogue()
     }
 
 
@@ -212,27 +218,32 @@ public class DialogueManager : MonoBehaviour
         dialogue_box.SetActive(false);
         dialoguebox_on = false;
 
-        if (player_movement != null)
+        if (player_movement != null)            // player can move again
         {
-            player_movement.EnableMovement();   // player can move again
+            player_movement.EnableMovement();   
         }
 
-        NotificationTrigger trigger_notif = current_source.GetComponent<NotificationTrigger>();
+        NotificationTrigger trigger_notif = current_source.GetComponent<NotificationTrigger>();             // notification pop ups after certain interactions
         if (trigger_notif != null)
         {
             trigger_notif.ShowNotification();
         }
 
-        HiddenObject phone = current_source.GetComponent<HiddenObject>();   // requirement to interact with phone
+        HiddenObject phone = current_source.GetComponent<HiddenObject>();                                   // requirement to interact with phone
         if (phone != null)
         {
             phone.RevealObject();
         }
 
-        InGameCutsceneDialogue in_game_cutscene = current_source.GetComponent<InGameCutsceneDialogue>();
+        InGameCutsceneDialogue in_game_cutscene = current_source.GetComponent<InGameCutsceneDialogue>();    // timeline continues after dialogue plays (during in-game cutscene)
         if (in_game_cutscene != null)
         {
-            in_game_cutscene.ResumeTimeline();      // timeline or cutscene continues after dialogue plays
+            in_game_cutscene.ResumeTimeline();
+        }
+
+        if (CutsceneLoader.cutscene_ToPlay != CutsceneType.None)                                            // load cutscenes after certain interactions (e.g choice making in Ch 1)
+        {
+            SceneManager.LoadScene("Ch 1 Cutscenes");
         }
     }
 }

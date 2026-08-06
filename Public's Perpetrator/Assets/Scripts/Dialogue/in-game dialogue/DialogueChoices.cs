@@ -25,4 +25,8 @@ public class DialogueChoice
     [Header("Next Dialogue")]
     public DialogueTrigger option_1_dialogue;
     public DialogueTrigger option_2_dialogue;
+
+    [Header("Choice Panel Paths")]
+    public bool option_1_is_cutscene;
+    public CutsceneType option_1_playscene;
 }

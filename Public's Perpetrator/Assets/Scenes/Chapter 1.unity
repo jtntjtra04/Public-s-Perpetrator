@@ -7032,7 +7032,6 @@ RectTransform:
   - {fileID: 256700762}
   - {fileID: 269623525}
   - {fileID: 976977927}
-  - {fileID: 1929778110}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7055,7 +7054,6 @@ MonoBehaviour:
   musicSource: {fileID: 256700761}
   SFXSource: {fileID: 269623524}
   footstepSource: {fileID: 976977926}
-  TypeSound: {fileID: 1929778111}
   BGM_windy_indoors: {fileID: 8300000, guid: bfccf4abb17eb024ca2cde51508b6485, type: 3}
   BGM_crime_scene: {fileID: 8300000, guid: de1ecd00959a401499928fc63dbac18f, type: 3}
   door: {fileID: 8300000, guid: dfaafa6dc5ebabb4680c57211f1cadfa, type: 3}
@@ -7066,7 +7064,6 @@ MonoBehaviour:
   metal_screech: {fileID: 8300000, guid: dc7813845e323a445baed996a0f06add, type: 3}
   lamp_flicker: {fileID: 8300000, guid: 3255fbb97a73e014b9424a168c15a1a6, type: 3}
   flashlight_click: {fileID: 8300000, guid: d0f3c126eb3704547aa57895b02d9e21, type: 3}
-  SFX_type_blip: {fileID: 8300000, guid: 9372c823913611d49b7c8a55ddbd9150, type: 3}
 --- !u!1 &160469540
 GameObject:
   m_ObjectHideFlags: 0
@@ -7121,19 +7118,16 @@ MonoBehaviour:
     - Paul
     - 
     - 
-    - 
     lines:
     - Where's the occupant? This is starting to look shady..
     - It's too dark as well. I can't really see.. anything..
     - Good thing I brought a flashlight with me.
     - Press F to use your flashlight on a small area.
     - 'Press E to interact with surrounding objects that may require your attention. '
-    - Press B to open your inventory in case you picked something up along the way.
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
-    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     choice:
@@ -7378,7 +7372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -30}
+  m_AnchoredPosition: {x: 0, y: -23.799997}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &217939699
@@ -7436,7 +7430,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -8203,7 +8197,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -8263,7 +8257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000045776367, y: -30.000002}
+  m_AnchoredPosition: {x: -0.000045776367, y: -23.799997}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &273765623
@@ -29475,8 +29469,7 @@ MonoBehaviour:
   connection_text: {fileID: 1399177611}
   connection_shade: {fileID: 977816009}
   transition_anim: {fileID: 748920579}
-  dialogue_after: {fileID: 520054346}
-  dialogue_manager: {fileID: 0}
+  dialogue_after: {fileID: 0}
 --- !u!114 &520054346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29539,11 +29532,11 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
-      hasChoice: 0
+      hasChoice: 1
       option_1_text: Call the police
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
+      option_2_text: I've seen enough. I better hand this over to the authorities..
+      option_1_desc: Investigate further
+      option_2_desc: All the proof on this board seems to lead towards something..
       option_1_dialogue: {fileID: 0}
       option_2_dialogue: {fileID: 0}
 --- !u!1 &520483962
@@ -29630,8 +29623,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -51727,7 +51720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.23621427, g: 0.21927373, b: 0.3886792, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -54099,7 +54092,7 @@ Transform:
   m_GameObject: {fileID: 1159420703}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.92, y: -7.57, z: 0}
+  m_LocalPosition: {x: -10.89, y: -7.64, z: 0}
   m_LocalScale: {x: 1.35, y: 1.2912749, z: 1.2912749}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -54227,6 +54220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   investigation_board: {fileID: 520054345}
+  board_collider: {fileID: 0}
 --- !u!1 &1163609819
 GameObject:
   m_ObjectHideFlags: 0
@@ -55882,7 +55876,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ed2339491ba224e96c6c44a57e8105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type_audio: {fileID: 151349625}
   dialogue_box: {fileID: 2137740934}
   name_text: {fileID: 2108751371}
   dialogue_text: {fileID: 861758120}
@@ -59906,8 +59899,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -72724,139 +72717,6 @@ Transform:
   - {fileID: 840599201}
   m_Father: {fileID: 835531336}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1929778109
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1929778110}
-  - component: {fileID: 1929778111}
-  m_Layer: 5
-  m_Name: Type Blip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1929778110
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929778109}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 151349624}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!82 &1929778111
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929778109}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 0.2
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1930019379
 GameObject:
   m_ObjectHideFlags: 0
@@ -74610,7 +74470,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 520054345}
         m_TargetAssemblyTypeName: InvestigationBoard, Assembly-CSharp
-        m_MethodName: NoCorrelation
+        m_MethodName: TheSymbol
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -74640,7 +74500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -14620569, guid: fa12fd514a6a93f468e8b18bcc43e0fb, type: 3}
+  m_Sprite: {fileID: 528041149, guid: fa12fd514a6a93f468e8b18bcc43e0fb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

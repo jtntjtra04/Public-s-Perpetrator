@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Timeline;
 using UnityEngine.UI;
 using static Unity.VisualScripting.Member;
 
@@ -13,9 +12,8 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> names;
     private Queue<Sprite> images;
 
-    [Header("Call to Dialogue Manager & Other References")]
+    [Header("Call to Dialogue Manager")]
     private GameObject current_source;
-    public AudioManager type_audio;
 
     [Header("UI")]
     public GameObject dialogue_box;             // UI
@@ -85,10 +83,7 @@ public class DialogueManager : MonoBehaviour
         dialogue_box.SetActive(true);
         dialoguebox_on = true;
 
-        if (player_movement != null)
-        {
-            player_movement.DisableMovement();      // player no longer moves during a dialogue (not applicable during in-game cutscenes)
-        }
+        player_movement.DisableMovement();  // player doesn't move during dialogues
 
         names.Clear();
         lines.Clear();
@@ -139,7 +134,6 @@ public class DialogueManager : MonoBehaviour
         name_text.text = name;
         npc_image.sprite = image;
         StopAllCoroutines();
-        type_audio.PlayTypeSFX(type_audio.SFX_type_blip);
         StartCoroutine(TypeLines(line));
     }
 
@@ -159,7 +153,6 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(text_speed);
         }
 
-        type_audio.StopTypeSFX();
         dialogue_on = false;
         isplaying = 0;
     }
@@ -184,8 +177,6 @@ public class DialogueManager : MonoBehaviour
 
         option_1_text.text = current_dialogue.choice.option_1_text;
         option_2_text.text = current_dialogue.choice.option_2_text;
-        option_1_desc.text = current_dialogue.choice.option_1_desc;
-        option_2_desc.text = current_dialogue.choice.option_2_desc;
     }
 
 
@@ -193,7 +184,6 @@ public class DialogueManager : MonoBehaviour
     {
         choice_panel.SetActive(false);
         dialoguebox_on = false;
-        dialogue_box.SetActive(true);
         current_dialogue.choice.option_1_dialogue.TriggerDialogue();
     }
 
@@ -211,11 +201,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogue_box.SetActive(false);
         dialoguebox_on = false;
-
-        if (player_movement != null)
-        {
-            player_movement.EnableMovement();   // player can move again
-        }
+        player_movement.EnableMovement();
 
         NotificationTrigger trigger_notif = current_source.GetComponent<NotificationTrigger>();
         if (trigger_notif != null)
@@ -227,12 +213,6 @@ public class DialogueManager : MonoBehaviour
         if (phone != null)
         {
             phone.RevealObject();
-        }
-
-        InGameCutsceneDialogue in_game_cutscene = current_source.GetComponent<InGameCutsceneDialogue>();
-        if (in_game_cutscene != null)
-        {
-            in_game_cutscene.ResumeTimeline();
         }
     }
 }

@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
     [SerializeField] AudioSource footstepSource;    // separate AudioSource for footsteps, assigned in Inspector
-    [SerializeField] AudioSource TypeSound;         // when typing a dialogue
     public AudioClip BGM_windy_indoors;
     public AudioClip BGM_crime_scene;
     public AudioClip door;
@@ -19,7 +17,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip metal_screech;
     public AudioClip lamp_flicker;
     public AudioClip flashlight_click;
-    public AudioClip SFX_type_blip;
 
 
     // =============================== //
@@ -27,11 +24,8 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Chapter 1")
-        {
-            musicSource.clip = BGM_windy_indoors;
-            musicSource.Play();
-        }
+    musicSource.clip = BGM_windy_indoors;
+    musicSource.Play();
     }
 
 
@@ -73,19 +67,6 @@ public class AudioManager : MonoBehaviour
         float destroyDelay = (clip != null && clip.length > 0) ? Mathf.Min(clip.length, strictCutoff) : strictCutoff;       // strict deletion of clones
 
         Destroy(tempGO, destroyDelay);
-    }
-
-
-    public void PlayTypeSFX(AudioClip sound)
-    {
-        TypeSound.clip = sound;
-        TypeSound.Play();
-    }
-
-
-    public void StopTypeSFX()
-    {
-        TypeSound.Stop();
     }
 
 

@@ -40,11 +40,7 @@ public class CutsceneManager : MonoBehaviour
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Ch 1 Prologue")
-        {
-            scene_audio.ChangeSceneMusic(scene_audio.BGM_mysterious);
-        }
-
+        scene_audio.ChangeSceneMusic(scene_audio.BGM_mysterious);
         lines_queue = new Queue<string>();
         names_queue = new Queue<string>();
         background_queue = new Queue<Sprite>();

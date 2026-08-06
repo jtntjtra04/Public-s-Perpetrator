@@ -232,6 +232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 461016462}
+  - component: {fileID: 461016464}
   - component: {fileID: 461016463}
   m_Layer: 5
   m_Name: back to menu
@@ -268,7 +269,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 461016461}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac5503d4a1a4e634194c5723004df3af, type: 3}
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 43895d9a73427c54cb89549bb684417d, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 461016464}
+          m_TargetAssemblyTypeName: EndingScene, Assembly-CSharp
+          m_MethodName: GoBacktoMenu
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &461016464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461016461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf773e206a009a44afce4241ba934a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &635724184
@@ -489,6 +520,8 @@ PlayableDirector:
     value: {fileID: 1688184567}
   - key: {fileID: 2278523018275095891, guid: 950a80cb436f92e4481a1e5f0a45af35, type: 2}
     value: {fileID: 2096260974}
+  - key: {fileID: -1842695187774499644, guid: 950a80cb436f92e4481a1e5f0a45af35, type: 2}
+    value: {fileID: 461016463}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1294860002

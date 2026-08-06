@@ -29167,6 +29167,7 @@ GameObject:
   - component: {fileID: 519420036}
   - component: {fileID: 519420034}
   - component: {fileID: 519420035}
+  - component: {fileID: 519420037}
   m_Layer: 5
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -29379,6 +29380,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbb8621ae7c6d74898ba515f3697a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &519420037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 1
+  m_AssetsPPU: 16
+  m_RefResolutionX: 320
+  m_RefResolutionY: 180
+  m_CropFrame: 0
+  m_GridSnapping: 0
+  m_FilterMode: 0
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1 &520054341
 GameObject:
   m_ObjectHideFlags: 0
@@ -53269,8 +53294,8 @@ MonoBehaviour:
       this Old Warehouse not far from here.
     - But before that.. I should make sense of what unravelled before I got here.
     - There must be something in your suitcase that can act as evidence. But what?
-    - If you can't figure anything out of what you currently have, perhaps you should
-      research the house incase of missing important details..
+    - If you can't figure anything out with what you currently have, perhaps you
+      should research the house incase of missing important details..
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
@@ -71125,13 +71150,17 @@ MonoBehaviour:
     names:
     - Paul
     - Paul
+    - 
     lines:
     - I admire detective work.. but this is too much.. I better report this crime
       scene to the authorities instead.
     - Hopefully they can handle the situation..
+    - You definitely better have a good excuse of why you're even here in the first
+      place..
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     choice:
       hasChoice: 0
       option_1_text: 

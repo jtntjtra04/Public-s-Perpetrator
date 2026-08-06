@@ -9776,7 +9776,7 @@ MonoBehaviour:
   dialogue_text: {fileID: 34375148}
   npc_image: {fileID: 320091777}
   text_speed: 0.04
-  dialoguebox_on: 1
+  dialoguebox_on: 0
   isplaying: 0
   choice_panel: {fileID: 1261247654}
   option_1_button: {fileID: 72592071}

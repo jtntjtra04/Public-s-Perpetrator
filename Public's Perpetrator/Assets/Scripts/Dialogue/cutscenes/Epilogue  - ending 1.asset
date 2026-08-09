@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935e806512a942344bf74b84d2f55e3b, type: 3}
+  m_Name: Epilogue  - ending 1
+  m_EditorClassIdentifier: 
+  cutscene_type: 1
+  cutscene_name:
+  - 
+  - 
+  - 
+  - 
+  - Paul
+  - Paul
+  - 
+  - 
+  - Policeman
+  - Paul
+  - Paul
+  - Policeman
+  - Policeman
+  - Officer Bradley
+  - Paul
+  - Paul
+  - Officer Bradley
+  - Officer Bradley
+  - Paul
+  - 
+  - Paul
+  - Paul
+  - 
+  - Bradley
+  - Bradley
+  - Bradley
+  - 
+  - 
+  cutscene_lines:
+  - ...
+  - 'So you called the police. Perhaps what you witnessed may have been too much
+    for you.. '
+  - A glimmer of doubt lies behind the corner of your mindscape regarding your decision..
+    but surely the authorities could make something out of this situation.. right?
+  - ...
+  - Damn, they're taking forever to get here.
+  - To be fair we're in the middle of god knows where..
+  - ( a few minutes later.. )
+  - ( police car pulls over )
+  - Evening, sir. Ye're Mr. Paul Payton who called in, correct?
+  - Yes, officer. It's a bloody whole crime scene in there!
+  - Wait, where's the investigation squad?
+  - Unfortunately the last investigation unit was assigned on another case in metropolis.
+    But don'tcha worry, sir. Another available unit will arrive shortly after.
+  - As for now, I have been assigned to secure the perimeter and crime scene before
+    they arrive.
+  - Also, pleased to meet'cha. Name's Bradley from the police station from the far
+    town close to the main city. Say.. how'd ye end up in this desolated house anyway?
+    It's miles away..
+  - Well I had this hobby of discovering abandoned places, sir. Even the far ones..
+  - Curiosity got the better of me as I approached upstairs. That's where I saw the
+    blood..
+  - I see..
+  - Can you show me the location?
+  - Yes, officer. Follow me.
+  - ...
+  - It's over here, officer.
+  - Officer?
+  - 
+  - ( sigh.. )
+  - The boss better be true to his word regarding that extra pay..
+  - So long, chap.. I'm just doin my job..
+  - Trust is a rare gem indeed..
+  - Ending 1 - Further Away from Home
+  cutscene_BG:
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  cutscene_character:
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: 8652665667799513063, guid: ea3082db3051ba444ae13e665f4a72da, type: 3}
+  - {fileID: 8652665667799513063, guid: ea3082db3051ba444ae13e665f4a72da, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: 5051383722975590901, guid: c511460ad3d981c47941a97700849807, type: 3}
+  - {fileID: 8652665667799513063, guid: ea3082db3051ba444ae13e665f4a72da, type: 3}
+  - {fileID: 8652665667799513063, guid: ea3082db3051ba444ae13e665f4a72da, type: 3}
+  - {fileID: 5051383722975590901, guid: c511460ad3d981c47941a97700849807, type: 3}
+  - {fileID: 5051383722975590901, guid: c511460ad3d981c47941a97700849807, type: 3}
+  - {fileID: 5051383722975590901, guid: c511460ad3d981c47941a97700849807, type: 3}
+  - {fileID: 8652665667799513063, guid: ea3082db3051ba444ae13e665f4a72da, type: 3}
+  - {fileID: 8652665667799513063, guid: ea3082db3051ba444ae13e665f4a72da, type: 3}
+  - {fileID: 5051383722975590901, guid: c511460ad3d981c47941a97700849807, type: 3}
+  - {fileID: 5051383722975590901, guid: c511460ad3d981c47941a97700849807, type: 3}
+  - {fileID: 8652665667799513063, guid: ea3082db3051ba444ae13e665f4a72da, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}

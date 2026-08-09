@@ -18,7 +18,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip walking_wood;
     public AudioClip metal_screech;
     public AudioClip lamp_flicker;
+    public AudioClip water_drip;
     public AudioClip flashlight_click;
+    public AudioClip fridge_hum;
     public AudioClip SFX_type_blip;
 
 

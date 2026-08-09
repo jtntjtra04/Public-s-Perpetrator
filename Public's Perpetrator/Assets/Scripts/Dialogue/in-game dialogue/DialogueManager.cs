@@ -167,7 +167,7 @@ public class DialogueManager : MonoBehaviour
 
 
     // =============================== //
-    // When a Dialogue Ends            //
+    // Choice Panel                    //
     // =============================== //
 
 
@@ -192,25 +192,71 @@ public class DialogueManager : MonoBehaviour
 
     public void ChooseOption1()
     {
-        if (current_dialogue.choice.option_1_is_cutscene)                                   // refers to DialogueChoice.cs to check if the choice is a cutscene or not (must be checked if it were to play)
+        if (current_dialogue.choice.option_1_is_worldscene)
+        {
+            WorldSceneManager.world_scene_ToPlay = current_dialogue.choice.option_1_playworld;
+            WorldSceneManager.world_scene_pending = true;
+        }
+
+        if (current_dialogue.choice.option_1_is_cutscene)                                   // refers to DialogueChoice.cs to check if the choice leads to a cutscene or not (checked if YES)
         {
             CutsceneLoader.cutscene_ToPlay = current_dialogue.choice.option_1_playscene;    // calls cutscene loader and loads the cutscene_type to play according to inspector
         }
 
-        choice_panel.SetActive(false);
+        choice_panel.SetActive(false);                                                        
         dialoguebox_on = false;
-        dialogue_box.SetActive(true);
-        current_dialogue.choice.option_1_dialogue.TriggerDialogue();                        // trigger dialogue from object that contains the dialogue from StartDialogue() until EndDialogue()
+
+        if (current_dialogue.choice.option_1_dialogue != null)
+        {
+            dialogue_box.SetActive(true);
+            current_dialogue.choice.option_1_dialogue.TriggerDialogue();                    // trigger dialogue from object that contains the dialogue from StartDialogue() until EndDialogue()
+        }
+        else
+        {
+            if (WorldSceneManager.world_scene_pending)
+            {
+                WorldSceneManager.world_scene_pending = false;
+                SceneManager.LoadScene("Ch 1 World Scenes");
+            }
+        }
     }
 
 
     public void ChooseOption2()
     {
+        if (current_dialogue.choice.option_2_is_worldscene)
+        {
+            WorldSceneManager.world_scene_ToPlay = current_dialogue.choice.option_2_playworld;
+            WorldSceneManager.world_scene_pending = true;
+        }
+
+        if (current_dialogue.choice.option_2_is_cutscene)
+        {
+            CutsceneLoader.cutscene_ToPlay = current_dialogue.choice.option_2_playscene;
+        }
+
         choice_panel.SetActive(false);
         dialoguebox_on = false;
         dialogue_box.SetActive(true);
-        current_dialogue.choice.option_2_dialogue.TriggerDialogue();
+
+        if (current_dialogue.choice.option_2_dialogue != null)
+        {
+            current_dialogue.choice.option_2_dialogue.TriggerDialogue();
+        }
+        else
+        {
+            if (WorldSceneManager.world_scene_pending)
+            {
+                WorldSceneManager.world_scene_pending = false;
+                SceneManager.LoadScene("Ch 1 World Scenes");
+            }
+        }
     }
+
+
+    // =============================== //
+    // After the Dialogue Ends         //
+    // =============================== //
 
 
     public void EndDialogue()
@@ -218,7 +264,7 @@ public class DialogueManager : MonoBehaviour
         dialogue_box.SetActive(false);
         dialoguebox_on = false;
 
-        if (player_movement != null)            // player can move again
+        if (player_movement != null)                                                                        // player can move again
         {
             player_movement.EnableMovement();   
         }
@@ -235,16 +281,22 @@ public class DialogueManager : MonoBehaviour
             phone.RevealObject();
         }
 
-        InGameCutsceneDialogue in_game_cutscene = current_source.GetComponent<InGameCutsceneDialogue>();    // timeline continues after dialogue plays (during in-game cutscene)
-        if (in_game_cutscene != null)
+        WorldSceneDialogue world_scene = current_source.GetComponent<WorldSceneDialogue>();                 // timeline continues after dialogue plays (during in-game cutscene)
+        if (world_scene != null)
         {
-            in_game_cutscene.ResumeTimeline();
+            world_scene.ResumeTimeline();
         }
 
-        DialogueTrigger object_trigger = current_source.GetComponent<DialogueTrigger>();
+        DialogueTrigger object_trigger = current_source.GetComponent<DialogueTrigger>();                    // plays a cutscene if there is any.
         if (object_trigger != null && object_trigger.cutscene_AfterDialogue)
         {
             SceneManager.LoadScene("Ch 1 Cutscenes");
+        }
+
+        if (WorldSceneManager.world_scene_pending)                                                          // plays a world scene if there is any.
+        {
+            WorldSceneManager.world_scene_pending = false;
+            SceneManager.LoadScene("Ch 1 World Scenes");
         }
     }
 }

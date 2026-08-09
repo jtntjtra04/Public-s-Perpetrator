@@ -29,4 +29,11 @@ public class DialogueChoice
     [Header("Choice Panel Paths")]
     public bool option_1_is_cutscene;
     public CutsceneType option_1_playscene;
+    public bool option_2_is_cutscene;
+    public CutsceneType option_2_playscene;
+
+    public bool option_1_is_worldscene;
+    public WorldSceneType option_1_playworld;
+    public bool option_2_is_worldscene;
+    public WorldSceneType option_2_playworld;
 }

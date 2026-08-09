@@ -362,6 +362,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &7143044
 MonoBehaviour:
@@ -7068,7 +7074,9 @@ MonoBehaviour:
   walking_wood: {fileID: 8300000, guid: 06548ef11ad767844a665f438dc538be, type: 3}
   metal_screech: {fileID: 8300000, guid: dc7813845e323a445baed996a0f06add, type: 3}
   lamp_flicker: {fileID: 8300000, guid: 3255fbb97a73e014b9424a168c15a1a6, type: 3}
+  water_drip: {fileID: 8300000, guid: 51b72644587396f41be735b6b9fb6123, type: 3}
   flashlight_click: {fileID: 8300000, guid: d0f3c126eb3704547aa57895b02d9e21, type: 3}
+  fridge_hum: {fileID: 8300000, guid: 096cd2c29c337934caf38de7edb8ea8c, type: 3}
   SFX_type_blip: {fileID: 8300000, guid: 9372c823913611d49b7c8a55ddbd9150, type: 3}
 --- !u!1 &160469540
 GameObject:
@@ -7149,6 +7157,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &160469543
 MonoBehaviour:
@@ -24090,6 +24104,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &375334218
 MonoBehaviour:
@@ -28082,6 +28102,7 @@ RectTransform:
   - {fileID: 1163609820}
   - {fileID: 1545976966}
   - {fileID: 1035411246}
+  - {fileID: 1424040923}
   - {fileID: 2137740935}
   - {fileID: 946822121}
   - {fileID: 1584609040}
@@ -28528,6 +28549,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &495858431
 MonoBehaviour:
@@ -29053,6 +29080,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &509937039
 MonoBehaviour:
@@ -29218,7 +29251,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -29561,7 +29594,7 @@ MonoBehaviour:
     - Except for the symbol.. engraved on it..
     - ...
     - Wait.. I saw this symbol somewhere..
-    - Isn't this.. from the Special Forces? Oh #$%&..
+    - Isn't this.. from the Special Forces? It can't be..
     - If my hunch is correct.. they must've broken in. Buck must've been an army
       veteran. How else could've he managed to fight them off. It's a massacre.
     - Though it did costed him his finger..
@@ -29590,6 +29623,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!1 &520483962
 GameObject:
@@ -30010,6 +30049,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &540116974
 BoxCollider2D:
@@ -30127,6 +30172,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &557212528
 BoxCollider2D:
@@ -40242,6 +40293,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &589246937
 MonoBehaviour:
@@ -40598,6 +40655,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &600020033
 BoxCollider2D:
@@ -40838,6 +40901,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &603284765
 MonoBehaviour:
@@ -41019,6 +41088,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &611336432
 MonoBehaviour:
@@ -42207,6 +42282,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &722873049
 MonoBehaviour:
@@ -43493,6 +43574,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &807263728
 MonoBehaviour:
@@ -43814,6 +43901,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817689855}
   m_CullTransparentMesh: 1
+--- !u!1 &828560388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 828560389}
+  - component: {fileID: 828560391}
+  - component: {fileID: 828560390}
+  m_Layer: 0
+  m_Name: fridge noise
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &828560389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828560388}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1, y: -3.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 965103698}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &828560390
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828560388}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1813d046959c19744b26246ac9d10d95, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &828560391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828560388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2702babfc40a728488054778a6812a1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1159420707}
 --- !u!1 &835531335
 GameObject:
   m_ObjectHideFlags: 0
@@ -44019,6 +44174,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &840599205
 MonoBehaviour:
@@ -46166,6 +46327,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &878060671
 MonoBehaviour:
@@ -46433,6 +46600,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &898026393
 MonoBehaviour:
@@ -47292,6 +47465,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &930751086
 MonoBehaviour:
@@ -47485,6 +47664,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 828560389}
   - {fileID: 12264780}
   - {fileID: 34606322}
   m_Father: {fileID: 1293496437}
@@ -51133,6 +51313,142 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &992847689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992847690}
+  - component: {fileID: 992847692}
+  - component: {fileID: 992847691}
+  m_Layer: 5
+  m_Name: text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &992847690
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992847689}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.4830918, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1791917124}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &992847691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992847689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Resume
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: b404053674c569149b49c408bce8fc60, type: 2}
+  m_sharedMaterial: {fileID: -5912440345306644242, guid: b404053674c569149b49c408bce8fc60, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &992847692
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992847689}
+  m_CullTransparentMesh: 1
 --- !u!1 &1000241721
 GameObject:
   m_ObjectHideFlags: 0
@@ -51262,6 +51578,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &1000241727
 BoxCollider2D:
@@ -51786,7 +52108,7 @@ RectTransform:
   m_GameObject: {fileID: 1035411245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.35, y: 1.0125, z: 1.35}
+  m_LocalScale: {x: 1.75, y: 1.3125, z: 1.75}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 448248545}
@@ -52055,6 +52377,54 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.9604759, y: 0.3458913}
   m_EdgeRadius: 0
+--- !u!1 &1040731038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1040731040}
+  - component: {fileID: 1040731039}
+  m_Layer: 0
+  m_Name: PauseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1040731039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040731038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2c99d0be11b1554f81d0d5acc6b7ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 1424040922}
+  transition_anim: {fileID: 748920579}
+  player_movement: {fileID: 1159420707}
+  dialogue_manager: {fileID: 1305199792}
+--- !u!4 &1040731040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040731038}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.05, y: -7.53, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048164246
 GameObject:
   m_ObjectHideFlags: 0
@@ -52624,6 +52994,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1095854120
 MonoBehaviour:
@@ -52773,6 +53149,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098449524}
   m_CullTransparentMesh: 1
+--- !u!1 &1108262910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108262911}
+  - component: {fileID: 1108262912}
+  m_Layer: 0
+  m_Name: choice 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1108262911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108262910}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1677287471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1108262912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108262910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69386bbf259070458282b0daae99b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names: []
+    lines: []
+    images: []
+    choice:
+      hasChoice: 0
+      option_1_text: 
+      option_2_text: 
+      option_1_desc: 
+      option_2_desc: 
+      option_1_dialogue: {fileID: 0}
+      option_2_dialogue: {fileID: 0}
+      option_1_is_cutscene: 0
+      option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
+  cutscene_AfterDialogue: 0
 --- !u!1 &1118587413
 GameObject:
   m_ObjectHideFlags: 0
@@ -52937,6 +53378,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1118587419
 MonoBehaviour:
@@ -53312,6 +53759,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!1 &1142537734
 GameObject:
@@ -54173,7 +54626,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 5
   m_Sprite: {fileID: 5661283180690989203, guid: 6b63a2245b5ab544cbb836f09b820ba2, type: 3}
-  m_Color: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
+  m_Color: {r: 0.6754716, g: 0.6754716, b: 0.6754716, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -54192,7 +54645,7 @@ Transform:
   m_GameObject: {fileID: 1159420703}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.82, y: -7.58, z: 0}
+  m_LocalPosition: {x: -11.05, y: -7.53, z: 0}
   m_LocalScale: {x: 1.35, y: 1.2912749, z: 1.2912749}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -54585,6 +55038,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!1 &1171540196
 GameObject:
@@ -54673,6 +55132,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 1142459715}
       option_1_is_cutscene: 1
       option_1_playscene: 1
+      option_2_is_cutscene: 0
+      option_2_playscene: 2
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1171540199
 MonoBehaviour:
@@ -55460,6 +55925,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1248543740
 MonoBehaviour:
@@ -55742,8 +56213,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -565, y: -45.6}
-  m_SizeDelta: {x: 206.0613, y: 200.8605}
+  m_AnchoredPosition: {x: -561.5104, y: -47.72602}
+  m_SizeDelta: {x: 192.7417, y: 187.8772}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1288293755
 MonoBehaviour:
@@ -56088,6 +56559,144 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318739492}
+  m_CullTransparentMesh: 1
+--- !u!1 &1318835954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1318835955}
+  - component: {fileID: 1318835957}
+  - component: {fileID: 1318835956}
+  m_Layer: 5
+  m_Name: text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1318835955
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318835954}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 0.4830918, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1785240225}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -1.5942098}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1318835956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318835954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Back to
+
+    Menu'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: b404053674c569149b49c408bce8fc60, type: 2}
+  m_sharedMaterial: {fileID: -5912440345306644242, guid: b404053674c569149b49c408bce8fc60, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1318835957
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318835954}
   m_CullTransparentMesh: 1
 --- !u!1 &1325474024
 GameObject:
@@ -56730,7 +57339,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.397, y: -2.721, z: 0}
-  m_LocalScale: {x: 1.9, y: 2.2, z: 2.2}
+  m_LocalScale: {x: 1.91, y: 2.2, z: 2.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1373416942}
@@ -56767,6 +57376,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1360210733
 MonoBehaviour:
@@ -57572,6 +58187,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!212 &1375666450
 SpriteRenderer:
@@ -57809,6 +58430,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!1 &1399177609
 GameObject:
@@ -58049,6 +58676,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413655859}
+  m_CullTransparentMesh: 1
+--- !u!1 &1424040922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1424040923}
+  - component: {fileID: 1424040926}
+  - component: {fileID: 1424040925}
+  m_Layer: 5
+  m_Name: pause panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1424040923
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424040922}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.7500001, y: 1.7500001, z: 1.7500001}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1791917124}
+  - {fileID: 1785240225}
+  m_Father: {fileID: 469391462}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -18}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1424040925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424040922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.23529412, g: 0.21960784, b: 0.3882353, a: 0.39215687}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1139701842, guid: dd7cdeea1beadd14092d51f6e6a45c5a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1424040926
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424040922}
   m_CullTransparentMesh: 1
 --- !u!1 &1454417584
 GameObject:
@@ -58420,6 +59124,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1463943599
 MonoBehaviour:
@@ -59437,6 +60147,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1542674529
 MonoBehaviour:
@@ -60201,7 +60917,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.6
   m_Color: {r: 0.745283, g: 0.99660933, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 5
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000119494facf4dc584
@@ -60222,8 +60938,8 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 359.99997
-  m_PointLightOuterAngle: 359.99997
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 1
   m_PointLightOuterRadius: 2
   m_ShapeLightParametricSides: 5
@@ -60254,7 +60970,7 @@ MonoBehaviour:
   audio_manager: {fileID: 151349625}
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
 --- !u!1 &1600842140
 GameObject:
   m_ObjectHideFlags: 0
@@ -60612,6 +61328,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &1617600694
 BoxCollider2D:
@@ -60922,6 +61644,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1640904247
 MonoBehaviour:
@@ -61374,6 +62102,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1647763024
 MonoBehaviour:
@@ -61419,7 +62153,9 @@ Transform:
   m_LocalPosition: {x: 42.43, y: 8.86, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1108262911}
+  - {fileID: 1942949505}
   m_Father: {fileID: 1975790071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1677287472
@@ -61536,24 +62272,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
-    - Paul
+    - 
+    - 
     - Paul
     lines:
-    - A bunch of old coats and polo shirts.
-    - They seem really old fashioned for my taste.
+    - A large wooden closet lies in the corner of the bedroom.
+    - However, this one seems to be sealed real tight.
+    - Perhaps I can budge it open if I force it hard enough.
     images:
-    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
-      hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
+      hasChoice: 1
+      option_1_text: Force the door open
+      option_2_text: Keep it closed
+      option_1_desc: You can try to budge it open with your bare hands.
+      option_2_desc: Maybe it's closed for a reason..
+      option_1_dialogue: {fileID: 1108262912}
+      option_2_dialogue: {fileID: 1942949506}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 1
+      option_1_playworld: 1
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1677287475
 MonoBehaviour:
@@ -62157,6 +62902,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1708302415
 MonoBehaviour:
@@ -62553,18 +63304,21 @@ MonoBehaviour:
     - Paul
     - Paul
     - Paul
+    - 
     lines:
     - ...
     - It's so quiet.. I can even hear the wind outside..
     - Hello?
     - ...
     - I don't think anyone's home. Imma try look around.
+    - Use W-A-S-D to move around.
     images:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     choice:
       hasChoice: 0
       option_1_text: 
@@ -62575,6 +63329,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1742061060
 MonoBehaviour:
@@ -62905,6 +63665,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!1 &1744614654
 GameObject:
@@ -70651,6 +71417,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1759922078
 MonoBehaviour:
@@ -70831,6 +71603,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1761332065
 MonoBehaviour:
@@ -70941,6 +71719,340 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 1
+--- !u!1 &1785240224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1785240225}
+  - component: {fileID: 1785240228}
+  - component: {fileID: 1785240227}
+  - component: {fileID: 1785240226}
+  m_Layer: 5
+  m_Name: back to menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1785240225
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785240224}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 2.07, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1318835955}
+  m_Father: {fileID: 1424040923}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.00000023841858}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1785240226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785240224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1785240227}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1040731039}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: BackToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1785240227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785240224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1139701842, guid: dd7cdeea1beadd14092d51f6e6a45c5a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1785240228
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785240224}
+  m_CullTransparentMesh: 1
+--- !u!1 &1790941305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1790941306}
+  - component: {fileID: 1790941308}
+  - component: {fileID: 1790941307}
+  m_Layer: 0
+  m_Name: water dripping
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790941306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790941305}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 92.04, y: 32.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1988266433}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1790941307
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790941305}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0481984c1746f85479357e1584860539, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1790941308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790941305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2702babfc40a728488054778a6812a1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1159420707}
+--- !u!1 &1791917123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1791917124}
+  - component: {fileID: 1791917127}
+  - component: {fileID: 1791917126}
+  - component: {fileID: 1791917125}
+  m_Layer: 5
+  m_Name: resume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1791917124
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791917123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 2.07, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 992847690}
+  m_Father: {fileID: 1424040923}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 85.6}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1791917125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791917123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1791917126}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1040731039}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1791917126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791917123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1139701842, guid: dd7cdeea1beadd14092d51f6e6a45c5a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1791917127
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791917123}
+  m_CullTransparentMesh: 1
 --- !u!1 &1818751159
 GameObject:
   m_ObjectHideFlags: 0
@@ -71171,6 +72283,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 1
 --- !u!1 &1828899576
 GameObject:
@@ -71452,6 +72570,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1847556029
 MonoBehaviour:
@@ -71532,6 +72656,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1864908120
 MonoBehaviour:
@@ -71852,6 +72982,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1876565410
 MonoBehaviour:
@@ -72239,6 +73375,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1889786015
 MonoBehaviour:
@@ -72460,6 +73602,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &1896431331
 BoxCollider2D:
@@ -73240,6 +74388,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1942949504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1942949505}
+  - component: {fileID: 1942949506}
+  m_Layer: 0
+  m_Name: choice 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1942949505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942949504}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1677287471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1942949506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942949504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69386bbf259070458282b0daae99b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names: []
+    lines: []
+    images: []
+    choice:
+      hasChoice: 0
+      option_1_text: 
+      option_2_text: 
+      option_1_desc: 
+      option_2_desc: 
+      option_1_dialogue: {fileID: 0}
+      option_2_dialogue: {fileID: 0}
+      option_1_is_cutscene: 0
+      option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
+  cutscene_AfterDialogue: 0
 --- !u!1 &1950594765
 GameObject:
   m_ObjectHideFlags: 0
@@ -73275,6 +74488,7 @@ MonoBehaviour:
   inventory_item: {fileID: 7640327504810885691, guid: ce11ac2dc02db0c4cbf0c8b8d64c4e98, type: 3}
   player: {fileID: 1159420707}
   inventory_active: 0
+  dialogue_manager: {fileID: 1305199792}
 --- !u!4 &1950594767
 Transform:
   m_ObjectHideFlags: 0
@@ -73491,6 +74705,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1951719694
 MonoBehaviour:
@@ -73770,7 +74990,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.427, y: -2.721, z: 0}
-  m_LocalScale: {x: 1.9, y: 2.2, z: 2.2}
+  m_LocalScale: {x: 1.91, y: 2.2, z: 2.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1373416942}
@@ -73807,6 +75027,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1967488903
 MonoBehaviour:
@@ -74422,6 +75648,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1790941306}
   - {fileID: 1981974463}
   - {fileID: 1819820144}
   - {fileID: 579080313}
@@ -75261,6 +76488,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &2075186842
 MonoBehaviour:
@@ -75419,6 +76652,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &2091665666
 BoxCollider2D:
@@ -75764,6 +77003,12 @@ MonoBehaviour:
       option_2_dialogue: {fileID: 0}
       option_1_is_cutscene: 0
       option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &2104602327
 MonoBehaviour:
@@ -76010,7 +77255,7 @@ GameObject:
   - component: {fileID: 2113258871}
   - component: {fileID: 2113258872}
   m_Layer: 8
-  m_Name: faint llight
+  m_Name: faint light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76668,8 +77913,8 @@ RectTransform:
   m_GameObject: {fileID: 2137740934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 861758119}
   - {fileID: 2108751370}
@@ -78123,6 +79368,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1040731040}
   - {fileID: 1305199793}
   - {fileID: 1950594767}
   - {fileID: 656324576}

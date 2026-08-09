@@ -233,8 +233,10 @@ public class InvestigationBoard : MonoBehaviour
 
         transition_anim.Play("StartFade");                                              // switches scenes with transition
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         transition_anim.Play("EndFade");
+
+        WorldSceneManager.world_scene_ToPlay = WorldSceneType.Epilogue;                 // switches to epilogue
+        SceneManager.LoadScene("Ch 1 World Scenes");
     }
 
 

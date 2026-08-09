@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: c7369351da0b34744aec8dd76dd42a38
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1125305872021967328
+    second: blood splatter_0
+  - first:
+      213: 888345375221127399
+    second: blood splatter_1
+  - first:
+      213: 3945471069307313306
+    second: blood splatter_2
+  - first:
+      213: -2183869364548261133
+    second: blood splatter_3
+  - first:
+      213: -7512405245731527274
+    second: blood splatter_4
+  - first:
+      213: 862525048492511832
+    second: blood splatter_5
+  - first:
+      213: 8976418538417115935
+    second: blood splatter_6
+  - first:
+      213: -5440491001571158892
+    second: blood splatter_7
+  - first:
+      213: 4115244468599026735
+    second: blood splatter_8
+  - first:
+      213: -7910509239443343
+    second: blood splatter_9
+  - first:
+      213: -568111856483739412
+    second: blood splatter_10
+  - first:
+      213: 1378893142703349368
+    second: blood splatter_11
+  - first:
+      213: -931066935632615300
+    second: blood splatter_12
+  - first:
+      213: 6351842428940952297
+    second: blood splatter_13
+  - first:
+      213: 3796368837863000680
+    second: blood splatter_14
+  - first:
+      213: -3903968765309613683
+    second: blood splatter_15
+  - first:
+      213: 4402594054009384320
+    second: blood splatter_16
+  - first:
+      213: 8279433931034195243
+    second: blood splatter_17
+  - first:
+      213: 3895469525875832025
+    second: blood splatter_18
+  - first:
+      213: 3392558342298101397
+    second: blood splatter_19
+  - first:
+      213: -8285163268845580468
+    second: blood splatter_20
+  - first:
+      213: -1653109418785894112
+    second: blood splatter_21
+  - first:
+      213: 9154131296388704479
+    second: blood splatter_22
+  - first:
+      213: -3350276490366560526
+    second: blood splatter_23
+  - first:
+      213: 6311983058352047989
+    second: blood splatter_24
+  - first:
+      213: -2615530020148292409
+    second: blood splatter_25
+  - first:
+      213: 1806362260332720489
+    second: blood splatter_26
+  - first:
+      213: 5700275748523707884
+    second: blood splatter_27
+  - first:
+      213: 2346823247592693070
+    second: blood splatter_28
+  - first:
+      213: 4237742541647937707
+    second: blood splatter_29
+  - first:
+      213: -6069087925116390238
+    second: blood splatter_30
+  - first:
+      213: 9187775505333566167
+    second: blood splatter_31
+  - first:
+      213: -3406796535831766802
+    second: blood splatter_32
+  - first:
+      213: -8297233039044943601
+    second: blood splatter_33
+  - first:
+      213: 4408423628460767221
+    second: blood splatter_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blood splatter
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1d78d7ab3ed9f00800000000000000
+      internalID: 1125305872021967328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0642717aeda1abf4e86c0340e944b588
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      blood splatter: 1125305872021967328
+      blood splatter_1: 888345375221127399
+      blood splatter_10: -568111856483739412
+      blood splatter_11: 1378893142703349368
+      blood splatter_12: -931066935632615300
+      blood splatter_13: 6351842428940952297
+      blood splatter_14: 3796368837863000680
+      blood splatter_15: -3903968765309613683
+      blood splatter_16: 4402594054009384320
+      blood splatter_17: 8279433931034195243
+      blood splatter_18: 3895469525875832025
+      blood splatter_19: 3392558342298101397
+      blood splatter_2: 3945471069307313306
+      blood splatter_20: -8285163268845580468
+      blood splatter_21: -1653109418785894112
+      blood splatter_22: 9154131296388704479
+      blood splatter_23: -3350276490366560526
+      blood splatter_24: 6311983058352047989
+      blood splatter_25: -2615530020148292409
+      blood splatter_26: 1806362260332720489
+      blood splatter_27: 5700275748523707884
+      blood splatter_28: 2346823247592693070
+      blood splatter_29: 4237742541647937707
+      blood splatter_3: -2183869364548261133
+      blood splatter_30: -6069087925116390238
+      blood splatter_31: 9187775505333566167
+      blood splatter_32: -3406796535831766802
+      blood splatter_33: -8297233039044943601
+      blood splatter_34: 4408423628460767221
+      blood splatter_4: -7512405245731527274
+      blood splatter_5: 862525048492511832
+      blood splatter_6: 8976418538417115935
+      blood splatter_7: -5440491001571158892
+      blood splatter_8: 4115244468599026735
+      blood splatter_9: -7910509239443343
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

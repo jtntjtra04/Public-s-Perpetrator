@@ -14,6 +14,8 @@ public class InventoryManager : MonoBehaviour
     public bool inventory_active = false;
     AudioManager audioinv;
 
+    public DialogueManager dialogue_manager;
+
 
     private void Awake()
     {
@@ -30,7 +32,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.B) && !dialogue_manager.dialoguebox_on)
         {
             if (!inventory_active)
             {

@@ -24,4 +24,16 @@ public class PropSounds : MonoBehaviour
     {
         audiomanager.PlaySpatialSFX(audiomanager.lamp_flicker, transform.position, 12f, baseVolume2);
     }
+
+
+    public void WaterDripping(float baseVolume3)
+    {
+        audiomanager.PlaySpatialSFX(audiomanager.water_drip, transform.position, 12f, baseVolume3);
+    }
+
+
+    public void FridgeHum(float baseVolume4)
+    {
+        audiomanager.PlaySpatialSFX(audiomanager.fridge_hum, transform.position, 12f, baseVolume4);
+    }
 }

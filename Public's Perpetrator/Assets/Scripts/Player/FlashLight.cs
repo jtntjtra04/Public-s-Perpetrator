@@ -40,7 +40,7 @@ public class Flashlight : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             flashlight_light.enabled = !flashlight_light.enabled;
-            audio_manager.PlaySFX(audio_manager.flashlight_click, 2f, 0.45f);
+            audio_manager.PlaySFX(audio_manager.SFX_flashlight_click, 2f, 0.45f);
         }
 
         if (flashlight_light.enabled)

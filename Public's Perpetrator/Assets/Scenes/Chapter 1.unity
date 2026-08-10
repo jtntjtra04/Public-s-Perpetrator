@@ -368,6 +368,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &7143044
 MonoBehaviour:
@@ -7067,17 +7069,18 @@ MonoBehaviour:
   TypeSound: {fileID: 1929778111}
   BGM_windy_indoors: {fileID: 8300000, guid: bfccf4abb17eb024ca2cde51508b6485, type: 3}
   BGM_crime_scene: {fileID: 8300000, guid: de1ecd00959a401499928fc63dbac18f, type: 3}
-  door: {fileID: 8300000, guid: dfaafa6dc5ebabb4680c57211f1cadfa, type: 3}
-  shelf_drag: {fileID: 8300000, guid: 1c9e2b6cb8ebe194e9d197f511598426, type: 3}
-  inventory_open: {fileID: 8300000, guid: 7e9008714729e834a9a8e14738eb2d07, type: 3}
-  item_obtained: {fileID: 8300000, guid: 09f5f5f46be380a4bb29521b0d82299e, type: 3}
+  SFX_door: {fileID: 8300000, guid: dfaafa6dc5ebabb4680c57211f1cadfa, type: 3}
+  SFX_shelf_drag: {fileID: 8300000, guid: 1c9e2b6cb8ebe194e9d197f511598426, type: 3}
+  SFX_inventory_open: {fileID: 8300000, guid: 7e9008714729e834a9a8e14738eb2d07, type: 3}
+  SFX_item_obtained: {fileID: 8300000, guid: 09f5f5f46be380a4bb29521b0d82299e, type: 3}
+  SFX_flashlight_click: {fileID: 8300000, guid: d0f3c126eb3704547aa57895b02d9e21, type: 3}
+  SFX_type_blip: {fileID: 8300000, guid: 9372c823913611d49b7c8a55ddbd9150, type: 3}
+  SFX_paper: {fileID: 8300000, guid: e459e7dfad7c7ba42b00483981d2c77e, type: 3}
   walking_wood: {fileID: 8300000, guid: 06548ef11ad767844a665f438dc538be, type: 3}
   metal_screech: {fileID: 8300000, guid: dc7813845e323a445baed996a0f06add, type: 3}
   lamp_flicker: {fileID: 8300000, guid: 3255fbb97a73e014b9424a168c15a1a6, type: 3}
   water_drip: {fileID: 8300000, guid: 51b72644587396f41be735b6b9fb6123, type: 3}
-  flashlight_click: {fileID: 8300000, guid: d0f3c126eb3704547aa57895b02d9e21, type: 3}
   fridge_hum: {fileID: 8300000, guid: 096cd2c29c337934caf38de7edb8ea8c, type: 3}
-  SFX_type_blip: {fileID: 8300000, guid: 9372c823913611d49b7c8a55ddbd9150, type: 3}
 --- !u!1 &160469540
 GameObject:
   m_ObjectHideFlags: 0
@@ -7163,6 +7166,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &160469543
 MonoBehaviour:
@@ -7364,6 +7369,142 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &206603912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 206603915}
+  - component: {fileID: 206603914}
+  - component: {fileID: 206603913}
+  m_Layer: 5
+  m_Name: text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &206603913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206603912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: b404053674c569149b49c408bce8fc60, type: 2}
+  m_sharedMaterial: {fileID: -5912440345306644242, guid: b404053674c569149b49c408bce8fc60, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 35
+  m_fontSizeBase: 35
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &206603914
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206603912}
+  m_CullTransparentMesh: 1
+--- !u!224 &206603915
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206603912}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1708927580}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 458}
+  m_SizeDelta: {x: 550, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &217939697
 GameObject:
   m_ObjectHideFlags: 0
@@ -24110,6 +24251,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &375334218
 MonoBehaviour:
@@ -27919,6 +28062,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452349449}
   m_CullTransparentMesh: 1
+--- !u!1 &460479512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 460479513}
+  - component: {fileID: 460479516}
+  - component: {fileID: 460479515}
+  - component: {fileID: 460479514}
+  m_Layer: 5
+  m_Name: objective text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &460479513
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460479512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1708927580}
+  m_Father: {fileID: 1813504757}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &460479514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460479512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &460479515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460479512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &460479516
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460479512}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &462462717
 GameObject:
   m_ObjectHideFlags: 0
@@ -28555,6 +28800,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &495858431
 MonoBehaviour:
@@ -29086,6 +29333,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &509937039
 MonoBehaviour:
@@ -29535,7 +29784,6 @@ MonoBehaviour:
   have_finger: 0
   have_knife: 0
   have_certificate: 0
-  have_poster: 0
   connector_selected: {fileID: -741155594131258307, guid: c7d6da04c4ae50f4aa5c287df768b7cf, type: 3}
   connector_unselected: {fileID: 1806155792462630838, guid: 8266eff4ef3db504e8456ebf8c3c9795, type: 3}
   connector_solved: {fileID: -1163389222586971273, guid: ed1bf31d52179b648a4675895ac3b797, type: 3}
@@ -29629,6 +29877,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!1 &520483962
 GameObject:
@@ -30055,6 +30305,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &540116974
 BoxCollider2D:
@@ -30178,6 +30430,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &557212528
 BoxCollider2D:
@@ -40299,6 +40553,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &589246937
 MonoBehaviour:
@@ -40661,6 +40917,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &600020033
 BoxCollider2D:
@@ -40907,6 +41165,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &603284765
 MonoBehaviour:
@@ -41094,6 +41354,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &611336432
 MonoBehaviour:
@@ -42288,6 +42550,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &722873049
 MonoBehaviour:
@@ -42312,6 +42576,7 @@ GameObject:
   - component: {fileID: 729144591}
   - component: {fileID: 729144593}
   - component: {fileID: 729144592}
+  - component: {fileID: 729144594}
   m_Layer: 0
   m_Name: letter
   m_TagString: Untagged
@@ -42349,6 +42614,12 @@ MonoBehaviour:
   mail: {fileID: 1584609039}
   on_mail: 0
   opened_mail: 0
+  dialogue_played: 0
+  mail_read: 0
+  dialogue_after: {fileID: 729144594}
+  audio_manager: {fileID: 151349625}
+  fade_duration: 0.3
+  mail_canvas: {fileID: 1584609043}
 --- !u!61 &729144593
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42395,6 +42666,47 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.2678728, y: 0.9631386}
   m_EdgeRadius: 0
+--- !u!114 &729144594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729144590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69386bbf259070458282b0daae99b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    names:
+    - 
+    - Paul
+    lines:
+    - A piece of old paper covered in dust rests on the steel table.
+    - A letter?
+    images:
+    - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
+    - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
+    choice:
+      hasChoice: 0
+      option_1_text: 
+      option_2_text: 
+      option_1_desc: 
+      option_2_desc: 
+      option_1_dialogue: {fileID: 0}
+      option_2_dialogue: {fileID: 0}
+      option_1_is_cutscene: 0
+      option_1_playscene: 0
+      option_2_is_cutscene: 0
+      option_2_playscene: 0
+      option_1_is_worldscene: 0
+      option_1_playworld: 0
+      option_2_is_worldscene: 0
+      option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
+  cutscene_AfterDialogue: 0
 --- !u!1 &743175212
 GameObject:
   m_ObjectHideFlags: 0
@@ -43164,6 +43476,99 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.3167311, y: 11.447528}
   m_EdgeRadius: 0
+--- !u!1 &795084000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 795084001}
+  - component: {fileID: 795084003}
+  - component: {fileID: 795084002}
+  m_Layer: 0
+  m_Name: crime scene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &795084001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795084000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 99.54, y: 3.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1335003578}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &795084002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795084000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bedced5e3996d64db50fd6962a7561a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objective_manager: {fileID: 1813504756}
+  objective_set: 2
+--- !u!61 &795084003
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795084000}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -1.8134079, y: -1.5965221}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.25909424, y: 5.76024}
+  m_EdgeRadius: 0
 --- !u!1 &795645201
 GameObject:
   m_ObjectHideFlags: 0
@@ -43580,6 +43985,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &807263728
 MonoBehaviour:
@@ -44180,6 +44587,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &840599205
 MonoBehaviour:
@@ -46333,6 +46742,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &878060671
 MonoBehaviour:
@@ -46606,6 +47017,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &898026393
 MonoBehaviour:
@@ -47471,6 +47884,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &930751086
 MonoBehaviour:
@@ -51584,6 +51999,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &1000241727
 BoxCollider2D:
@@ -53000,6 +53417,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1095854120
 MonoBehaviour:
@@ -53213,7 +53632,102 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
+--- !u!1 &1115649976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1115649977}
+  - component: {fileID: 1115649980}
+  - component: {fileID: 1115649978}
+  m_Layer: 0
+  m_Name: entrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1115649977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115649976}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.17, y: -8.43, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1335003578}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1115649978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115649976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bedced5e3996d64db50fd6962a7561a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objective_manager: {fileID: 1813504756}
+  objective_set: 1
+--- !u!61 &1115649980
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115649976}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.078175545, y: 1.4281287}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.33652687, y: 3.8562574}
+  m_EdgeRadius: 0
 --- !u!1 &1118587413
 GameObject:
   m_ObjectHideFlags: 0
@@ -53384,6 +53898,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1118587419
 MonoBehaviour:
@@ -53765,6 +54281,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 1
+    objective_type: 3
   cutscene_AfterDialogue: 0
 --- !u!1 &1142537734
 GameObject:
@@ -54645,7 +55163,7 @@ Transform:
   m_GameObject: {fileID: 1159420703}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.05, y: -7.53, z: 0}
+  m_LocalPosition: {x: -11.29, y: -7.57, z: 0}
   m_LocalScale: {x: 1.35, y: 1.2912749, z: 1.2912749}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -55044,6 +55562,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!1 &1171540196
 GameObject:
@@ -55138,6 +55658,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1171540199
 MonoBehaviour:
@@ -55931,6 +56453,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1248543740
 MonoBehaviour:
@@ -56359,7 +56883,7 @@ MonoBehaviour:
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
+    m_FadeDuration: 0.3
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -56456,6 +56980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type_audio: {fileID: 151349625}
+  objective_manager: {fileID: 1813504756}
   dialogue_box: {fileID: 2137740934}
   name_text: {fileID: 2108751371}
   dialogue_text: {fileID: 861758120}
@@ -56983,6 +57508,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328442772}
   m_CullTransparentMesh: 1
+--- !u!1 &1335003577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1335003578}
+  m_Layer: 0
+  m_Name: Objective triggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1335003578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335003577}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1115649977}
+  - {fileID: 795084001}
+  m_Father: {fileID: 1465192240}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1346039775
 GameObject:
   m_ObjectHideFlags: 0
@@ -57382,6 +57940,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1360210733
 MonoBehaviour:
@@ -58193,6 +58753,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!212 &1375666450
 SpriteRenderer:
@@ -58436,6 +58998,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!1 &1399177609
 GameObject:
@@ -59130,6 +59694,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1463943599
 MonoBehaviour:
@@ -59193,6 +59759,7 @@ Transform:
   - {fileID: 570452974}
   - {fileID: 321953272}
   - {fileID: 442781180}
+  - {fileID: 1335003578}
   - {fileID: 1965398122}
   - {fileID: 1293496437}
   - {fileID: 835531336}
@@ -60153,6 +60720,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1542674529
 MonoBehaviour:
@@ -60802,6 +61371,7 @@ GameObject:
   - component: {fileID: 1584609040}
   - component: {fileID: 1584609042}
   - component: {fileID: 1584609041}
+  - component: {fileID: 1584609043}
   m_Layer: 5
   m_Name: secret letter
   m_TagString: Untagged
@@ -60849,7 +61419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8301535818826159781, guid: 1bc199dff7c5d5e4a804c677a947da8f, type: 3}
+  m_Sprite: {fileID: 3019130261699528322, guid: 5300477a02eeaed499f99f8aafa68f55, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -60867,6 +61437,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584609039}
   m_CullTransparentMesh: 1
+--- !u!225 &1584609043
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584609039}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1587342824
 GameObject:
   m_ObjectHideFlags: 0
@@ -61334,6 +61916,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &1617600694
 BoxCollider2D:
@@ -61650,6 +62234,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1640904247
 MonoBehaviour:
@@ -62108,6 +62694,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1647763024
 MonoBehaviour:
@@ -62299,6 +62887,8 @@ MonoBehaviour:
       option_1_playworld: 1
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1677287475
 MonoBehaviour:
@@ -62908,6 +63498,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1708302415
 MonoBehaviour:
@@ -62967,6 +63559,56 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.96875, y: 0.9264089}
   m_EdgeRadius: 0
+--- !u!1 &1708927578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1708927580}
+  - component: {fileID: 1708927579}
+  m_Layer: 5
+  m_Name: canvas group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!225 &1708927579
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708927578}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!224 &1708927580
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708927578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 206603915}
+  - {fileID: 1809618447}
+  m_Father: {fileID: 460479513}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1715759805
 GameObject:
   m_ObjectHideFlags: 0
@@ -63335,6 +63977,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1742061060
 MonoBehaviour:
@@ -63671,6 +64315,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!1 &1744614654
 GameObject:
@@ -71423,6 +72069,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1759922078
 MonoBehaviour:
@@ -71609,6 +72257,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1761332065
 MonoBehaviour:
@@ -72053,6 +72703,194 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791917123}
   m_CullTransparentMesh: 1
+--- !u!1 &1809618444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1809618447}
+  - component: {fileID: 1809618446}
+  - component: {fileID: 1809618445}
+  m_Layer: 5
+  m_Name: description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1809618445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809618444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: b404053674c569149b49c408bce8fc60, type: 2}
+  m_sharedMaterial: {fileID: -5912440345306644242, guid: b404053674c569149b49c408bce8fc60, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1809618446
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809618444}
+  m_CullTransparentMesh: 1
+--- !u!224 &1809618447
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809618444}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1708927580}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 398}
+  m_SizeDelta: {x: 550, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1813504755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1813504757}
+  - component: {fileID: 1813504756}
+  m_Layer: 0
+  m_Name: ObjectiveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1813504756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813504755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6241de5a128144cb71e3511cc80222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objective_current: 0
+  objective_complete: 0
+  objective_text: {fileID: 206603913}
+  objective_desc: {fileID: 1809618445}
+  dialogue_manager: {fileID: 1305199792}
+  objective_canvas: {fileID: 1708927579}
+  fade_duration: 1.5
+--- !u!4 &1813504757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813504755}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.05, y: -7.53, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 460479513}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1818751159
 GameObject:
   m_ObjectHideFlags: 0
@@ -72289,6 +73127,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 1
 --- !u!1 &1828899576
 GameObject:
@@ -72576,6 +73416,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1847556029
 MonoBehaviour:
@@ -72662,6 +73504,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1864908120
 MonoBehaviour:
@@ -72988,6 +73832,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1876565410
 MonoBehaviour:
@@ -73381,6 +74227,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1889786015
 MonoBehaviour:
@@ -73608,6 +74456,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &1896431331
 BoxCollider2D:
@@ -74452,6 +75302,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!1 &1950594765
 GameObject:
@@ -74711,6 +75563,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1951719694
 MonoBehaviour:
@@ -75033,6 +75887,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &1967488903
 MonoBehaviour:
@@ -76494,6 +77350,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &2075186842
 MonoBehaviour:
@@ -76658,6 +77516,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!61 &2091665666
 BoxCollider2D:
@@ -77009,6 +77869,8 @@ MonoBehaviour:
       option_1_playworld: 0
       option_2_is_worldscene: 0
       option_2_playworld: 0
+    objective_exists: 0
+    objective_type: 0
   cutscene_AfterDialogue: 0
 --- !u!114 &2104602327
 MonoBehaviour:
@@ -79371,6 +80233,7 @@ SceneRoots:
   - {fileID: 1040731040}
   - {fileID: 1305199793}
   - {fileID: 1950594767}
+  - {fileID: 1813504757}
   - {fileID: 656324576}
   - {fileID: 519420032}
   - {fileID: 976601024}

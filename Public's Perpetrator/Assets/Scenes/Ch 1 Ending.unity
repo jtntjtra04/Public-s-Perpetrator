@@ -443,7 +443,7 @@ MonoBehaviour:
 
 
     We hope you enjoyed
-    this short narrative RPG experience and stay put for Act 2: A New Turn'
+    this short narrative RPG experience.'
 --- !u!222 &842966921
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1016,7 +1016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.47626886, g: 0.41940188, b: 0.9622642, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1036,7 +1036,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Publlic''s Perpetrator : Chapter 1
+  m_Text: 'Public''s Perpetrator : Chapter 1
 
     Call from the Unknown'
 --- !u!222 &1539705304
@@ -1141,8 +1141,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1.25
   m_Text: This is a demo version of Public's Perpetrator. Any form of temporary asset
-    will be renewed and polished along with new additions in the future as we want
-    to truly develop this game deep down from our hearts and imagination.
+    will be renewed and polished along with new additions in the future.
 --- !u!222 &1688184569
 CanvasRenderer:
   m_ObjectHideFlags: 0

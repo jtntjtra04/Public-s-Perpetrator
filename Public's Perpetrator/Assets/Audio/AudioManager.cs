@@ -11,17 +11,18 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource TypeSound;         // when typing a dialogue
     public AudioClip BGM_windy_indoors;
     public AudioClip BGM_crime_scene;
-    public AudioClip door;
-    public AudioClip shelf_drag;
-    public AudioClip inventory_open;
-    public AudioClip item_obtained;
+    public AudioClip SFX_door;
+    public AudioClip SFX_shelf_drag;
+    public AudioClip SFX_inventory_open;
+    public AudioClip SFX_item_obtained;
+    public AudioClip SFX_flashlight_click;
+    public AudioClip SFX_type_blip;
+    public AudioClip SFX_paper;
     public AudioClip walking_wood;
     public AudioClip metal_screech;
     public AudioClip lamp_flicker;
     public AudioClip water_drip;
-    public AudioClip flashlight_click;
     public AudioClip fridge_hum;
-    public AudioClip SFX_type_blip;
 
 
     // =============================== //

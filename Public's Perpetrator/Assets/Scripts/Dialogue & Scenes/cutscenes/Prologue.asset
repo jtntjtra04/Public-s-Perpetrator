@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935e806512a942344bf74b84d2f55e3b, type: 3}
+  m_Name: Prologue
+  m_EditorClassIdentifier: 
+  cutscene_type: 0
+  cutscene_name:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Paul
+  - Paul
+  - Paul
+  - Paul
+  - Paul
+  - Paul
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Paul
+  - Paul
+  - 
+  - 
+  - Email
+  - Paul
+  - Paul
+  - Email
+  - Email
+  - Email
+  - Email
+  - 
+  - Paul
+  - Paul
+  - Paul
+  - Paul
+  - Paul
+  - Paul
+  - Paul
+  - Paul
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Paul
+  - 
+  - Paul
+  - 
+  - 
+  - Paul
+  - Paul
+  - Paul
+  - Paul
+  - Paul
+  - Paul
+  cutscene_lines:
+  - There's a saying that the strong are meant to defend the weak and with that comes
+    harmony & peace.
+  - A world where each one's necessity is fulfilled with freedom aside from perturbation
+    and fear.
+  - Yet there's not a single day without crime around every corner, families weeping
+    out of hardship and suffering.
+  - 'What seemed to be the strong to defend the weak, only to
+
+    exploit them for
+    triumph and the wealth they seek..'
+  - 'Eventually, it comes into question, where does "happiness" truly
+
+    come from..'
+  - 'Bags of wealth? The sense of power over something else? Or
+
+    maybe.. just
+    maybe..'
+  - The will to bring torn pieces back together..
+  - ...
+  - ( grunt )
+  - Another day, another stinkin terrible day..
+  - This city just reeks of crime and penury. Even the news agrees with me..
+  - How many days has it been since I worked on that minor missing item case? Fifteen?
+    Twenty five? Apparently I lost count..
+  - Maybe mom was right. This gig prolly ain't for me.
+  - I admired dad's work and his principles.. but I never knew him nor can I possibly
+    reach his level of intelligence and wisdom..
+  - ...
+  - As interesting as the world of detectives and crime solving may be, you are just
+    at level one. Heh, maybe even a zero.
+  - Not to mention the rampant acts of violence lurking in every corner..
+  - Rather than out of malevolence, it has turned into a necessity simply to bring
+    food to their plate.
+  - Lack of job opportunities, terrible state of the economy. Who would even commission
+    a detective at this point..
+  - (sigh) even my mom's working overtime. I'm starting to feel bad for her..
+  - I'm letting go of this mantle tomorrow. There's no use in hoping for a lost cause..
+  - Several hours later, you've decided to hit the hay. It was rather a quiet evening..
+  - except..
+  - ( You received 1 email )
+  - 'Did I hear something? (grunts) '
+  - An email? From who?
+  - '"For Detective Paul Payton"'
+  - '"Evening, sire. I got an urgent case that requires your expertise. I''ve witnessed
+    your skills before and I know you''''ll be fit for the job."'
+  - '"However, I''m yet to tell you my name and there''s much more to discuss. I
+    can''t say anything further. They''re all watching.."'
+  - '"Meet me at the house near the countryside under these coordinates"'
+  - A set of coordinates was written under the previous passage, supposedly pointing
+    towards a vacant house in the countryside, distant from the rest of its residents.
+  - ...
+  - This has to be a joke..
+  - ( scrolls down )
+  - '"and no, this is not a joke.. ( this message will now delete itself in 5 minutes..
+    )"'
+  - ... who sent this ?
+  - As fishy as it may seem, it's been months since the last commission.. and I do
+    need another one. Man.. talk about desperation..
+  - I can even pay off several of mom's bills afterwards. Better off than sagging
+    away on this old bed.
+  - (sigh) I can't believe I'm lying to mom again about this but..
+  - It's for the better..
+  - ...
+  - ( minutes of driving later... )
+  - ...
+  - ( car door closes )
+  - ...
+  - This must be the place the stranger was talking about..
+  - ( knock )
+  - Hello? Anyone home?
+  - ...
+  - ( knock )
+  - Hello?
+  - Wait a minute. The door's unlocked..
+  - But noone else is aware of this address other than me. It's literally in the
+    middle of nowhere..
+  - ( puts ear against door )
+  - It's too quiet. Something's off..
+  - ( I should try to investigate.. )
+  cutscene_BG:
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: -4508454841284806233, guid: 6512b822ca11d564595a4f2b2864b312, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1313942972730354439, guid: ed7321127b7fdeb428c7cdd7e90c6583, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  - {fileID: 1129021561312009483, guid: 8dcdeb7fd301c0443bab88b7a9f56dfb, type: 3}
+  cutscene_character:
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: 7803557484988222738, guid: 30b20bcc323a38d449b896c99efb15a6, type: 3}
+  - {fileID: 7803557484988222738, guid: 30b20bcc323a38d449b896c99efb15a6, type: 3}
+  - {fileID: 7803557484988222738, guid: 30b20bcc323a38d449b896c99efb15a6, type: 3}
+  - {fileID: 7803557484988222738, guid: 30b20bcc323a38d449b896c99efb15a6, type: 3}
+  - {fileID: 7803557484988222738, guid: 30b20bcc323a38d449b896c99efb15a6, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: 7803557484988222738, guid: 30b20bcc323a38d449b896c99efb15a6, type: 3}
+  - {fileID: 7803557484988222738, guid: 30b20bcc323a38d449b896c99efb15a6, type: 3}
+  - {fileID: 7803557484988222738, guid: 30b20bcc323a38d449b896c99efb15a6, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: 7803557484988222738, guid: 30b20bcc323a38d449b896c99efb15a6, type: 3}
+  - {fileID: 7803557484988222738, guid: 30b20bcc323a38d449b896c99efb15a6, type: 3}
+  - {fileID: 7803557484988222738, guid: 30b20bcc323a38d449b896c99efb15a6, type: 3}
+  - {fileID: 7803557484988222738, guid: 30b20bcc323a38d449b896c99efb15a6, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}
+  - {fileID: -3490700647867510141, guid: b543efceefebc39498f052a6e02244c0, type: 3}

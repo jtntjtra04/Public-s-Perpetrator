@@ -147,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("door"))
         {
-            audiomanager.PlaySFX(audiomanager.door, 1f, 0.2f);
+            audiomanager.PlaySFX(audiomanager.SFX_door, 1f, 0.2f);
         }
         if (collision.gameObject.CompareTag("crime scene"))
         {

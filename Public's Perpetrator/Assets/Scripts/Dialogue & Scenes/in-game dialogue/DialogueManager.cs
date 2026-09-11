@@ -30,6 +30,7 @@ public class DialogueManager : MonoBehaviour
     private bool dialogue_on = false;
     public bool dialoguebox_on = false;
     public float isplaying = 0f;
+    public bool dialogue_removed;
 
     [Header("Choice Event")]
     public GameObject choice_panel;

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
 [System.Serializable]
@@ -26,14 +27,15 @@ public class DialogueChoice
     public DialogueTrigger option_1_dialogue;
     public DialogueTrigger option_2_dialogue;
 
-    [Header("Choice Panel Paths")]
-    public bool option_1_is_cutscene;
-    public CutsceneType option_1_playscene;
-    public bool option_2_is_cutscene;
-    public CutsceneType option_2_playscene;
 
-    public bool option_1_is_worldscene;
-    public WorldSceneType option_1_playworld;
-    public bool option_2_is_worldscene;
-    public WorldSceneType option_2_playworld;
+    [Header("Choice Panel Paths")]
+    public bool option1_cutscene;
+    public CutsceneType option1_playscene;
+    public bool option2_cutscene;
+    public CutsceneType option2_playscene;
+
+    public bool option1_worldscene;
+    public WorldSceneType option1_playworld;
+    public bool option2_worldscene;
+    public WorldSceneType option2_playworld;
 }

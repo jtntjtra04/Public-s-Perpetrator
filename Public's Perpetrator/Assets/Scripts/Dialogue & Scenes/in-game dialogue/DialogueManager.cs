@@ -194,15 +194,15 @@ public class DialogueManager : MonoBehaviour
 
     public void ChooseOption1()
     {
-        if (current_dialogue.choice.option_1_is_worldscene)
+        if (current_dialogue.choice.option1_worldscene)
         {
-            WorldSceneManager.world_scene_ToPlay = current_dialogue.choice.option_1_playworld;
+            WorldSceneManager.world_scene_ToPlay = current_dialogue.choice.option1_playworld;
             WorldSceneManager.world_scene_pending = true;
         }
 
-        if (current_dialogue.choice.option_1_is_cutscene)                                   // refers to DialogueChoice.cs to check if the choice leads to a cutscene or not (checked if YES)
+        if (current_dialogue.choice.option1_cutscene)                                   // refers to DialogueChoice.cs to check if the choice leads to a cutscene or not (checked if YES)
         {
-            CutsceneLoader.cutscene_ToPlay = current_dialogue.choice.option_1_playscene;    // calls cutscene loader and loads the cutscene_type to play according to inspector
+            CutsceneLoader.cutscene_ToPlay = current_dialogue.choice.option1_playscene;    // calls cutscene loader and loads the cutscene_type to play according to inspector
         }
 
         choice_panel.SetActive(false);                                                        
@@ -226,15 +226,15 @@ public class DialogueManager : MonoBehaviour
 
     public void ChooseOption2()
     {
-        if (current_dialogue.choice.option_2_is_worldscene)
+        if (current_dialogue.choice.option2_worldscene)
         {
-            WorldSceneManager.world_scene_ToPlay = current_dialogue.choice.option_2_playworld;
+            WorldSceneManager.world_scene_ToPlay = current_dialogue.choice.option2_playworld;
             WorldSceneManager.world_scene_pending = true;
         }
 
-        if (current_dialogue.choice.option_2_is_cutscene)
+        if (current_dialogue.choice.option2_cutscene)
         {
-            CutsceneLoader.cutscene_ToPlay = current_dialogue.choice.option_2_playscene;
+            CutsceneLoader.cutscene_ToPlay = current_dialogue.choice.option2_playscene;
         }
 
         choice_panel.SetActive(false);
@@ -253,6 +253,12 @@ public class DialogueManager : MonoBehaviour
                 SceneManager.LoadScene("Ch 1 World Scenes");
             }
         }
+    }
+
+
+    private void RecordFatalChoice()
+    {
+        if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.LogFails();
     }
 
 

@@ -38,6 +38,7 @@ public class WorldSceneManager : MonoBehaviour
 
             case WorldSceneType.Closet_trap:
                 director.playableAsset = closet_trap;
+                if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.LogFails("Closet Trap");
                 break;
         }
 

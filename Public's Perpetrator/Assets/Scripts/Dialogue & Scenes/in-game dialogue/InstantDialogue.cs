@@ -10,10 +10,22 @@ public class InstantDialogue : MonoBehaviour
     private HighlightObject object_status;
 
 
+    [SerializeField]
+    private string interaction_id;
+
+
     private void Start()
     {
         dialogue_trigger = GetComponent<DialogueTrigger>();
         object_status = GetComponent<HighlightObject>();
+
+        if (string.IsNullOrWhiteSpace(interaction_id))
+        {
+            Debug.LogError(
+                $"An interaction ID must be assigned to {gameObject.name}.", this);     // ID must be assigned to the object
+
+            return;
+        }
     }
 
 
@@ -21,6 +33,8 @@ public class InstantDialogue : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && CanTriggerDialogue == false)
         {
+            if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.RecordInteract(interaction_id);
+
             dialogue_trigger.TriggerDialogue();
             CanTriggerDialogue = true;
 

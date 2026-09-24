@@ -14,18 +14,18 @@ public class DialogueChoice
 
 
     [Header("Button Text")]
-    public string option_1_text;
-    public string option_2_text;
+    public string option1_text;
+    public string option2_text;
 
 
     [Header("Button Text")]
-    public string option_1_desc;
-    public string option_2_desc;
+    public string option1_desc;
+    public string option2_desc;
 
 
     [Header("Next Dialogue")]
-    public DialogueTrigger option_1_dialogue;
-    public DialogueTrigger option_2_dialogue;
+    public DialogueTrigger option1_dialogue;
+    public DialogueTrigger option2_dialogue;
 
 
     [Header("Choice Panel Paths")]

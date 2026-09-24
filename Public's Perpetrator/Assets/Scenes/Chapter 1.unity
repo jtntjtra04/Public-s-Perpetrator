@@ -354,20 +354,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -383,6 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: left cabinet 2
 --- !u!1 &12264779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1249,6 +1250,7 @@ MonoBehaviour:
   destination: {fileID: 63471013}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: 2nd Floor Hall
 --- !u!61 &102305334
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7162,20 +7164,20 @@ MonoBehaviour:
     - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -7192,6 +7194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_manager: {fileID: 1305199792}
+  interaction_id: instructions trigger
 --- !u!61 &160469545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24208,20 +24211,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -24237,6 +24240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: light switch 1
 --- !u!61 &375334220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24672,6 +24676,7 @@ MonoBehaviour:
   destination: {fileID: 2003945470}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: 2nd Floor Hall
 --- !u!61 &402559798
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28757,20 +28762,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -28786,6 +28791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: politics bookshelf
 --- !u!1 &500322912
 GameObject:
   m_ObjectHideFlags: 0
@@ -29290,20 +29296,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -29319,6 +29325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: history bookshelf
 --- !u!1 &514978541
 GameObject:
   m_ObjectHideFlags: 0
@@ -29772,6 +29779,7 @@ MonoBehaviour:
   transition_anim: {fileID: 748920579}
   dialogue_after: {fileID: 520054346}
   dialogue_manager: {fileID: 1305199792}
+  interaction_id: investigation board puzzle
 --- !u!114 &520054346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29835,20 +29843,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: Call the police
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -30041,6 +30049,7 @@ MonoBehaviour:
   destination: {fileID: 462462718}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: Basement
 --- !u!61 &531937624
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30209,8 +30218,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00020003319, y: 0, z: 0}
-    m_Extent: {x: 1.0006, y: 1.0005, z: 0}
+    m_Center: {x: -0.00025004148, y: 0.00020000339, z: 0}
+    m_Extent: {x: 1.0007501, y: 1, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -30326,6 +30335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: wall clock
 --- !u!114 &540116972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30347,20 +30357,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -30472,20 +30482,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -30601,6 +30611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: kitchen stove
 --- !u!1 &561976437
 GameObject:
   m_ObjectHideFlags: 0
@@ -30653,6 +30664,7 @@ MonoBehaviour:
   destination: {fileID: 1471054442}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: 2nd Floor Hall
 --- !u!61 &561976440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40595,20 +40607,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -40624,6 +40636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: wall crack
 --- !u!61 &589246939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40959,20 +40972,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -41088,6 +41101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: chopping board
 --- !u!1 &603284761
 GameObject:
   m_ObjectHideFlags: 0
@@ -41207,20 +41221,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -41237,6 +41251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_manager: {fileID: 1305199792}
+  interaction_id: bathroom rug trigger
 --- !u!61 &603284767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41396,20 +41411,20 @@ MonoBehaviour:
     - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -41425,6 +41440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: towels 1
 --- !u!61 &611336434
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42114,6 +42130,7 @@ MonoBehaviour:
   destination: {fileID: 1465683447}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: Living Room
 --- !u!61 &680564007
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42592,20 +42609,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -42621,6 +42638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: toilet 2
 --- !u!1 &729144590
 GameObject:
   m_ObjectHideFlags: 0
@@ -42676,6 +42694,7 @@ MonoBehaviour:
   audio_manager: {fileID: 151349625}
   fade_duration: 0.3
   mail_canvas: {fileID: 1584609043}
+  interaction_id: letter secret
 --- !u!61 &729144593
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42746,20 +42765,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -43526,6 +43545,7 @@ MonoBehaviour:
   destination: {fileID: 802691463}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: Living Room
 --- !u!61 &789801956
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44199,20 +44219,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -44228,6 +44248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: right cabinet 2
 --- !u!61 &807263730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44633,7 +44654,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 886902560}
   - {fileID: 1026665841}
   - {fileID: 1373416942}
   - {fileID: 507164981}
@@ -44802,20 +44822,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -44831,6 +44851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: towels 2
 --- !u!1 &861318560
 GameObject:
   m_ObjectHideFlags: 0
@@ -46957,20 +46978,20 @@ MonoBehaviour:
     - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -46986,6 +47007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: family painting
 --- !u!61 &878060673
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -47086,39 +47108,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &886902559
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 886902560}
-  m_Layer: 0
-  m_Name: hall F2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &886902560
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886902559}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1664172237}
-  - {fileID: 1627540624}
-  m_Father: {fileID: 835531336}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &890331673
 GameObject:
   m_ObjectHideFlags: 0
@@ -47265,20 +47254,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -47294,6 +47283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: wardrobe 2
 --- !u!61 &898026395
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48132,20 +48122,20 @@ MonoBehaviour:
     - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -48161,6 +48151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: crime bookshelf
 --- !u!1 &946822120
 GameObject:
   m_ObjectHideFlags: 0
@@ -52247,20 +52238,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -52322,6 +52313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: electronic device
 --- !u!114 &1000241730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52406,8 +52398,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.81915, y: -0.5437, z: 0}
-    m_Extent: {x: 2.89705, y: 4.6945, z: 0}
+    m_Center: {x: 1.81845, y: -0.54454994, z: 0}
+    m_Extent: {x: 2.89635, y: 4.69405, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -53751,20 +53743,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -53780,6 +53772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: bathtub
 --- !u!1 &1098449524
 GameObject:
   m_ObjectHideFlags: 0
@@ -53966,20 +53959,20 @@ MonoBehaviour:
     images: []
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -54232,20 +54225,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -54261,6 +54254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: light switch 2
 --- !u!1 &1122886249
 GameObject:
   m_ObjectHideFlags: 0
@@ -54615,20 +54609,20 @@ MonoBehaviour:
     - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 1
     objective_type: 3
   cutscene_AfterDialogue: 0
@@ -54775,8 +54769,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1145011954}
   - component: {fileID: 1145011955}
-  - component: {fileID: 1145011957}
   - component: {fileID: 1145011956}
+  - component: {fileID: 1145011957}
   m_Layer: 0
   m_Name: bathroom exit
   m_TagString: door
@@ -54914,6 +54908,7 @@ MonoBehaviour:
   destination: {fileID: 988800946}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: Living Room
 --- !u!213 &1146010493
 Sprite:
   m_ObjectHideFlags: 0
@@ -55300,6 +55295,14 @@ PrefabInstance:
       propertyPath: notification_box
       value: 
       objectReference: {fileID: 946822120}
+    - target: {fileID: 7749622299156316823, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: item_category
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8307120959495877836, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
+      propertyPath: interaction_id
+      value: painting item
+      objectReference: {fileID: 0}
     - target: {fileID: 8980485964331215533, guid: 4f21f6b62cb96924f91559072532ffad, type: 3}
       propertyPath: m_Name
       value: painting
@@ -60707,6 +60710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: fake plant
 --- !u!114 &1169034665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60728,20 +60732,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -60824,20 +60828,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 1
-      option_1_text: Call the police
-      option_2_text: Investigate Further
-      option_1_desc: I've seen enough. I better hand this over to the authorities..
-      option_2_desc: All the proof on this board seems to lead towards something..
-      option_1_dialogue: {fileID: 1822735378}
-      option_2_dialogue: {fileID: 1142459715}
-      option_1_is_cutscene: 1
-      option_1_playscene: 1
-      option_2_is_cutscene: 0
-      option_2_playscene: 2
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: Call the police
+      option2_text: Investigate Further
+      option1_desc: I've seen enough. I better hand this over to the authorities..
+      option2_desc: All the proof on this board seems to lead towards something..
+      option1_dialogue: {fileID: 1822735378}
+      option2_dialogue: {fileID: 1142459715}
+      option1_cutscene: 1
+      option1_playscene: 1
+      option2_cutscene: 0
+      option2_playscene: 2
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -60854,6 +60858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_manager: {fileID: 1305199792}
+  interaction_id: clue board secret
 --- !u!61 &1171540201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60973,6 +60978,7 @@ MonoBehaviour:
   destination: {fileID: 802380737}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: Office
 --- !u!61 &1184893357
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61211,6 +61217,7 @@ MonoBehaviour:
   destination: {fileID: 1403093639}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: Bedroom
 --- !u!61 &1203640694
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61377,20 +61384,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -61504,6 +61511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: bedroom window
 --- !u!1 &1214481970
 GameObject:
   m_ObjectHideFlags: 0
@@ -61553,6 +61561,7 @@ MonoBehaviour:
   destination: {fileID: 105210268}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: 2nd Floor Hall
 --- !u!61 &1214481973
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61812,20 +61821,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -61841,6 +61850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: television
 --- !u!1 &1266456188
 GameObject:
   m_ObjectHideFlags: 0
@@ -61976,6 +61986,7 @@ MonoBehaviour:
   destination: {fileID: 1346039776}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: Living Room
 --- !u!61 &1273341641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62441,12 +62452,12 @@ MonoBehaviour:
   isplaying: 0
   dialogue_removed: 0
   choice_panel: {fileID: 1035411245}
-  option_1_button: {fileID: 448248546}
-  option_2_button: {fileID: 1055465206}
-  option_1_text: {fileID: 520483964}
-  option_2_text: {fileID: 1571770652}
-  option_1_desc: {fileID: 271368784}
-  option_2_desc: {fileID: 217939699}
+  option1_button: {fileID: 448248546}
+  option2_button: {fileID: 1055465206}
+  option1_text: {fileID: 520483964}
+  option2_text: {fileID: 1571770652}
+  option1_desc: {fileID: 271368784}
+  option2_desc: {fileID: 217939699}
 --- !u!4 &1305199793
 Transform:
   m_ObjectHideFlags: 0
@@ -63378,20 +63389,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -63407,6 +63418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: fridge 2
 --- !u!61 &1360210735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64112,6 +64124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_manager: {fileID: 1305199792}
+  interaction_id: crime scene trigger
 --- !u!61 &1375666447
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -64191,20 +64204,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -64409,6 +64422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: dining table
 --- !u!114 &1380744535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64436,20 +64450,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -65132,20 +65146,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -65161,6 +65175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: bathroom sink 1
 --- !u!1 &1465192238
 GameObject:
   m_ObjectHideFlags: 0
@@ -65527,6 +65542,7 @@ MonoBehaviour:
   destination: {fileID: 795645202}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: Bathroom F1
 --- !u!61 &1477729297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66244,20 +66260,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -66274,6 +66290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_manager: {fileID: 1305199792}
+  interaction_id: bedroom scene trigger
 --- !u!61 &1542674531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67440,20 +67457,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -67569,6 +67586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: kitchen sink
 --- !u!1 &1619675762
 GameObject:
   m_ObjectHideFlags: 0
@@ -67729,11 +67747,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 93.15, y: 2.6, z: 0}
-  m_LocalScale: {x: 0.55, y: 0.7, z: 0.5}
+  m_LocalScale: {x: 0.55, y: 0.6999999, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 532217950}
-  m_Father: {fileID: 886902560}
+  m_Father: {fileID: 1951647509}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1627540625
 MonoBehaviour:
@@ -67843,20 +67861,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -67873,6 +67891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_manager: {fileID: 1305199792}
+  interaction_id: basement trigger
 --- !u!212 &1640904250
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68098,6 +68117,7 @@ MonoBehaviour:
   lamp_on: {fileID: 980764680973116145, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   lamp_off: {fileID: -4089531950506871088, guid: c224ba7692f1eeb408155bb670b43ab7, type: 3}
   book_anim: {fileID: 1742280953}
+  interaction_id: bulb ornaments puzzle
 --- !u!61 &1642864443
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68303,20 +68323,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -68332,6 +68352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: left cabinet 1
 --- !u!1 &1664172236
 GameObject:
   m_ObjectHideFlags: 0
@@ -68359,11 +68380,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 84, y: 2.6, z: 0}
-  m_LocalScale: {x: 0.55, y: 0.7, z: 0.5}
+  m_LocalScale: {x: 0.55, y: 0.6999999, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1874629851}
-  m_Father: {fileID: 886902560}
+  m_Father: {fileID: 1951647509}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1664172238
 MonoBehaviour:
@@ -68581,20 +68602,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 1
-      option_1_text: Force the door open
-      option_2_text: Keep it closed
-      option_1_desc: You can try to budge it open with your bare hands.
-      option_2_desc: Maybe it's closed for a reason..
-      option_1_dialogue: {fileID: 1108262912}
-      option_2_dialogue: {fileID: 1942949506}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 1
-      option_1_playworld: 1
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: Force the door open
+      option2_text: Keep it closed
+      option1_desc: You can try to budge it open with your bare hands.
+      option2_desc: Maybe it's closed for a reason..
+      option1_dialogue: {fileID: 1108262912}
+      option2_dialogue: {fileID: 1942949506}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 1
+      option1_playworld: 1
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -68610,6 +68631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: wardrobe 1
 --- !u!1 &1680727691
 GameObject:
   m_ObjectHideFlags: 0
@@ -68878,6 +68900,7 @@ MonoBehaviour:
   destination: {fileID: 2111561491}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: Bathroom F2
 --- !u!61 &1696623910
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69192,20 +69215,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -69221,6 +69244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: office computer
 --- !u!61 &1708302417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69671,20 +69695,20 @@ MonoBehaviour:
     - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -69701,6 +69725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue_manager: {fileID: 1305199792}
+  interaction_id: entrance trigger
 --- !u!212 &1742061062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69972,6 +69997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: moveable bookshelf
 --- !u!114 &1742280956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70010,20 +70036,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -77806,20 +77832,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -77835,6 +77861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: bathroom table sink
 --- !u!1 &1761332060
 GameObject:
   m_ObjectHideFlags: 0
@@ -77994,20 +78021,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -78023,6 +78050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: right cabinet 1
 --- !u!1 &1772709096
 GameObject:
   m_ObjectHideFlags: 0
@@ -78864,20 +78892,20 @@ MonoBehaviour:
     - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 1
@@ -79153,20 +79181,20 @@ MonoBehaviour:
     - {fileID: -3192516492055939191, guid: 6730911efd719bc48a9da7e5a9bb3f72, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -79182,6 +79210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: bed
 --- !u!1 &1864908117
 GameObject:
   m_ObjectHideFlags: 0
@@ -79241,20 +79270,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -79270,6 +79299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: soap shelf 2
 --- !u!61 &1864908122
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -79471,8 +79501,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.000050008297, y: 0.00014996529, z: 0}
-    m_Extent: {x: 1.0007501, y: 1.00045, z: 0}
+    m_Center: {x: -0.00044998527, y: 0.00050002337, z: 0}
+    m_Extent: {x: 0.99944997, y: 1.0004001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -79653,20 +79683,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -79682,6 +79712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: murder bookshelf
 --- !u!1 &1879426236
 GameObject:
   m_ObjectHideFlags: 0
@@ -80048,20 +80079,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -80077,6 +80108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: soap shelf 1
 --- !u!61 &1889786017
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -80256,6 +80288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: real plant
 --- !u!114 &1896431329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80277,20 +80310,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -81123,20 +81156,20 @@ MonoBehaviour:
     images: []
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -81220,8 +81253,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1664172237}
   - {fileID: 2073407999}
   - {fileID: 967287637}
+  - {fileID: 1627540624}
   m_Father: {fileID: 1293496437}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1951719689
@@ -81384,20 +81419,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -81413,6 +81448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: study desk
 --- !u!1 &1957300509
 GameObject:
   m_ObjectHideFlags: 0
@@ -81708,20 +81744,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -81737,6 +81773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: fridge 1
 --- !u!61 &1967488905
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -82211,6 +82248,7 @@ MonoBehaviour:
   destination: {fileID: 1556550575}
   isTransition: 0
   transition_anim: {fileID: 748920579}
+  destination_room_id: Kitchen
 --- !u!61 &1987809112
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -83172,20 +83210,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -83201,6 +83239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: tall lamp
 --- !u!95 &2075186844
 Animator:
   serializedVersion: 7
@@ -83338,20 +83377,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -83413,6 +83452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bda15612cd32c654ba778cbdce4785fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: messy books
 --- !u!114 &2091665669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83691,20 +83731,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -83720,6 +83760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: toilet 1
 --- !u!1 &2108751369
 GameObject:
   m_ObjectHideFlags: 0
@@ -85128,6 +85169,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 262744970}
     m_Modifications:
     - target: {fileID: 446493505762977441, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: interaction_id
+      value: finger item
+      objectReference: {fileID: 0}
+    - target: {fileID: 446493505762977441, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
       propertyPath: dialogue_manager
       value: 
       objectReference: {fileID: 1305199792}
@@ -85187,6 +85232,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 4366145966323580780, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
+      propertyPath: item_category
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4685029002757949409, guid: f55bb99314dff6b409c93816227f6eef, type: 3}
       propertyPath: notif_text
       value: 
@@ -85404,6 +85453,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.046633363
       objectReference: {fileID: 0}
+    - target: {fileID: 1524581362264933355, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: interaction_id
+      value: knife item
+      objectReference: {fileID: 0}
     - target: {fileID: 2157624297302420597, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.65000004
@@ -85560,6 +85613,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 7849027841155230609, guid: 689a84c9fba203f41bbb98d5ba4feda2, type: 3}
+      propertyPath: item_category
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -85674,6 +85731,10 @@ PrefabInstance:
       propertyPath: dialogue_text
       value: 
       objectReference: {fileID: 861758120}
+    - target: {fileID: 5346909851273071644, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: item_category
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5836118165462188957, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -85713,6 +85774,10 @@ PrefabInstance:
     - target: {fileID: 5836118165462188957, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7112473474923165876, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
+      propertyPath: interaction_id
+      value: batteries item
       objectReference: {fileID: 0}
     - target: {fileID: 7112473474923165876, guid: 5388f868c0f5c4a47821f24cb386faf0, type: 3}
       propertyPath: dialogue_manager
@@ -85898,6 +85963,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 2696351401263635817, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: item_category
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3702001284986773920, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
       propertyPath: dialogue.lines.Array.size
       value: 4
@@ -85965,6 +86034,10 @@ PrefabInstance:
     - target: {fileID: 6957568401371324726, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7347549369174914345, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
+      propertyPath: interaction_id
+      value: certificate item
       objectReference: {fileID: 0}
     - target: {fileID: 7347549369174914345, guid: 6628842c8b8567645bb156c7c44f80f9, type: 3}
       propertyPath: dialogue_manager

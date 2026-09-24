@@ -39,6 +39,9 @@ public class InvestigationBoard : MonoBehaviour
     public DialogueTrigger dialogue_after;
     public DialogueManager dialogue_manager;
 
+    [SerializeField]
+    private string interaction_id;
+
 
     // =============================== //
     // Puzzle Updates                  //
@@ -60,6 +63,14 @@ public class InvestigationBoard : MonoBehaviour
         {
             connection.SetActive(false);
         }
+
+        if (string.IsNullOrWhiteSpace(interaction_id))
+        {
+            Debug.LogError(
+                $"An interaction ID must be assigned to {gameObject.name}.", this);     // ID must be assigned to the object
+
+            return;
+        }
     }
 
 
@@ -67,9 +78,12 @@ public class InvestigationBoard : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && can_open_board && !secret_puzzle_solved && CompletedItems())
         {
+            if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.RecordInteract(interaction_id);
+
             investigation_board.SetActive(true);            // interacting with the secret link puzzle
             on_board = true;
         }
+
         if (Input.GetKeyDown(KeyCode.Escape) && on_board)   // leave the board to explore again
         {
             CloseBoard();

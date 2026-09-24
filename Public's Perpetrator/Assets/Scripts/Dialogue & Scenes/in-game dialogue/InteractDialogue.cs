@@ -11,11 +11,23 @@ public class InteractDialogue : MonoBehaviour
     private HighlightObject object_status;
 
 
+    [SerializeField]
+    private string interaction_id;
+
+
     private void Start()
     {
         dialogue_trigger = this.gameObject.GetComponent<DialogueTrigger>();
         object_status = this.gameObject.GetComponent<HighlightObject>();
         dialogue_manager = FindFirstObjectByType<DialogueManager>();
+
+        if (string.IsNullOrWhiteSpace(interaction_id))
+        {
+            Debug.LogError(
+                $"An interaction ID must be assigned to {gameObject.name}.", this);     // ID must be assigned to the object
+           
+            return;
+        }
     }
 
 
@@ -23,6 +35,8 @@ public class InteractDialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && CanTriggerDialogue && dialogue_manager.dialoguebox_on == false)
         {
+            if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.RecordInteract(interaction_id);
+
             dialogue_trigger.TriggerDialogue();
             if (object_status != null)
             {

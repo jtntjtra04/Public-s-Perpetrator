@@ -7,6 +7,15 @@ public class ItemController : MonoBehaviour
 {
     public Item item;
 
+    [SerializeField]
+    private ItemCategory item_category;
+
+    public enum ItemCategory
+    {
+        Others,
+        Clue
+    }
+
 
     // =============================== //
     // Items & Puzzle Requirements     //
@@ -18,6 +27,12 @@ public class ItemController : MonoBehaviour
         if(item != null)
         {
             InventoryManager.Instance.AddItem(item);        // add item to inventory
+
+            if (AnalyticsManager.Instance != null)
+            {
+                bool is_clue = item_category == ItemCategory.Clue;                  // is true if the item is a CLUE
+                AnalyticsManager.Instance.LogItemCollected(item.name,is_clue);
+            }
 
             InvestigationBoard investigation_board = FindAnyObjectByType<InvestigationBoard>();
 

@@ -11,6 +11,10 @@ public class RoomSwitch : MonoBehaviour
     private PlayerMovement player_movement;
 
 
+    [SerializeField]
+    private string destination_room_id;
+
+
     private void Awake()
     {
         player_movement = FindAnyObjectByType<PlayerMovement>();
@@ -32,11 +36,17 @@ public class RoomSwitch : MonoBehaviour
     private IEnumerator TransitionRoom(Collider2D collision)
     {
         isTransition = true;
+
+        if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.ExitRoom();
+
         player_movement.DisableMovement();
         transition_anim.Play("StartFade");
         yield return new WaitForSeconds(1.5f);
         collision.transform.position = new Vector2(destination.position.x, destination.position.y);
         transition_anim.Play("EndFade");
+
+        if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.EnterRoom(destination_room_id);
+
         player_movement.EnableMovement();
         isTransition = false;
     }

@@ -26,6 +26,9 @@ public class LampPuzzle : MonoBehaviour
     public Animator book_anim;                  // to trigger the sliding bookshelf
     AudioManager audiomanager;
 
+    [SerializeField]
+    private string interaction_id;
+
 
     private void Start()
     {
@@ -40,6 +43,14 @@ public class LampPuzzle : MonoBehaviour
         }
 
         lamp_states = new bool[7] { false, false, false, false, false, false, false};   // all the lamps are initially off
+
+        if (string.IsNullOrWhiteSpace(interaction_id))
+        {
+            Debug.LogError(
+                $"An interaction ID must be assigned to {gameObject.name}.", this);     // ID must be assigned to the object
+
+            return;
+        }
     }
 
 
@@ -47,6 +58,7 @@ public class LampPuzzle : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E) && can_trigger_puzzle && have_battery)   // if the puzzle isn't done and batteries are in hand, puzzle can be triggered
         {
+            if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.RecordInteract(interaction_id);
             lamp_puzzle.SetActive(true);
             on_puzzle = true;
             Debug.Log("interacted with puzzle");

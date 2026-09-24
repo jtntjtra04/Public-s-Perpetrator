@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.Timeline;
 using UnityEngine.UI;
 using static Unity.VisualScripting.Member;
@@ -34,12 +35,12 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Choice Event")]
     public GameObject choice_panel;
-    public Button option_1_button;
-    public Button option_2_button;
-    public TextMeshProUGUI option_1_text;
-    public TextMeshProUGUI option_2_text;
-    public TextMeshProUGUI option_1_desc;
-    public TextMeshProUGUI option_2_desc;
+    public Button option1_button;
+    public Button option2_button;
+    public TextMeshProUGUI option1_text;
+    public TextMeshProUGUI option2_text;
+    public TextMeshProUGUI option1_desc;
+    public TextMeshProUGUI option2_desc;
     private Dialogue current_dialogue;
 
     [Header("Player Detection")]
@@ -185,10 +186,10 @@ public class DialogueManager : MonoBehaviour
         dialogue_box.SetActive(false);
         choice_panel.SetActive(true);
 
-        option_1_text.text = current_dialogue.choice.option_1_text;
-        option_2_text.text = current_dialogue.choice.option_2_text;
-        option_1_desc.text = current_dialogue.choice.option_1_desc;
-        option_2_desc.text = current_dialogue.choice.option_2_desc;
+        option1_text.text = current_dialogue.choice.option1_text;
+        option2_text.text = current_dialogue.choice.option2_text;
+        option1_desc.text = current_dialogue.choice.option1_desc;
+        option2_desc.text = current_dialogue.choice.option2_desc;
     }
 
 
@@ -208,10 +209,10 @@ public class DialogueManager : MonoBehaviour
         choice_panel.SetActive(false);                                                        
         dialoguebox_on = false;
 
-        if (current_dialogue.choice.option_1_dialogue != null)
+        if (current_dialogue.choice.option1_dialogue != null)
         {
             dialogue_box.SetActive(true);
-            current_dialogue.choice.option_1_dialogue.TriggerDialogue();                    // trigger dialogue from object that contains the dialogue from StartDialogue() until EndDialogue()
+            current_dialogue.choice.option1_dialogue.TriggerDialogue();                    // trigger dialogue from object that contains the dialogue from StartDialogue() until EndDialogue()
         }
         else
         {
@@ -241,9 +242,9 @@ public class DialogueManager : MonoBehaviour
         dialoguebox_on = false;
         dialogue_box.SetActive(true);
 
-        if (current_dialogue.choice.option_2_dialogue != null)
+        if (current_dialogue.choice.option2_dialogue != null)
         {
-            current_dialogue.choice.option_2_dialogue.TriggerDialogue();
+            current_dialogue.choice.option2_dialogue.TriggerDialogue();
         }
         else
         {
@@ -253,12 +254,6 @@ public class DialogueManager : MonoBehaviour
                 SceneManager.LoadScene("Ch 1 World Scenes");
             }
         }
-    }
-
-
-    private void RecordFatalChoice()
-    {
-        if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.LogFails();
     }
 
 

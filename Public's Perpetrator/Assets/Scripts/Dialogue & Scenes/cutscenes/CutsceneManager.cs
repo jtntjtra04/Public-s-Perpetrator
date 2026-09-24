@@ -319,6 +319,7 @@ public class CutsceneManager : MonoBehaviour
         background_queue.Clear();
         character_queue.Clear();
 
+        if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.LogSkipCutscene(current_cutscene_type);
         EndCutscene();
     }
 

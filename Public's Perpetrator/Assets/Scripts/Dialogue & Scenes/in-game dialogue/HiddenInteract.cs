@@ -39,7 +39,7 @@ public class HiddenInteract : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && CanTriggerDialogue && dialogue_manager.dialoguebox_on == false && !phone.object_revealed)
+        if (Input.GetKeyDown(KeyCode.E) && CanTriggerDialogue && dialogue_manager.dialogue_ongoing == false && !phone.object_revealed)
         {
             if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.RecordInteract(interaction_id);
 

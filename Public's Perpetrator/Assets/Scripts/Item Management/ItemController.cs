@@ -9,6 +9,8 @@ public class ItemController : MonoBehaviour
 
     [SerializeField]
     private ItemCategory item_category;
+    private bool first_clue_obtained = false;
+
 
     public enum ItemCategory
     {
@@ -30,8 +32,9 @@ public class ItemController : MonoBehaviour
 
             if (AnalyticsManager.Instance != null)
             {
-                bool is_clue = item_category == ItemCategory.Clue;                  // is true if the item is a CLUE
-                AnalyticsManager.Instance.LogItemCollected(item.name,is_clue);
+                bool is_clue = item_category == ItemCategory.Clue;
+                if(first_clue_obtained == false && is_clue) AnalyticsManager.Instance.LogMilestone("Milestone: 1st Clue Obtained");
+                AnalyticsManager.Instance.LogItemCollected(item.name, is_clue);
             }
 
             InvestigationBoard investigation_board = FindAnyObjectByType<InvestigationBoard>();
@@ -62,7 +65,7 @@ public class ItemController : MonoBehaviour
                 }
             }
 
-            Destroy(gameObject);                            // remove the item from map after pickup
+            Destroy(gameObject);                                    // remove the item from map after pickup
         }
 
         else

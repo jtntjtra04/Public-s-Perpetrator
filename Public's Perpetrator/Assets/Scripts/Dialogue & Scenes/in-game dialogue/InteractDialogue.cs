@@ -33,15 +33,19 @@ public class InteractDialogue : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && CanTriggerDialogue && dialogue_manager.dialoguebox_on == false)
+        if (Input.GetKeyDown(KeyCode.E) && CanTriggerDialogue && dialogue_manager.dialogue_ongoing == false)
         {
-            if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.RecordInteract(interaction_id);
+            if (AnalyticsManager.Instance != null)
+            {
+                AnalyticsManager.Instance.RecordInteract(interaction_id);
+                if (interaction_id == "office computer" || interaction_id == "electronic device")
+                {
+                    AnalyticsManager.Instance.LogMilestone("Milestone: 1st Puzzle Direction");
+                }
+            }
 
             dialogue_trigger.TriggerDialogue();
-            if (object_status != null)
-            {
-                object_status.is_interacted = true;
-            }
+            if (object_status != null) object_status.is_interacted = true;
         }
     }
 

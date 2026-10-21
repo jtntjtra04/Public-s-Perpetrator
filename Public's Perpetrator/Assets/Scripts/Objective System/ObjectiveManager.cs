@@ -39,7 +39,7 @@ public class ObjectiveManager : MonoBehaviour
 
             case ObjectiveType.LookAround:
 
-                if (!dialogue_manager.dialoguebox_on)
+                if (!dialogue_manager.dialogue_ongoing)
                 {
                     objective_text.text = "Look around the house.";
                     objective_desc.text = "Something is off since I stepped foot into this house, it's way too quiet..";
@@ -50,7 +50,7 @@ public class ObjectiveManager : MonoBehaviour
                 break;
 
             case ObjectiveType.InvestigateScene:
-                if (!dialogue_manager.dialoguebox_on)
+                if (!dialogue_manager.dialogue_ongoing)
                 {
                     objective_text.text = "Further investigate the 2nd floor.";
                     objective_desc.text = "I don't know who's blood this belongs to. Hopefully it isn't the stranger's..";
@@ -61,7 +61,7 @@ public class ObjectiveManager : MonoBehaviour
                 break;
 
             case ObjectiveType.FinalDeduction:
-                if (!dialogue_manager.dialoguebox_on)
+                if (!dialogue_manager.dialogue_ongoing)
                 {
                     objective_text.text = "Deduce what happened.";
                     objective_desc.text = "There must be some leftover evidence that I can use to connect the dots..";

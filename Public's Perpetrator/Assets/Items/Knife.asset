@@ -15,3 +15,5 @@ MonoBehaviour:
   id: 2
   name: Pocket Knife
   icon: {fileID: 6617313405431064331, guid: d7050c9e0a3373b499884d61df95ccfa, type: 3}
+  description: "An army knife with a symbol engraved \non its blade. Despite the
+    blood residue,\nit seems brand new."

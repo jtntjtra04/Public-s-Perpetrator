@@ -33,6 +33,7 @@ public class WorldSceneManager : MonoBehaviour
         switch (world_scene_type)
         {
             case WorldSceneType.Epilogue:
+                AnalyticsManager.Instance.EndRun("Main Ending");
                 director.playableAsset = epilogue;
                 break;
 

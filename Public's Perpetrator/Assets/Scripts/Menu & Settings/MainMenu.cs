@@ -52,6 +52,7 @@ public class MainMenu : MonoBehaviour
         CutsceneLoader.cutscene_ToPlay = CutsceneType.Prologue;
         menu_audio.PlaySceneSFX(menu_audio.SFX_click);
         StartCoroutine(NextPart());
+        AnalyticsManager.Instance.BeginRun();
     }
 
 

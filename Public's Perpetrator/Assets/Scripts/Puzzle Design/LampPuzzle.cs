@@ -26,8 +26,9 @@ public class LampPuzzle : MonoBehaviour
     public Animator book_anim;                  // to trigger the sliding bookshelf
     AudioManager audiomanager;
 
-    [SerializeField]
-    private string interaction_id;
+    [SerializeField] private string interaction_id;
+    [SerializeField] private string puzzle_id;
+    private bool puzzle_solved;
 
 
     private void Start()
@@ -59,6 +60,9 @@ public class LampPuzzle : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E) && can_trigger_puzzle && have_battery)   // if the puzzle isn't done and batteries are in hand, puzzle can be triggered
         {
             if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.RecordInteract(interaction_id);
+            if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.BeginPuzzleAttempt(puzzle_id);
+            puzzle_solved = false;
+
             lamp_puzzle.SetActive(true);
             on_puzzle = true;
             Debug.Log("interacted with puzzle");
@@ -102,12 +106,11 @@ public class LampPuzzle : MonoBehaviour
             Debug.LogError("Index out of range: " + index);
             return;
         }
-        lamp_states[index] = !lamp_states[index];
 
+        lamp_states[index] = !lamp_states[index];
         lamps[index].sprite = lamp_states[index] ? lamp_on : lamp_off;
 
         switches[index].GetComponentInChildren<Image>().sprite = switches[index].isOn ? switch_on : switch_off;
-
         GoalCondition();
     }
 
@@ -116,6 +119,7 @@ public class LampPuzzle : MonoBehaviour
     {
         if (lamp_states[2] && lamp_states[3] && lamp_states[4] && !lamp_states[0] && !lamp_states[1] && !lamp_states[5] && !lamp_states[6])
         {
+            puzzle_solved = true;
             StartCoroutine(HiddenDoorAnimation());
         }
     }
@@ -133,6 +137,12 @@ public class LampPuzzle : MonoBehaviour
 
     public void ClosePuzzle()                   // whenever the player exits the puzzle
     {
+        if (AnalyticsManager.Instance != null)
+        {
+            AnalyticsManager.Instance.EndPuzzleAttempt(puzzle_id, puzzle_solved);
+            AnalyticsManager.Instance.LogMilestone("Milestone: Solved 1st Puzzle");
+        }
+
         lamp_puzzle.SetActive(false);
         on_puzzle = false;
     }

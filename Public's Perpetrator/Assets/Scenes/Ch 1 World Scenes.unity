@@ -7810,8 +7810,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 1.8194501, y: -0.5444498, z: 0}
-    m_Extent: {x: 2.89595, y: 4.69415, z: 0}
+    m_Center: {x: 1.81875, y: -0.5444, z: 0}
+    m_Extent: {x: 2.89615, y: 4.6946, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9937,12 +9937,12 @@ MonoBehaviour:
   isplaying: 0
   dialogue_removed: 0
   choice_panel: {fileID: 1261247654}
-  option_1_button: {fileID: 72592071}
-  option_2_button: {fileID: 1813212578}
-  option_1_text: {fileID: 469212642}
-  option_2_text: {fileID: 912319690}
-  option_1_desc: {fileID: 467156534}
-  option_2_desc: {fileID: 2048373162}
+  option1_button: {fileID: 0}
+  option2_button: {fileID: 0}
+  option1_text: {fileID: 0}
+  option2_text: {fileID: 0}
+  option1_desc: {fileID: 0}
+  option2_desc: {fileID: 0}
 --- !u!4 &329104504
 Transform:
   m_ObjectHideFlags: 0
@@ -17323,20 +17323,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   world_dialogue_manager: {fileID: 329104503}
@@ -52316,6 +52316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86e75a91fe25d4418be9b35846f9a84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_id: 
 --- !u!114 &1678708752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52347,20 +52348,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   cutscene_AfterDialogue: 0
@@ -52630,20 +52631,20 @@ MonoBehaviour:
     - {fileID: 3641372603542673665, guid: 17ce39b9e2507af40b9340a67211c236, type: 3}
     choice:
       hasChoice: 0
-      option_1_text: 
-      option_2_text: 
-      option_1_desc: 
-      option_2_desc: 
-      option_1_dialogue: {fileID: 0}
-      option_2_dialogue: {fileID: 0}
-      option_1_is_cutscene: 0
-      option_1_playscene: 0
-      option_2_is_cutscene: 0
-      option_2_playscene: 0
-      option_1_is_worldscene: 0
-      option_1_playworld: 0
-      option_2_is_worldscene: 0
-      option_2_playworld: 0
+      option1_text: 
+      option2_text: 
+      option1_desc: 
+      option2_desc: 
+      option1_dialogue: {fileID: 0}
+      option2_dialogue: {fileID: 0}
+      option1_cutscene: 0
+      option1_playscene: 0
+      option2_cutscene: 0
+      option2_playscene: 0
+      option1_worldscene: 0
+      option1_playworld: 0
+      option2_worldscene: 0
+      option2_playworld: 0
     objective_exists: 0
     objective_type: 0
   world_dialogue_manager: {fileID: 329104503}

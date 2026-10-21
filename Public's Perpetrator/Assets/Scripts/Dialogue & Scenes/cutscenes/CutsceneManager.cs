@@ -341,9 +341,11 @@ public class CutsceneManager : MonoBehaviour
         {
             case CutsceneType.Prologue:
                 SceneManager.LoadScene("Chapter 1");
+                if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.BeginClueCounter();
                 break;
 
             case CutsceneType.Epilogue_ending_1:
+                AnalyticsManager.Instance.EndRun("Ending 1 - Further Away From Home");
                 SceneManager.LoadScene("Ch 1 Ending");
                 break;
         }

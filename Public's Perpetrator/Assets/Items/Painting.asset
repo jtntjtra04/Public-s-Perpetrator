@@ -15,3 +15,5 @@ MonoBehaviour:
   id: 1
   name: Poster
   icon: {fileID: 2752897537967948496, guid: 3f07c3aae924ae2449f674768101a45e, type: 3}
+  description: "A 1st edition painting of Paracelsus. This\nwill definitely cost
+    a fortune, but I better \nreturn it to its rightful owner when I get \nthe chance.."

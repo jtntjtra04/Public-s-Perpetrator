@@ -21,7 +21,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !dialogue_manager.dialoguebox_on)
+        if (Input.GetKeyDown(KeyCode.Escape) && !dialogue_manager.dialogue_ongoing)
         {
             if (isPaused)
                 Resume();
@@ -60,6 +60,7 @@ public class PauseMenu : MonoBehaviour
 
     public void BackToMenu()
     {
+        if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.CancelPuzzleAttempt();
         StartCoroutine(FadeTransition());
         Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");

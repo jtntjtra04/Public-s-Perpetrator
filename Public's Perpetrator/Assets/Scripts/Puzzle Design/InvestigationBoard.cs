@@ -39,8 +39,8 @@ public class InvestigationBoard : MonoBehaviour
     public DialogueTrigger dialogue_after;
     public DialogueManager dialogue_manager;
 
-    [SerializeField]
-    private string interaction_id;
+    [SerializeField] private string interaction_id;
+    [SerializeField] private string puzzle_id;
 
 
     // =============================== //
@@ -79,6 +79,7 @@ public class InvestigationBoard : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && can_open_board && !secret_puzzle_solved && CompletedItems())
         {
             if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.RecordInteract(interaction_id);
+            if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.BeginPuzzleAttempt(puzzle_id);
 
             investigation_board.SetActive(true);            // interacting with the secret link puzzle
             on_board = true;
@@ -242,7 +243,7 @@ public class InvestigationBoard : MonoBehaviour
         dialogue_after.TriggerDialogue();
 
         DialogueManager dialogue_manager = FindAnyObjectByType<DialogueManager>();
-        yield return new WaitUntil(() => !dialogue_manager.dialoguebox_on);             // wait until dialogue is over
+        yield return new WaitUntil(() => !dialogue_manager.dialogue_ongoing);             // wait until dialogue is over
 
         transition_anim.Play("StartFade");                                              // switches scenes with transition
         yield return new WaitForSeconds(2f);
@@ -263,6 +264,7 @@ public class InvestigationBoard : MonoBehaviour
 
     private void CloseBoard()
     {
+        if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.EndPuzzleAttempt(puzzle_id, secret_puzzle_solved);
         investigation_board.SetActive(false);
         on_board = false;
     }

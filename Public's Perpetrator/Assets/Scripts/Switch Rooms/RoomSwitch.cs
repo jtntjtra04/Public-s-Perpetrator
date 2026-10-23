@@ -54,7 +54,7 @@ public class RoomSwitch : MonoBehaviour
             faintlampSystem.SetFaintState(faultyRoom);                              // determine faint lamp based on room
         }
 
-        if(destination_room_id == "Basement") AnalyticsManager.Instance.LogMilestone("Milestone: Discovered Basement");
+        if (destination_room_id == "Basement") AnalyticsManager.Instance.LogMilestone("Milestone: Discovered Basement");
         if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.EnterRoom(destination_room_id);                    // ANALYTICS → room entry
 
         player_movement.EnableMovement();                                                                                   // re-enable movement after transition

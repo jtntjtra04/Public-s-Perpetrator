@@ -64,7 +64,7 @@ public class GameTimer : MonoBehaviour
     {
         Debug.Log("20-minutes reached.");
 
-        if (menu_panel != null) menu_panel.SetActive(true);
+        pause_menu.Pause();
         if (menu_text != null) menu_text.SetActive(true);
 
         Time.timeScale = 0f;

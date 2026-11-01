@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -37,7 +37,7 @@ public class InventoryManager : MonoBehaviour
         {
             if (!inventory.activeSelf)
             {
-                audio_manager.PlaySFX(audio_manager.SFX_inventory_open, 2f, 0.15f);
+                audio_manager.PlaySFX(audio_manager.SFX_inventory_open, 2f, 0.15f);     // opens suitcase → disable movement & open inventory
                 inventory.SetActive(true);
                 InputItems();
                 player.DisableMovement();
@@ -45,7 +45,7 @@ public class InventoryManager : MonoBehaviour
 
             else
             {
-                CloseInventory();
+                CloseInventory();                                                       // closes suitcase → re-enable movement & closes inventory
             } 
         }
     }

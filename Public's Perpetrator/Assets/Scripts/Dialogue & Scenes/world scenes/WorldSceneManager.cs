@@ -33,13 +33,14 @@ public class WorldSceneManager : MonoBehaviour
         switch (world_scene_type)
         {
             case WorldSceneType.Epilogue:
+                AnalyticsManager.Instance.LogMilestone("Milestone: Reached an Ending");
                 AnalyticsManager.Instance.EndRun("Main Ending");
                 director.playableAsset = epilogue;
                 break;
 
             case WorldSceneType.Closet_trap:
-                director.playableAsset = closet_trap;
                 if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.LogFails("Closet Trap");
+                director.playableAsset = closet_trap;
                 break;
         }
 

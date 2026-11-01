@@ -32,6 +32,7 @@ public class DialogueManager : MonoBehaviour
     public bool dialogue_ongoing = false;
     public float isplaying = 0f;
 
+
     [Header("Choice Event")]
     public GameObject choice_panel;
     public Button option1_button;
@@ -154,11 +155,15 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator TypeLines(string sentence)
     {
-        dialogue_text.text = "";
+        dialogue_text.text = sentence;
+        dialogue_text.maxVisibleCharacters = 0;                                 // assign sentence and hide all
 
-        foreach(char letter in sentence.ToCharArray())
+        dialogue_text.ForceMeshUpdate();
+        int totalVisibleCharacters = dialogue_text.textInfo.characterCount;     // process layout instantly
+
+        for (int i = 0; i <= totalVisibleCharacters; i++)                       // increase visible characters one by one
         {
-            dialogue_text.text += letter;
+            dialogue_text.maxVisibleCharacters = i;
             yield return new WaitForSeconds(text_speed);
         }
 

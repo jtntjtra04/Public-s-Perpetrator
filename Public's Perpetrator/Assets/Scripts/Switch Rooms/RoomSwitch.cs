@@ -6,9 +6,11 @@ using UnityEngine;
 public class RoomSwitch : MonoBehaviour
 {
     public Transform destination;
-    private bool isTransition = false;                                  // isTransition acts as a safe guard to prevent multiple coroutines
     public Animator transition_anim;
     private PlayerMovement player_movement;
+
+    private bool isTransition = false;                                  // isTransition acts as a safe guard to prevent multiple coroutines
+    private bool basement_discovered = false;
 
     [SerializeField]
     private string destination_room_id;
@@ -54,10 +56,17 @@ public class RoomSwitch : MonoBehaviour
             faintlampSystem.SetFaintState(faultyRoom);                              // determine faint lamp based on room
         }
 
-        if (destination_room_id == "Basement") AnalyticsManager.Instance.LogMilestone("Milestone: Discovered Basement");
-        if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.EnterRoom(destination_room_id);                    // ANALYTICS → room entry
+        if (AnalyticsManager.Instance != null)
+        {
+            AnalyticsManager.Instance.EnterRoom(destination_room_id);                                                           // ANALYTICS → room entry
+            if (destination_room_id == "Basement" && basement_discovered == false)
+            {
+                AnalyticsManager.Instance.LogMilestone("Milestone: Discovered Basement");
+                basement_discovered = true;
+            }
 
-        player_movement.EnableMovement();                                                                                   // re-enable movement after transition
-        isTransition = false;
+            player_movement.EnableMovement();                                                                                       // re-enable movement after transition
+            isTransition = false;
+        }
     }
 }

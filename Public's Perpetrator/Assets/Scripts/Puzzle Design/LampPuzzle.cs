@@ -12,6 +12,7 @@ public class LampPuzzle : MonoBehaviour
     private bool can_trigger_puzzle = false;
     public bool on_puzzle = false;
     public bool have_battery = false;
+    public Item batteries_item;
 
     public Toggle[] switches;                   // switch toggles and sprites
     public CanvasGroup switch_box;
@@ -28,6 +29,7 @@ public class LampPuzzle : MonoBehaviour
 
     [SerializeField] private string interaction_id;
     [SerializeField] private string puzzle_id;
+    [SerializeField] public Collider2D bookshelf_moved;
     private bool puzzle_solved;
 
 
@@ -115,11 +117,19 @@ public class LampPuzzle : MonoBehaviour
     }
 
 
-    private void GoalCondition()                // condition to solve the puzzle
+    private void GoalCondition()                                         // condition to solve the puzzle
     {
         if (lamp_states[2] && lamp_states[3] && lamp_states[4] && !lamp_states[0] && !lamp_states[1] && !lamp_states[5] && !lamp_states[6])
         {
             puzzle_solved = true;
+            AnalyticsManager.Instance.LogMilestone("Milestone: Solved 1st Puzzle");
+
+            if (bookshelf_moved != null)
+            {
+                bookshelf_moved.enabled = false;
+            }
+
+            InventoryManager.Instance.RemoveItem(batteries_item);        // add item to inventory
             StartCoroutine(HiddenDoorAnimation());
         }
     }
@@ -140,7 +150,6 @@ public class LampPuzzle : MonoBehaviour
         if (AnalyticsManager.Instance != null)
         {
             AnalyticsManager.Instance.EndPuzzleAttempt(puzzle_id, puzzle_solved);
-            AnalyticsManager.Instance.LogMilestone("Milestone: Solved 1st Puzzle");
         }
 
         lamp_puzzle.SetActive(false);

@@ -345,6 +345,7 @@ public class CutsceneManager : MonoBehaviour
                 break;
 
             case CutsceneType.Epilogue_ending_1:
+                AnalyticsManager.Instance.LogMilestone("Milestone: Reached an Ending");
                 AnalyticsManager.Instance.EndRun("Ending 1 - Further Away From Home");
                 SceneManager.LoadScene("Ch 1 Ending");
                 break;

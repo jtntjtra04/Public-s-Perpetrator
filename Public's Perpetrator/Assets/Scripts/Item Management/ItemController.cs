@@ -33,7 +33,11 @@ public class ItemController : MonoBehaviour
             if (AnalyticsManager.Instance != null)
             {
                 bool is_clue = item_category == ItemCategory.Clue;
-                if(first_clue_obtained == false && is_clue) AnalyticsManager.Instance.LogMilestone("Milestone: 1st Clue Obtained");
+                if (first_clue_obtained == false && is_clue)
+                {
+                    AnalyticsManager.Instance.LogMilestone("Milestone: Another Clue Obtained");
+                    first_clue_obtained = true;                
+                }
                 AnalyticsManager.Instance.LogItemCollected(item.name, is_clue);
             }
 

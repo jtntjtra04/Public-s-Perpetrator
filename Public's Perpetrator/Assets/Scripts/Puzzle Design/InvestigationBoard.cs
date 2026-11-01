@@ -1,10 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class InvestigationBoard : MonoBehaviour
@@ -24,24 +24,29 @@ public class InvestigationBoard : MonoBehaviour
     public Button[] connectors;                     // connector buttons
     public GameObject[] connections;                // links between evidence
     private bool[] connector_selected;
-    private bool[] connecter_solved = new bool[3];
     private int curr_connector;
+    private bool connector_open = true;
+
+    [Header("Descriptions")]
+    public TMP_Text descriptive_text;
 
     [Header("Answer / Connections Related")]
     private int[] selected_answers = { -1, -1, -1 };
-    private int[] correct_answers = { 2, 1, 0 };
+    private int[] correct_answers = { 0, 1, 0 };
 
     [Header("After the Puzzle")]
     public Animator transition_anim;                // change of scene after secret link puzzle is solved
     public DialogueTrigger dialogue_after;
     public DialogueManager dialogue_manager;
+    public Dialogue dialogue;
 
     [SerializeField] private string interaction_id;
     [SerializeField] private string puzzle_id;
 
 
     // =============================== //
-    // Puzzle Updates & Start          //\    // =============================== //
+    // Puzzle Updates & Start          //
+    // =============================== //
 
 
     private void Start()
@@ -49,6 +54,7 @@ public class InvestigationBoard : MonoBehaviour
         investigation_board.SetActive(false);
         on_board = false;
         connector_selected = new bool[3] {false, false, false};
+        descriptive_text.text = "After searching the house, these are the several clues I could find. I wonder how they're all connected..";
 
         foreach (GameObject connection in connections) connection.SetActive(false);
 
@@ -62,8 +68,9 @@ public class InvestigationBoard : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && can_open_board && !secret_puzzle_solved && CompletedItems())
+        if (Input.GetKeyDown(KeyCode.E) && can_open_board && !secret_puzzle_solved && CompletedItems() && !dialogue_manager.dialogue_ongoing)
         {
+            dialogue_manager.StartDialogue(dialogue, gameObject);
             if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.RecordInteract(interaction_id);
             if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.BeginPuzzleAttempt(puzzle_id);
 
@@ -71,7 +78,10 @@ public class InvestigationBoard : MonoBehaviour
             on_board = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape) && on_board) CloseBoard();
+        if (Input.GetKeyDown(KeyCode.Escape) && on_board)
+        {
+            CloseBoard();
+        }
     }
 
 
@@ -89,7 +99,6 @@ public class InvestigationBoard : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Touched the board");
         if (collision.CompareTag("Player")) can_open_board = true;
     }
 
@@ -107,23 +116,38 @@ public class InvestigationBoard : MonoBehaviour
 
     public void ConnectorButton(int connector)
     {
-        if(connector == 0 && !connector_selected[0])
+        for (int i = 0; i < connectors.Length; i++)
+        {
+            if (connectors[i] != null && !dialogue_manager.dialogue_ongoing && connector_open)
+            {
+                connectors[i].image.color = (i == connector) ? new Color32(186, 178, 254, 255) : Color.white;
+                descriptive_text.text = "";
+            }
+        }
+
+        if (connector == 0 && !connector_selected[0] && !dialogue_manager.dialogue_ongoing && connector_open)
         {
             Debug.Log("connector 1 selected");
+            CloseConnection(1);
+            CloseConnection(2);
             connections[connector].SetActive(true);
             connector_selected[connector] = true;
             curr_connector = connector;
         }
-        if (connector == 1 && !connector_selected[1])
+        if (connector == 1 && !connector_selected[1] && !dialogue_manager.dialogue_ongoing && connector_open)
         {
             Debug.Log("connector 2 selected");
+            CloseConnection(0);
+            CloseConnection(2);
             connections[connector].SetActive(true);
             connector_selected[connector] = true;
             curr_connector = connector;
         }
-        if (connector == 2 && !connector_selected[2])
+        if (connector == 2 && !connector_selected[2] && !dialogue_manager.dialogue_ongoing && connector_open)
         {
             Debug.Log("connector 3 selected");
+            CloseConnection(0);
+            CloseConnection(1);
             connections[connector].SetActive(true);
             connector_selected[connector] = true;
             curr_connector = connector;
@@ -133,26 +157,34 @@ public class InvestigationBoard : MonoBehaviour
 
     public void SelectAnswer(int answer)
     {
-        if (curr_connector < 0)
-            return;
+        if (curr_connector < 0) return;
 
         selected_answers[curr_connector] = answer;
+
+        Button[] string_options = connections[curr_connector].GetComponentsInChildren<Button>();
+        for (int i = 0; i < string_options.Length; i++)
+        {
+            string_options[i].image.color = (i == answer) ? new Color32(186, 178, 254, 255) : Color.white;
+        }
+
+        if (selected_answers[0] != correct_answers[0])
+        {
+            Debug.Log("Wrong answer(s) selected");
+        }
+        else if (selected_answers[1] != correct_answers[1])
+        {
+            Debug.Log("Wrong answer(s) selected");
+        }
+        else if (selected_answers[2] != correct_answers[2])
+        {
+            Debug.Log("Wrong answer(s) selected");
+        }
 
         if (selected_answers[0] == correct_answers[0] &&
             selected_answers[1] == correct_answers[1] &&
             selected_answers[2] == correct_answers[2])
         {
-            StartCoroutine(SecretLinkCleared());
-        }
-    }
-
-
-    private void ConnectorSolved(int connector)
-    {
-        if (connecter_solved[connector]) return;
-        connecter_solved[connector] = true;
-        if (connecter_solved[0] && connecter_solved[1] && connecter_solved[2])
-        {
+            connector_open = false;
             StartCoroutine(SecretLinkCleared());
         }
     }
@@ -165,8 +197,14 @@ public class InvestigationBoard : MonoBehaviour
 
     private IEnumerator SecretLinkCleared()
     {
+        CloseConnection(0);
+        CloseConnection(1);
+        CloseConnection(2);
+
         secret_puzzle_solved = true;
-        yield return new WaitForSeconds(3f);
+        descriptive_text.text = "That must be it..";
+
+        yield return new WaitForSeconds(2f);
         CloseBoard();
         dialogue_after.TriggerDialogue();
 

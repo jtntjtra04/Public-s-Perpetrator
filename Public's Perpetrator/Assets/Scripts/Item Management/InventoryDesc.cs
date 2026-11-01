@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class InventoryDesc : MonoBehaviour
@@ -9,7 +10,7 @@ public class InventoryDesc : MonoBehaviour
     public static InventoryDesc Instance;
 
     public GameObject desc_BG;              // The UI panel container
-    public Text desc_text;                  // The description in the panel
+    public TMP_Text desc_text;              // The description in the panel
 
 
     private void Awake()
@@ -24,8 +25,8 @@ public class InventoryDesc : MonoBehaviour
     {
         if (desc_BG.activeSelf)
         {
-            Vector2 mousePosition = Input.mousePosition;                            // description panel follows mouse
-            desc_BG.transform.position = mousePosition + new Vector2(7f, -7f);    // slight offsset
+            Vector2 mousePosition = Input.mousePosition;                           // description panel follows mouse
+            desc_BG.transform.position = mousePosition + new Vector2(0f, -60f);    // slight offsset
         }
     }
 

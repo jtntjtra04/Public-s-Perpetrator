@@ -9,6 +9,7 @@ public class InteractDialogue : MonoBehaviour
     private bool CanTriggerDialogue = false;
     private DialogueManager dialogue_manager;
     private HighlightObject object_status;
+    private bool milestone_reached = false;
 
 
     [SerializeField]
@@ -38,9 +39,10 @@ public class InteractDialogue : MonoBehaviour
             if (AnalyticsManager.Instance != null)
             {
                 AnalyticsManager.Instance.RecordInteract(interaction_id);
-                if (interaction_id == "office computer" || interaction_id == "electronic device")
+                if ((interaction_id == "office computer" || interaction_id == "electronic device") && milestone_reached == false)
                 {
                     AnalyticsManager.Instance.LogMilestone("Milestone: 1st Puzzle Direction");
+                    milestone_reached = true;
                 }
             }
 

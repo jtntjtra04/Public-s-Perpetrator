@@ -64,7 +64,7 @@ public class ObjectiveManager : MonoBehaviour
                 if (!dialogue_manager.dialogue_ongoing)
                 {
                     objective_text.text = "Deduce what happened.";
-                    objective_desc.text = "There must be some leftover evidence that I can use to connect the dots..";
+                    objective_desc.text = "There must be several clues that I can use to connect the dots. I'll get back to the investigation board once I gather enough..";
                 }
                 if (fade_coroutine != null)
                     StopCoroutine(fade_coroutine);

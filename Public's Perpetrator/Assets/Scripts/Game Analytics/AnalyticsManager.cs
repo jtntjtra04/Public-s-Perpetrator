@@ -150,7 +150,6 @@ public class AnalyticsManager : MonoBehaviour
         Debug.Log($"EndRun called. Ending: {ending_type}, Active: {run_active}, " + $"Run: {run_attempt}, Initialized: {isInitialized}");
         if (!run_active) return;
 
-        LogMilestone("Milestone: Reached an Ending");
         ExitRoom();                                                                    // accounts for the basement before ending the run
         float run_playtime = Time.realtimeSinceStartup - run_startTime;                // calculate cumulative runtime in seconds since the first scene opened
 
@@ -189,6 +188,7 @@ public class AnalyticsManager : MonoBehaviour
     {
         if (!run_active) return;
         failures_thisRun ++;
+        milestone_queue = 0;                                                            // reset milestone progression upon death / failure
 
         CustomEvent fail_event = new CustomEvent("Triggered_Failure")
         {
@@ -336,7 +336,7 @@ public class AnalyticsManager : MonoBehaviour
             clues_gathered_thisRun++;
             if (clues_gathered_thisRun >= total_clues) {
                 LogCluesCollected();
-                LogMilestone("Milestone: All Clues Collected");
+                AnalyticsManager.Instance.LogMilestone("Milestone: All Clues Collected");
             }
         }
 
@@ -458,6 +458,7 @@ public class AnalyticsManager : MonoBehaviour
 
     private void OnApplicationQuit()
     {
+        EndRun("Player left");
         ExitRoom();                                                         // calls ExitRoom() to log time INCASE the game closes & forces a data flush
         if (isInitialized) AnalyticsService.Instance.Flush();
     }

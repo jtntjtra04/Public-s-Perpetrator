@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.Timeline;
 using UnityEngine.UI;
 using static Unity.VisualScripting.Member;
@@ -27,19 +28,19 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Dialogue Status")]
     public float text_speed = 0.04f;
-    private bool dialogue_on = false;
-    public bool dialoguebox_on = false;
+    private bool dialogue_typing = false;
+    public bool dialogue_ongoing = false;
     public float isplaying = 0f;
-    public bool dialogue_removed;
+
 
     [Header("Choice Event")]
     public GameObject choice_panel;
-    public Button option_1_button;
-    public Button option_2_button;
-    public TextMeshProUGUI option_1_text;
-    public TextMeshProUGUI option_2_text;
-    public TextMeshProUGUI option_1_desc;
-    public TextMeshProUGUI option_2_desc;
+    public Button option1_button;
+    public Button option2_button;
+    public TextMeshProUGUI option1_text;
+    public TextMeshProUGUI option2_text;
+    public TextMeshProUGUI option1_desc;
+    public TextMeshProUGUI option2_desc;
     private Dialogue current_dialogue;
 
     [Header("Player Detection")]
@@ -62,10 +63,10 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetMouseButtonUp(0) && dialoguebox_on)
+        if(Input.GetMouseButtonUp(0) && dialogue_ongoing)
         {
             isplaying += 1;
-            if (!dialogue_on)
+            if (!dialogue_typing)
             {
                 NextDialogue();
             }
@@ -84,9 +85,9 @@ public class DialogueManager : MonoBehaviour
         current_source = source;
 
         isplaying = 1;                      // in regards to faster text typing
-        if (dialoguebox_on) return;
+        if (dialogue_ongoing) return;
         dialogue_box.SetActive(true);
-        dialoguebox_on = true;
+        dialogue_ongoing = true;
 
         if (player_movement != null)
         {
@@ -138,7 +139,7 @@ public class DialogueManager : MonoBehaviour
         string line = lines.Dequeue();
         Sprite image = images.Dequeue();
 
-        dialogue_on = true;
+        dialogue_typing = true;
         name_text.text = name;
         npc_image.sprite = image;
         StopAllCoroutines();
@@ -154,16 +155,20 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator TypeLines(string sentence)
     {
-        dialogue_text.text = "";
+        dialogue_text.text = sentence;
+        dialogue_text.maxVisibleCharacters = 0;                                 // assign sentence and hide all
 
-        foreach(char letter in sentence.ToCharArray())
+        dialogue_text.ForceMeshUpdate();
+        int totalVisibleCharacters = dialogue_text.textInfo.characterCount;     // process layout instantly
+
+        for (int i = 0; i <= totalVisibleCharacters; i++)                       // increase visible characters one by one
         {
-            dialogue_text.text += letter;
+            dialogue_text.maxVisibleCharacters = i;
             yield return new WaitForSeconds(text_speed);
         }
 
         type_audio.StopTypeSFX();
-        dialogue_on = false;
+        dialogue_typing = false;
         isplaying = 0;
     }
 
@@ -185,10 +190,10 @@ public class DialogueManager : MonoBehaviour
         dialogue_box.SetActive(false);
         choice_panel.SetActive(true);
 
-        option_1_text.text = current_dialogue.choice.option_1_text;
-        option_2_text.text = current_dialogue.choice.option_2_text;
-        option_1_desc.text = current_dialogue.choice.option_1_desc;
-        option_2_desc.text = current_dialogue.choice.option_2_desc;
+        option1_text.text = current_dialogue.choice.option1_text;
+        option2_text.text = current_dialogue.choice.option2_text;
+        option1_desc.text = current_dialogue.choice.option1_desc;
+        option2_desc.text = current_dialogue.choice.option2_desc;
     }
 
 
@@ -200,18 +205,18 @@ public class DialogueManager : MonoBehaviour
             WorldSceneManager.world_scene_pending = true;
         }
 
-        if (current_dialogue.choice.option1_cutscene)                                   // refers to DialogueChoice.cs to check if the choice leads to a cutscene or not (checked if YES)
+        if (current_dialogue.choice.option1_cutscene)                                      // refers to DialogueChoice.cs to check if the choice leads to a cutscene or not (checked if YES)
         {
             CutsceneLoader.cutscene_ToPlay = current_dialogue.choice.option1_playscene;    // calls cutscene loader and loads the cutscene_type to play according to inspector
         }
 
-        choice_panel.SetActive(false);                                                        
-        dialoguebox_on = false;
+        choice_panel.SetActive(false);
+        dialogue_ongoing = false;
 
-        if (current_dialogue.choice.option_1_dialogue != null)
+        if (current_dialogue.choice.option1_dialogue != null)
         {
             dialogue_box.SetActive(true);
-            current_dialogue.choice.option_1_dialogue.TriggerDialogue();                    // trigger dialogue from object that contains the dialogue from StartDialogue() until EndDialogue()
+            current_dialogue.choice.option1_dialogue.TriggerDialogue();                    // trigger dialogue from object that contains the dialogue from StartDialogue() until EndDialogue()
         }
         else
         {
@@ -238,12 +243,12 @@ public class DialogueManager : MonoBehaviour
         }
 
         choice_panel.SetActive(false);
-        dialoguebox_on = false;
+        dialogue_ongoing = false;
         dialogue_box.SetActive(true);
 
-        if (current_dialogue.choice.option_2_dialogue != null)
+        if (current_dialogue.choice.option2_dialogue != null)
         {
-            current_dialogue.choice.option_2_dialogue.TriggerDialogue();
+            current_dialogue.choice.option2_dialogue.TriggerDialogue();
         }
         else
         {
@@ -256,12 +261,6 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-    private void RecordFatalChoice()
-    {
-        if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.LogFails();
-    }
-
-
     // =============================== //
     // After the Dialogue Ends         //
     // =============================== //
@@ -270,44 +269,44 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         dialogue_box.SetActive(false);
-        dialoguebox_on = false;
+        dialogue_ongoing = false;
 
-        if (player_movement != null)                                                                        // player can move again
+        if (player_movement != null)                                                                        // player can MOVE again
         {
             player_movement.EnableMovement();   
         }
 
-        NotificationTrigger trigger_notif = current_source.GetComponent<NotificationTrigger>();             // notification pop ups after certain interactions
+        NotificationTrigger trigger_notif = current_source.GetComponent<NotificationTrigger>();             // NOTIFICATION pop ups after certain interactions
         if (trigger_notif != null)
         {
             trigger_notif.ShowNotification();
         }
 
-        HiddenObject phone = current_source.GetComponent<HiddenObject>();                                   // requirement to interact with phone
+        HiddenObject phone = current_source.GetComponent<HiddenObject>();                                   // requirement to interact with HIDDEN OBJECTS (e.g. phone)
         if (phone != null)
         {
             phone.RevealObject();
         }
 
-        WorldSceneDialogue world_scene = current_source.GetComponent<WorldSceneDialogue>();                 // timeline continues after dialogue plays (during in-game cutscene)
+        WorldSceneDialogue world_scene = current_source.GetComponent<WorldSceneDialogue>();                 // timeline continues after dialogue plays (during in-game WORLD SCENE)
         if (world_scene != null)
         {
             world_scene.ResumeTimeline();
         }
 
-        DialogueTrigger object_trigger = current_source.GetComponent<DialogueTrigger>();                    // plays a cutscene if there is any.
+        DialogueTrigger object_trigger = current_source.GetComponent<DialogueTrigger>();                    // plays a CUTSCENE if there is any.
         if (object_trigger != null && object_trigger.cutscene_AfterDialogue)
         {
             SceneManager.LoadScene("Ch 1 Cutscenes");
         }
 
-        if (WorldSceneManager.world_scene_pending)                                                          // plays a world scene if there is any
+        if (WorldSceneManager.world_scene_pending)                                                          // plays a WORLD SCENE if there is any
         {
             WorldSceneManager.world_scene_pending = false;
             SceneManager.LoadScene("Ch 1 World Scenes");
         }
 
-        if (current_dialogue.objective_exists)                                                              // sets the next objective if there is any
+        if (current_dialogue.objective_exists)                                                              // sets the next OBJECTIVE if there is any
         {
             objective_manager.SetObjective(current_dialogue.objective_type);
         }

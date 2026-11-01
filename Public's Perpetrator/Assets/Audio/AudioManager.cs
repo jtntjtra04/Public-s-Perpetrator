@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
+    [SerializeField] AudioSource FlashlightSource;
     [SerializeField] AudioSource footstepSource;    // separate AudioSource for footsteps, assigned in Inspector
     [SerializeField] AudioSource TypeSound;         // when typing a dialogue
     public AudioClip BGM_windy_indoors;
@@ -15,14 +16,15 @@ public class AudioManager : MonoBehaviour
     public AudioClip SFX_shelf_drag;
     public AudioClip SFX_inventory_open;
     public AudioClip SFX_item_obtained;
-    public AudioClip SFX_flashlight_click;
     public AudioClip SFX_type_blip;
     public AudioClip SFX_paper;
+    public AudioClip flashlight_click;
     public AudioClip walking_wood;
     public AudioClip metal_screech;
     public AudioClip lamp_flicker;
     public AudioClip water_drip;
     public AudioClip fridge_hum;
+    public AudioClip electricity;
 
 
     // =============================== //

@@ -319,6 +319,7 @@ public class CutsceneManager : MonoBehaviour
         background_queue.Clear();
         character_queue.Clear();
 
+        if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.LogSkipCutscene(current_cutscene_type);
         EndCutscene();
     }
 
@@ -340,9 +341,12 @@ public class CutsceneManager : MonoBehaviour
         {
             case CutsceneType.Prologue:
                 SceneManager.LoadScene("Chapter 1");
+                if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.BeginClueCounter();
                 break;
 
             case CutsceneType.Epilogue_ending_1:
+                AnalyticsManager.Instance.LogMilestone("Milestone: Reached an Ending");
+                AnalyticsManager.Instance.EndRun("Ending 1 - Further Away From Home");
                 SceneManager.LoadScene("Ch 1 Ending");
                 break;
         }

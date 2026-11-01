@@ -12,6 +12,7 @@ public class LampPuzzle : MonoBehaviour
     private bool can_trigger_puzzle = false;
     public bool on_puzzle = false;
     public bool have_battery = false;
+    public Item batteries_item;
 
     public Toggle[] switches;                   // switch toggles and sprites
     public CanvasGroup switch_box;
@@ -25,6 +26,11 @@ public class LampPuzzle : MonoBehaviour
 
     public Animator book_anim;                  // to trigger the sliding bookshelf
     AudioManager audiomanager;
+
+    [SerializeField] private string interaction_id;
+    [SerializeField] private string puzzle_id;
+    [SerializeField] public Collider2D bookshelf_moved;
+    private bool puzzle_solved;
 
 
     private void Start()
@@ -40,6 +46,14 @@ public class LampPuzzle : MonoBehaviour
         }
 
         lamp_states = new bool[7] { false, false, false, false, false, false, false};   // all the lamps are initially off
+
+        if (string.IsNullOrWhiteSpace(interaction_id))
+        {
+            Debug.LogError(
+                $"An interaction ID must be assigned to {gameObject.name}.", this);     // ID must be assigned to the object
+
+            return;
+        }
     }
 
 
@@ -47,6 +61,10 @@ public class LampPuzzle : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E) && can_trigger_puzzle && have_battery)   // if the puzzle isn't done and batteries are in hand, puzzle can be triggered
         {
+            if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.RecordInteract(interaction_id);
+            if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.BeginPuzzleAttempt(puzzle_id);
+            puzzle_solved = false;
+
             lamp_puzzle.SetActive(true);
             on_puzzle = true;
             Debug.Log("interacted with puzzle");
@@ -90,20 +108,28 @@ public class LampPuzzle : MonoBehaviour
             Debug.LogError("Index out of range: " + index);
             return;
         }
-        lamp_states[index] = !lamp_states[index];
 
+        lamp_states[index] = !lamp_states[index];
         lamps[index].sprite = lamp_states[index] ? lamp_on : lamp_off;
 
         switches[index].GetComponentInChildren<Image>().sprite = switches[index].isOn ? switch_on : switch_off;
-
         GoalCondition();
     }
 
 
-    private void GoalCondition()                // condition to solve the puzzle
+    private void GoalCondition()                                         // condition to solve the puzzle
     {
         if (lamp_states[2] && lamp_states[3] && lamp_states[4] && !lamp_states[0] && !lamp_states[1] && !lamp_states[5] && !lamp_states[6])
         {
+            puzzle_solved = true;
+            AnalyticsManager.Instance.LogMilestone("Milestone: Solved 1st Puzzle");
+
+            if (bookshelf_moved != null)
+            {
+                bookshelf_moved.enabled = false;
+            }
+
+            InventoryManager.Instance.RemoveItem(batteries_item);        // add item to inventory
             StartCoroutine(HiddenDoorAnimation());
         }
     }
@@ -121,6 +147,11 @@ public class LampPuzzle : MonoBehaviour
 
     public void ClosePuzzle()                   // whenever the player exits the puzzle
     {
+        if (AnalyticsManager.Instance != null)
+        {
+            AnalyticsManager.Instance.EndPuzzleAttempt(puzzle_id, puzzle_solved);
+        }
+
         lamp_puzzle.SetActive(false);
         on_puzzle = false;
     }

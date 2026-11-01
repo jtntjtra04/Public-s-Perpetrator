@@ -18,9 +18,21 @@ public class Mail : MonoBehaviour
     public CanvasGroup mail_canvas;
 
 
+    [SerializeField]
+    private string interaction_id;
+
+
     private void Start()
     {
         CloseMail();        // the secret mail hasn't been opened
+
+        if (string.IsNullOrWhiteSpace(interaction_id))
+        {
+            Debug.LogError(
+                $"An interaction ID must be assigned to {gameObject.name}.", this);     // ID must be assigned to the object
+
+            return;
+        }
     }
 
 
@@ -28,6 +40,8 @@ public class Mail : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E) && can_open_mail)
         {
+            if (AnalyticsManager.Instance != null) AnalyticsManager.Instance.RecordInteract(interaction_id);
+
             if (dialogue_played == false)
             {
                 dialogue_after.TriggerDialogue();

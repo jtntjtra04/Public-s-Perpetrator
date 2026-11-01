@@ -10,7 +10,6 @@ public class Flashlight : MonoBehaviour
     public float maxRadius = 3f;
     public DialogueManager dialogue_manager;
     public AudioManager audio_manager;
-    
 
     [Header("Highlighting objects")]
     public LayerMask interactableLayer;
@@ -18,6 +17,9 @@ public class Flashlight : MonoBehaviour
     private Light2D flashlight_light;
     private Transform player_transform;
     private Camera mainCamera;
+
+    [Header("Footsteps")]
+    [SerializeField] private AudioSource FlashlightSource;
 
 
     private void Awake()
@@ -32,7 +34,7 @@ public class Flashlight : MonoBehaviour
 
     private void Update()
     {
-        if (dialogue_manager != null && dialogue_manager.dialoguebox_on)
+        if (dialogue_manager != null && dialogue_manager.dialogue_ongoing)
         {
             return; 
         }
@@ -40,7 +42,7 @@ public class Flashlight : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             flashlight_light.enabled = !flashlight_light.enabled;
-            audio_manager.PlaySFX(audio_manager.SFX_flashlight_click, 2f, 0.45f);
+            FlashlightSource.PlayOneShot(audio_manager.flashlight_click);
         }
 
         if (flashlight_light.enabled)

@@ -7,6 +7,17 @@ public class ItemController : MonoBehaviour
 {
     public Item item;
 
+    [SerializeField]
+    private ItemCategory item_category;
+    private bool first_clue_obtained = false;
+
+
+    public enum ItemCategory
+    {
+        Others,
+        Clue
+    }
+
 
     // =============================== //
     // Items & Puzzle Requirements     //
@@ -18,6 +29,17 @@ public class ItemController : MonoBehaviour
         if(item != null)
         {
             InventoryManager.Instance.AddItem(item);        // add item to inventory
+
+            if (AnalyticsManager.Instance != null)
+            {
+                bool is_clue = item_category == ItemCategory.Clue;
+                if (first_clue_obtained == false && is_clue)
+                {
+                    AnalyticsManager.Instance.LogMilestone("Milestone: Another Clue Obtained");
+                    first_clue_obtained = true;                
+                }
+                AnalyticsManager.Instance.LogItemCollected(item.name, is_clue);
+            }
 
             InvestigationBoard investigation_board = FindAnyObjectByType<InvestigationBoard>();
 
@@ -47,7 +69,7 @@ public class ItemController : MonoBehaviour
                 }
             }
 
-            Destroy(gameObject);                            // remove the item from map after pickup
+            Destroy(gameObject);                                    // remove the item from map after pickup
         }
 
         else

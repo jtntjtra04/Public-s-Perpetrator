@@ -9,6 +9,11 @@ public class InteractDialogue : MonoBehaviour
     private bool CanTriggerDialogue = false;
     private DialogueManager dialogue_manager;
     private HighlightObject object_status;
+    private bool milestone_reached = false;
+
+
+    [SerializeField]
+    private string interaction_id;
 
 
     private void Start()
@@ -16,18 +21,33 @@ public class InteractDialogue : MonoBehaviour
         dialogue_trigger = this.gameObject.GetComponent<DialogueTrigger>();
         object_status = this.gameObject.GetComponent<HighlightObject>();
         dialogue_manager = FindFirstObjectByType<DialogueManager>();
+
+        if (string.IsNullOrWhiteSpace(interaction_id))
+        {
+            Debug.LogError(
+                $"An interaction ID must be assigned to {gameObject.name}.", this);     // ID must be assigned to the object
+           
+            return;
+        }
     }
 
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && CanTriggerDialogue && dialogue_manager.dialoguebox_on == false)
+        if (Input.GetKeyDown(KeyCode.E) && CanTriggerDialogue && dialogue_manager.dialogue_ongoing == false)
         {
-            dialogue_trigger.TriggerDialogue();
-            if (object_status != null)
+            if (AnalyticsManager.Instance != null)
             {
-                object_status.is_interacted = true;
+                AnalyticsManager.Instance.RecordInteract(interaction_id);
+                if ((interaction_id == "office computer" || interaction_id == "electronic device") && milestone_reached == false)
+                {
+                    AnalyticsManager.Instance.LogMilestone("Milestone: 1st Puzzle Direction");
+                    milestone_reached = true;
+                }
             }
+
+            dialogue_trigger.TriggerDialogue();
+            if (object_status != null) object_status.is_interacted = true;
         }
     }
 
